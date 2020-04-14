@@ -5,14 +5,14 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Firefly.PowerShell.DynamicParameters.DynamicParameterBuilder.yml",
+      "source_relative_path": "api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Firefly.PowerShell.DynamicParameters.DynamicParameterBuilder.html",
-          "hash": "MnO9xuNuwnAU1WIV0CXFag=="
+          "relative_path": "api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.html",
+          "hash": "UXPp68OC+ijjxjZutf2X7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.html",
-          "hash": "d7B/yp2dQebajgNxYgX2MQ=="
+          "hash": "ThiUeYQRWOUq62DDobTvfQ=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.PowerShell.DynamicParameters.html",
-          "hash": "SvWQ8XLBh4jPPw3ipqkSVg=="
+          "hash": "ApBGA7+Uj45jptsJsPyv1g=="
         }
       },
       "is_incremental": false,
@@ -48,7 +48,7 @@
           "hash": "Q03DX2M1dxLlcbAevf5mkA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ZvTgMslBiKcSjhQH/nufyQ=="
+          "hash": "1OoCesJ3m5MLNzPTk1LbaQ=="
         }
       },
       "is_incremental": false,
@@ -72,7 +72,7 @@
           "hash": "ezUNlwak4SuLOaoeIXQ/kA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "4WwHWvHpTlff9ajrSW2pxw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -115,23 +115,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -144,8 +146,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
