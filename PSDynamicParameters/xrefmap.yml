@@ -187,6 +187,12 @@ references:
   commentId: M:Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValidatePattern(System.String,System.Text.RegularExpressions.RegexOptions)
   fullName: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValidatePattern(System.String, System.Text.RegularExpressions.RegexOptions)
   nameWithType: RuntimeDefinedParameterBuilder.WithValidatePattern(String, RegexOptions)
+- uid: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValidatePattern(System.Text.RegularExpressions.Regex)
+  name: WithValidatePattern(Regex)
+  href: api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.html#Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterBuilder_WithValidatePattern_System_Text_RegularExpressions_Regex_
+  commentId: M:Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValidatePattern(System.Text.RegularExpressions.Regex)
+  fullName: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValidatePattern(System.Text.RegularExpressions.Regex)
+  nameWithType: RuntimeDefinedParameterBuilder.WithValidatePattern(Regex)
 - uid: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValidatePattern*
   name: WithValidatePattern
   href: api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.html#Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterBuilder_WithValidatePattern_
