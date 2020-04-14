@@ -213,7 +213,7 @@ Helper class to accumulate a <a class="xref" href="https://docs.microsoft.com/do
     <a href="https://github.com/fireflycons/PSDynamicParameters/new/master/apiSpec/new?filename=Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_Add_Firefly_PowerShell_DynamicParameters_DynamicParameterBuilder_.md&amp;value=---%0Auid%3A%20Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.Add(Firefly.PowerShell.DynamicParameters.DynamicParameterBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/master/src/Firefly.PowerShell.DynamicParameters/RuntimeDefinedParameterDictionaryHelper.cs/#L64">View Source</a>
+    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/master/src/Firefly.PowerShell.DynamicParameters/RuntimeDefinedParameterDictionaryHelper.cs/#L77">View Source</a>
   </span>
   <a id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_Add_" data-uid="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.Add*"></a>
   <h4 id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_Add_Firefly_PowerShell_DynamicParameters_DynamicParameterBuilder_" data-uid="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.Add(Firefly.PowerShell.DynamicParameters.DynamicParameterBuilder)">Add(DynamicParameterBuilder)</h4>
@@ -237,17 +237,24 @@ Helper class to accumulate a <a class="xref" href="https://docs.microsoft.com/do
       <tr>
         <td><a class="xref" href="Firefly.PowerShell.DynamicParameters.DynamicParameterBuilder.html">DynamicParameterBuilder</a></td>
         <td><span class="parametername">parameterBuilder</span></td>
-        <td><p>The parameter builder.</p>
+        <td><p>The parameter builder which will be built to yield the parameter to add.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_Add_Firefly_PowerShell_DynamicParameters_DynamicParameterBuilder__examples">Examples</h5>
+  <pre><code>dictionaryHelper.Add(
+    new DynamicParameterBuilder(&quot;MyMandatoryOneTwoParameter&quot;)
+       .WithMandatory()
+       .WithValidateSet(&quot;One&quot;, &quot;Two&quot;)
+    );</code></pre>
+
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/fireflycons/PSDynamicParameters/new/master/apiSpec/new?filename=Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_Add_System_Management_Automation_RuntimeDefinedParameter_.md&amp;value=---%0Auid%3A%20Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.Add(System.Management.Automation.RuntimeDefinedParameter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/master/src/Firefly.PowerShell.DynamicParameters/RuntimeDefinedParameterDictionaryHelper.cs/#L73">View Source</a>
+    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/master/src/Firefly.PowerShell.DynamicParameters/RuntimeDefinedParameterDictionaryHelper.cs/#L86">View Source</a>
   </span>
   <a id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_Add_" data-uid="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.Add*"></a>
   <h4 id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_Add_System_Management_Automation_RuntimeDefinedParameter_" data-uid="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.Add(System.Management.Automation.RuntimeDefinedParameter)">Add(RuntimeDefinedParameter)</h4>
@@ -271,7 +278,7 @@ Helper class to accumulate a <a class="xref" href="https://docs.microsoft.com/do
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.management.automation.runtimedefinedparameter">RuntimeDefinedParameter</a></td>
         <td><span class="parametername">parameter</span></td>
-        <td><p>The parameter.</p>
+        <td><p>The parameter to add.</p>
 </td>
       </tr>
     </tbody>
@@ -283,14 +290,13 @@ Helper class to accumulate a <a class="xref" href="https://docs.microsoft.com/do
     <a href="https://github.com/fireflycons/PSDynamicParameters/new/master/apiSpec/new?filename=Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_op_Explicit_Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper__System_Management_Automation_RuntimeDefinedParameterDictionary.md&amp;value=---%0Auid%3A%20Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.op_Explicit(Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper)~System.Management.Automation.RuntimeDefinedParameterDictionary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/master/src/Firefly.PowerShell.DynamicParameters/RuntimeDefinedParameterDictionaryHelper.cs/#L54">View Source</a>
+    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/master/src/Firefly.PowerShell.DynamicParameters/RuntimeDefinedParameterDictionaryHelper.cs/#L58">View Source</a>
   </span>
   <a id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_op_Explicit_" data-uid="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.op_Explicit*"></a>
   <h4 id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_op_Explicit_Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper__System_Management_Automation_RuntimeDefinedParameterDictionary" data-uid="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.op_Explicit(Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper)~System.Management.Automation.RuntimeDefinedParameterDictionary">Explicit(RuntimeDefinedParameterDictionaryHelper to RuntimeDefinedParameterDictionary)</h4>
   <div class="markdown level1 summary"><p>
 Performs an explicit conversion from <a class="xref" href="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.html">RuntimeDefinedParameterDictionaryHelper</a> to <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.management.automation.runtimedefinedparameterdictionary">RuntimeDefinedParameterDictionary</a>.
 </p>
-<p>This cast permits being able to return the <a class="xref" href="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.html">RuntimeDefinedParameterDictionaryHelper</a> instance directly from <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.management.automation.idynamicparameters.getdynamicparameters#System_Management_Automation_IDynamicParameters_GetDynamicParameters">GetDynamicParameters()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -310,7 +316,7 @@ Performs an explicit conversion from <a class="xref" href="Firefly.PowerShell.Dy
       <tr>
         <td><a class="xref" href="Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.html">RuntimeDefinedParameterDictionaryHelper</a></td>
         <td><span class="parametername">dictionaryHelper</span></td>
-        <td><p>The dictionary helper.</p>
+        <td><p>The dictionary helper instance.</p>
 </td>
       </tr>
     </tbody>
@@ -326,11 +332,14 @@ Performs an explicit conversion from <a class="xref" href="Firefly.PowerShell.Dy
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.management.automation.runtimedefinedparameterdictionary">RuntimeDefinedParameterDictionary</a></td>
-        <td><p>The result of the conversion.</p>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.management.automation.runtimedefinedparameterdictionary">RuntimeDefinedParameterDictionary</a> which can be returned from <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.management.automation.idynamicparameters.getdynamicparameters#System_Management_Automation_IDynamicParameters_GetDynamicParameters">GetDynamicParameters()</a>. An explicit cast is needed since the return type is <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper_op_Explicit_Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterDictionaryHelper__System_Management_Automation_RuntimeDefinedParameterDictionary_examples">Examples</h5>
+  <pre><code>return (RuntimeDefinedParameterDictionary)dictionaryHelper;</code></pre>
+
 </article>
           </div>
           

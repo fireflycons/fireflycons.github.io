@@ -116,7 +116,7 @@ public class AddDynamicParameterCommand : PSCmdlet, IDynamicParameters
         if (boundParameters.ContainsKey(&quot;MyNewParameter&quot;))
         {
             // The dynamic parameter is present - retrieve its value
-            var myParameter = boundParameters[&quot;MyNewParameter&quot;];
+            var myNewParameter = boundParameters[&quot;MyNewParameter&quot;];
 
             // Do something with the parameter...
         }
