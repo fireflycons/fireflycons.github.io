@@ -73,6 +73,8 @@
 <pre><code class="lang-csharp">[Cmdlet(VerbsCommon.Add, &quot;DynamicParameter&quot;)]
 public class AddDynamicParameterCommand : PSCmdlet, IDynamicParameters
 {
+    private const string MyNewParameter = &quot;MyNewParameter&quot;;
+
     /// &lt;summary&gt;
     /// Gets or sets the test to run
     /// This is a mandatory fixed parameter to the cmdlet.
@@ -95,9 +97,10 @@ public class AddDynamicParameterCommand : PSCmdlet, IDynamicParameters
             // Add a param &quot;-MyNewParameter&quot; which will be mandatory
             // with allowed values of &quot;Yes&quot; or &quot;No&quot;
             dynamicParams.Add(
-                new DynamicParameterBuilder(&quot;MyNewParameter&quot;)
+                new DynamicParameterBuilder(MyNewParameter)
                     .WithMandatory()
                     .WithValidateSet(&quot;Yes&quot;, &quot;No&quot;)
+                    .WithHelpMessage(&quot;Please answer Yes or No&quot;)
                 );
         }
 
@@ -113,10 +116,10 @@ public class AddDynamicParameterCommand : PSCmdlet, IDynamicParameters
         // This is $PSBoundParameters
         var boundParameters = this.MyInvocation.BoundParameters;
 
-        if (boundParameters.ContainsKey(&quot;MyNewParameter&quot;))
+        if (boundParameters.ContainsKey(MyNewParameter))
         {
             // The dynamic parameter is present - retrieve its value
-            var myNewParameter = boundParameters[&quot;MyNewParameter&quot;];
+            var myNewParameter = boundParameters[MyNewParameter];
 
             // Do something with the parameter...
         }
@@ -134,7 +137,7 @@ public class AddDynamicParameterCommand : PSCmdlet, IDynamicParameters
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/master/docfx/articles/creating.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fireflycons/PSDynamicParameters/blob/appveyor/docfx/articles/creating.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
