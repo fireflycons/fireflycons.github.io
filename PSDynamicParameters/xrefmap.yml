@@ -287,6 +287,19 @@ references:
   isSpec: "True"
   fullName: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValueFromPipelineByPropertyName
   nameWithType: RuntimeDefinedParameterBuilder.WithValueFromPipelineByPropertyName
+- uid: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments
+  name: WithValueFromRemainingArguments()
+  href: api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.html#Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterBuilder_WithValueFromRemainingArguments
+  commentId: M:Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments
+  fullName: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments()
+  nameWithType: RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments()
+- uid: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments*
+  name: WithValueFromRemainingArguments
+  href: api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.html#Firefly_PowerShell_DynamicParameters_RuntimeDefinedParameterBuilder_WithValueFromRemainingArguments_
+  commentId: Overload:Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments
+  isSpec: "True"
+  fullName: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments
+  nameWithType: RuntimeDefinedParameterBuilder.WithValueFromRemainingArguments
 - uid: Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper
   name: RuntimeDefinedParameterDictionaryHelper
   href: api/Firefly.PowerShell.DynamicParameters.RuntimeDefinedParameterDictionaryHelper.html
