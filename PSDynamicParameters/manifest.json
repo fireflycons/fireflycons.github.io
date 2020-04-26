@@ -88,12 +88,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "lvLTvl9kfVF/orKNF2Kj7w=="
+          "hash": "0Mrz8McXo+alcU/bIBUNoA=="
         }
       },
       "is_incremental": false,
