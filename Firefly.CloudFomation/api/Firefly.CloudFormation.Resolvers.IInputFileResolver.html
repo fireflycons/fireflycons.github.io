@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IInputFileResolver
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IInputFileResolver
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver">
+  
+  
+  <h1 id="Firefly_CloudFormation_Resolvers_IInputFileResolver" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver" class="text-break">Interface IInputFileResolver
+  </h1>
+  <div class="markdown level0 summary"><p>Interface that defines classes that will resolve a file that may be present in the local file system or referenced by URL</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormation.Resolvers.html">Firefly.CloudFormation.Resolvers</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormation.dll</h6>
+  <h5 id="Firefly_CloudFormation_Resolvers_IInputFileResolver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IInputFileResolver</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_IInputFileResolver_ArtifactContent.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.IInputFileResolver.ArtifactContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/IInputFileResolver.cs/#L19">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ArtifactContent_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ArtifactContent*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ArtifactContent" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ArtifactContent">ArtifactContent</h4>
+  <div class="markdown level1 summary"><p>Gets the artifact content. This will be <code>null</code> if the artifact is in S3
+or the text content as per <a class="xref" href="Firefly.CloudFormation.Resolvers.IInputFileResolver.html#Firefly_CloudFormation_Resolvers_IInputFileResolver_FileContent">FileContent</a> if the artifact is local.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ArtifactContent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The artifact content</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_IInputFileResolver_ArtifactUrl.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.IInputFileResolver.ArtifactUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/IInputFileResolver.cs/#L35">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ArtifactUrl_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ArtifactUrl*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ArtifactUrl" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ArtifactUrl">ArtifactUrl</h4>
+  <div class="markdown level1 summary"><p>Gets the URL of an artifact located in S3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ArtifactUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The file URL. If not <code>null</code>, then this should be passed to CloudFormation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_IInputFileResolver_FileContent.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.IInputFileResolver.FileContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/IInputFileResolver.cs/#L27">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_IInputFileResolver_FileContent_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.FileContent*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_IInputFileResolver_FileContent" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.FileContent">FileContent</h4>
+  <div class="markdown level1 summary"><p>Gets the text content of the file - wherever it is located.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string FileContent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The file body.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_IInputFileResolver_Source.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.IInputFileResolver.Source%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/IInputFileResolver.cs/#L43">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_IInputFileResolver_Source_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.Source*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_IInputFileResolver_Source" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.Source">Source</h4>
+  <div class="markdown level1 summary"><p>Gets how the artifact should be sourced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InputFileSource Source { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.InputFileSource.html">InputFileSource</a></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_IInputFileResolver_ResolveArtifactLocationAsync_Firefly_CloudFormation_ICloudFormationContext_System_String_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.IInputFileResolver.ResolveArtifactLocationAsync(Firefly.CloudFormation.ICloudFormationContext%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/IInputFileResolver.cs/#L61">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ResolveArtifactLocationAsync_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ResolveArtifactLocationAsync*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ResolveArtifactLocationAsync_Firefly_CloudFormation_ICloudFormationContext_System_String_System_String_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ResolveArtifactLocationAsync(Firefly.CloudFormation.ICloudFormationContext,System.String,System.String)">ResolveArtifactLocationAsync(ICloudFormationContext, String, String)</h4>
+  <div class="markdown level1 summary"><p>Resolves the given artifact location (template or policy) from text input
+uploading it to S3 if the object is larger than the maximum size for
+body text supported by the CloudFormation API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResolutionResult&gt; ResolveArtifactLocationAsync(ICloudFormationContext context, string objectToResolve, string stackName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.ICloudFormationContext.html">ICloudFormationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context for logging.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">objectToResolve</span></td>
+        <td><p>The object to resolve - either a local file path, or string content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stackName</span></td>
+        <td><p>Name of the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Firefly.CloudFormation.Model.ResolutionResult.html">ResolutionResult</a>&gt;</td>
+        <td><p>Result of the resolution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_IInputFileResolver_ResolveFileAsync_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.IInputFileResolver.ResolveFileAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/IInputFileResolver.cs/#L50">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ResolveFileAsync_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ResolveFileAsync*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_IInputFileResolver_ResolveFileAsync_System_String_" data-uid="Firefly.CloudFormation.Resolvers.IInputFileResolver.ResolveFileAsync(System.String)">ResolveFileAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Resolves and loads the given file from the specified location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; ResolveFileAsync(string objectLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">objectLocation</span></td>
+        <td><p>The file location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>The file content</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_IInputFileResolver.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.IInputFileResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/IInputFileResolver.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
