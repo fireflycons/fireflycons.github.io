@@ -1,0 +1,1413 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CloudFormationBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CloudFormationBuilder
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder">
+  
+  
+  <h1 id="Firefly_CloudFormation_Model_CloudFormationBuilder" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder" class="text-break">Class CloudFormationBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>
+Fluent builder pattern implementation for <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html">CloudFormationRunner</a>
+</p>
+<p>
+<example>
+<pre><code>var builder = CloudFormationRunner.Builder(new MyCloudFormationContext(), &quot;my-stack&quot;);
+var runner = builder
+    .WithTemplateLocation(&quot;~/repos/my-aws-project/cloudformation.yaml&quot;)
+    .WithCapabilities(new [] { Capability.CAPABILITY_IAM })
+    .WithFollowOperation()
+    .Build();
+<p>await runner.CreateStackAsync();</code></pre>
+</example>
+A builder is constructed by calling the static method <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_Builder_Firefly_CloudFormation_ICloudFormationContext_System_String_">Builder(ICloudFormationContext, String)</a></p>
+<p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CloudFormationBuilder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormation.Model.html">Firefly.CloudFormation.Model</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormation.dll</h6>
+  <h5 id="Firefly_CloudFormation_Model_CloudFormationBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CloudFormationBuilder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_Build.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.Build%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L164">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_Build_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.Build*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_Build" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.Build">Build()</h4>
+  <div class="markdown level1 summary"><p>Builds a new <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html">CloudFormationRunner</a> with the settings applied thus far.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationRunner Build()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html">CloudFormationRunner</a></td>
+        <td><p>A new <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html">CloudFormationRunner</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithCapabilities_System_Collections_Generic_IEnumerable_Amazon_CloudFormation_Capability__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithCapabilities(System.Collections.Generic.IEnumerable%7BAmazon.CloudFormation.Capability%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L198">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithCapabilities_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithCapabilities*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithCapabilities_System_Collections_Generic_IEnumerable_Amazon_CloudFormation_Capability__" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithCapabilities(System.Collections.Generic.IEnumerable{Amazon.CloudFormation.Capability})">WithCapabilities(IEnumerable&lt;Capability&gt;)</h4>
+  <div class="markdown level1 summary"><p>In some cases, you must explicitly acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to create the stack.
+See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html">https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html</a> for information on when to use capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithCapabilities(IEnumerable&lt;Capability&gt; capabilities)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Amazon.CloudFormation.Capability</span>&gt;</td>
+        <td><span class="parametername">capabilities</span></td>
+        <td><p>The capabilities.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithChangesetOnly_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithChangesetOnly(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L209">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithChangesetOnly_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithChangesetOnly*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithChangesetOnly_System_Boolean_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithChangesetOnly(System.Boolean)">WithChangesetOnly(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set whether to create change set only without performing update. If <code>true</code> then <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_UpdateStackAsync_System_Func_Amazon_CloudFormation_Model_DescribeChangeSetResponse_System_Boolean__">UpdateStackAsync(Func&lt;DescribeChangeSetResponse, Boolean&gt;)</a> will return immediately after creation of a change set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithChangesetOnly(bool enable = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>If <code>true</code> (default), execute change set only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithClientFactory_Firefly_CloudFormation_IAwsClientFactory_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithClientFactory(Firefly.CloudFormation.IAwsClientFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L221">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithClientFactory_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithClientFactory*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithClientFactory_Firefly_CloudFormation_IAwsClientFactory_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithClientFactory(Firefly.CloudFormation.IAwsClientFactory)">WithClientFactory(IAwsClientFactory)</h4>
+  <div class="markdown level1 summary"><p>Adds a user supplied client factory.
+If a user client factory is not supplied, then a default is created using the credentials, region and endpoint information from the <a class="xref" href="Firefly.CloudFormation.ICloudFormationContext.html">ICloudFormationContext</a> passed to the builder's constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithClientFactory(IAwsClientFactory factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.IAwsClientFactory.html">IAwsClientFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td><p>The factory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithClientToken_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithClientToken(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L234">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithClientToken_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithClientToken*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithClientToken_System_String_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithClientToken(System.String)">WithClientToken(String)</h4>
+  <div class="markdown level1 summary"><p>A unique identifier for this CreateChangeSet request.
+Specify this token if you plan to retry requests so that AWS CloudFormation knows that you're not attempting to create another change set with the same name.
+You might retry CreateChangeSet requests to ensure that AWS CloudFormation successfully received them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithClientToken(string token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithDeleteNoopChangeset_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithDeleteNoopChangeset(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L247">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithDeleteNoopChangeset_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithDeleteNoopChangeset*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithDeleteNoopChangeset_System_Boolean_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithDeleteNoopChangeset(System.Boolean)">WithDeleteNoopChangeset(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set whether to auto-delete change sets that return no change.
+The default for this is <code>true</code>, so call this method with <code>false</code> to retain change set for future inspection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithDeleteNoopChangeset(bool delete)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">delete</span></td>
+        <td><p>if set to <code>true</code> [delete].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithDisableRollback_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithDisableRollback(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L460">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithDisableRollback_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithDisableRollback*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithDisableRollback_System_Boolean_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithDisableRollback(System.Boolean)">WithDisableRollback(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Disables rollback on create failure, leaving the successfully created resources intact.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithDisableRollback(bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>If <code>true</code> (default), disable rollback if stack create fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Cannot set DisableRollback when OnFailure has been set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithFollowOperation_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithFollowOperation(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L331">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithFollowOperation_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithFollowOperation*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithFollowOperation_System_Boolean_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithFollowOperation(System.Boolean)">WithFollowOperation(Boolean)</h4>
+  <div class="markdown level1 summary"><p>
+Sets whether to follow a stack operation.
+</p>
+<p>
+For all stack modifications, if this is set then the method will not return until the stack operation completes.
+Additionally for stack updates, should a modification be in progress at the time <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_UpdateStackAsync_System_Func_Amazon_CloudFormation_Model_DescribeChangeSetResponse_System_Boolean__">UpdateStackAsync(Func&lt;DescribeChangeSetResponse, Boolean&gt;)</a> is called,
+then that method will wait for the modification to complete, sending events to the <a class="xref" href="Firefly.CloudFormation.ILogger.html">ILogger</a> interface prior to creating the update changeset.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithFollowOperation(bool enable = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>If <code>true</code> (default), wait for stack action to complete, logging stack events to the given <a class="xref" href="Firefly.CloudFormation.ILogger.html">ILogger</a> implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithNotificationARNs_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithNotificationARNs(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L259">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithNotificationARNs_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithNotificationARNs*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithNotificationARNs_System_Collections_Generic_IEnumerable_System_String__" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithNotificationARNs(System.Collections.Generic.IEnumerable{System.String})">WithNotificationARNs(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>The Amazon Resource Names (ARNs) of Amazon Simple Notification Service (Amazon SNS) topics that AWS CloudFormation associates with the stack.
+To remove all associated notification topics, specify an empty list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithNotificationARNs(IEnumerable&lt;string&gt; notificationARNs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">notificationARNs</span></td>
+        <td><p>The notification ARNs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithOnFailure_Amazon_CloudFormation_OnFailure_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithOnFailure(Amazon.CloudFormation.OnFailure)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L432">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithOnFailure_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithOnFailure*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithOnFailure_Amazon_CloudFormation_OnFailure_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithOnFailure(Amazon.CloudFormation.OnFailure)">WithOnFailure(OnFailure)</h4>
+  <div class="markdown level1 summary"><p>Determines what action will be taken if stack creation fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithOnFailure(OnFailure onFailure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.CloudFormation.OnFailure</span></td>
+        <td><span class="parametername">onFailure</span></td>
+        <td><p>The action to take on create failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Cannot set OnFailure when DisableRollback is true</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithParameters_System_Collections_Generic_IDictionary_System_String_System_String__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithParameters(System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L268">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithParameters_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithParameters*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithParameters_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithParameters(System.Collections.Generic.IDictionary{System.String,System.String})">WithParameters(IDictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the stack parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithParameters(IDictionary&lt;string, string&gt; parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Dictionary of <code>ParameterKey</code>, <code>ParameterValue</code> pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithResourceImports_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithResourceImports(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L280">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithResourceImports_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithResourceImports*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithResourceImports_System_String_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithResourceImports(System.String)">WithResourceImports(String)</h4>
+  <div class="markdown level1 summary"><p>Adds resources to import.
+See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html">https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html</a> for information on resource import.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithResourceImports(string resourceImportsLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">resourceImportsLocation</span></td>
+        <td><p>Location of resource imports file (or string content).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithResourceType_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithResourceType(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L409">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithResourceType_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithResourceType*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithResourceType_System_Collections_Generic_IEnumerable_System_String__" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithResourceType(System.Collections.Generic.IEnumerable{System.String})">WithResourceType(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the template resource types that you have permissions to work with for this update stack action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithResourceType(IEnumerable&lt;string&gt; resourceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">resourceType</span></td>
+        <td><p>Type of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithRetainResource_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithRetainResource(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L477">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithRetainResource_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithRetainResource*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithRetainResource_System_Collections_Generic_IEnumerable_System_String__" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithRetainResource(System.Collections.Generic.IEnumerable{System.String})">WithRetainResource(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>For stacks in the <code>DELETE_FAILED</code> state, a list of resource logical IDs that are associated with the resources you want to retain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithRetainResource(IEnumerable&lt;string&gt; retainResource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">retainResource</span></td>
+        <td><p>The resources to retain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithRoleArn_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithRoleArn(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L295">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithRoleArn_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithRoleArn*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithRoleArn_System_String_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithRoleArn(System.String)">WithRoleArn(String)</h4>
+  <div class="markdown level1 summary"><p>The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that AWS CloudFormation assumes when executing the change set.
+AWS CloudFormation uses the role's credentials to make calls on your behalf. AWS CloudFormation uses this role for all future operations on the stack.
+As long as users have permission to operate on the stack, AWS CloudFormation uses this role even if the users don't have permission to pass it. Ensure that the role grants least privilege.
+If you don't specify a value, AWS CloudFormation uses the role that was previously associated with the stack.
+If no role is available, AWS CloudFormation uses a temporary session that is generated from your user credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithRoleArn(string arn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arn</span></td>
+        <td><p>The ARN.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithRollbackConfiguration_Amazon_CloudFormation_Model_RollbackConfiguration_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithRollbackConfiguration(Amazon.CloudFormation.Model.RollbackConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L374">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithRollbackConfiguration_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithRollbackConfiguration*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithRollbackConfiguration_Amazon_CloudFormation_Model_RollbackConfiguration_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithRollbackConfiguration(Amazon.CloudFormation.Model.RollbackConfiguration)">WithRollbackConfiguration(RollbackConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Adds a rollback configuration.
+See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-rollback-triggers.html">https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-rollback-triggers.html</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithRollbackConfiguration(RollbackConfiguration rollbackConfiguration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.CloudFormation.Model.RollbackConfiguration</span></td>
+        <td><span class="parametername">rollbackConfiguration</span></td>
+        <td><p>The rollback configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithStackPolicy_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithStackPolicy(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L386">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithStackPolicy_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithStackPolicy*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithStackPolicy_System_String_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithStackPolicy(System.String)">WithStackPolicy(String)</h4>
+  <div class="markdown level1 summary"><p>Sets a new stack policy.
+See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html">https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithStackPolicy(string stackPolicy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stackPolicy</span></td>
+        <td><p>The stack policy as a JSON document, path to a file containing the document or an HTTPS or S3 URL pointing to the document in S3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithStackPolicyDuringUpdate_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithStackPolicyDuringUpdate(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L398">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithStackPolicyDuringUpdate_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithStackPolicyDuringUpdate*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithStackPolicyDuringUpdate_System_String_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithStackPolicyDuringUpdate(System.String)">WithStackPolicyDuringUpdate(String)</h4>
+  <div class="markdown level1 summary"><p>Sets a temporary stack policy for use during an update.
+See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html">https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithStackPolicyDuringUpdate(string stackPolicy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stackPolicy</span></td>
+        <td><p>The stack policy as a JSON document, path to a file containing the document or an HTTPS or S3 URL pointing to the document in S3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithTags_System_Collections_Generic_IEnumerable_Amazon_CloudFormation_Model_Tag__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithTags(System.Collections.Generic.IEnumerable%7BAmazon.CloudFormation.Model.Tag%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L304">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTags_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTags*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTags_System_Collections_Generic_IEnumerable_Amazon_CloudFormation_Model_Tag__" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTags(System.Collections.Generic.IEnumerable{Amazon.CloudFormation.Model.Tag})">WithTags(IEnumerable&lt;Tag&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds stack-level tags which are applied to the stack itself and all resources created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithTags(IEnumerable&lt;Tag&gt; tags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Amazon.CloudFormation.Model.Tag</span>&gt;</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>The tags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithTemplateLocation_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithTemplateLocation(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L313">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTemplateLocation_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTemplateLocation*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTemplateLocation_System_String_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTemplateLocation(System.String)">WithTemplateLocation(String)</h4>
+  <div class="markdown level1 summary"><p>Adds the template location. Either a local path, or an HTTPS or S3 URI pointing to a template in S3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithTemplateLocation(string templateLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">templateLocation</span></td>
+        <td><p>The template location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithTerminationProtection_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithTerminationProtection(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L420">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTerminationProtection_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTerminationProtection*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTerminationProtection_System_Boolean_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTerminationProtection(System.Boolean)">WithTerminationProtection(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Enable termination protection (create only)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithTerminationProtection(bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>If <code>true</code> (default), set termination protection on the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithTimeoutInMinutes_System_Int32_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithTimeoutInMinutes(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L448">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTimeoutInMinutes_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTimeoutInMinutes*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithTimeoutInMinutes_System_Int32_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithTimeoutInMinutes(System.Int32)">WithTimeoutInMinutes(Int32)</h4>
+  <div class="markdown level1 summary"><p>The amount of time that can pass before the stack status becomes CREATE_FAILED (Create only)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithTimeoutInMinutes(int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>The timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithUsePreviousTemplate_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithUsePreviousTemplate(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L362">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithUsePreviousTemplate_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithUsePreviousTemplate*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithUsePreviousTemplate_System_Boolean_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithUsePreviousTemplate(System.Boolean)">WithUsePreviousTemplate(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Whether to use existing template for stack update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithUsePreviousTemplate(bool enable = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>If <code>true</code> (default), use the previous template stored in CloudFormation to perform an update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder_WithWaitForInProgressUpdate_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder.WithWaitForInProgressUpdate(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L351">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithWaitForInProgressUpdate_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithWaitForInProgressUpdate*"></a>
+  <h4 id="Firefly_CloudFormation_Model_CloudFormationBuilder_WithWaitForInProgressUpdate_System_Boolean_" data-uid="Firefly.CloudFormation.Model.CloudFormationBuilder.WithWaitForInProgressUpdate(System.Boolean)">WithWaitForInProgressUpdate(Boolean)</h4>
+  <div class="markdown level1 summary"><p>
+Sets whether to wait for another operation on this stack which is in progress.
+</p>
+<p>
+For stack updates, should a modification be in progress at the time <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_UpdateStackAsync_System_Func_Amazon_CloudFormation_Model_DescribeChangeSetResponse_System_Boolean__">UpdateStackAsync(Func&lt;DescribeChangeSetResponse, Boolean&gt;)</a> is called,
+then that method will wait for the modification to complete, sending events to the <a class="xref" href="Firefly.CloudFormation.ILogger.html">ILogger</a> interface prior to creating the update changeset.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudFormationBuilder WithWaitForInProgressUpdate(bool enable = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>If <code>true</code> (default), wait for stack action initiated elsewhere to complete,
+logging stack events to the given <a class="xref" href="Firefly.CloudFormation.ILogger.html">ILogger</a> implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a></td>
+        <td><p>The builder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Model_CloudFormationBuilder.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Model.CloudFormationBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Model/CloudFormationBuilder.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
