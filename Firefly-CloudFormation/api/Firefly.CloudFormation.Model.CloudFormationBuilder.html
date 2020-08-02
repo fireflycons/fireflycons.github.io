@@ -77,6 +77,8 @@
 Fluent builder pattern implementation for <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html">CloudFormationRunner</a>
 </p>
 <p>
+A builder is constructed by calling the static method <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_Builder_Firefly_CloudFormation_ICloudFormationContext_System_String_">Builder(ICloudFormationContext, String)</a>
+</p>
 <example>
 <pre><code>var builder = CloudFormationRunner.Builder(new MyCloudFormationContext(), &quot;my-stack&quot;);
 var runner = builder
@@ -85,9 +87,7 @@ var runner = builder
     .WithFollowOperation()
     .Build();
 <p>await runner.CreateStackAsync();</code></pre>
-</example>
-A builder is constructed by calling the static method <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_Builder_Firefly_CloudFormation_ICloudFormationContext_System_String_">Builder(ICloudFormationContext, String)</a></p>
-<p>
+</example><p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">

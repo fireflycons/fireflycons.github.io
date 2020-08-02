@@ -73,10 +73,56 @@
   
   <h1 id="Firefly_CloudFormation_IS3Util" data-uid="Firefly.CloudFormation.IS3Util" class="text-break">Interface IS3Util
   </h1>
-  <div class="markdown level0 summary"><p>Interface describing methods that CloudFormation operations can use to upload oversize content
+  <div class="markdown level0 summary"><p>
+Interface describing methods that CloudFormation operations can use to upload oversize content
 (template or policy document) to S3 and to download template content from S3.
 If an implementation of this interface is not provided to the <a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a>,
-then an attempt to run with oversize content (e.g. template body &gt; 51,200 bytes) or to refer to a template in S3, then the operation will fail.</p>
+then an attempt to run with oversize content (e.g. template body > 51,200 bytes) or to refer to a template in S3, then the operation will fail.
+</p>
+<example>
+Example implementation
+<pre><code>private IAmazonS3 s3Client;
+private string BucketName;
+private ILogger logger;
+<p>public async Task&lt;Uri&gt; UploadOversizeArtifactToS3(
+string stackName,
+string body,
+string originalFilename,
+UploadFileType uploadFileType)
+{
+var ms = new MemoryStream(
+new UTF8Encoding().GetBytes(body ?? throw new ArgumentNullException(nameof(body))));</p>
+<pre><code>var key = uploadFileType == UploadFileType.Template
+              ? $&amp;quot;_{stackName}_template_{originalFilename}&amp;quot;
+              : $&amp;quot;_{stackName}_policy_{originalFilename}&amp;quot;;
+
+var ub = new UriBuilder($&amp;quot;https://{this.BucketName}.s3.amazonaws.com&amp;quot;) { Path = $&amp;quot;/{key}&amp;quot; };
+
+this.logger.LogInformation($&amp;quot;Copying oversize {uploadFileType.ToString().ToLower()} to {ub.Uri}&amp;quot;);
+
+await this.s3Client.PutObjectAsync(
+    new PutObjectRequest
+        {
+            BucketName = this.BucketName,
+            Key = key,
+            AutoCloseStream = true,
+            InputStream = ms
+        });
+
+return ub.Uri;
+</code></pre>
+<p>}</p>
+<p>public async Task&lt;string&gt; GetS3ObjectContent(string bucketName, string key)
+{
+using (var response = await this.s3.GetObjectAsync(new GetObjectRequest { BucketName = bucketName, Key = key }))
+{
+using (var sr = new StreamReader(response.ResponseStream))
+{
+return sr.ReadToEnd();
+}
+}
+}</code></pre>
+</example><p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormation.html">Firefly.CloudFormation</a></h6>
@@ -92,11 +138,16 @@ then an attempt to run with oversize content (e.g. template body &gt; 51,200 byt
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_IS3Util_GetS3ObjectContent_System_String_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.IS3Util.GetS3ObjectContent(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/IS3Util.cs/#L92">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/IS3Util.cs/#L101">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_IS3Util_GetS3ObjectContent_" data-uid="Firefly.CloudFormation.IS3Util.GetS3ObjectContent*"></a>
   <h4 id="Firefly_CloudFormation_IS3Util_GetS3ObjectContent_System_String_System_String_" data-uid="Firefly.CloudFormation.IS3Util.GetS3ObjectContent(System.String,System.String)">GetS3ObjectContent(String, String)</h4>
-  <div class="markdown level1 summary"><p>Gets the content of an S3 object.</p>
+  <div class="markdown level1 summary"><p>
+Gets the content of an S3 object.
+</p>
+<p>
+This method is called by <a class="xref" href="Firefly.CloudFormation.Resolvers.AbstractFileResolver.html">AbstractFileResolver</a> to read templates and policies for which an S3 location has been specified.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -148,7 +199,7 @@ then an attempt to run with oversize content (e.g. template body &gt; 51,200 byt
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_IS3Util_UploadOversizeArtifactToS3_System_String_System_String_System_String_Firefly_CloudFormation_Model_UploadFileType_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.IS3Util.UploadOversizeArtifactToS3(System.String%2CSystem.String%2CSystem.String%2CFirefly.CloudFormation.Model.UploadFileType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/IS3Util.cs/#L80">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/IS3Util.cs/#L84">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_IS3Util_UploadOversizeArtifactToS3_" data-uid="Firefly.CloudFormation.IS3Util.UploadOversizeArtifactToS3*"></a>
   <h4 id="Firefly_CloudFormation_IS3Util_UploadOversizeArtifactToS3_System_String_System_String_System_String_Firefly_CloudFormation_Model_UploadFileType_" data-uid="Firefly.CloudFormation.IS3Util.UploadOversizeArtifactToS3(System.String,System.String,System.String,Firefly.CloudFormation.Model.UploadFileType)">UploadOversizeArtifactToS3(String, String, String, UploadFileType)</h4>
@@ -156,55 +207,12 @@ then an attempt to run with oversize content (e.g. template body &gt; 51,200 byt
 Uploads oversize content (template or policy) to S3.
 </p>
 <p>
-This method will be called by create/update operations to upload oversize content to S3.
-It is the responsibility of the implementation to provide the destination bucket.
+This method is called by <a class="xref" href="Firefly.CloudFormation.Resolvers.AbstractFileResolver.html">AbstractFileResolver</a> when <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_CreateStackAsync">CreateStackAsync()</a>
+or <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_UpdateStackAsync_System_Func_Amazon_CloudFormation_Model_DescribeChangeSetResponse_System_Boolean__">UpdateStackAsync(Func&lt;DescribeChangeSetResponse, Boolean&gt;)</a> to upload oversize local content to S3.
 </p>
 <p>
-<example>
-Example implementation
-<pre><code>private IAmazonS3 s3Client;
-private string BucketName;
-private ILogger logger;
-<p>public async Task&lt;Uri&gt; UploadOversizeArtifactToS3(
-string stackName,
-string body,
-string originalFilename,
-UploadFileType uploadFileType)
-{
-var ms = new MemoryStream(
-new UTF8Encoding().GetBytes(body ?? throw new ArgumentNullException(nameof(body))));</p>
-<pre><code>var key = uploadFileType == UploadFileType.Template
-              ? $&amp;quot;_{stackName}_template_{originalFilename}&amp;quot;
-              : $&amp;quot;_{stackName}_policy_{originalFilename}&amp;quot;;
-
-var ub = new UriBuilder($&amp;quot;https://{this.BucketName}.s3.amazonaws.com&amp;quot;) { Path = $&amp;quot;/{key}&amp;quot; };
-
-this.logger.LogInformation($&amp;quot;Copying oversize {uploadFileType.ToString().ToLower()} to {ub.Uri}&amp;quot;);
-
-await this.s3Client.PutObjectAsync(
-    new PutObjectRequest
-        {
-            BucketName = this.BucketName,
-            Key = key,
-            AutoCloseStream = true,
-            InputStream = ms
-        });
-
-return ub.Uri;
-</code></pre>
-<p>}</p>
-<p>public async Task&lt;string&gt; GetS3ObjectContent(string bucketName, string key)
-{
-using (var response = await this.s3.GetObjectAsync(new GetObjectRequest { BucketName = bucketName, Key = key }))
-{
-using (var sr = new StreamReader(response.ResponseStream))
-{
-return sr.ReadToEnd();
-}
-}
-}</code></pre>
-</example></p>
-<p>
+It is the responsibility of the implementation to provide the destination bucket.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -274,7 +282,7 @@ return sr.ReadToEnd();
                     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_IS3Util.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.IS3Util%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/IS3Util.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/IS3Util.cs/#L65" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
