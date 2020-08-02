@@ -117,50 +117,9 @@ Interface describing methods that CloudFormation operations can use to upload ov
 If an implementation of this interface is not provided to the <a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a>,
 then an attempt to run with oversize content (e.g. template body > 51,200 bytes) or to refer to a template in S3, then the operation will fail.
 </p>
-<example>
-Example implementation
-<pre><code>private IAmazonS3 s3Client;
-private string BucketName;
-private ILogger logger;
-<p>public async Task&lt;Uri&gt; UploadOversizeArtifactToS3(
-string stackName,
-string body,
-string originalFilename,
-UploadFileType uploadFileType)
-{
-var ms = new MemoryStream(
-new UTF8Encoding().GetBytes(body ?? throw new ArgumentNullException(nameof(body))));</p>
-<pre><code>var key = uploadFileType == UploadFileType.Template
-              ? $&amp;quot;_{stackName}_template_{originalFilename}&amp;quot;
-              : $&amp;quot;_{stackName}_policy_{originalFilename}&amp;quot;;
-
-var ub = new UriBuilder($&amp;quot;https://{this.BucketName}.s3.amazonaws.com&amp;quot;) { Path = $&amp;quot;/{key}&amp;quot; };
-
-this.logger.LogInformation($&amp;quot;Copying oversize {uploadFileType.ToString().ToLower()} to {ub.Uri}&amp;quot;);
-
-await this.s3Client.PutObjectAsync(
-    new PutObjectRequest
-        {
-            BucketName = this.BucketName,
-            Key = key,
-            AutoCloseStream = true,
-            InputStream = ms
-        });
-
-return ub.Uri;
-</code></pre>
-<p>}</p>
-<p>public async Task&lt;string&gt; GetS3ObjectContent(string bucketName, string key)
-{
-using (var response = await this.s3.GetObjectAsync(new GetObjectRequest { BucketName = bucketName, Key = key }))
-{
-using (var sr = new StreamReader(response.ResponseStream))
-{
-return sr.ReadToEnd();
-}
-}
-}</code></pre>
-</example><p>
+<p>
+Example implementation.
+</p>
 </section>
 </article>
           </div>
