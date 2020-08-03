@@ -114,11 +114,10 @@ The context provides essential information for the operation of this library:
       <section><p>
 Interface describing methods that CloudFormation operations can use to upload oversize content
 (template or policy document) to S3 and to download template content from S3.
-If an implementation of this interface is not provided to the <a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a>,
-then an attempt to run with oversize content (e.g. template body > 51,200 bytes) or to refer to a template in S3, then the operation will fail.
 </p>
 <p>
-Example implementation.
+If an implementation of this interface is not provided to the <a class="xref" href="Firefly.CloudFormation.Model.CloudFormationBuilder.html">CloudFormationBuilder</a>,
+then an attempt to run with oversize content (e.g. template body > 51,200 bytes) or to refer to a template in S3, then the operation will fail.
 </p>
 </section>
 </article>
