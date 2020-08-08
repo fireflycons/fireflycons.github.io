@@ -534,6 +534,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Model.CloudFormationBuilder.WithFollowOperation
   nameWithType: CloudFormationBuilder.WithFollowOperation
+- uid: Firefly.CloudFormation.Model.CloudFormationBuilder.WithForceS3(System.Boolean)
+  name: WithForceS3(Boolean)
+  href: api/Firefly.CloudFormation.Model.CloudFormationBuilder.html#Firefly_CloudFormation_Model_CloudFormationBuilder_WithForceS3_System_Boolean_
+  commentId: M:Firefly.CloudFormation.Model.CloudFormationBuilder.WithForceS3(System.Boolean)
+  fullName: Firefly.CloudFormation.Model.CloudFormationBuilder.WithForceS3(System.Boolean)
+  nameWithType: CloudFormationBuilder.WithForceS3(Boolean)
+- uid: Firefly.CloudFormation.Model.CloudFormationBuilder.WithForceS3*
+  name: WithForceS3
+  href: api/Firefly.CloudFormation.Model.CloudFormationBuilder.html#Firefly_CloudFormation_Model_CloudFormationBuilder_WithForceS3_
+  commentId: Overload:Firefly.CloudFormation.Model.CloudFormationBuilder.WithForceS3
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Model.CloudFormationBuilder.WithForceS3
+  nameWithType: CloudFormationBuilder.WithForceS3
 - uid: Firefly.CloudFormation.Model.CloudFormationBuilder.WithNotificationARNs(System.Collections.Generic.IEnumerable{System.String})
   name: WithNotificationARNs(IEnumerable<String>)
   href: api/Firefly.CloudFormation.Model.CloudFormationBuilder.html#Firefly_CloudFormation_Model_CloudFormationBuilder_WithNotificationARNs_System_Collections_Generic_IEnumerable_System_String__
@@ -1792,6 +1805,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Resolvers.AbstractFileResolver.FileContent
   nameWithType: AbstractFileResolver.FileContent
+- uid: Firefly.CloudFormation.Resolvers.AbstractFileResolver.ForceS3
+  name: ForceS3
+  href: api/Firefly.CloudFormation.Resolvers.AbstractFileResolver.html#Firefly_CloudFormation_Resolvers_AbstractFileResolver_ForceS3
+  commentId: P:Firefly.CloudFormation.Resolvers.AbstractFileResolver.ForceS3
+  fullName: Firefly.CloudFormation.Resolvers.AbstractFileResolver.ForceS3
+  nameWithType: AbstractFileResolver.ForceS3
+- uid: Firefly.CloudFormation.Resolvers.AbstractFileResolver.ForceS3*
+  name: ForceS3
+  href: api/Firefly.CloudFormation.Resolvers.AbstractFileResolver.html#Firefly_CloudFormation_Resolvers_AbstractFileResolver_ForceS3_
+  commentId: Overload:Firefly.CloudFormation.Resolvers.AbstractFileResolver.ForceS3
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Resolvers.AbstractFileResolver.ForceS3
+  nameWithType: AbstractFileResolver.ForceS3
 - uid: Firefly.CloudFormation.Resolvers.AbstractFileResolver.InputFileName
   name: InputFileName
   href: api/Firefly.CloudFormation.Resolvers.AbstractFileResolver.html#Firefly_CloudFormation_Resolvers_AbstractFileResolver_InputFileName
@@ -1960,6 +1986,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Resolvers.StackPolicyResolver.StackPolicyResolver
   nameWithType: StackPolicyResolver.StackPolicyResolver
+- uid: Firefly.CloudFormation.Resolvers.StackPolicyResolver.ForceS3
+  name: ForceS3
+  href: api/Firefly.CloudFormation.Resolvers.StackPolicyResolver.html#Firefly_CloudFormation_Resolvers_StackPolicyResolver_ForceS3
+  commentId: P:Firefly.CloudFormation.Resolvers.StackPolicyResolver.ForceS3
+  fullName: Firefly.CloudFormation.Resolvers.StackPolicyResolver.ForceS3
+  nameWithType: StackPolicyResolver.ForceS3
+- uid: Firefly.CloudFormation.Resolvers.StackPolicyResolver.ForceS3*
+  name: ForceS3
+  href: api/Firefly.CloudFormation.Resolvers.StackPolicyResolver.html#Firefly_CloudFormation_Resolvers_StackPolicyResolver_ForceS3_
+  commentId: Overload:Firefly.CloudFormation.Resolvers.StackPolicyResolver.ForceS3
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Resolvers.StackPolicyResolver.ForceS3
+  nameWithType: StackPolicyResolver.ForceS3
 - uid: Firefly.CloudFormation.Resolvers.StackPolicyResolver.MaxFileSize
   name: MaxFileSize
   href: api/Firefly.CloudFormation.Resolvers.StackPolicyResolver.html#Firefly_CloudFormation_Resolvers_StackPolicyResolver_MaxFileSize
@@ -1979,18 +2018,18 @@ references:
   commentId: T:Firefly.CloudFormation.Resolvers.TemplateResolver
   fullName: Firefly.CloudFormation.Resolvers.TemplateResolver
   nameWithType: TemplateResolver
-- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean)
-  name: TemplateResolver(IAwsClientFactory, ICloudFormationContext, String, Boolean)
-  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_
-  commentId: M:Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean)
-  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver(Firefly.CloudFormation.IAwsClientFactory, Firefly.CloudFormation.ICloudFormationContext, System.String, System.Boolean)
-  nameWithType: TemplateResolver.TemplateResolver(IAwsClientFactory, ICloudFormationContext, String, Boolean)
-- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean)
-  name: TemplateResolver(ICloudFormationContext, String, Boolean)
-  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_
-  commentId: M:Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean)
-  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver(Firefly.CloudFormation.ICloudFormationContext, System.String, System.Boolean)
-  nameWithType: TemplateResolver.TemplateResolver(ICloudFormationContext, String, Boolean)
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)
+  name: TemplateResolver(IAwsClientFactory, ICloudFormationContext, String, Boolean, Boolean)
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_
+  commentId: M:Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver(Firefly.CloudFormation.IAwsClientFactory, Firefly.CloudFormation.ICloudFormationContext, System.String, System.Boolean, System.Boolean)
+  nameWithType: TemplateResolver.TemplateResolver(IAwsClientFactory, ICloudFormationContext, String, Boolean, Boolean)
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)
+  name: TemplateResolver(ICloudFormationContext, String, Boolean, Boolean)
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_
+  commentId: M:Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver(Firefly.CloudFormation.ICloudFormationContext, System.String, System.Boolean, System.Boolean)
+  nameWithType: TemplateResolver.TemplateResolver(ICloudFormationContext, String, Boolean, Boolean)
 - uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor*
   name: TemplateResolver
   href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_
@@ -1998,6 +2037,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver
   nameWithType: TemplateResolver.TemplateResolver
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3
+  name: ForceS3
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver_ForceS3
+  commentId: P:Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3
+  nameWithType: TemplateResolver.ForceS3
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3*
+  name: ForceS3
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver_ForceS3_
+  commentId: Overload:Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3
+  nameWithType: TemplateResolver.ForceS3
 - uid: Firefly.CloudFormation.Resolvers.TemplateResolver.MaxFileSize
   name: MaxFileSize
   href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver_MaxFileSize
