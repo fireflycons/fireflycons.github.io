@@ -1,0 +1,665 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Firefly.EmbeddedResourceLoader
+  name: Firefly.EmbeddedResourceLoader
+  href: api/Firefly.EmbeddedResourceLoader.html
+  commentId: N:Firefly.EmbeddedResourceLoader
+  fullName: Firefly.EmbeddedResourceLoader
+  nameWithType: Firefly.EmbeddedResourceLoader
+- uid: Firefly.EmbeddedResourceLoader.AutoResourceLoader
+  name: AutoResourceLoader
+  href: api/Firefly.EmbeddedResourceLoader.AutoResourceLoader.html
+  commentId: T:Firefly.EmbeddedResourceLoader.AutoResourceLoader
+  fullName: Firefly.EmbeddedResourceLoader.AutoResourceLoader
+  nameWithType: AutoResourceLoader
+- uid: Firefly.EmbeddedResourceLoader.AutoResourceLoader.#ctor
+  name: AutoResourceLoader()
+  href: api/Firefly.EmbeddedResourceLoader.AutoResourceLoader.html#Firefly_EmbeddedResourceLoader_AutoResourceLoader__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.AutoResourceLoader.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.AutoResourceLoader.AutoResourceLoader()
+  nameWithType: AutoResourceLoader.AutoResourceLoader()
+- uid: Firefly.EmbeddedResourceLoader.AutoResourceLoader.#ctor*
+  name: AutoResourceLoader
+  href: api/Firefly.EmbeddedResourceLoader.AutoResourceLoader.html#Firefly_EmbeddedResourceLoader_AutoResourceLoader__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.AutoResourceLoader.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.AutoResourceLoader.AutoResourceLoader
+  nameWithType: AutoResourceLoader.AutoResourceLoader
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute
+  name: EmbeddedResourceAttribute
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html
+  commentId: T:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute
+  nameWithType: EmbeddedResourceAttribute
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor(System.String)
+  name: EmbeddedResourceAttribute(String)
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.EmbeddedResourceAttribute(System.String)
+  nameWithType: EmbeddedResourceAttribute.EmbeddedResourceAttribute(String)
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor(System.String,System.Reflection.Assembly)
+  name: EmbeddedResourceAttribute(String, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute__ctor_System_String_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor(System.String,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.EmbeddedResourceAttribute(System.String, System.Reflection.Assembly)
+  nameWithType: EmbeddedResourceAttribute.EmbeddedResourceAttribute(String, Assembly)
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor(System.String,System.String)
+  name: EmbeddedResourceAttribute(String, String)
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute__ctor_System_String_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor(System.String,System.String)
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.EmbeddedResourceAttribute(System.String, System.String)
+  nameWithType: EmbeddedResourceAttribute.EmbeddedResourceAttribute(String, String)
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor*
+  name: EmbeddedResourceAttribute
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.EmbeddedResourceAttribute
+  nameWithType: EmbeddedResourceAttribute.EmbeddedResourceAttribute
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ContainingAssembly
+  name: ContainingAssembly
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_ContainingAssembly
+  commentId: P:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ContainingAssembly
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ContainingAssembly
+  nameWithType: EmbeddedResourceAttribute.ContainingAssembly
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ContainingAssembly*
+  name: ContainingAssembly
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_ContainingAssembly_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ContainingAssembly
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ContainingAssembly
+  nameWithType: EmbeddedResourceAttribute.ContainingAssembly
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath
+  name: ResourcePath
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_ResourcePath
+  commentId: P:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath
+  nameWithType: EmbeddedResourceAttribute.ResourcePath
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath*
+  name: ResourcePath
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_ResourcePath_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath
+  nameWithType: EmbeddedResourceAttribute.ResourcePath
+- uid: Firefly.EmbeddedResourceLoader.Exceptions
+  name: Firefly.EmbeddedResourceLoader.Exceptions
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.html
+  commentId: N:Firefly.EmbeddedResourceLoader.Exceptions
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions
+  nameWithType: Firefly.EmbeddedResourceLoader.Exceptions
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException
+  name: ResourceLoaderAmbiguousPathException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException
+  nameWithType: ResourceLoaderAmbiguousPathException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor
+  name: ResourceLoaderAmbiguousPathException()
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException()
+  nameWithType: ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException()
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ResourceLoaderAmbiguousPathException(SerializationInfo, StreamingContext)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(SerializationInfo, StreamingContext)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.String)
+  name: ResourceLoaderAmbiguousPathException(String)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(System.String)
+  nameWithType: ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(String)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.String,System.Exception)
+  name: ResourceLoaderAmbiguousPathException(String, Exception)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.String,System.Exception)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(System.String, System.Exception)
+  nameWithType: ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(String, Exception)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.String,System.Reflection.Assembly)
+  name: ResourceLoaderAmbiguousPathException(String, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException__ctor_System_String_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor(System.String,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(System.String, System.Reflection.Assembly)
+  nameWithType: ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException(String, Assembly)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor*
+  name: ResourceLoaderAmbiguousPathException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException
+  nameWithType: ResourceLoaderAmbiguousPathException.ResourceLoaderAmbiguousPathException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.Message
+  name: Message
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException_Message
+  commentId: P:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.Message
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.Message
+  nameWithType: ResourceLoaderAmbiguousPathException.Message
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.Message*
+  name: Message
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderAmbiguousPathException_Message_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.Message
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.Message
+  nameWithType: ResourceLoaderAmbiguousPathException.Message
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException
+  name: ResourceLoaderException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException
+  nameWithType: ResourceLoaderException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor
+  name: ResourceLoaderException()
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderException__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.ResourceLoaderException()
+  nameWithType: ResourceLoaderException.ResourceLoaderException()
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ResourceLoaderException(SerializationInfo, StreamingContext)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.ResourceLoaderException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ResourceLoaderException.ResourceLoaderException(SerializationInfo, StreamingContext)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor(System.String)
+  name: ResourceLoaderException(String)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderException__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.ResourceLoaderException(System.String)
+  nameWithType: ResourceLoaderException.ResourceLoaderException(String)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor(System.String,System.Exception)
+  name: ResourceLoaderException(String, Exception)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor(System.String,System.Exception)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.ResourceLoaderException(System.String, System.Exception)
+  nameWithType: ResourceLoaderException.ResourceLoaderException(String, Exception)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor*
+  name: ResourceLoaderException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderException__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.ResourceLoaderException
+  nameWithType: ResourceLoaderException.ResourceLoaderException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException
+  name: ResourceLoaderInvalidDirectoryException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException
+  nameWithType: ResourceLoaderInvalidDirectoryException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor
+  name: ResourceLoaderInvalidDirectoryException()
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException()
+  nameWithType: ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException()
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ResourceLoaderInvalidDirectoryException(SerializationInfo, StreamingContext)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(SerializationInfo, StreamingContext)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.String)
+  name: ResourceLoaderInvalidDirectoryException(String)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(System.String)
+  nameWithType: ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(String)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.String,System.Exception)
+  name: ResourceLoaderInvalidDirectoryException(String, Exception)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.String,System.Exception)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(System.String, System.Exception)
+  nameWithType: ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(String, Exception)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.String,System.Reflection.Assembly)
+  name: ResourceLoaderInvalidDirectoryException(String, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException__ctor_System_String_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor(System.String,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(System.String, System.Reflection.Assembly)
+  nameWithType: ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException(String, Assembly)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor*
+  name: ResourceLoaderInvalidDirectoryException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException
+  nameWithType: ResourceLoaderInvalidDirectoryException.ResourceLoaderInvalidDirectoryException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.Message
+  name: Message
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException_Message
+  commentId: P:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.Message
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.Message
+  nameWithType: ResourceLoaderInvalidDirectoryException.Message
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.Message*
+  name: Message
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidDirectoryException_Message_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.Message
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.Message
+  nameWithType: ResourceLoaderInvalidDirectoryException.Message
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException
+  name: ResourceLoaderInvalidPathException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException
+  nameWithType: ResourceLoaderInvalidPathException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor
+  name: ResourceLoaderInvalidPathException()
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException()
+  nameWithType: ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException()
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ResourceLoaderInvalidPathException(SerializationInfo, StreamingContext)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(SerializationInfo, StreamingContext)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.String)
+  name: ResourceLoaderInvalidPathException(String)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(System.String)
+  nameWithType: ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(String)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.String,System.Exception)
+  name: ResourceLoaderInvalidPathException(String, Exception)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.String,System.Exception)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(System.String, System.Exception)
+  nameWithType: ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(String, Exception)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.String,System.Reflection.Assembly)
+  name: ResourceLoaderInvalidPathException(String, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException__ctor_System_String_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor(System.String,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(System.String, System.Reflection.Assembly)
+  nameWithType: ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException(String, Assembly)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor*
+  name: ResourceLoaderInvalidPathException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException
+  nameWithType: ResourceLoaderInvalidPathException.ResourceLoaderInvalidPathException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.Message
+  name: Message
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException_Message
+  commentId: P:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.Message
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.Message
+  nameWithType: ResourceLoaderInvalidPathException.Message
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.Message*
+  name: Message
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidPathException_Message_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.Message
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.Message
+  nameWithType: ResourceLoaderInvalidPathException.Message
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException
+  name: ResourceLoaderInvalidTypeException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException
+  nameWithType: ResourceLoaderInvalidTypeException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor
+  name: ResourceLoaderInvalidTypeException()
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidTypeException__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException()
+  nameWithType: ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException()
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ResourceLoaderInvalidTypeException(SerializationInfo, StreamingContext)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidTypeException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(SerializationInfo, StreamingContext)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.String)
+  name: ResourceLoaderInvalidTypeException(String)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidTypeException__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(System.String)
+  nameWithType: ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(String)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.String,System.Exception)
+  name: ResourceLoaderInvalidTypeException(String, Exception)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidTypeException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.String,System.Exception)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(System.String, System.Exception)
+  nameWithType: ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(String, Exception)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.Type)
+  name: ResourceLoaderInvalidTypeException(Type)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidTypeException__ctor_System_Type_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor(System.Type)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(System.Type)
+  nameWithType: ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException(Type)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor*
+  name: ResourceLoaderInvalidTypeException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderInvalidTypeException__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException
+  nameWithType: ResourceLoaderInvalidTypeException.ResourceLoaderInvalidTypeException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException
+  name: ResourceLoaderPathException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException
+  nameWithType: ResourceLoaderPathException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor
+  name: ResourceLoaderPathException()
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLoaderPathException()
+  nameWithType: ResourceLoaderPathException.ResourceLoaderPathException()
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ResourceLoaderPathException(SerializationInfo, StreamingContext)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLoaderPathException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ResourceLoaderPathException.ResourceLoaderPathException(SerializationInfo, StreamingContext)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.String)
+  name: ResourceLoaderPathException(String)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLoaderPathException(System.String)
+  nameWithType: ResourceLoaderPathException.ResourceLoaderPathException(String)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.String,System.Exception)
+  name: ResourceLoaderPathException(String, Exception)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.String,System.Exception)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLoaderPathException(System.String, System.Exception)
+  nameWithType: ResourceLoaderPathException.ResourceLoaderPathException(String, Exception)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.String,System.Reflection.Assembly)
+  name: ResourceLoaderPathException(String, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException__ctor_System_String_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor(System.String,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLoaderPathException(System.String, System.Reflection.Assembly)
+  nameWithType: ResourceLoaderPathException.ResourceLoaderPathException(String, Assembly)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor*
+  name: ResourceLoaderPathException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLoaderPathException
+  nameWithType: ResourceLoaderPathException.ResourceLoaderPathException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLocation
+  name: ResourceLocation
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException_ResourceLocation
+  commentId: P:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLocation
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLocation
+  nameWithType: ResourceLoaderPathException.ResourceLocation
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLocation*
+  name: ResourceLocation
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException_ResourceLocation_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLocation
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourceLocation
+  nameWithType: ResourceLoaderPathException.ResourceLocation
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourcePath
+  name: ResourcePath
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException_ResourcePath
+  commentId: P:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourcePath
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourcePath
+  nameWithType: ResourceLoaderPathException.ResourcePath
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourcePath*
+  name: ResourcePath
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderPathException_ResourcePath_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourcePath
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.ResourcePath
+  nameWithType: ResourceLoaderPathException.ResourcePath
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException
+  name: ResourceLoaderReadOnlyException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException
+  nameWithType: ResourceLoaderReadOnlyException
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor
+  name: ResourceLoaderReadOnlyException()
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderReadOnlyException__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException()
+  nameWithType: ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException()
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ResourceLoaderReadOnlyException(SerializationInfo, StreamingContext)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderReadOnlyException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException(SerializationInfo, StreamingContext)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor(System.String)
+  name: ResourceLoaderReadOnlyException(String)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderReadOnlyException__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException(System.String)
+  nameWithType: ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException(String)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor(System.String,System.Exception)
+  name: ResourceLoaderReadOnlyException(String, Exception)
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderReadOnlyException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor(System.String,System.Exception)
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException(System.String, System.Exception)
+  nameWithType: ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException(String, Exception)
+- uid: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor*
+  name: ResourceLoaderReadOnlyException
+  href: api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html#Firefly_EmbeddedResourceLoader_Exceptions_ResourceLoaderReadOnlyException__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException
+  nameWithType: ResourceLoaderReadOnlyException.ResourceLoaderReadOnlyException
+- uid: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin
+  name: IResourceLoaderPlugin
+  href: api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html
+  commentId: T:Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin
+  fullName: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin
+  nameWithType: IResourceLoaderPlugin
+- uid: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.GetObject(System.Object)
+  name: GetObject(Object)
+  href: api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html#Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin_GetObject_System_Object_
+  commentId: M:Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.GetObject(System.Object)
+  fullName: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.GetObject(System.Object)
+  nameWithType: IResourceLoaderPlugin.GetObject(Object)
+- uid: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.GetObject*
+  name: GetObject
+  href: api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html#Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin_GetObject_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.GetObject
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.GetObject
+  nameWithType: IResourceLoaderPlugin.GetObject
+- uid: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.ResourceFormat
+  name: ResourceFormat
+  href: api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html#Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin_ResourceFormat
+  commentId: P:Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.ResourceFormat
+  fullName: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.ResourceFormat
+  nameWithType: IResourceLoaderPlugin.ResourceFormat
+- uid: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.ResourceFormat*
+  name: ResourceFormat
+  href: api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html#Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin_ResourceFormat_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.ResourceFormat
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.ResourceFormat
+  nameWithType: IResourceLoaderPlugin.ResourceFormat
+- uid: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.Type
+  name: Type
+  href: api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html#Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin_Type
+  commentId: P:Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.Type
+  fullName: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.Type
+  nameWithType: IResourceLoaderPlugin.Type
+- uid: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.Type*
+  name: Type
+  href: api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html#Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin_Type_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.Type
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.Type
+  nameWithType: IResourceLoaderPlugin.Type
+- uid: Firefly.EmbeddedResourceLoader.Materialization
+  name: Firefly.EmbeddedResourceLoader.Materialization
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.html
+  commentId: N:Firefly.EmbeddedResourceLoader.Materialization
+  fullName: Firefly.EmbeddedResourceLoader.Materialization
+  nameWithType: Firefly.EmbeddedResourceLoader.Materialization
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory
+  name: TempDirectory
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory
+  nameWithType: TempDirectory
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.#ctor
+  name: TempDirectory()
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory__ctor
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.#ctor
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.TempDirectory()
+  nameWithType: TempDirectory.TempDirectory()
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.#ctor*
+  name: TempDirectory
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.TempDirectory
+  nameWithType: TempDirectory.TempDirectory
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Dispose
+  name: Dispose()
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory_Dispose
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Dispose
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Dispose()
+  nameWithType: TempDirectory.Dispose()
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Dispose*
+  name: Dispose
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory_Dispose_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Dispose
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Dispose
+  nameWithType: TempDirectory.Dispose
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.FullPath
+  name: FullPath
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory_FullPath
+  commentId: P:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.FullPath
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.FullPath
+  nameWithType: TempDirectory.FullPath
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.FullPath*
+  name: FullPath
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory_FullPath_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.FullPath
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.FullPath
+  nameWithType: TempDirectory.FullPath
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile
+  name: TempFile
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html
+  commentId: T:Firefly.EmbeddedResourceLoader.Materialization.TempFile
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile
+  nameWithType: TempFile
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.IO.Stream)
+  name: TempFile(Stream)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_System_IO_Stream_
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.IO.Stream)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.TempFile(System.IO.Stream)
+  nameWithType: TempFile.TempFile(Stream)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor*
+  name: TempFile
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.TempFile
+  nameWithType: TempFile.TempFile
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Dispose
+  name: Dispose()
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_Dispose
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.Dispose
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Dispose()
+  nameWithType: TempFile.Dispose()
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Dispose*
+  name: Dispose
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_Dispose_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempFile.Dispose
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Dispose
+  nameWithType: TempFile.Dispose
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.FullPath
+  name: FullPath
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_FullPath
+  commentId: P:Firefly.EmbeddedResourceLoader.Materialization.TempFile.FullPath
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.FullPath
+  nameWithType: TempFile.FullPath
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.FullPath*
+  name: FullPath
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_FullPath_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempFile.FullPath
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.FullPath
+  nameWithType: TempFile.FullPath
+- uid: Firefly.EmbeddedResourceLoader.ResourceFormat
+  name: ResourceFormat
+  href: api/Firefly.EmbeddedResourceLoader.ResourceFormat.html
+  commentId: T:Firefly.EmbeddedResourceLoader.ResourceFormat
+  fullName: Firefly.EmbeddedResourceLoader.ResourceFormat
+  nameWithType: ResourceFormat
+- uid: Firefly.EmbeddedResourceLoader.ResourceFormat.Stream
+  name: Stream
+  href: api/Firefly.EmbeddedResourceLoader.ResourceFormat.html#Firefly_EmbeddedResourceLoader_ResourceFormat_Stream
+  commentId: F:Firefly.EmbeddedResourceLoader.ResourceFormat.Stream
+  fullName: Firefly.EmbeddedResourceLoader.ResourceFormat.Stream
+  nameWithType: ResourceFormat.Stream
+- uid: Firefly.EmbeddedResourceLoader.ResourceFormat.String
+  name: String
+  href: api/Firefly.EmbeddedResourceLoader.ResourceFormat.html#Firefly_EmbeddedResourceLoader_ResourceFormat_String
+  commentId: F:Firefly.EmbeddedResourceLoader.ResourceFormat.String
+  fullName: Firefly.EmbeddedResourceLoader.ResourceFormat.String
+  nameWithType: ResourceFormat.String
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader
+  name: ResourceLoader
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html
+  commentId: T:Firefly.EmbeddedResourceLoader.ResourceLoader
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader
+  nameWithType: ResourceLoader
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream(System.String,System.Reflection.Assembly)
+  name: GetResourceStream(String, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetResourceStream_System_String_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream(System.String,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream(System.String, System.Reflection.Assembly)
+  nameWithType: ResourceLoader.GetResourceStream(String, Assembly)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream*
+  name: GetResourceStream
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetResourceStream_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream
+  nameWithType: ResourceLoader.GetResourceStream
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)
+  name: GetStringResource(Stream)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_IO_Stream_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)
+  nameWithType: ResourceLoader.GetStringResource(Stream)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource*
+  name: GetStringResource
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource
+  nameWithType: ResourceLoader.GetStringResource
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources(System.Object)
+  name: LoadResources(Object)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources(System.Object)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources(System.Object)
+  nameWithType: ResourceLoader.LoadResources(Object)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources*
+  name: LoadResources
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources
+  nameWithType: ResourceLoader.LoadResources
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable{Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin})
+  name: RegisterPlugin(IEnumerable<IResourceLoaderPlugin>)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_System_Collections_Generic_IEnumerable_Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin__
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable{Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin})
+  name.vb: RegisterPlugin(IEnumerable(Of IResourceLoaderPlugin))
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable<Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin>)
+  fullName.vb: Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable(Of Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin))
+  nameWithType: ResourceLoader.RegisterPlugin(IEnumerable<IResourceLoaderPlugin>)
+  nameWithType.vb: ResourceLoader.RegisterPlugin(IEnumerable(Of IResourceLoaderPlugin))
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin*
+  name: RegisterPlugin
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin
+  nameWithType: ResourceLoader.RegisterPlugin

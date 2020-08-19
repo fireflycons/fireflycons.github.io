@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ResourceLoader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ResourceLoader
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader">
+  
+  
+  <h1 id="Firefly_EmbeddedResourceLoader_ResourceLoader" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader" class="text-break">Class ResourceLoader
+  </h1>
+  <div class="markdown level0 summary"><p>
+This class does all the magic.
+Given a type, or an instance of a type containing fields or properties decorated with the <a class="xref" href="Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResourceAttribute</a>
+it loads up all the fields and properties with the indicated embedded resources.
+</p>
+<p>
+Resources are only loaded into members that have not previously been initialized (i.e are <code>null</code>).
+This also has the beneficial side effect of ensuring that static members are only ever loaded once, which
+is when the first instance of the containing type is presented.
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ResourceLoader</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.EmbeddedResourceLoader.html">Firefly.EmbeddedResourceLoader</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.EmbeddedResourceLoader.dll</h6>
+  <h5 id="Firefly_EmbeddedResourceLoader_ResourceLoader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ResourceLoader</code></pre>
+  </div>
+  <h5 id="Firefly_EmbeddedResourceLoader_ResourceLoader_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The load process works by looking for an appropriate way of initializing the member in the following order...</p>
+<ol><li>If the member is a string, then read the resource as a string and assign it directly.</li><li>Look for a constructor of the member&apos;s type that takes a single argument of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>. Good for many binary types like images and so forth.</li><li>
+Look for a public static or instance Load method taking a single argument of type <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a> or <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.streamreader">StreamReader</a>, e.g. <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.xml.linq.xdocument">XDocument</a>
+or <a href="https://github.com/aaubry/YamlDotNet/blob/master/YamlDotNet/RepresentationModel/YamlStream.cs">YamlStream</a>
+</li><li>Look for a public static Parse method taking a single argument of type <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, e.g. <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm">JObject</a>.</li><li>Search registered plugins for a plugin that supports the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a> of the field or property.</li><li>Throw an exception.</li></ol>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_GetResourceStream_System_String_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream(System.String%2CSystem.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L112">View Source</a>
+  </span>
+  <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetResourceStream_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream*"></a>
+  <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetResourceStream_System_String_System_Reflection_Assembly_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream(System.String,System.Reflection.Assembly)">GetResourceStream(String, Assembly)</h4>
+  <div class="markdown level1 summary"><p>Gets the manifest resource stream for the given resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stream GetResourceStream(string partialResourcePath, Assembly containingAssembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partialResourcePath</span></td>
+        <td><p>Partial (trailing) path to embedded resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
+        <td><span class="parametername">containingAssembly</span></td>
+        <td><p>Assembly that contains the resource to load.
+If <code>null</code> then the assembly containing the code that calls this method is searched.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><p>A stream from which to load the resource data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html">ResourceLoaderInvalidPathException</a></td>
+        <td><p>Resource path was incorrect, or you did not set the build action to Embedded Resource</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L147">View Source</a>
+  </span>
+  <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource*"></a>
+  <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_IO_Stream_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)">GetStringResource(Stream)</h4>
+  <div class="markdown level1 summary"><p>Reads the resource stream into a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetStringResource(Stream resourceStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">resourceStream</span></td>
+        <td><p>The resource stream returned by <a class="xref" href="Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetResourceStream_System_String_System_Reflection_Assembly_">GetResourceStream(String, Assembly)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>String containing resource data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object_.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L249">View Source</a>
+  </span>
+  <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources*"></a>
+  <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources(System.Object)">LoadResources(Object)</h4>
+  <div class="markdown level1 summary"><p>This method examines the object passed to it for members decorated with the <a class="xref" href="Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResourceAttribute</a> attribute and loads any indicated resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadResources(object typeOrInstance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">typeOrInstance</span></td>
+        <td><p>Either a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, or an instance of some object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+In the case where <code data-dev-comment-type="paramref" class="paramref">typeOrInstance</code> is a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, 
+the type will be examined only for static members decorated with the attribute.
+This is useful for static classes, or instance classes for which you only want to initialize the static members. 
+</p>
+<p>
+If <code data-dev-comment-type="paramref" class="paramref">typeOrInstance</code> is an instance of an object, decorated static members will be initialized 
+along with all decorated instance members.
+</p>
+<p>
+In all cases members are only initialized with embedded resource data if the member is still null at the time this method is called.
+</p>
+<p>
+Note that value types are always initialized with their default value if no actual initialization to some other value is present
+and as such are initialized, therefore the <a class="xref" href="Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResourceAttribute</a> is simply ignored. </p>
+</div>
+  <h5 id="Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object__examples">Examples</h5>
+  <pre><code>using System.Xml.Linq;
+using Firefly.EmbeddedResourceLoader;
+
+namespace TestNamespace
+{
+    static class StaticClass
+    {
+        [EmbeddedResource(&quot;TestNamespace.Resources.TestResource2.xml&quot;)]
+        public static XDocument xdoc = null;
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Initialise members of a static class
+            ResourceLoader.LoadResources(typeof(StaticClass));
+        }
+    }
+}</code></pre>
+<pre><code>using System.Xml.Linq;
+using Firefly.EmbeddedResourceLoader;
+
+namespace TestNamespace
+{
+    class TestClass
+    {
+        [EmbeddedResource(&quot;TestNamespace.Resources.TestResource1.txt&quot;)]
+        public string testResource1;
+
+        [EmbeddedResource(&quot;TestNamespace.Resources.TestResource2.xml&quot;)]
+        private XDocument testResource2;
+
+        public TestClass()
+        {
+            // Initialise instance and any uninitialized static members.
+            ResourceLoader.LoadResources(this);
+        }
+    }
+}</code></pre>
+<pre><code>using System.Xml.Linq;
+using Firefly.EmbeddedResourceLoader;
+
+namespace TestNamespace
+{
+    class TestClass
+    {
+        // Partial resource paths must be unambiguous
+        [EmbeddedResource(&quot;TestResource1.txt&quot;)]
+        public string testResource1;
+
+        [EmbeddedResource(&quot;TestResource2.xml&quot;, &quot;MyAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;)]
+        private XDocument testResource2;
+
+        public TestClass()
+        {
+            // Initialise instance and any uninitialized static members.
+            ResourceLoader.LoadResources(this);
+        }
+    }
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html">ResourceLoaderInvalidTypeException</a></td>
+        <td><p>The type of the attributed member does not support resource loading.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html">ResourceLoaderReadOnlyException</a></td>
+        <td><p>Property does not have a set accessor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html">ResourceLoaderInvalidPathException</a></td>
+        <td><p>The resource could not be found. Either the path is incorrect, or the resource wasn't set to Embedded Resource in the Solution Explorer properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html">ResourceLoaderAmbiguousPathException</a></td>
+        <td><p>The partial resource path specified matches more than one resource in the assembly manifest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_System_Collections_Generic_IEnumerable_Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin__.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable%7BFirefly.EmbeddedResourceLoader.IResourceLoaderPlugin%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L332">View Source</a>
+  </span>
+  <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin*"></a>
+  <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_System_Collections_Generic_IEnumerable_Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin__" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable{Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin})">RegisterPlugin(IEnumerable&lt;IResourceLoaderPlugin&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register a type or types from a plug-in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterPlugin(IEnumerable&lt;IResourceLoaderPlugin&gt; typesToRegister)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html">IResourceLoaderPlugin</a>&gt;</td>
+        <td><span class="parametername">typesToRegister</span></td>
+        <td><p>The types to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>typesToRegister is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L52" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

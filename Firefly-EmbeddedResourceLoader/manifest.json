@@ -1,0 +1,392 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/firefly-embeddedresourceloader/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.AutoResourceLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.AutoResourceLoader.html",
+          "hash": "Cyaxaj7sFX8t4lSo9DCYYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html",
+          "hash": "8/wbxW4Tp/y6GS95ncRERw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html",
+          "hash": "IY1QAdHqwJ6I/6fzQ2sCXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderException.html",
+          "hash": "P5OlLU9HQ99d9E1lyleTrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidDirectoryException.html",
+          "hash": "B6ottaGSyRktOMrCYPfKyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidPathException.html",
+          "hash": "wviYGIV9xupEHJwfhzbwHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderInvalidTypeException.html",
+          "hash": "YwS0B0+FB+grXB/lzwPMMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderPathException.html",
+          "hash": "zm9tIRfp1BcJZ8AdYhoJew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderReadOnlyException.html",
+          "hash": "YE6EVtm3E8hQfv/kKthHQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Exceptions.html",
+          "hash": "q/WszDdcbeudyEfbcRXtVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin.html",
+          "hash": "NJIO0L8t8a2v59Ek5tHGHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html",
+          "hash": "MSYOHcpMaiZuiYNqFn90jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html",
+          "hash": "sMGaEN8pOquXHGUelAI1Jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.Materialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.Materialization.html",
+          "hash": "iPORWhlS3qtDPjXpWYALsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.ResourceFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.ResourceFormat.html",
+          "hash": "FakHWuNPvxYzU5YLqcClIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.ResourceLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.ResourceLoader.html",
+          "hash": "+HlTSYtNwONcFIp8pu9jOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.html",
+          "hash": "j2qjRDCC2I0pOz+rnuwYDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "4iTLMgvR6zgVxo/rby4mww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "1NpwTHLHxF1ZqXhEVcZLKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/exceptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/exceptions.html",
+          "hash": "PFUPuZjbeHYoqTwPWqd54g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/how-it-works.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/how-it-works.html",
+          "hash": "twAMzlG509zKBX3/WAxCJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/index.html",
+          "hash": "F6S/3QAVrQyU9K/ffy2daQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/materializers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/materializers.html",
+          "hash": "16JTTmWwqRGSVeCXX6V1Mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/plugins.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/plugins.html",
+          "hash": "grf3GEx7sN24vxydv97jag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/static-classes.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/static-classes.html",
+          "hash": "4+XXB3SUmPNfo4SlOEDvPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "2Tai0SspfCq63tYMxfma3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "/J53FwBHmVBdkwyuviphlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "4U5SuMhFU7uDg0xrAeTXFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 8,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 17,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

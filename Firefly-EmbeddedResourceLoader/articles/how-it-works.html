@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How it Works </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How it Works ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-it-works">How it Works</h1>
+
+<p>Basically, reflection.</p>
+<p>That aside for now, there are quite a few types that exist both in the standard libraries and server popular third party packages that are ideal for initializing from embedded resouces, taking the resource either as a <code>Stream</code> or as a <code>string</code>. This library will work as-is without any extra coding to initialise classes with fields or properties that meet the following criteria</p>
+<ul>
+<li>Is not read only (readonly field, or property with no set accessor)</li>
+<li>Is not already assigned a value. Note that for value types, they always are assigned with their default value (e.g. int = 0), so are ignored.</li>
+<li>Is a string</li>
+<li>Has a constructor taking a single argument of type <code>Stream</code>, e.g. <code>Bitmap</code></li>
+<li>Has a static <code>Load</code> method taking a single argument of type <code>Stream</code> or <code>StreamReader</code>, e.g. <code>XDocument</code></li>
+<li>Has an instance <code>Load</code> method taking a single argument of type <code>Stream</code> or <code>StreamReader</code>, e.g.  <code>YamlStream</code></li>
+<li>Has a static <code>Parse</code> method taking a single argument of type <code>string</code>, e.g. <code>JObject</code></li>
+</ul>
+<p>Create a class that has one or more fields or properties that you want to initialise from embedded resource data. You can either inherit your class from <a href="xef:Firefly.EmbeddedResourceLoader.AutoResourceLoader">AutoResourceLoader</a> in which case evey time an instance of your class is created, its resources will auto-load, or call <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object_">ResouceLoader.LoadResources</a> on the instance to load on demand.</p>
+<p>To associate a field or property with an embedded resource, decorate it with the <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResource</a> attribute.</p>
+<p>The attribute's constructor takes as it's first argument the name of an embedded resource. You only have to give enough of the resource name to make it unambiguous, i.e. can't be confused with any similarly named resource.</p>
+<p>Say the namespace of your resources is <code>MyCompany.MyLibrary.Resources</code>, i.e. you created a project called <code>MyCompany.MyLibrary</code> and you created a project folder called <code>Resources</code> to put your embedded resources in. Within this folder you have a resource file <code>MyResource.txt</code>. You could then decorate your class member with</p>
+<pre><code class="lang-csharp">    [EmbeddedResource(&quot;MyResource.txt&quot;)]
+    public string MyProperty {get; set; }
+</code></pre>
+<p>...and the resource would be found and loaded.</p>
+<p>If on the other hand you had two resource folders <code>Resources1</code> and <code>Resources2</code>, both containing a file <code>MyResource.txt</code> the above would throw a <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.Exceptions.ResourceLoaderAmbiguousPathException.html">ResourceLoaderAmbiguousPathException</a>. To solve this, you would need to be more specific with the resource name:</p>
+<pre><code class="lang-csharp">    [EmbeddedResource(&quot;Resources1.MyResource.txt&quot;)]
+    public string MyProperty {get; set; }
+</code></pre>
+<h2 id="remarks">Remarks</h2>
+<p>Note that creating classes with members that are initialized using the <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResource</a> attribute and are therefore never directly assigned will generate a lot of compiler warnings. You can get rid of most of these by disabling warning <code>169</code> and <code>649</code> using <code>#pragme warning disable</code></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/docfx/articles/how-it-works.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
