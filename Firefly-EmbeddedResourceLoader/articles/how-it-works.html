@@ -92,6 +92,12 @@
 <pre><code class="lang-csharp">    [EmbeddedResource(&quot;Resources1.MyResource.txt&quot;)]
     public string MyProperty {get; set; }
 </code></pre>
+<h1 id="examples-in-other-repositories">Examples in Other Repositories</h1>
+<p>You can see this library in action in the unit test projects in my other repositories</p>
+<ul>
+<li><a href="https://github.com/fireflycons/Firefly.CloudFormation/tree/master/tests/Firefly.CloudFormation.Tests.Unit">Firefly.CloudFormation</a></li>
+<li><a href="https://github.com/fireflycons/PSCloudFormation/tree/master/tests/Firefly.PSCloudFormation.Tests.Unit">PSCloudFomation</a></li>
+</ul>
 <h2 id="remarks">Remarks</h2>
 <p>Note that creating classes with members that are initialized using the <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResource</a> attribute and are therefore never directly assigned will generate a lot of compiler warnings. You can get rid of most of these by disabling warning <code>169</code> and <code>649</code> using <code>#pragme warning disable</code></p>
 </article>
