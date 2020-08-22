@@ -100,12 +100,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/lambda.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/lambda.html",
+          "hash": "LokFh/RzoyscSCmHMIFVAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "WWFA8IEnIbkYwqv+nKcS8A=="
+          "hash": "mXBdNXEZyfe6D81t8bj7kQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +162,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
