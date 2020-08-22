@@ -1,0 +1,256 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Firefly.CrossPlatformZip
+  name: Firefly.CrossPlatformZip
+  href: api/Firefly.CrossPlatformZip.html
+  commentId: N:Firefly.CrossPlatformZip
+  fullName: Firefly.CrossPlatformZip
+  nameWithType: Firefly.CrossPlatformZip
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings
+  name: CrossPlatformZipSettings
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html
+  commentId: T:Firefly.CrossPlatformZip.CrossPlatformZipSettings
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings
+  nameWithType: CrossPlatformZipSettings
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.AlternateFileName
+  name: AlternateFileName
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_AlternateFileName
+  commentId: P:Firefly.CrossPlatformZip.CrossPlatformZipSettings.AlternateFileName
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.AlternateFileName
+  nameWithType: CrossPlatformZipSettings.AlternateFileName
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.AlternateFileName*
+  name: AlternateFileName
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_AlternateFileName_
+  commentId: Overload:Firefly.CrossPlatformZip.CrossPlatformZipSettings.AlternateFileName
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.AlternateFileName
+  nameWithType: CrossPlatformZipSettings.AlternateFileName
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.Artifacts
+  name: Artifacts
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_Artifacts
+  commentId: P:Firefly.CrossPlatformZip.CrossPlatformZipSettings.Artifacts
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.Artifacts
+  nameWithType: CrossPlatformZipSettings.Artifacts
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.Artifacts*
+  name: Artifacts
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_Artifacts_
+  commentId: Overload:Firefly.CrossPlatformZip.CrossPlatformZipSettings.Artifacts
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.Artifacts
+  nameWithType: CrossPlatformZipSettings.Artifacts
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.CompressionLevel
+  name: CompressionLevel
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_CompressionLevel
+  commentId: P:Firefly.CrossPlatformZip.CrossPlatformZipSettings.CompressionLevel
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.CompressionLevel
+  nameWithType: CrossPlatformZipSettings.CompressionLevel
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.CompressionLevel*
+  name: CompressionLevel
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_CompressionLevel_
+  commentId: Overload:Firefly.CrossPlatformZip.CrossPlatformZipSettings.CompressionLevel
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.CompressionLevel
+  nameWithType: CrossPlatformZipSettings.CompressionLevel
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogError
+  name: LogError
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_LogError
+  commentId: P:Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogError
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogError
+  nameWithType: CrossPlatformZipSettings.LogError
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogError*
+  name: LogError
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_LogError_
+  commentId: Overload:Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogError
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogError
+  nameWithType: CrossPlatformZipSettings.LogError
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogMessage
+  name: LogMessage
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_LogMessage
+  commentId: P:Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogMessage
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogMessage
+  nameWithType: CrossPlatformZipSettings.LogMessage
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogMessage*
+  name: LogMessage
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_LogMessage_
+  commentId: Overload:Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogMessage
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.LogMessage
+  nameWithType: CrossPlatformZipSettings.LogMessage
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.TargetPlatform
+  name: TargetPlatform
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_TargetPlatform
+  commentId: P:Firefly.CrossPlatformZip.CrossPlatformZipSettings.TargetPlatform
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.TargetPlatform
+  nameWithType: CrossPlatformZipSettings.TargetPlatform
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.TargetPlatform*
+  name: TargetPlatform
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_TargetPlatform_
+  commentId: Overload:Firefly.CrossPlatformZip.CrossPlatformZipSettings.TargetPlatform
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.TargetPlatform
+  nameWithType: CrossPlatformZipSettings.TargetPlatform
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.ZipFile
+  name: ZipFile
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_ZipFile
+  commentId: P:Firefly.CrossPlatformZip.CrossPlatformZipSettings.ZipFile
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.ZipFile
+  nameWithType: CrossPlatformZipSettings.ZipFile
+- uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings.ZipFile*
+  name: ZipFile
+  href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html#Firefly_CrossPlatformZip_CrossPlatformZipSettings_ZipFile_
+  commentId: Overload:Firefly.CrossPlatformZip.CrossPlatformZipSettings.ZipFile
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.CrossPlatformZipSettings.ZipFile
+  nameWithType: CrossPlatformZipSettings.ZipFile
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException
+  name: DuplicateEntryException
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html
+  commentId: T:Firefly.CrossPlatformZip.DuplicateEntryException
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException
+  nameWithType: DuplicateEntryException
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.#ctor
+  name: DuplicateEntryException()
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException__ctor
+  commentId: M:Firefly.CrossPlatformZip.DuplicateEntryException.#ctor
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateEntryException()
+  nameWithType: DuplicateEntryException.DuplicateEntryException()
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: DuplicateEntryException(SerializationInfo, StreamingContext)
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.CrossPlatformZip.DuplicateEntryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateEntryException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: DuplicateEntryException.DuplicateEntryException(SerializationInfo, StreamingContext)
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.#ctor(System.String)
+  name: DuplicateEntryException(String)
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException__ctor_System_String_
+  commentId: M:Firefly.CrossPlatformZip.DuplicateEntryException.#ctor(System.String)
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateEntryException(System.String)
+  nameWithType: DuplicateEntryException.DuplicateEntryException(String)
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.#ctor(System.String,System.Exception)
+  name: DuplicateEntryException(String, Exception)
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.CrossPlatformZip.DuplicateEntryException.#ctor(System.String,System.Exception)
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateEntryException(System.String, System.Exception)
+  nameWithType: DuplicateEntryException.DuplicateEntryException(String, Exception)
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.#ctor*
+  name: DuplicateEntryException
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException__ctor_
+  commentId: Overload:Firefly.CrossPlatformZip.DuplicateEntryException.#ctor
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateEntryException
+  nameWithType: DuplicateEntryException.DuplicateEntryException
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateDirectories
+  name: DuplicateDirectories
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException_DuplicateDirectories
+  commentId: P:Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateDirectories
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateDirectories
+  nameWithType: DuplicateEntryException.DuplicateDirectories
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateDirectories*
+  name: DuplicateDirectories
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException_DuplicateDirectories_
+  commentId: Overload:Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateDirectories
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateDirectories
+  nameWithType: DuplicateEntryException.DuplicateDirectories
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateFiles
+  name: DuplicateFiles
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException_DuplicateFiles
+  commentId: P:Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateFiles
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateFiles
+  nameWithType: DuplicateEntryException.DuplicateFiles
+- uid: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateFiles*
+  name: DuplicateFiles
+  href: api/Firefly.CrossPlatformZip.DuplicateEntryException.html#Firefly_CrossPlatformZip_DuplicateEntryException_DuplicateFiles_
+  commentId: Overload:Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateFiles
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.DuplicateEntryException.DuplicateFiles
+  nameWithType: DuplicateEntryException.DuplicateFiles
+- uid: Firefly.CrossPlatformZip.Zipper
+  name: Zipper
+  href: api/Firefly.CrossPlatformZip.Zipper.html
+  commentId: T:Firefly.CrossPlatformZip.Zipper
+  fullName: Firefly.CrossPlatformZip.Zipper
+  nameWithType: Zipper
+- uid: Firefly.CrossPlatformZip.Zipper.Unzip(System.String,System.String)
+  name: Unzip(String, String)
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_Unzip_System_String_System_String_
+  commentId: M:Firefly.CrossPlatformZip.Zipper.Unzip(System.String,System.String)
+  fullName: Firefly.CrossPlatformZip.Zipper.Unzip(System.String, System.String)
+  nameWithType: Zipper.Unzip(String, String)
+- uid: Firefly.CrossPlatformZip.Zipper.Unzip*
+  name: Unzip
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_Unzip_
+  commentId: Overload:Firefly.CrossPlatformZip.Zipper.Unzip
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.Zipper.Unzip
+  nameWithType: Zipper.Unzip
+- uid: Firefly.CrossPlatformZip.Zipper.Zip(Firefly.CrossPlatformZip.CrossPlatformZipSettings)
+  name: Zip(CrossPlatformZipSettings)
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_Zip_Firefly_CrossPlatformZip_CrossPlatformZipSettings_
+  commentId: M:Firefly.CrossPlatformZip.Zipper.Zip(Firefly.CrossPlatformZip.CrossPlatformZipSettings)
+  fullName: Firefly.CrossPlatformZip.Zipper.Zip(Firefly.CrossPlatformZip.CrossPlatformZipSettings)
+  nameWithType: Zipper.Zip(CrossPlatformZipSettings)
+- uid: Firefly.CrossPlatformZip.Zipper.Zip(System.String,System.String,System.Int32)
+  name: Zip(String, String, Int32)
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_Zip_System_String_System_String_System_Int32_
+  commentId: M:Firefly.CrossPlatformZip.Zipper.Zip(System.String,System.String,System.Int32)
+  fullName: Firefly.CrossPlatformZip.Zipper.Zip(System.String, System.String, System.Int32)
+  nameWithType: Zipper.Zip(String, String, Int32)
+- uid: Firefly.CrossPlatformZip.Zipper.Zip(System.String,System.String,System.Int32,Firefly.CrossPlatformZip.ZipPlatform)
+  name: Zip(String, String, Int32, ZipPlatform)
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_Zip_System_String_System_String_System_Int32_Firefly_CrossPlatformZip_ZipPlatform_
+  commentId: M:Firefly.CrossPlatformZip.Zipper.Zip(System.String,System.String,System.Int32,Firefly.CrossPlatformZip.ZipPlatform)
+  fullName: Firefly.CrossPlatformZip.Zipper.Zip(System.String, System.String, System.Int32, Firefly.CrossPlatformZip.ZipPlatform)
+  nameWithType: Zipper.Zip(String, String, Int32, ZipPlatform)
+- uid: Firefly.CrossPlatformZip.Zipper.Zip*
+  name: Zip
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_Zip_
+  commentId: Overload:Firefly.CrossPlatformZip.Zipper.Zip
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.Zipper.Zip
+  nameWithType: Zipper.Zip
+- uid: Firefly.CrossPlatformZip.Zipper.ZipSingleFile(Firefly.CrossPlatformZip.CrossPlatformZipSettings)
+  name: ZipSingleFile(CrossPlatformZipSettings)
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_ZipSingleFile_Firefly_CrossPlatformZip_CrossPlatformZipSettings_
+  commentId: M:Firefly.CrossPlatformZip.Zipper.ZipSingleFile(Firefly.CrossPlatformZip.CrossPlatformZipSettings)
+  fullName: Firefly.CrossPlatformZip.Zipper.ZipSingleFile(Firefly.CrossPlatformZip.CrossPlatformZipSettings)
+  nameWithType: Zipper.ZipSingleFile(CrossPlatformZipSettings)
+- uid: Firefly.CrossPlatformZip.Zipper.ZipSingleFile(System.String,System.String,System.String,System.Int32)
+  name: ZipSingleFile(String, String, String, Int32)
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_ZipSingleFile_System_String_System_String_System_String_System_Int32_
+  commentId: M:Firefly.CrossPlatformZip.Zipper.ZipSingleFile(System.String,System.String,System.String,System.Int32)
+  fullName: Firefly.CrossPlatformZip.Zipper.ZipSingleFile(System.String, System.String, System.String, System.Int32)
+  nameWithType: Zipper.ZipSingleFile(String, String, String, Int32)
+- uid: Firefly.CrossPlatformZip.Zipper.ZipSingleFile(System.String,System.String,System.String,System.Int32,Firefly.CrossPlatformZip.ZipPlatform)
+  name: ZipSingleFile(String, String, String, Int32, ZipPlatform)
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_ZipSingleFile_System_String_System_String_System_String_System_Int32_Firefly_CrossPlatformZip_ZipPlatform_
+  commentId: M:Firefly.CrossPlatformZip.Zipper.ZipSingleFile(System.String,System.String,System.String,System.Int32,Firefly.CrossPlatformZip.ZipPlatform)
+  fullName: Firefly.CrossPlatformZip.Zipper.ZipSingleFile(System.String, System.String, System.String, System.Int32, Firefly.CrossPlatformZip.ZipPlatform)
+  nameWithType: Zipper.ZipSingleFile(String, String, String, Int32, ZipPlatform)
+- uid: Firefly.CrossPlatformZip.Zipper.ZipSingleFile*
+  name: ZipSingleFile
+  href: api/Firefly.CrossPlatformZip.Zipper.html#Firefly_CrossPlatformZip_Zipper_ZipSingleFile_
+  commentId: Overload:Firefly.CrossPlatformZip.Zipper.ZipSingleFile
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.Zipper.ZipSingleFile
+  nameWithType: Zipper.ZipSingleFile
+- uid: Firefly.CrossPlatformZip.ZipPlatform
+  name: ZipPlatform
+  href: api/Firefly.CrossPlatformZip.ZipPlatform.html
+  commentId: T:Firefly.CrossPlatformZip.ZipPlatform
+  fullName: Firefly.CrossPlatformZip.ZipPlatform
+  nameWithType: ZipPlatform
+- uid: Firefly.CrossPlatformZip.ZipPlatform.Unix
+  name: Unix
+  href: api/Firefly.CrossPlatformZip.ZipPlatform.html#Firefly_CrossPlatformZip_ZipPlatform_Unix
+  commentId: F:Firefly.CrossPlatformZip.ZipPlatform.Unix
+  fullName: Firefly.CrossPlatformZip.ZipPlatform.Unix
+  nameWithType: ZipPlatform.Unix
+- uid: Firefly.CrossPlatformZip.ZipPlatform.Windows
+  name: Windows
+  href: api/Firefly.CrossPlatformZip.ZipPlatform.html#Firefly_CrossPlatformZip_ZipPlatform_Windows
+  commentId: F:Firefly.CrossPlatformZip.ZipPlatform.Windows
+  fullName: Firefly.CrossPlatformZip.ZipPlatform.Windows
+  nameWithType: ZipPlatform.Windows
