@@ -97,15 +97,15 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.CloudFormationRunner.CreateStackAsync
   nameWithType: CloudFormationRunner.CreateStackAsync
-- uid: Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func{System.Boolean})
-  name: DeleteStackAsync(Func<Boolean>)
-  href: api/Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__
-  commentId: M:Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func{System.Boolean})
-  name.vb: DeleteStackAsync(Func(Of Boolean))
-  fullName: Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func<System.Boolean>)
-  fullName.vb: Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func(Of System.Boolean))
-  nameWithType: CloudFormationRunner.DeleteStackAsync(Func<Boolean>)
-  nameWithType.vb: CloudFormationRunner.DeleteStackAsync(Func(Of Boolean))
+- uid: Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func{System.Boolean},System.Func{System.Boolean})
+  name: DeleteStackAsync(Func<Boolean>, Func<Boolean>)
+  href: api/Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__System_Func_System_Boolean__
+  commentId: M:Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func{System.Boolean},System.Func{System.Boolean})
+  name.vb: DeleteStackAsync(Func(Of Boolean), Func(Of Boolean))
+  fullName: Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func<System.Boolean>, System.Func<System.Boolean>)
+  fullName.vb: Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func(Of System.Boolean), System.Func(Of System.Boolean))
+  nameWithType: CloudFormationRunner.DeleteStackAsync(Func<Boolean>, Func<Boolean>)
+  nameWithType.vb: CloudFormationRunner.DeleteStackAsync(Func(Of Boolean), Func(Of Boolean))
 - uid: Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync*
   name: DeleteStackAsync
   href: api/Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_

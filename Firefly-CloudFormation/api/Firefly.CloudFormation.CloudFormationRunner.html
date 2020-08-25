@@ -217,19 +217,19 @@ To construct this object, get a builder instance by calling <a class="xref" href
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__System_Func_System_Boolean__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func%7BSystem.Boolean%7D%2CSystem.Func%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/CloudFormationRunner.cs/#L408">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/CloudFormationRunner.cs/#L412">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_" data-uid="Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync*"></a>
-  <h4 id="Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__" data-uid="Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func{System.Boolean})">DeleteStackAsync(Func&lt;Boolean&gt;)</h4>
+  <h4 id="Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__System_Func_System_Boolean__" data-uid="Firefly.CloudFormation.CloudFormationRunner.DeleteStackAsync(System.Func{System.Boolean},System.Func{System.Boolean})">DeleteStackAsync(Func&lt;Boolean&gt;, Func&lt;Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>Deletes a stack.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;CloudFormationResult&gt; DeleteStackAsync(Func&lt;bool&gt; invalidRetentionConfirmationFunc = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;CloudFormationResult&gt; DeleteStackAsync(Func&lt;bool&gt; invalidRetentionConfirmationFunc = null, Func&lt;bool&gt; queryDeleteStackFunc = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -246,6 +246,13 @@ To construct this object, get a builder instance by calling <a class="xref" href
         <td><span class="parametername">invalidRetentionConfirmationFunc</span></td>
         <td><p>Function to confirm delete if user passed resources to retain when the stack is not in a failed state due to resources that could not be deleted.
 If this parameter is <code>null</code>, or the function returns true, then all resources are deleted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">queryDeleteStackFunc</span></td>
+        <td><p>Function to confirm whether to delete the stack at all.
+If this parameter is <code>null</code>, or the function returns true, then the delete proceeds.</p>
 </td>
       </tr>
     </tbody>
@@ -287,7 +294,7 @@ If this parameter is <code>null</code>, or the function returns true, then all r
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_CloudFormationRunner_ResetStackAsync.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.CloudFormationRunner.ResetStackAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/CloudFormationRunner.cs/#L494">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/CloudFormationRunner.cs/#L506">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_CloudFormationRunner_ResetStackAsync_" data-uid="Firefly.CloudFormation.CloudFormationRunner.ResetStackAsync*"></a>
   <h4 id="Firefly_CloudFormation_CloudFormationRunner_ResetStackAsync" data-uid="Firefly.CloudFormation.CloudFormationRunner.ResetStackAsync">ResetStackAsync()</h4>
@@ -296,7 +303,7 @@ Resets a stack by deleting and recreating it.
 </p>
 <p>
 This is useful when an attempt to create a new stack fails, leaving an existing stack in <code>ROLLBACK_COMPLETE</code> state,
-or if you just want to rebuild a stack from scratch. Internally it calls <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__">DeleteStackAsync(Func&lt;Boolean&gt;)</a>,
+or if you just want to rebuild a stack from scratch. Internally it calls <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_DeleteStackAsync_System_Func_System_Boolean__System_Func_System_Boolean__">DeleteStackAsync(Func&lt;Boolean&gt;, Func&lt;Boolean&gt;)</a>,
 waits for that to complete, then calls <a class="xref" href="Firefly.CloudFormation.CloudFormationRunner.html#Firefly_CloudFormation_CloudFormationRunner_CreateStackAsync">CreateStackAsync()</a>.
 </p>
 </div>
@@ -326,7 +333,7 @@ waits for that to complete, then calls <a class="xref" href="Firefly.CloudFormat
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_CloudFormationRunner_UpdateStackAsync_System_Func_Amazon_CloudFormation_Model_DescribeChangeSetResponse_System_Boolean__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.CloudFormationRunner.UpdateStackAsync(System.Func%7BAmazon.CloudFormation.Model.DescribeChangeSetResponse%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/CloudFormationRunner.cs/#L527">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/CloudFormationRunner.cs/#L539">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_CloudFormationRunner_UpdateStackAsync_" data-uid="Firefly.CloudFormation.CloudFormationRunner.UpdateStackAsync*"></a>
   <h4 id="Firefly_CloudFormation_CloudFormationRunner_UpdateStackAsync_System_Func_Amazon_CloudFormation_Model_DescribeChangeSetResponse_System_Boolean__" data-uid="Firefly.CloudFormation.CloudFormationRunner.UpdateStackAsync(System.Func{Amazon.CloudFormation.Model.DescribeChangeSetResponse,System.Boolean})">UpdateStackAsync(Func&lt;DescribeChangeSetResponse, Boolean&gt;)</h4>
