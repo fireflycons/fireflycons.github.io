@@ -87,11 +87,36 @@
 </code></pre>
 <h2 id="tempdirectory">TempDirectory</h2>
 <p>The <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html">TempDirectory</a> class materializes a project folder full of resources to a directory created  in the user's temp directory (Windows) or <code>/tmp</code> on other systems.</p>
-<p>Here, the path passed to th <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResource</a> attribute is expected to unambiguously resolve to a folder in the project that contains one or more embedded resources. The file names and any subfolders within the selected folder are replicated to the temporary directory tree.</p>
+<p>Here, the path passed to the <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResource</a> attribute is expected to unambiguously resolve to a folder in the project that contains one or more embedded resources. The file names and any subfolders within the selected folder are replicated to the temporary directory tree.</p>
 <p>The <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html">TempDirectory</a> also contains a default constructor that enables you to create a temporary directory for any purpose.</p>
 <pre><code class="lang-csharp">public class MyResourceClass : IDisposable
 {
     [EmbeddedResource(&quot;Resources&quot;)]
+    public TempDirectory Resources { get; set; }
+
+    public void Dispose()
+    {
+        this.Resources?.Dispose();
+    }
+}
+</code></pre>
+<h3 id="caveats-with-tempdirectory">Caveats with TempDirectory</h3>
+<p>The compiler has a nasty trick when embedding folders into the resource manifest. It converts hyphens in directory names to underscores meaning that when the directory structure is materialized you don't get what you expect. I expect this is to do with what consitutes valid characters for a .NET namespace name, thus any invalid character in a resource folder name is going to be replaced.</p>
+<p>To work around this, there is a property <code>DirectoryRenames</code> on <a class="xref" href="../api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html">EmbeddedResource</a> that allows you to specify renames for directories that are being materialized.</p>
+<p>Say you have this structure in your project</p>
+<pre><code>TempDirResource
++ sub-dir
+  + file.txt
+</code></pre>
+<p>This will by default come out like this in the filesystem</p>
+<pre><code>TempDirResource
++ sub_dir
+  + file.txt
+</code></pre>
+<p>To get the correct directory, do this</p>
+<pre><code class="lang-csharp">public class MyResourceClass : IDisposable
+{
+    [EmbeddedResource(&quot;Resources&quot;, DirectoryRenames = new[] { &quot;sub_dir&quot;, &quot;sub-dir&quot;} )]
     public TempDirectory Resources { get; set; }
 
     public void Dispose()

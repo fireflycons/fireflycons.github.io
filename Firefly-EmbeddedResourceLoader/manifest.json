@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html",
-          "hash": "8/wbxW4Tp/y6GS95ncRERw=="
+          "hash": "IixSU1iJbS+oiQidmRagxA=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html",
-          "hash": "MSYOHcpMaiZuiYNqFn90jg=="
+          "hash": "1mmJXHM4KFXgqVcgWuK2nQ=="
         }
       },
       "is_incremental": false,
@@ -197,11 +197,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.EmbeddedResourceLoader.TakeEveryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.EmbeddedResourceLoader.TakeEveryExtensions.html",
+          "hash": "rCGVWX4TOdulyApr082oNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.EmbeddedResourceLoader.yml",
       "output": {
         ".html": {
           "relative_path": "api/Firefly.EmbeddedResourceLoader.html",
-          "hash": "j2qjRDCC2I0pOz+rnuwYDw=="
+          "hash": "rZufWfgLpErSdlUaHl2gXA=="
         }
       },
       "is_incremental": false,
@@ -225,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1NpwTHLHxF1ZqXhEVcZLKw=="
+          "hash": "nJoVKshupC4BA8jgVPnbOQ=="
         }
       },
       "is_incremental": false,
@@ -273,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/materializers.html",
-          "hash": "16JTTmWwqRGSVeCXX6V1Mw=="
+          "hash": "AAKP0MdnLhOw+6miE3ACqg=="
         }
       },
       "is_incremental": false,
@@ -360,7 +372,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 17,
+          "total_file_count": 18,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

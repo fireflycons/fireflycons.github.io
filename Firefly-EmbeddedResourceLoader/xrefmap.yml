@@ -70,6 +70,19 @@ references:
   isSpec: "True"
   fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ContainingAssembly
   nameWithType: EmbeddedResourceAttribute.ContainingAssembly
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.DirectoryRenames
+  name: DirectoryRenames
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_DirectoryRenames
+  commentId: P:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.DirectoryRenames
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.DirectoryRenames
+  nameWithType: EmbeddedResourceAttribute.DirectoryRenames
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.DirectoryRenames*
+  name: DirectoryRenames
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_DirectoryRenames_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.DirectoryRenames
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.DirectoryRenames
+  nameWithType: EmbeddedResourceAttribute.DirectoryRenames
 - uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath
   name: ResourcePath
   href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_ResourcePath
@@ -663,3 +676,34 @@ references:
   isSpec: "True"
   fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin
   nameWithType: ResourceLoader.RegisterPlugin
+- uid: Firefly.EmbeddedResourceLoader.TakeEveryExtensions
+  name: TakeEveryExtensions
+  href: api/Firefly.EmbeddedResourceLoader.TakeEveryExtensions.html
+  commentId: T:Firefly.EmbeddedResourceLoader.TakeEveryExtensions
+  fullName: Firefly.EmbeddedResourceLoader.TakeEveryExtensions
+  nameWithType: TakeEveryExtensions
+- uid: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery*
+  name: TakeEvery
+  href: api/Firefly.EmbeddedResourceLoader.TakeEveryExtensions.html#Firefly_EmbeddedResourceLoader_TakeEveryExtensions_TakeEvery_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery
+  nameWithType: TakeEveryExtensions.TakeEvery
+- uid: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name: TakeEvery<T>(IEnumerable<T>, Int32)
+  href: api/Firefly.EmbeddedResourceLoader.TakeEveryExtensions.html#Firefly_EmbeddedResourceLoader_TakeEveryExtensions_TakeEvery__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name.vb: TakeEvery(Of T)(IEnumerable(Of T), Int32)
+  fullName: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery<T>(System.Collections.Generic.IEnumerable<T>, System.Int32)
+  fullName.vb: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Int32)
+  nameWithType: TakeEveryExtensions.TakeEvery<T>(IEnumerable<T>, Int32)
+  nameWithType.vb: TakeEveryExtensions.TakeEvery(Of T)(IEnumerable(Of T), Int32)
+- uid: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Int32)
+  name: TakeEvery<T>(IEnumerable<T>, Int32, Int32)
+  href: api/Firefly.EmbeddedResourceLoader.TakeEveryExtensions.html#Firefly_EmbeddedResourceLoader_TakeEveryExtensions_TakeEvery__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Int32_
+  commentId: M:Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Int32)
+  name.vb: TakeEvery(Of T)(IEnumerable(Of T), Int32, Int32)
+  fullName: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery<T>(System.Collections.Generic.IEnumerable<T>, System.Int32, System.Int32)
+  fullName.vb: Firefly.EmbeddedResourceLoader.TakeEveryExtensions.TakeEvery(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Int32, System.Int32)
+  nameWithType: TakeEveryExtensions.TakeEvery<T>(IEnumerable<T>, Int32, Int32)
+  nameWithType.vb: TakeEveryExtensions.TakeEvery(Of T)(IEnumerable(Of T), Int32, Int32)
