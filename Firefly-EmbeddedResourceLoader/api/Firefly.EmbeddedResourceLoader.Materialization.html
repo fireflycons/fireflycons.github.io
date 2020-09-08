@@ -87,6 +87,12 @@ This is because the internal manifest format uses dot as a separator character t
 is impossible to programmatically determine whether the last dot in a resource name is a directory
 separator or a file extension. The assumption used here is that it is a file extension.
 </p>
+<p>
+The compiler has a nasty trick when embedding folders into the resource manifest.
+These folders are effectively namespace names when committed to the assembly resource manifest and as such must confirm to .NET lexical structure rules for identifiers.
+All invalid characters as per this specification are replaced with underscore, and if the first character of the folder name is invalid,
+then an underscore is prefixed to the folder name.
+</p>
 </section>
       <h4><a class="xref" href="Firefly.EmbeddedResourceLoader.Materialization.TempFile.html">TempFile</a></h4>
       <section><p>Provides file backing for an embedded resource. It is up to the caller to dispose any <code>TempFile</code> instances to ensure clean-up of files created.</p>
