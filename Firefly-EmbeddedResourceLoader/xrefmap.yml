@@ -83,6 +83,19 @@ references:
   isSpec: "True"
   fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.DirectoryRenames
   nameWithType: EmbeddedResourceAttribute.DirectoryRenames
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.PreserveFileExtension
+  name: PreserveFileExtension
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_PreserveFileExtension
+  commentId: P:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.PreserveFileExtension
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.PreserveFileExtension
+  nameWithType: EmbeddedResourceAttribute.PreserveFileExtension
+- uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.PreserveFileExtension*
+  name: PreserveFileExtension
+  href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_PreserveFileExtension_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.PreserveFileExtension
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.PreserveFileExtension
+  nameWithType: EmbeddedResourceAttribute.PreserveFileExtension
 - uid: Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.ResourcePath
   name: ResourcePath
   href: api/Firefly.EmbeddedResourceLoader.EmbeddedResourceAttribute.html#Firefly_EmbeddedResourceLoader_EmbeddedResourceAttribute_ResourcePath
@@ -552,18 +565,37 @@ references:
   isSpec: "True"
   fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.FullPath
   nameWithType: TempDirectory.FullPath
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.op_Implicit(Firefly.EmbeddedResourceLoader.Materialization.TempDirectory)~System.String
+  name: Implicit(TempDirectory to String)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory_op_Implicit_Firefly_EmbeddedResourceLoader_Materialization_TempDirectory__System_String
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.op_Implicit(Firefly.EmbeddedResourceLoader.Materialization.TempDirectory)~System.String
+  name.vb: Widening(TempDirectory to String)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Implicit(Firefly.EmbeddedResourceLoader.Materialization.TempDirectory to System.String)
+  fullName.vb: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Widening(Firefly.EmbeddedResourceLoader.Materialization.TempDirectory to System.String)
+  nameWithType: TempDirectory.Implicit(TempDirectory to String)
+  nameWithType.vb: TempDirectory.Widening(TempDirectory to String)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.op_Implicit*
+  name: Implicit
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.html#Firefly_EmbeddedResourceLoader_Materialization_TempDirectory_op_Implicit_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Implicit
+  fullName.vb: Firefly.EmbeddedResourceLoader.Materialization.TempDirectory.Widening
+  nameWithType: TempDirectory.Implicit
+  nameWithType.vb: TempDirectory.Widening
 - uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile
   name: TempFile
   href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html
   commentId: T:Firefly.EmbeddedResourceLoader.Materialization.TempFile
   fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile
   nameWithType: TempFile
-- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.IO.Stream)
-  name: TempFile(Stream)
-  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_System_IO_Stream_
-  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.IO.Stream)
-  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.TempFile(System.IO.Stream)
-  nameWithType: TempFile.TempFile(Stream)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.IO.Stream,System.String)
+  name: TempFile(Stream, String)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_System_IO_Stream_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.IO.Stream,System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.TempFile(System.IO.Stream, System.String)
+  nameWithType: TempFile.TempFile(Stream, String)
 - uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor*
   name: TempFile
   href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_
@@ -597,6 +629,25 @@ references:
   isSpec: "True"
   fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.FullPath
   nameWithType: TempFile.FullPath
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.op_Implicit(Firefly.EmbeddedResourceLoader.Materialization.TempFile)~System.String
+  name: Implicit(TempFile to String)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_op_Implicit_Firefly_EmbeddedResourceLoader_Materialization_TempFile__System_String
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.op_Implicit(Firefly.EmbeddedResourceLoader.Materialization.TempFile)~System.String
+  name.vb: Widening(TempFile to String)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Implicit(Firefly.EmbeddedResourceLoader.Materialization.TempFile to System.String)
+  fullName.vb: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Widening(Firefly.EmbeddedResourceLoader.Materialization.TempFile to System.String)
+  nameWithType: TempFile.Implicit(TempFile to String)
+  nameWithType.vb: TempFile.Widening(TempFile to String)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.op_Implicit*
+  name: Implicit
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_op_Implicit_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempFile.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Implicit
+  fullName.vb: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Widening
+  nameWithType: TempFile.Implicit
+  nameWithType.vb: TempFile.Widening
 - uid: Firefly.EmbeddedResourceLoader.ResourceFormat
   name: ResourceFormat
   href: api/Firefly.EmbeddedResourceLoader.ResourceFormat.html
