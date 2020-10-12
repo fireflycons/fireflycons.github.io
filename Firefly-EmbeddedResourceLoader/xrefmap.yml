@@ -672,6 +672,31 @@ references:
   commentId: T:Firefly.EmbeddedResourceLoader.ResourceLoader
   fullName: Firefly.EmbeddedResourceLoader.ResourceLoader
   nameWithType: ResourceLoader
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String)
+  name: GetFileResource(String)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetFileResource_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String)
+  nameWithType: ResourceLoader.GetFileResource(String)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String,System.Boolean)
+  name: GetFileResource(String, Boolean)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetFileResource_System_String_System_Boolean_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String,System.Boolean)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String, System.Boolean)
+  nameWithType: ResourceLoader.GetFileResource(String, Boolean)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String,System.Boolean,System.Reflection.Assembly)
+  name: GetFileResource(String, Boolean, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetFileResource_System_String_System_Boolean_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String,System.Boolean,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource(System.String, System.Boolean, System.Reflection.Assembly)
+  nameWithType: ResourceLoader.GetFileResource(String, Boolean, Assembly)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource*
+  name: GetFileResource
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetFileResource_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetFileResource
+  nameWithType: ResourceLoader.GetFileResource
 - uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetResourceStream(System.String,System.Reflection.Assembly)
   name: GetResourceStream(String, Assembly)
   href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetResourceStream_System_String_System_Reflection_Assembly_
