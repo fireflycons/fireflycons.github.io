@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.CloudFormationRunner.html",
-          "hash": "Yg5MgU7bBH6jhdPHV1pTbg=="
+          "hash": "wK8toi0VhEDPMjeh6NhSkQ=="
         }
       },
       "is_incremental": false,
@@ -46,6 +46,18 @@
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.ICloudFormationContext.html",
           "hash": "iCYUYZcszngo0N3d7mOrDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormation.ICloudFormationRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormation.ICloudFormationRunner.html",
+          "hash": "FUpi+ubjUQbxlVCrrEhkgw=="
         }
       },
       "is_incremental": false,
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.CloudFormationBuilder.html",
-          "hash": "zhKOSrm/j9NbR3Qq9Jo20A=="
+          "hash": "Z0jymtsgZslhlUs2hxxe1w=="
         }
       },
       "is_incremental": false,
@@ -197,6 +209,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormation.Parsers.IParameterFileParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormation.Parsers.IParameterFileParser.html",
+          "hash": "gDLXLSCWrKLm/6b5FRb+Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormation.Parsers.IResourceImportParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormation.Parsers.IResourceImportParser.html",
+          "hash": "jaL6aoBHPKnHI6T8dx13Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormation.Parsers.ITemplateParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormation.Parsers.ITemplateParser.html",
+          "hash": "P63hwmYJI/sjAYySp5EM0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormation.Parsers.ITemplateResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormation.Parsers.ITemplateResource.html",
+          "hash": "31GL8H2DndkpeNzrVI8ADg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.CloudFormation.Parsers.InputFileParser.yml",
       "output": {
         ".html": {
@@ -213,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.ParameterFileParser.html",
-          "hash": "s5tYzMFYDryLlvi1Hy6MGw=="
+          "hash": "BbiA+G292p46nWYtEg1Cyg=="
         }
       },
       "is_incremental": false,
@@ -225,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.ResourceImportParser.html",
-          "hash": "75etOM/U+mtvcdWlFRB/Tg=="
+          "hash": "qlGci/CGLFWI77hICfPn5g=="
         }
       },
       "is_incremental": false,
@@ -249,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.TemplateParser.html",
-          "hash": "jomByvvLyoTdpSrjOHC1Hg=="
+          "hash": "eUyZt4iV7vel1/GGcS+UFw=="
         }
       },
       "is_incremental": false,
@@ -261,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.TemplateResource.html",
-          "hash": "2xDuERVn5vIYLLk/W88RMQ=="
+          "hash": "rdGKLaNKMZ14Ytb9jtdEcQ=="
         }
       },
       "is_incremental": false,
@@ -273,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.html",
-          "hash": "DSk67PVTwqzR6nIVgbTi+Q=="
+          "hash": "SmgOIe5BrgG5Fv4SysFuBw=="
         }
       },
       "is_incremental": false,
@@ -381,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.html",
-          "hash": "uJmb1atJ+1tdUH1LuK2bzA=="
+          "hash": "D9R9G+AkimeHHD8a8W8IFw=="
         }
       },
       "is_incremental": false,
@@ -405,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "R8T8b7qxhasLO1xHuKa9xw=="
+          "hash": "BS+jPsCDGtGr5evIb1dSAg=="
         }
       },
       "is_incremental": false,
@@ -459,7 +519,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 32,
+          "total_file_count": 37,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

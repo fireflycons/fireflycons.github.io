@@ -89,6 +89,10 @@ Parameters not supplied to an update operation are assumed to be <code>UsePrevio
     <div class="level1"><a class="xref" href="Firefly.CloudFormation.Parsers.InputFileParser.html">InputFileParser</a></div>
     <div class="level2"><span class="xref">ParameterFileParser</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Firefly.CloudFormation.Parsers.IParameterFileParser.html">IParameterFileParser</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -123,7 +127,7 @@ Parameters not supplied to an update operation are assumed to be <code>UsePrevio
   <h6><strong>Assembly</strong>: Firefly.CloudFormation.dll</h6>
   <h5 id="Firefly_CloudFormation_Parsers_ParameterFileParser_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ParameterFileParser : InputFileParser</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ParameterFileParser : InputFileParser, IParameterFileParser</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -177,7 +181,7 @@ Parameters not supplied to an update operation are assumed to be <code>UsePrevio
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ParameterFileParser CreateParser(string templateBody)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IParameterFileParser CreateParser(string templateBody)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +211,7 @@ Parameters not supplied to an update operation are assumed to be <code>UsePrevio
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Firefly.CloudFormation.Parsers.ParameterFileParser.html">ParameterFileParser</a></td>
+        <td><a class="xref" href="Firefly.CloudFormation.Parsers.IParameterFileParser.html">IParameterFileParser</a></td>
         <td><p>A new <a class="xref" href="Firefly.CloudFormation.Parsers.ParameterFileParser.html">ParameterFileParser</a></p>
 </td>
       </tr>
@@ -261,6 +265,10 @@ Parameters not supplied to an update operation are assumed to be <code>UsePrevio
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Firefly.CloudFormation.Parsers.IParameterFileParser.html">IParameterFileParser</a>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Firefly.CloudFormation.Parsers.InputFileParser.html">InputFileParser</a></div>

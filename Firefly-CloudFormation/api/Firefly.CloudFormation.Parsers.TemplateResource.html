@@ -82,6 +82,10 @@ A reference to the resource is included so that it can be directly modified.</p>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">TemplateResource</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Firefly.CloudFormation.Parsers.ITemplateResource.html">ITemplateResource</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -110,7 +114,7 @@ A reference to the resource is included so that it can be directly modified.</p>
   <h6><strong>Assembly</strong>: Firefly.CloudFormation.dll</h6>
   <h5 id="Firefly_CloudFormation_Parsers_TemplateResource_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class TemplateResource</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class TemplateResource : ITemplateResource</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -507,6 +511,10 @@ e.g. for a <code>AWS::Glue::Job</code> the path would be <code>Command/ScriptLoc
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Firefly.CloudFormation.Parsers.ITemplateResource.html">ITemplateResource</a>
+  </div>
 </article>
           </div>
           

@@ -99,6 +99,10 @@ See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/reso
     <div class="level1"><a class="xref" href="Firefly.CloudFormation.Parsers.InputFileParser.html">InputFileParser</a></div>
     <div class="level2"><span class="xref">ResourceImportParser</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Firefly.CloudFormation.Parsers.IResourceImportParser.html">IResourceImportParser</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -133,7 +137,7 @@ See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/reso
   <h6><strong>Assembly</strong>: Firefly.CloudFormation.dll</h6>
   <h5 id="Firefly_CloudFormation_Parsers_ResourceImportParser_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ResourceImportParser : InputFileParser</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ResourceImportParser : InputFileParser, IResourceImportParser</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -187,7 +191,7 @@ See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/reso
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResourceImportParser Create(string fileContent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IResourceImportParser Create(string fileContent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +221,7 @@ See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/reso
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Firefly.CloudFormation.Parsers.ResourceImportParser.html">ResourceImportParser</a></td>
+        <td><a class="xref" href="Firefly.CloudFormation.Parsers.IResourceImportParser.html">IResourceImportParser</a></td>
         <td><p>A new <a class="xref" href="Firefly.CloudFormation.Parsers.ResourceImportParser.html">ResourceImportParser</a>.</p>
 </td>
       </tr>
@@ -271,6 +275,10 @@ See <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/reso
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Firefly.CloudFormation.Parsers.IResourceImportParser.html">IResourceImportParser</a>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Firefly.CloudFormation.Parsers.InputFileParser.html">InputFileParser</a></div>
