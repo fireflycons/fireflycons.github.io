@@ -76,9 +76,10 @@
 <li>Migrate a resource between stacks (combination of the above two operations).</li>
 </ul>
 <h2 id="how-to-detach-a-resource">How to Detach a Resource</h2>
+<p>In general - this works out the box using any CloudFormation deployment technique. By &quot;detach&quot; the meaning is to disassociate the given resource from a CloudFormation stack <em>without</em> deleting it.</p>
 <ol>
 <li>Open the CloudFormation template</li>
-<li>For the resources you want to detach, you should ensure these are not referenced by other resources within the stack that you wish to retain (i.e. <code>Ref</code>, <code>DependsOn</code> etc, or indirect references).</li>
+<li>For the resources you want to detach, you should ensure these are not referenced directly or indirectly by other resources within the stack that you wish to retain (i.e. <code>Ref</code>, <code>DependsOn</code>, <code>GetAtt</code> etc, or even <code>Outputs</code>).</li>
 <li>For the resources you want to detach, add the <code>DeletionPolicy</code> attribute with value of <code>Retain</code>.</li>
 </ol>
 <pre><code class="lang-yaml">AWSTemplateFormatVersion: 2010-09-09

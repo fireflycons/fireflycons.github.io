@@ -85,8 +85,8 @@
 <li><code>AWS::Glue::Job</code></li>
 <li><code>AWS::StepFunctions::StateMachine</code></li>
 </ul>
-<p>In the case of <code>AWS::CloudFormation::Stack</code> the process is recursive so you can have any level of stack nesting, and any of the avoce resources found in nested stacks are also packaged.</p>
-<p>Starting with Release 4.0.13, there is no longer the need to explicitly package templates that require it with <a class="xref" href="../cmdlets/New-PSCFNPackage.html">New-PSCFNPackage</a>. <a class="xref" href="../cmdlets/New-PSCFNStack.html">New-PSCFNStack</a> and <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> check the template first for any resources that require packaging and then run the packaging step prior to submitting the template to CloudFormation. This automatic packging step makes use of PSCloudFormation's private bucket, and does not allow you to specify bucket, key prefix or additional S3 metadata. Should you require this level of control, then use <a class="xref" href="../cmdlets/New-PSCFNPackage.html">New-PSCFNPackage</a> to pre-package the template.</p>
+<p>In the case of <code>AWS::CloudFormation::Stack</code> the process is recursive so you can have any level of stack nesting, and any of the above resources found in nested stacks are also packaged.</p>
+<p>Starting with Release 4.0.13, there is no longer the need to explicitly package templates that require it with <a class="xref" href="../cmdlets/New-PSCFNPackage.html">New-PSCFNPackage</a>. <a class="xref" href="../cmdlets/New-PSCFNStack.html">New-PSCFNStack</a> and <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> check the template first for any resources that require packaging and then run the packaging step prior to submitting the template to CloudFormation. This automatic packging step makes use of PSCloudFormation's <a class="xref" href="s3-usage.html">private bucket</a>, and does not allow you to specify bucket, key prefix or additional S3 metadata. Should you require this level of control, then use <a class="xref" href="../cmdlets/New-PSCFNPackage.html">New-PSCFNPackage</a> to pre-package the template.</p>
 <p><strong>CAVEAT</strong> Whilst <a class="xref" href="../cmdlets/New-PSCFNPackage.html">New-PSCFNPackage</a> gives you full control over the use of S3, if you pipe the output of it directly into <a class="xref" href="../cmdlets/New-PSCFNStack.html">New-PSCFNStack</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, these cmdlets lose the ability to provide dynamic parameter support for the template's parameters. This is due to how PowerShell dynamic parameters work. The dynamic parameter system needs to be able to see the content of the template at the time you are entering the command at the command line. The template content is not yet known as it's being piped from <code>New-PSCFNPackage</code> at run time. You can do one of the following:</p>
 <ul>
 <li>Create a new template from the packager with <code>-OutputTemplateFile</code> and subsequently run the create or update using the re-written template as the input.</li>
@@ -94,7 +94,7 @@
 </ul>
 <p>Packaging of lambdas is quite advanced (see <a class="xref" href="lambda-packager.html">Lambda Packaging</a>), and packaging of nested stacks is well tested as I use both frequently in my day job. Other resources are not so well tested, so please <a href="https://github.com/fireflycons/PSCloudFormation/issues">raise an issue</a> if you find any bugs!</p>
 <h2 id="packaging-examples">Packaging Examples</h2>
-<p>Given a template <code>template.yaml</code> containing a nested template resource with simplified except below, it can be deployed three ways. The examples below show creation of a stack, however the technique is the same for both Update and Reset.</p>
+<p>Given a template <code>template.yaml</code> containing a nested template resource with simplified excerpt below, it can be deployed three ways. The examples below show creation of a stack, however the technique is the same for both Update and Reset.</p>
 <pre><code class="lang-yaml">AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   VpcId:
@@ -109,7 +109,7 @@ Resources:
 <h3 id="directly-with-new-pscfnpackage">Directly with New-PSCFNPackage</h3>
 <p>The fact that the template contains file system references rather than S3 references will be detected and the packaging system invoked.
 The nested template will be zipped and uploaded to the <a class="xref" href="s3-usage.html">private bucket</a>, the input template rewritten to a temporary file with the S3 location of the nested template inserted and the modifed template deployed. Following deployment the temporary copy of <code>template.yaml</code> is cleaned up.</p>
-<pre><code class="lang-powershell">New-PSCFNPackage -StacName test-stack -TemplateLocation template.yaml -VpcId vpc-12345678
+<pre><code class="lang-powershell">New-PSCFNPackage -StackName test-stack -TemplateLocation template.yaml -VpcId vpc-12345678
 </code></pre>
 <h3 id="single-step-with-new-pscfnpackage">Single Step with New-PSCFNPackage</h3>
 <p>In this case we are able to target a different bucket, and apply S3 metadata to any uploaded artifacts. The input template is still written to a temporary file and cleaned up after the deployment, howerver here it is necessary to use a <a class="xref" href="parameter-files.html">parameter file</a> to pass a value for <code>VpcId</code> due to the nature of PowerShell's <a class="xref" href="dynamic-parameters.html">dynamic parameter system</a>.</p>

@@ -69,15 +69,15 @@
             <article class="content wrap" id="_content" data-uid="lambda_packager">
 <h1 id="packaging-lambdas">Packaging Lambdas</h1>
 
-<p>A feature that is glaringly absent from <code>aws cloudformation package</code> is the ability to specify dependent modules <em>outside</em> of the lambda code directory structure that should be included in the lambda zip package e.g. modules in a python venv, therefore I have come up with my own implementation of this. It works by providing a file in the same directory as the script that contains the lambda handler function that lists all the dependent modules that should be packaged. This file is called <code>lambda-dependencies</code> and can have either a <code>.yaml</code> or <code>.json</code> extension.</p>
+<p>A feature that is glaringly absent from <code>aws cloudformation package</code> is the ability to specify dependent modules <em>outside</em> of the lambda code directory structure that should be included in the lambda zip package e.g. modules in a python venv, therefore I have come up with my own implementation of this. It works by providing a file in the same directory as the script that contains the lambda handler function that lists all the dependent modules that should be packaged. This file is called <code>lambda-dependencies</code> and can be0 either YAML or JSON format.</p>
 <p>Addtionally as part of the lambda packaging process, PSCloudFormation will, where possible, validate the lambda handler defined by the function resource. The lambda code file indicated by the handler is examined to check for the presence of a method within that has the correct name (defined by the Handler property) and signature for a handler function. This is especially useful when creating Custom Resource functions, as a typo in the handler name can cause the stack deployment to lock up completely.</p>
 <h2 id="dependency-specification">Dependency Specification</h2>
 <p>The schema for this file is that it is an array of dependency objects, where a dependency object has the following fields:</p>
 <ul>
 <li><code>Location</code> - A path or an environment variable containing a path to the directory containing modules. The path may resolve to an absolute location, or a location relative to the location of the dependency file. For Python lambdas, the <code>VIRTUAL_ENV</code> environment variable is especially useful here, provided that you create the package from within your virtual env. To specify an environment variable as a location, precede the variable name with <code>$</code></li>
-<li><code>Libraries</code> - A list of module names to take from <code>Location</code>, i.e. subdirectories of <code>Location</code></li>
+<li><code>Libraries</code> - A list of module names to take from <code>Location</code>, i.e. subdirectories of, or single script files mwithin <code>Location</code></li>
 </ul>
-<p>Note that the dependency system does not currently examine modules listed in <code>lambda-dependencies</code> for any sub-dependencies. IT is up to you to identify the full dependency tree of any given module and ensure they ae all listed in the dependencies file.</p>
+<p>Note that the dependency system does not currently examine modules listed in <code>lambda-dependencies</code> for any sub-dependencies. It is up to you to identify the full dependency tree of any given module and ensure they ae all listed in the dependencies file.</p>
 <h2 id="supported-runtimes">Supported Runtimes</h2>
 <p>Currently the following lambda runtimes are supported, which are basically the script runtimes. Compiled runtimes (Java, .NET and Go) would generally have a build process which can be made to target a zip file which would contain a full lambda package, and that zip file would be referred to in the CloudFormation template.</p>
 <ul>
@@ -85,7 +85,7 @@
 <li><code>nodejs</code> - all versions supported by AWS</li>
 <li><code>ruby</code> - all versions supported by AWS</li>
 </ul>
-<p>Having said this, the PSCloudFormation packager will still correctly apply a local zip file target referenced from a template file, so for compiled languages simply point the template at the zip artifact created by the compiled project's build process.</p>
+<p>Having said this, the PSCloudFormation packager will still correctly apply a local zip file target referenced from a template file. It will, for the above supported runtimes still attempt to validate the handler by looking inside the zip file, however for compiled languages simply point the template at the zip artifact created by the compiled project's build process.</p>
 <h3 id="python">Python</h3>
 <p>The easiest way to package Python dependencies is to build your Python lambda in a <a href="https://docs.python.org/3/library/venv.html">virtual env</a> and then run PSCloudFormation cmdlets from within the virtual env, using the <code>VIRTUAL_ENV</code> environment variable in your <code>lambda-dependencies</code> file as the location for package dependencies. This environment variable is created when you activate your virtualenv.</p>
 <pre><code class="lang-yaml">- Location: &quot;$VIRTUAL_ENV&quot;
@@ -97,7 +97,7 @@
   Libraries:
   - other_library
 </code></pre>
-<p>Sample directory structure (Windows)</p>
+<p><strong>Sample directory structure (Windows)</strong></p>
 <pre><code>lambda-project
 ├──template.yaml
 ├──lambda-function
@@ -109,7 +109,8 @@
             ├── PIL
             ├── six.py
 </code></pre>
-<p>Sample directory structure (Linux/Max), where <code>X.Y</code> is the Python runtime version e.g. <code>3.6</code></p>
+<p><strong>Sample directory structure (Linux/Max)</strong></p>
+<p>...where <code>X.Y</code> is the Python runtime version e.g. <code>3.6</code></p>
 <p><strong>CAVEAT</strong>: Due to the versioned site packages in the venv, you need to develop using the same version of Python as the runtime version you intend to deploy your lambda to.</p>
 <pre><code>lambda-project
 ├──template.yaml
@@ -153,6 +154,7 @@
       Runtime: ruby2.7
 </code></pre>
 <p>You can also provide a <code>lambda-dependencies</code> file in the same directory as <code>index.rb</code> to pull additional modules from other directories outside of the lambda project.</p>
+<p><strong>CAVEAT</strong>: Due to the versioned cache directory within the bundle structure, you need to develop using the same version of Ruby as the runtime version you intend to deploy your lambda to.</p>
 <pre><code>lambda-project
 ├──template.yaml
 └──lambda-function
