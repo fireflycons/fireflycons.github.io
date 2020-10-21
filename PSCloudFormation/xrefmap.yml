@@ -1,0 +1,42 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: dynamic-parameters
+  name: Dynamic Template Parameters
+  href: articles/dynamic-parameters.html
+- uid: Get-PSCFNStackOutputs
+  name: Get-PSCFNStackOutputs
+  href: cmdlets/Get-PSCFNStackOutputs.html
+- uid: index
+  name: index
+  href: cmdlets/index.html
+- uid: lambda_packager
+  name: Lambda Packager
+  href: articles/lambda-packager.html
+- uid: New-PSCFNPackage
+  name: New-PSCFNPackage
+  href: cmdlets/New-PSCFNPackage.html
+- uid: New-PSCFNStack
+  name: New-PSCFNStack
+  href: cmdlets/New-PSCFNStack.html
+- uid: packaging
+  name: Packaging
+  href: articles/packager.html
+- uid: parameter-files
+  name: Parameter Files
+  href: articles/parameter-files.html
+- uid: private-bucket
+  name: PSCloudFormation and S3
+  href: articles/s3-usage.html
+- uid: PSCloudFormation
+  name: PSCloudFormation
+  href: cmdlets/PSCloudFormation.html
+- uid: Remove-PSCFNStack
+  name: Remove-PSCFNStack
+  href: cmdlets/Remove-PSCFNStack.html
+- uid: Reset-PSCFNStack
+  name: Reset-PSCFNStack
+  href: cmdlets/Reset-PSCFNStack.html
+- uid: Update-PSCFNStack
+  name: Update-PSCFNStack
+  href: cmdlets/Update-PSCFNStack.html

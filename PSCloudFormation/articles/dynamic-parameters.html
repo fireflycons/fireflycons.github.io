@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dynamic Template Parameters </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Dynamic Template Parameters ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="dynamic-parameters">
+<h1 id="dynamic-template-parameters">Dynamic Template Parameters</h1>
+
+<p>By utilising the PowerShell Dynamic Parameter system, it is possible to turn the parameters in the <code>Parameters</code> section of a CloudFormation template into command line arguments for the PSCloudFormation cmdlets that take a template (<code>New-PSCFNStack</code>, <code>Update-PSCFNStack</code> and <code>Reset-PSCFNStack</code>). This makes it <em>much</em> easier to pass in parameter values to the stack than with either the AWS.Tools cmdlets (where you have to give it an array of hashes), or the CLI (where you have to supply a list of key/value pairs.</p>
+<p>With dynamic parameters you get command line completion for the names of parameters in the template, plus value completion for parameters with <code>AllowedValues</code>. All parameters are also type-checked <em>before</em> sending to AWS against <code>AllowedPattern</code> where specified, and also against <code>Type</code> where specified i.e. it won't let you pass a string when a number is expected. This includes validating against AWS specific types like <code>AWS::EC2::VPC::Id</code> etc.</p>
+<p>Where a template parameter has no default, the PowerShell <code>Mandatory</code> attribute is applied to the generated parameter so PowerShell will prompt for any required parameters not present on the command line.</p>
+<h2 id="in-action">In Action</h2>
+<p>Consider the following template</p>
+<pre><code class="lang-yaml">AWSTemplateFormatVersion: '2010-09-09'
+Description: Demo Stack
+Parameters:
+  SSMParamValue:
+    Description: Value for ssm parameter
+    Type: String
+    AllowedValues:
+    - Hello
+    - World
+Resources:
+  SSMParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+        Type: String
+        Value: !Ref SSMParamValue
+</code></pre>
+<h3 id="using-autocompletion">Using Autocompletion</h3>
+<p>Note in this example how both the parameter name and the allowed values are autocompleted</p>
+<p><img src="../images/good-args.gif" alt="Good Arguments"></p>
+<h3 id="passing-an-invalid-value">Passing an Invalid Value</h3>
+<p>Here a value that is not one of the valid values is passed to the parameter. It is caught before the template is submitted to CloudFormation</p>
+<p><img src="../images/invalid-args.gif" alt="Invalide Arguments"></p>
+<h3 id="omitting-a-parameter-with-no-default">Omitting a parameter with no default</h3>
+<p>If a required parameter is omitted, this is caught. Entering <code>!?</code> as directed for help prints the <code>Description</code> of the parameter from the template if present.</p>
+<p><img src="../images/mandatory-args.gif" alt="Mandatory Arguments"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-81/docfx/articles/dynamic-parameters.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

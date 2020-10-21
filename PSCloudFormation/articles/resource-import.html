@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Importing Resources </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Importing Resources ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="importing-resources">Importing Resources</h1>
+
+<p>Resource Import is a new feature of CloudFormation as of November 2019. This allows the following:</p>
+<ul>
+<li>Detach a resource from an existing stack.</li>
+<li>Import a resource that is not part of a stack into a stack.</li>
+<li>Migrate a resource between stacks (combination of the above two operations).</li>
+</ul>
+<h2 id="how-to-detach-a-resource">How to Detach a Resource</h2>
+<ol>
+<li>Open the CloudFormation template</li>
+<li>For the resources you want to detach, you should ensure these are not referenced by other resources within the stack that you wish to retain (i.e. <code>Ref</code>, <code>DependsOn</code> etc, or indirect references).</li>
+<li>For the resources you want to detach, add the <code>DeletionPolicy</code> attribute with value of <code>Retain</code>.</li>
+</ol>
+<pre><code class="lang-yaml">AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  TestUser:
+    Type: AWS::IAM::User
+    Properties:
+      Path: /
+
+  ApplicationBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: import-bucket-123456789012
+</code></pre>
+<ol start="4">
+<li>Update the stack</li>
+<li>Remove the resource from your template</li>
+</ol>
+<pre><code class="lang-yaml">AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  TestUser:
+    Type: AWS::IAM::User
+    Properties:
+      Path: /
+</code></pre>
+<ol start="6">
+<li>Update the stack again.</li>
+</ol>
+<p>At this point, the resource <code>import-bucket-123456789012</code> still exists, but are no longer part of the orginal stack.</p>
+<h2 id="how-to-import-a-resource-using-pscloudformation">How to Import a Resource (using PSCloudFormation)</h2>
+<ol>
+<li>Create a resource import file. This is an array of resource descriptions as JSON or YAML. Each resource is described by the following properties
+<ol>
+<li><code>ResourceType</code> - The AWS type of the imported resource.</li>
+<li><code>LogicalResourceId</code> - The logical name you are giving this resource in the stack you are importing into.</li>
+<li><code>ResourceIdentifier</code> - A list of name-value pairs which identify the unattached physical resource. For instance, a bucket requires <code>BucketName</code> defined. Other resource may require additional properties.</li>
+</ol>
+</li>
+</ol>
+<pre><code class="lang-yaml">- ResourceType: AWS::S3::Bucket
+  LogicalResourceId: ApplicationBucket
+  ResourceIdentifier:
+    BucketName: import-bucket-104552851521
+</code></pre>
+<ol start="2">
+<li>Add the resource into the importing stack's template. Note how the properties in the above resource file map into the resource in the stack CloudFormation. A deletion policy attribute <em>must</em> be specified on resources to import. This can be removed later with a further update to the stack if desired. Note that you  <strong>cannot</strong> make any other changes to the stack besides the resources that are being imported themselves. This includes changing the <code>Outputs</code> section. Any further updates related to the imported resouce must be done in a subsequent update to the stack.</li>
+</ol>
+<pre><code class="lang-yaml">AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  TestUser:
+    Type: AWS::IAM::User
+    Properties:
+      Path: /
+
+  ApplicationBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: import-bucket-104552851521
+</code></pre>
+<ol start="3">
+<li>Use <code>Update-PSCFNStack</code> to update the stack, giving the path to your resource import file as argument to <code>-ResourcesToImport</code></li>
+</ol>
+<pre><code>PS H:\Dev\Git\PSCloudFormation&gt; Update-PSCFNStack -StackName test-import-stack -TemplateLocation tests\resource-import\test-import-stack.yaml -ResourcesToImport tests\resource-import\test-import-bucket.yaml -Capabilities CAPABILITY_IAM -Wait
+
+
+Creating change set PSCloudFormation-1575322246 for test-import-stack
+
+Action LogicalResourceId ResourceType    Replacement PhysicalResourceId
+------ ----------------- ------------    ----------- ------------------
+Import ApplicationBucket AWS::S3::Bucket             import-bucket-104552851521
+
+
+Begin update of test-import-stack now?
+
+[Y] Yes [N] No [?] Help (default is &quot;Yes&quot;):
+Updating stack test-import-stack
+Waiting for update to complete
+TimeStamp StackName         Logical ID        Status              Status Reason
+--------- ---------         ----------        ------              -------------
+21:31:01  test-import-stack test-import-stack IMPORT_IN_PROGRESS  User Initiated
+21:31:04  test-import-stack ApplicationBucket IMPORT_IN_PROGRESS  Resource import started.
+21:31:05  test-import-stack ApplicationBucket IMPORT_COMPLETE     Resource import completed.
+21:31:06  test-import-stack ApplicationBucket UPDATE_IN_PROGRESS  Apply stack-level tags to imported resource if applicable.
+21:31:26  test-import-stack ApplicationBucket UPDATE_COMPLETE     -
+21:31:27  test-import-stack test-import-stack IMPORT_COMPLETE     -
+arn:aws:cloudformation:eu-west-1:104552851521:stack/test-import-stack/bae2a440-154a-11ea-b2ac-069dc79e2b34
+</code></pre>
+<h2 id="further-reading">Further Reading</h2>
+<p><a href="https://aws.amazon.com/blogs/aws/new-import-existing-resources-into-a-cloudformation-stack/">https://aws.amazon.com/blogs/aws/new-import-existing-resources-into-a-cloudformation-stack/</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-81/docfx/articles/resource-import.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

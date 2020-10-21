@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PSCloudFormation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PSCloudFormation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="pscloudformation">PSCloudFormation</h1>
+
+<h2 id="what-is-it">What is it?</h2>
+<p>When I began developing templates, I quickly became frustrated with the the length of time and complexity involved with deploying a change to a template to CloudFormation. A simple one-line fix would involve either using one of the command line tools, then jumping into the console to see how the update is progressing, or using the console itself and going through the half dozen or so screens just to get the thing uploaded and submitted.</p>
+<p>When it came to more complex arrangements such as nested templates or lambda code, this just seemed to increase complexity tenfold. It could take hours to make a few changes to a template and get them successfully deployed.</p>
+<p>Whilst primarily build as a development aid, there should be no reason why it shouldn't be included as part of an automated pipeline.</p>
+<h1 id="initial-design-goals">Initial Design Goals</h1>
+<h2 id="fast-feedback">Fast Feedback</h2>
+<p>First and foremost! You make a change, you want to learn quickly if it works. For this I wanted close parity with the AWS Tools CloudFormation commands, but crucially the ability to wait while the stack operation progresses and provide feedback directly to the console in the form of the stack event messages seen in the CloudFormation console in real time. This includes interleaving events from all nested stacks in the correct chronological order.</p>
+<h2 id="easy-template-parameters">Easy Template Parameters</h2>
+<p>With PoweShell's dynamic parameter system, I saw an opportunity to parse parameters from a template and provide them directly as command line arguments to the cmdlets in this module, thus saving the mucking about required to define stack parameters to either the AWS PowerShell cmdlets or <code>aws cloudformation deploy</code>. See the section on <a class="xref" href="articles/dynamic-parameters.html">dynamic parameters</a>.</p>
+<h2 id="a-solution-to-the-limitation-on-template-size">A Solution to the Limitation on Template Size</h2>
+<p>When developing large templates, indeed if you'e a fan of the JSON syntax, templates get very large very quickly. Once the template exceeds the 51,200 byte limit you are forced to use the console to pre-upload the template or upload directly to S3 and give an S3 URL, therefore adding more time to the development cycle. To solve this I cam up with the idea of giving PSCloudFormation its own auto-created <a class="xref" href="articles/s3-usage.html">private bucket</a> such that an S3 bucket is automatically created when it is first needed and remains there for subsequent usage. Oversize templates are automatically uploaded to this bucket</p>
+<h1 id="later-enhancements">Later Enhancements</h1>
+<p>As I started to create more lambdas and stacks with nested templates it quickly became apparent that there was room for improvement in this area. Having to manually package lambdas and upload them to S3 is a pain, <code>aws cloudformation package</code> is a pain, and trying to develop inline code lambdas is also a pain plus that limits thier scope!</p>
+<p>After several iterations I think I've come up with a fairly seamless <a class="xref" href="articles/packager.html">packaging mechanism</a> with additional support for <a class="xref" href="articles/lambda-packager.html">lambda packaging</a> that includes a lot of pre-flight checks.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-81/docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

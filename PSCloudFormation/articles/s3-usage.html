@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PSCloudFormation and S3 </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PSCloudFormation and S3 ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="private-bucket">
+<h1 id="pscloudformation-and-s3">PSCloudFormation and S3</h1>
+
+<p>The CloudFormation APIs have a limitation on the maximum size of a template that can be submitted without requiring it to be uploaded to S3 first. This is currently 51,200 bytes. To make life easier on the user, this library automatically manages this for you by creating and managing its own private bucket for oversize template uploads. This bucket is also leveraged by the <a class="xref" href="packager.html">packaging system</a>.</p>
+<p>When S3 is required, this module will check for its private bucket and if not found, will attempt to create it.</p>
+<h2 id="the-private-s3-bucket">The Private S3 Bucket</h2>
+<p>The bucket is named as follows: <code>cf-templates-pscloudformation-REGION-ACCOUNTID</code> where <code>REGION</code> is the AWS Region you run the cmdlets in (e.g. eu-west-1) and <code>ACCOUNTID</code> is your AWS account number.</p>
+<p>A lifecycle configuration to delete files older than 7 days is applied to prevent buildup of old temporary files. Note that if the caller does not have the correct permission to create lifecycle polices, a warning is displayed and the bucket is created without a policy.</p>
+<h3 id="required-permissions-create">Required Permissions (Create)</h3>
+<p>If the bucket does not exist, then it is created when first needed. For bucket creation to be successful, the caller (IAM identity that runs the cmdlet) must have the following permissions</p>
+<p>Required:</p>
+<pre><code>sts:GetCallerIdentity
+s3:CreateBucket
+</code></pre>
+<p>Recommended:</p>
+<pre><code>s3:PutLifecycleConfiguration
+</code></pre>
+<h3 id="required-permission-use">Required Permission (Use)</h3>
+<p>To use the bucket, the following permissions are required. Object level permissions can target the bucket directly.</p>
+<pre><code>sts:GetCallerIdentity
+s3:GetObject
+s3:PutObject
+s3:ListBucket
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-81/docfx/articles/s3-usage.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
