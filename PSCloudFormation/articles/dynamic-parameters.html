@@ -99,6 +99,10 @@ Resources:
 <h3 id="omitting-a-parameter-with-no-default">Omitting a parameter with no default</h3>
 <p>If a required parameter is omitted, this is caught. Entering <code>!?</code> as directed for help prints the <code>Description</code> of the parameter from the template if present.</p>
 <p><img src="../images/mandatory-args.gif" alt="Mandatory Arguments"></p>
+<h2 id="update-pscfnstack-and-dynamic-argumments">Update-PSCFNStack and Dynamic Argumments</h2>
+<p>When using <code>Update-PSCFNStack</code> you only need to supply values on the command line for stack parameters you wish to change. All remaining stack paramaeters will assume their previous values.</p>
+<h2 id="piped-template-body-and-dynamic-arguments">Piped Template Body and Dynamic Arguments</h2>
+<p>If you pass a template body to one of the cmdlets via the pipeline, it is not possible to use dynamic parameter arguments at all. The cmdlets will throw an exception saying that the cmdlet has no parameter of the given name. This is because at the time the dynamic parameter processing runs in the lifecycle of the cmdlet, the content of the template is not yet known, therefore the dynamic parameters cannot be built. You must in this case use a parameter file to define the template parameters (<code>-ParameterFile</code>)</p>
 </article>
           </div>
           
