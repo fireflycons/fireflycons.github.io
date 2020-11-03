@@ -280,19 +280,6 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.ICloudFormationRunner.DeleteStackAsync
   nameWithType: ICloudFormationRunner.DeleteStackAsync
-- uid: Firefly.CloudFormation.ICloudFormationRunner.Dispose
-  name: Dispose()
-  href: api/Firefly.CloudFormation.ICloudFormationRunner.html#Firefly_CloudFormation_ICloudFormationRunner_Dispose
-  commentId: M:Firefly.CloudFormation.ICloudFormationRunner.Dispose
-  fullName: Firefly.CloudFormation.ICloudFormationRunner.Dispose()
-  nameWithType: ICloudFormationRunner.Dispose()
-- uid: Firefly.CloudFormation.ICloudFormationRunner.Dispose*
-  name: Dispose
-  href: api/Firefly.CloudFormation.ICloudFormationRunner.html#Firefly_CloudFormation_ICloudFormationRunner_Dispose_
-  commentId: Overload:Firefly.CloudFormation.ICloudFormationRunner.Dispose
-  isSpec: "True"
-  fullName: Firefly.CloudFormation.ICloudFormationRunner.Dispose
-  nameWithType: ICloudFormationRunner.Dispose
 - uid: Firefly.CloudFormation.ICloudFormationRunner.ResetStackAsync
   name: ResetStackAsync()
   href: api/Firefly.CloudFormation.ICloudFormationRunner.html#Firefly_CloudFormation_ICloudFormationRunner_ResetStackAsync

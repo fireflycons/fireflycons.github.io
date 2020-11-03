@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.CloudFormationOperations.html",
-          "hash": "jd4AJ6uqMsKObnd+5k6bEw=="
+          "hash": "DsrkXjl+jTMmPt0lD7hvKQ=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.CloudFormationRunner.html",
-          "hash": "wK8toi0VhEDPMjeh6NhSkQ=="
+          "hash": "YU0533LbKngGfP6pX76TGQ=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.IAwsClientFactory.html",
-          "hash": "lJmaCaci0ivQ1R5rE0diHQ=="
+          "hash": "s4FRASGnWBHk3IeA7fu/+Q=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.ICloudFormationContext.html",
-          "hash": "iCYUYZcszngo0N3d7mOrDg=="
+          "hash": "e2xqubnpFoMKx8wif71A9A=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.ICloudFormationRunner.html",
-          "hash": "FUpi+ubjUQbxlVCrrEhkgw=="
+          "hash": "OXLx+l89OkUeLA2wHR6X3w=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.ILogger.html",
-          "hash": "p83g3+XcetmM7s2HbbunIA=="
+          "hash": "4LuS3qr8/q+U10VO204EyA=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.IS3Util.html",
-          "hash": "TtXn6BpSSmYGGCcGLavfhQ=="
+          "hash": "RUI3xURdG2Yrj0J3amYvNQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.CloudFormationBuilder.html",
-          "hash": "Z0jymtsgZslhlUs2hxxe1w=="
+          "hash": "8qTBoDJ2Xwo0qqpvpLP3TA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.CloudFormationResult.html",
-          "hash": "eTME0l472+l+B09qDaPKmw=="
+          "hash": "/zIv+27jLwrlqWGTFyz9nw=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.InputFileSource.html",
-          "hash": "81erHEm+8FXc6PjQErP8Wg=="
+          "hash": "T4v12U3vrzce01mROHdfYQ=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.ResolutionResult.html",
-          "hash": "PObl0zrWku952ipMK02DZQ=="
+          "hash": "muLsVDrS/8LE/2VvwXF1Bg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.SerializationFormat.html",
-          "hash": "jXw5hffLC1Ns2Kslcmd8uA=="
+          "hash": "3wDy9CuFYqsV7SMXKgdH+A=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.StackOperationException.html",
-          "hash": "In8AsOfnpqXT56aCGVQ8ag=="
+          "hash": "aL3xrwzErYjKIpGyvZ3S7g=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.StackOperationResult.html",
-          "hash": "TmvqwkmE08p+xCqA3gCASA=="
+          "hash": "0HJhLdUbQcFjHuZKVT1Yvg=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.StackOperationalState.html",
-          "hash": "ZwJ2ernqAW47H2Pbhd+t7g=="
+          "hash": "VZ+rdXk2yr1fQ2CGYeJGug=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.UploadFileType.html",
-          "hash": "bVdhWNu6aUIF6luWRzx/sQ=="
+          "hash": "x02xda38TLVWcF3gkj19Fg=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Model.html",
-          "hash": "3i5prxDvAseJziwPf+aG+A=="
+          "hash": "0e1dAzvqYYbHzl3hri709w=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.IParameterFileParser.html",
-          "hash": "gDLXLSCWrKLm/6b5FRb+Tg=="
+          "hash": "BlivNU4iwRTDXGwpmz1D2Q=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.IResourceImportParser.html",
-          "hash": "jaL6aoBHPKnHI6T8dx13Cg=="
+          "hash": "aWguTTyodXAwrMC5jdO5Dg=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.ITemplateParser.html",
-          "hash": "P63hwmYJI/sjAYySp5EM0Q=="
+          "hash": "m89JdxEEIvAb2x4cfHNf9A=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.ITemplateResource.html",
-          "hash": "31GL8H2DndkpeNzrVI8ADg=="
+          "hash": "M5/HXLktXTHxF8wbYxRk7Q=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.InputFileParser.html",
-          "hash": "MJjRwIqoHoMfq2EHheEcUg=="
+          "hash": "K2zTWLJdLkgz5NpYFRt9jw=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.ParameterFileParser.html",
-          "hash": "BbiA+G292p46nWYtEg1Cyg=="
+          "hash": "zDTcr2yhzkMPyDYnK2hATg=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.ResourceImportParser.html",
-          "hash": "qlGci/CGLFWI77hICfPn5g=="
+          "hash": "ThKP7Q9B0YBT3JsEl4Mmfw=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.TemplateFileParameter.html",
-          "hash": "7WI7m9nvCUH4FycyYNm7/A=="
+          "hash": "65H/YvXWgr8mFHFuoYJQAA=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.TemplateParser.html",
-          "hash": "eUyZt4iV7vel1/GGcS+UFw=="
+          "hash": "pQ8Ks50b79C2/Q64Ai8o2A=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.TemplateResource.html",
-          "hash": "rdGKLaNKMZ14Ytb9jtdEcQ=="
+          "hash": "UbYzwhO3s6oySdQ8KTxvWg=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Parsers.html",
-          "hash": "SmgOIe5BrgG5Fv4SysFuBw=="
+          "hash": "lihguRq6PsVME50FYmKCvQ=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Resolvers.AbstractFileResolver.html",
-          "hash": "Ack78ea4bDiJooA4UrjCdw=="
+          "hash": "VNswUGU5m8UvqM6qkf/pfg=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Resolvers.IInputFileResolver.html",
-          "hash": "ZuGZxSJ++VdK6i2mic0qOQ=="
+          "hash": "UsdX2XGZIg2cTGBtv3ni0Q=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Resolvers.StackPolicyResolver.html",
-          "hash": "qRdQ49cbhLMtKwgAjFp0Aw=="
+          "hash": "YCSIohH367Sxzqp74KN5hg=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Resolvers.TemplateResolver.html",
-          "hash": "L6F3XnBU1GBaIqlM49C0Mw=="
+          "hash": "b0K2W9BqGDphqoqnrsNf3w=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Resolvers.html",
-          "hash": "NcLtniL98bd1euOQUt36Jw=="
+          "hash": "PmUAKY4aeKjHQ0u5YnwP4g=="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Utils.BaseLogger.html",
-          "hash": "IMi57lkaOfEG350X4EZmtA=="
+          "hash": "cBZY/STrjApBrKvcB9/Taw=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Utils.StringExtensions.html",
-          "hash": "nKeddek7CoRMW0GlG0o/kA=="
+          "hash": "xkp2EQX/jKN0lnJzWuZcWw=="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Utils.html",
-          "hash": "6jhwv3q4u/FSvhxlLwsUKw=="
+          "hash": "ppduSY+Kj9v1nszbC7cEhw=="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.html",
-          "hash": "D9R9G+AkimeHHD8a8W8IFw=="
+          "hash": "fquwrpdyCorM9DN8uycI7Q=="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "0EdpL6j48s0RmhLnVnqG9g=="
+          "hash": "GjQcDy2AWWWMToCPOjF/iQ=="
         }
       },
       "is_incremental": false,
@@ -480,7 +480,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ELVgnvG5mJV5SbwqLVL0FQ=="
+          "hash": "uIG7DMN42cPVOtzXhz8LNQ=="
         }
       },
       "is_incremental": false,
