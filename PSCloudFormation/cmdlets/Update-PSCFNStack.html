@@ -8,7 +8,7 @@
     <title>Update-PSCFNStack </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Update-PSCFNStack ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -87,6 +87,8 @@
 Unless -Force is specified, the user may choose to continue or abandon at this stage.
 The call does not return until the stack update has completed unless -PassThru is present, in which case it returns immediately and you can check the status of the stack via the DescribeStacks API Stack events for this template and any nested stacks are output to the console.</p>
 <p>If -Wait is present, and a stack is found to be updating as a result of another process, this command will wait for that operation to complete following the stack events, prior to submitting the change set request.</p>
+<p>While a stack is in the UPDATE_IN_PROGRESS phase, pressing ESC 3 times in the space of a second will cancel the update forcing all modifications to roll back.
+Once the state transitions to UPDATE_COMPLETE_CLEANUP_IN_PROGRESS, the update can no longer be cancelled.</p>
 <h2 id="examples">EXAMPLES</h2>
 <h3 id="example-1">EXAMPLE 1</h3>
 <pre><code>Update-PSCFNStack -StackName &quot;my-stack&quot; -TemplateBody &quot;{TEMPLATE CONTENT HERE}&quot; -PK1 PV1 -PK2 PV2
