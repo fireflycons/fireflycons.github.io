@@ -611,6 +611,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Model.CloudFormationBuilder.WithForceS3
   nameWithType: CloudFormationBuilder.WithForceS3
+- uid: Firefly.CloudFormation.Model.CloudFormationBuilder.WithIncludeNestedStacks(System.Boolean)
+  name: WithIncludeNestedStacks(Boolean)
+  href: api/Firefly.CloudFormation.Model.CloudFormationBuilder.html#Firefly_CloudFormation_Model_CloudFormationBuilder_WithIncludeNestedStacks_System_Boolean_
+  commentId: M:Firefly.CloudFormation.Model.CloudFormationBuilder.WithIncludeNestedStacks(System.Boolean)
+  fullName: Firefly.CloudFormation.Model.CloudFormationBuilder.WithIncludeNestedStacks(System.Boolean)
+  nameWithType: CloudFormationBuilder.WithIncludeNestedStacks(Boolean)
+- uid: Firefly.CloudFormation.Model.CloudFormationBuilder.WithIncludeNestedStacks*
+  name: WithIncludeNestedStacks
+  href: api/Firefly.CloudFormation.Model.CloudFormationBuilder.html#Firefly_CloudFormation_Model_CloudFormationBuilder_WithIncludeNestedStacks_
+  commentId: Overload:Firefly.CloudFormation.Model.CloudFormationBuilder.WithIncludeNestedStacks
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Model.CloudFormationBuilder.WithIncludeNestedStacks
+  nameWithType: CloudFormationBuilder.WithIncludeNestedStacks
 - uid: Firefly.CloudFormation.Model.CloudFormationBuilder.WithNotificationARNs(System.Collections.Generic.IEnumerable{System.String})
   name: WithNotificationARNs(IEnumerable<String>)
   href: api/Firefly.CloudFormation.Model.CloudFormationBuilder.html#Firefly_CloudFormation_Model_CloudFormationBuilder_WithNotificationARNs_System_Collections_Generic_IEnumerable_System_String__
