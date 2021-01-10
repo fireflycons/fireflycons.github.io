@@ -7,6 +7,34 @@ references:
   commentId: N:Firefly.CrossPlatformZip
   fullName: Firefly.CrossPlatformZip
   nameWithType: Firefly.CrossPlatformZip
+- uid: Firefly.CrossPlatformZip.Console
+  name: Firefly.CrossPlatformZip.Console
+  href: api/Firefly.CrossPlatformZip.Console.html
+  commentId: N:Firefly.CrossPlatformZip.Console
+  fullName: Firefly.CrossPlatformZip.Console
+  nameWithType: Firefly.CrossPlatformZip.Console
+- uid: Firefly.CrossPlatformZip.Console.Program
+  name: Program
+  href: api/Firefly.CrossPlatformZip.Console.Program.html
+  commentId: T:Firefly.CrossPlatformZip.Console.Program
+  fullName: Firefly.CrossPlatformZip.Console.Program
+  nameWithType: Program
+- uid: Firefly.CrossPlatformZip.Console.Program.Main(System.String,System.Nullable{Firefly.CrossPlatformZip.ZipPlatform},System.Nullable{System.Int32},System.IO.FileSystemInfo)
+  name: Main(String, Nullable<ZipPlatform>, Nullable<Int32>, FileSystemInfo)
+  href: api/Firefly.CrossPlatformZip.Console.Program.html#Firefly_CrossPlatformZip_Console_Program_Main_System_String_System_Nullable_Firefly_CrossPlatformZip_ZipPlatform__System_Nullable_System_Int32__System_IO_FileSystemInfo_
+  commentId: M:Firefly.CrossPlatformZip.Console.Program.Main(System.String,System.Nullable{Firefly.CrossPlatformZip.ZipPlatform},System.Nullable{System.Int32},System.IO.FileSystemInfo)
+  name.vb: Main(String, Nullable(Of ZipPlatform), Nullable(Of Int32), FileSystemInfo)
+  fullName: Firefly.CrossPlatformZip.Console.Program.Main(System.String, System.Nullable<Firefly.CrossPlatformZip.ZipPlatform>, System.Nullable<System.Int32>, System.IO.FileSystemInfo)
+  fullName.vb: Firefly.CrossPlatformZip.Console.Program.Main(System.String, System.Nullable(Of Firefly.CrossPlatformZip.ZipPlatform), System.Nullable(Of System.Int32), System.IO.FileSystemInfo)
+  nameWithType: Program.Main(String, Nullable<ZipPlatform>, Nullable<Int32>, FileSystemInfo)
+  nameWithType.vb: Program.Main(String, Nullable(Of ZipPlatform), Nullable(Of Int32), FileSystemInfo)
+- uid: Firefly.CrossPlatformZip.Console.Program.Main*
+  name: Main
+  href: api/Firefly.CrossPlatformZip.Console.Program.html#Firefly_CrossPlatformZip_Console_Program_Main_
+  commentId: Overload:Firefly.CrossPlatformZip.Console.Program.Main
+  isSpec: "True"
+  fullName: Firefly.CrossPlatformZip.Console.Program.Main
+  nameWithType: Program.Main
 - uid: Firefly.CrossPlatformZip.CrossPlatformZipSettings
   name: CrossPlatformZipSettings
   href: api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html

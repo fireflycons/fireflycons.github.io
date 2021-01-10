@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Articles and How-Tos </title>
+    <title>Command Line Interface </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Articles and How-Tos ">
+    <meta name="title" content="Command Line Interface ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="articles-and-how-tos">Articles and How-Tos</h1>
+<h1 id="command-line-interface">Command Line Interface</h1>
 
-<p>In this section there are a few examples of how to use this library.</p>
+<p>A super-simple command line interface is provided with the repo, but at present you need to build and deploy it yourself.</p>
+<p>It is most useful for creating zips for AWS Lambda code from a Windows environment, where the content of the zip file requires Unix file attributes and permissions. The created zip will have all file permissions as <code>rwxrwxrwx</code> and all directories as <code>drwxrwxrwx</code></p>
+<p>Only a single path argument is supported and may point to a file to zip or if the path is a directory, the content will be added recursively.</p>
+<h2 id="building-the-command-line-tool">Building the command line tool</h2>
+<p>Open a command prompt in the root of the repo, then run the following</p>
+<pre><code>dotnet build
+dotnet pack
+dotnet tool install --global --add-source ./src/Firefly.CrossPlatformZip.Console/nupkg/ Firefly.CrossPlatformZip.Console
+</code></pre>
+<p>The zip tool is now globally installed with an alias of <code>xpzip</code></p>
+<h2 id="using-the-tool">Using the tool</h2>
+<p>Enter <code>xpzip -h</code> for list of command line arguments</p>
 </article>
           </div>
           
@@ -78,7 +89,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fireflycons/CrossPlatformZip/blob/master/docfx/articles/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fireflycons/CrossPlatformZip/blob/master/docfx/articles/command-line.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

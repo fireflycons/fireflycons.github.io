@@ -5,11 +5,35 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CrossPlatformZip.Console.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CrossPlatformZip.Console.Program.html",
+          "hash": "urdxbn3M53vnBwrNhopK6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CrossPlatformZip.Console.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CrossPlatformZip.Console.html",
+          "hash": "WRkOQFL5q44APjCDL77QSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.yml",
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html",
-          "hash": "teNd5WrXnxEQK3+D306mBQ=="
+          "hash": "XjUWjJHm1mm7poH3n9A2iw=="
         }
       },
       "is_incremental": false,
@@ -21,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.DuplicateEntryException.html",
-          "hash": "7QzuI0pa5O2Md3ud/Hoegw=="
+          "hash": "bi/p2lxQ+mXkjn526R6zGQ=="
         }
       },
       "is_incremental": false,
@@ -33,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.ZipPlatform.html",
-          "hash": "B9Uu2OEaC2dRPVF27DVEYQ=="
+          "hash": "+c5fBCAPhy1+vzgb3BFoTw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.Zipper.html",
-          "hash": "l69oiAmujIH35hFOBvLnoQ=="
+          "hash": "j0/W0i+maPzrvcSY8dgshw=="
         }
       },
       "is_incremental": false,
@@ -57,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.html",
-          "hash": "mokY3CQvLBS+pweDa87uww=="
+          "hash": "CfwSF8p6LawihuGdUvaWrg=="
         }
       },
       "is_incremental": false,
@@ -69,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "+K3WEJ7ai5Eu4w3G43gqqQ=="
+          "hash": "IJcuJTcRcpsssHzSsgCO/w=="
         }
       },
       "is_incremental": false,
@@ -81,7 +105,19 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "uTuEETp1Xl1CVUKyBGTZiA=="
+          "hash": "hgZDZMFbVspCT/SdQRlRBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/command-line.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/command-line.html",
+          "hash": "W+J9tH0FYEEkqfjOleipIQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/index.html",
-          "hash": "uqBylnhDYxHD/q9vZ8oM+w=="
+          "hash": "Qe13bv2U9G8EQCdybdVGKQ=="
         }
       },
       "is_incremental": false,
@@ -105,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/lambda.html",
-          "hash": "LokFh/RzoyscSCmHMIFVAg=="
+          "hash": "AdE67/F58HLNjryksBLZrg=="
         }
       },
       "is_incremental": false,
@@ -117,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "mXBdNXEZyfe6D81t8bj7kQ=="
+          "hash": "UkEGxudOZC6n8Nw/JnWAWg=="
         }
       },
       "is_incremental": false,
@@ -129,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "AljcyDDOVmnGzc391j/yIg=="
+          "hash": "9Z0qhHLc4x6XUIldso2QwA=="
         }
       },
       "is_incremental": false,
@@ -162,13 +198,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
