@@ -4,6 +4,21 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/changesets.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changesets.html",
+          "hash": "zzU9s2SdRPUPuxgtHMXASg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/dynamic-parameters.md",
       "output": {
@@ -93,7 +108,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "19spMOkltDa/AHwfXIoXvQ=="
+          "hash": "5DhbGROGHeWeYm4TOt31rQ=="
         }
       },
       "is_incremental": false,
@@ -113,11 +128,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "cmdlets/New-PSCFNChangeset.md",
+      "output": {
+        ".html": {
+          "relative_path": "cmdlets/New-PSCFNChangeset.html",
+          "hash": "TLPW9Mh+PoyRRoCByysLyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "cmdlets/New-PSCFNPackage.md",
       "output": {
         ".html": {
           "relative_path": "cmdlets/New-PSCFNPackage.html",
-          "hash": "F/XKJAIBEiHOij1iFzB2cA=="
+          "hash": "vcpKLnag48HjE7WdplKJUQ=="
         }
       },
       "is_incremental": false,
@@ -153,7 +180,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Remove-PSCFNStack.html",
-          "hash": "gQbKNLCNafz+mqgc1KPGyg=="
+          "hash": "nc4b23H7l+vecxrPq4OQRA=="
         }
       },
       "is_incremental": false,
@@ -177,7 +204,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Update-PSCFNStack.html",
-          "hash": "upPDlsPlufCYU+6AlpWfgw=="
+          "hash": "3hhUqxV4JUPfmFvEywYuqA=="
         }
       },
       "is_incremental": false,
@@ -201,7 +228,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/toc.html",
-          "hash": "4O7wonczpZJxBfo63NOnhQ=="
+          "hash": "ZdykunIcxqWmP9oaD2XPJQ=="
         }
       },
       "is_incremental": false,
@@ -279,7 +306,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 16,
+          "total_file_count": 18,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

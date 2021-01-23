@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Changesets </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Changesets ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changesets">Changesets</h1>
+
+<p>PSCloudFormation supports extracting changeset detail to a file, the pipeline, and potentially viewing in a browser.</p>
+<h2 id="pipeline-output">Pipeline Output</h2>
+<p>The <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> cmdlet will output raw JSON to the pipeline if neither <code>-ChangesetDetail</code> not <code>-ShowInBrowser</code> arguments are present. The changest may be further processed by piping this output through <code>ConvertFrom-Json</code> to get a PowerShell object representation of the changeset detail.</p>
+<h2 id="exporting-change-detail-to-file">Exporting Change Detail to File</h2>
+<p>If a file path is given to the <code>-ChangesetDetail</code> parameter of <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, then the JSON Changes document is written to this file.</p>
+<h2 id="viewing-in-a-browser">Viewing in a Browser</h2>
+<p>Where possible, detailed changeset information may be viewed in a browser. PSCloudFormation attempts to detect whether a browser should be available. It does this by examining the operating system version and from this working out whether a GUI is present. This is done like so:</p>
+<ul>
+<li><strong>Windows</strong>. Read the registry value <code>InstallationType</code> at <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion</code>. If the result is <code>Client</code> or <code>Server</code> then a GUI is present. Use Shell Execute to invoke the generated HTML document directly resulting in it being opened by the default browser.</li>
+<li><strong>Linux</strong>. Check for environment variable <code>XDG_CURRENT_DESKTOP</code>. If present, pass the generated HTML document to <code>xdg-open</code>.</li>
+<li><strong>MacOS</strong>. On Macs a GUI is assumed always present. Pass the generated HTML document to <code>open</code>.</li>
+</ul>
+<p>When a GUI is detected, <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> provides an additional option <code>View in Browser</code> when it asks whether to apply the generated changeset. When <code>-Force</code> parameter is set, this is skipped.</p>
+<p><a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> will perform the above by addition of <code>-ShowInBrowser</code> switch argument.</p>
+<p>The HTML document contains a formatted view of each change along with the detail provided in the <code>JSON Changes</code> view in the CloudFormation console.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-96/docfx/articles/changesets.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

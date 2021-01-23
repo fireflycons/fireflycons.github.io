@@ -100,7 +100,7 @@ he exception is AWS::ApiGateway::RestApi; if you don't specify a BodyS3Location,
 </code></pre>
 <p>Reads the template, recursively walking any AWS::CloudFormation::Stack resources, uploading code artifacts and nested templates to S3, using the bucket that is auto-created by this module.</p>
 <h3 id="example-2">EXAMPLE 2</h3>
-<pre><code>New-PSCFNPackage -TemplateFile my-template.json -OutputTemplateFile my-modified-template.json -S3Bucket my-bucket -S3Prefix template-resouces
+<pre><code>New-PSCFNPackage -TemplateFile my-template.json -OutputTemplateFile my-modified-template.json -S3Bucket my-bucket -S3Prefix template-resources
 </code></pre>
 <p>Reads the template, recursively walking any AWS::CloudFormation::Stack resources, uploading code artifacts and nested templates to S3, using the specified bucket which must exist, and key prefix for all uploaded objects.</p>
 <h3 id="example-3">EXAMPLE 3</h3>

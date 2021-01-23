@@ -13,6 +13,9 @@ references:
 - uid: lambda_packager
   name: Lambda Packager
   href: articles/lambda-packager.html
+- uid: New-PSCFNChangeset
+  name: New-PSCFNChangeset
+  href: cmdlets/New-PSCFNChangeset.html
 - uid: New-PSCFNPackage
   name: New-PSCFNPackage
   href: cmdlets/New-PSCFNPackage.html

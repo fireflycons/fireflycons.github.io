@@ -83,16 +83,16 @@
 The call does not return until the stack deletion has completed unless -PassThru is present, in which case it returns immediately and you can check the status of the stack via the DescribeStacks API Stack events for this template and any nested stacks are output to the console.</p>
 <h2 id="examples">EXAMPLES</h2>
 <h3 id="example-1">EXAMPLE 1</h3>
-<pre><code>Remove-PSFNStack -StackName my-stack
+<pre><code>Remove-PSCFNStack -StackName my-stack
 </code></pre>
 <p>Deletes the specified stack</p>
 <h3 id="example-2">EXAMPLE 2</h3>
-<pre><code>Remove-PSFNStack -StackName my-stack -PassThru
+<pre><code>Remove-PSCFNStack -StackName my-stack -PassThru
 </code></pre>
 <p>Deletes the specified stack.
 Don't wait for the deletion to complete.</p>
 <h3 id="example-3">EXAMPLE 3</h3>
-<pre><code>Remove-PSFNStack -StackName my-stack -RetainResource my-bucket, my-security-group
+<pre><code>Remove-PSCFNStack -StackName my-stack -RetainResource my-bucket, my-security-group
 </code></pre>
 <p>Deletes the specified stack, retaining the specified resources.</p>
 <p>Note that the listed resources will only be retained if, and only if the stack is in a DELETE_FAILED state and the listed resources are the cause of the failure.
