@@ -69,12 +69,39 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="changesets">Changesets</h1>
 
-<p>PSCloudFormation supports extracting changeset detail to a file, the pipeline, and potentially viewing in a browser.</p>
-<h2 id="pipeline-output">Pipeline Output</h2>
+<p>PSCloudFormation supports extracting changeset detail to a file, the pipeline, and potentially viewing in a browser. It also suppports nested changeset creation (new as of re:Invent 2020).</p>
+<ul>
+<li><a href="#Cmdlets-for-Changeset-Creation">Cmdlets for Changeset Creation</a></li>
+<li><a href="#Working-with-Changesets">Working with Changesets</a>
+<ul>
+<li><a href="#Nested-Changeset">Nested Changests</a></li>
+<li><a href="#Pipeline-Output">Pipeline Output</a></li>
+<li><a href="#Exporting-Change-Detail-to-File">Exporting Change Detail to File</a></li>
+<li><a href="#Viewing-in-a-Browser">Viewing in a Browser</a></li>
+</ul>
+</li>
+<li><a href="#Caveats">Caveats</a>
+<ul>
+<li><a href="#Browser-View">Browser View</a></li>
+<li><a href="#Nested-Changeset-Creation">Nested Changeset Creation</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="cmdlets-for-changeset-creation">Cmdlets for Changeset Creation</h2>
+<ul>
+<li><a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> - Use this to create a cchangeset only for review.</li>
+<li><a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> - A changeset is automatically created and presented fo review unless the <code>-Force</code> switch is present, in which case it is executed immediately.</li>
+</ul>
+<h2 id="working-with-changesets">Working with Changesets</h2>
+<h3 id="nested-changesets">Nested Changesets</h3>
+<p>If the switch <code>-IncludeNestedStacks</code> is passed to either <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, and the given stack contains <code>AWS::CloudFomation::Stack</code> resources, changesets will be computed for these stacks also. Changes for all the stacks in the nest will be displayed.</p>
+<p>Please be aware of the <a href="#Nested-Changeset-Creation">caveat</a> below!</p>
+<h3 id="pipeline-output">Pipeline Output</h3>
 <p>The <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> cmdlet will output raw JSON to the pipeline if neither <code>-ChangesetDetail</code> not <code>-ShowInBrowser</code> arguments are present. The changest may be further processed by piping this output through <code>ConvertFrom-Json</code> to get a PowerShell object representation of the changeset detail.</p>
-<h2 id="exporting-change-detail-to-file">Exporting Change Detail to File</h2>
+<p>The JSON object is the same as that which you can see in the <code>JSON Changes</code> tab of the CloudFormation Console, with the small exception that the property names in the JSON begin with an uppercase letter.</p>
+<h3 id="exporting-change-detail-to-file">Exporting Change Detail to File</h3>
 <p>If a file path is given to the <code>-ChangesetDetail</code> parameter of <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, then the JSON Changes document is written to this file.</p>
-<h2 id="viewing-in-a-browser">Viewing in a Browser</h2>
+<h3 id="viewing-in-a-browser">Viewing in a Browser</h3>
 <p>Where possible, detailed changeset information may be viewed in a browser. PSCloudFormation attempts to detect whether a browser should be available. It does this by examining the operating system version and from this working out whether a GUI is present. This is done like so:</p>
 <ul>
 <li><strong>Windows</strong>. Read the registry value <code>InstallationType</code> at <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion</code>. If the result is <code>Client</code> or <code>Server</code> then a GUI is present. Use Shell Execute to invoke the generated HTML document directly resulting in it being opened by the default browser.</li>
@@ -84,6 +111,14 @@
 <p>When a GUI is detected, <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> provides an additional option <code>View in Browser</code> when it asks whether to apply the generated changeset. When <code>-Force</code> parameter is set, this is skipped.</p>
 <p><a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> will perform the above by addition of <code>-ShowInBrowser</code> switch argument.</p>
 <p>The HTML document contains a formatted view of each change along with the detail provided in the <code>JSON Changes</code> view in the CloudFormation console.</p>
+<p>Additionally, only relevant information from the JSON changes are diplayed. Properties that are <code>null</code> in the JSON change are hidden. Change detail is only shown for <code>Modify</code> changes, as there isn't any relevant detail for <code>Add</code> or <code>Remove</code>. Full detail is intially hidden, however a button will show to un-hide this detail where it exists.</p>
+<h2 id="caveats">Caveats</h2>
+<h3 id="browser-view">Browser View</h3>
+<p>The HTML view relies on <a href="https://jquery.com">jQuery</a> and <a href="https://getbootstrap.com">Bootstrap</a> for its layout. If you are executing thes cmdlets from a restricted network with no Internet access, these components will not download from their respective CDNs and thus the changeset display may be at least unhelpful and at worst unintelligeable. In such situations, use the <code>-ChangesetDetail</code> parameter to write JSON changes to a file and examine the file content.</p>
+<h3 id="nested-changeset-creation">Nested Changeset Creation</h3>
+<p>There is a server-side bug in this which I reported and has been acknowledged by AWS. If a nested stack has no changes, then any outputs of this nested stack are incorrectly deemed to have <em>all</em> been changed. Any other stacks in the nest which use these outputs as parameters then incorrectly show resource changes caused by these paameters.</p>
+<p>This issue renders the nested changeset feature fairly useless at present. Since the bug is server-side (i.e. within AWS itself), as soon as AWS roll out the fix, then PSCloudFormation will work with this feature without the need for a new release.</p>
+<p>AWS estimate for the fix is March 2021.</p>
 </article>
           </div>
           

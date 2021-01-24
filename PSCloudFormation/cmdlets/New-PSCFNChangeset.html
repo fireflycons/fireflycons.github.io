@@ -73,7 +73,7 @@
 <p>Calls the AWS CloudFormation CreateChangeSet API operation.</p>
 <h2 id="syntax">SYNTAX</h2>
 <pre><code>New-PSCFNChangeset [-ChangesetDetail &lt;String&gt;] [-IncludeNestedStacks] [-ResourcesToImport &lt;String&gt;]
- [-ShowInBrowser] [-Capabilities &lt;String[]&gt;] [-ForceS3] [-NotificationARNs &lt;String[]&gt;]
+ [-UsePreviousTemplate] [-ShowInBrowser] [-Capabilities &lt;String[]&gt;] [-ForceS3] [-NotificationARNs &lt;String[]&gt;]
  [-ParameterFile &lt;String&gt;] [-ResourceType &lt;String[]&gt;] [-RollbackConfiguration_MonitoringTimeInMinute &lt;Int32&gt;]
  [-RollbackConfiguration_RollbackTrigger &lt;RollbackTrigger[]&gt;] [-StackPolicyLocation &lt;String&gt;] [-Tag &lt;Tag[]&gt;]
  [-TemplateLocation &lt;String&gt;] [-ClientRequestToken &lt;String&gt;] [-Force] [-PassThru] [-RoleARN &lt;String&gt;]
@@ -92,10 +92,21 @@ When you are satisfied with the changes the change set will make, execute the ch
 AWS CloudFormation doesn't make changes until you execute the change set.
 To create a change set for the entire stack hierarchy, set IncludeNestedStacks to True.</p>
 <h2 id="examples">EXAMPLES</h2>
-<h3 id="example-1">Example 1</h3>
-<pre><code class="lang-powershell">PS C:\&gt; {{ Add example code here }}
+<h3 id="example-1">EXAMPLE 1</h3>
+<pre><code>New-PSCFNChangeset  -StackName &quot;my-stack&quot; -UsePreviousTemplate -PK1 PV1 -PK2 PV2
 </code></pre>
-<p>{{ Add example description here }}</p>
+<p>Creates a changeset for the stack my-stack and outputs the changeset detail as JSON to the pipeline.
+The template currently associated with the stack is used and updated with new customization parameters ('PK1' and 'PK2' represent the names of parameters declared in the template content, 'PV1' and 'PV2' represent the values for those parameters.</p>
+<h3 id="example-2">EXAMPLE 2</h3>
+<pre><code>New-PSCFNChangeset  -StackName &quot;my-stack&quot; -UsePreviousTemplate -PK1 PV1 -PK2 PV2 -ShowInBrowser
+</code></pre>
+<p>Creates a changeset for the stack my-stack and launches the default browser to view the changeset detail.
+The template currently associated with the stack is used and updated with new customization parameters ('PK1' and 'PK2' represent the names of parameters declared in the template content, 'PV1' and 'PV2' represent the values for those parameters.</p>
+<h3 id="example-3">EXAMPLE 3</h3>
+<pre><code>New-PSCFNChangeset  -StackName &quot;my-stack&quot; -TemplateLocation my-stack.yaml -PK1 PV1 -PK2 PV2 -ChangesetDetail my-stack-changes.json
+</code></pre>
+<p>Creates a changeset for the stack my-stack and saves the JSON changeset detail to the specified file.
+The template in my-stack.yaml is used and updated with new customization parameters ('PK1' and 'PK2' represent the names of parameters declared in the template content, 'PV1' and 'PV2' represent the values for those parameters.</p>
 <h2 id="parameters">PARAMETERS</h2>
 <h3 id="-changesetdetail">-ChangesetDetail</h3>
 <p>Specifies a path to a file into which to write detailed JSON change information.
@@ -130,8 +141,7 @@ Accept wildcard characters: False
 <p>If you created an AWS resource outside of AWS CloudFormation management, you can bring this existing resource into AWS CloudFormation management using resource import.
 You can manage your resources using AWS CloudFormation regardless of where they were created without having to delete and re-create them as part of a stack.
 Note that when performing an import, this is the only change that can happen to the stack.
-If any other resources are changed, the changeset will fail to create.
-You can specify either a string, path to a file, or URL of a object in S3 that contains the resource import body as JSON or YAML.</p>
+If any other resources are changed, the changeset will fail to create.</p>
 <p>You can specify either a string, path to a file, or URL of a object in S3 that contains the resource import body as JSON or YAML.</p>
 <pre><code class="lang-yaml">Type: String
 Parameter Sets: (All)
@@ -140,6 +150,19 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-useprevioustemplate">-UsePreviousTemplate</h3>
+<p>Reuse the existing template that is associated with the stack that you are updating.
+Conditional: You must specify only one of the following parameters: TemplateLocation or set the UsePreviousTemplate to true.</p>
+<pre><code class="lang-yaml">Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 </code></pre>
@@ -555,10 +578,12 @@ The output is always JSON.</p>
 <p>If you created an AWS resource outside of AWS CloudFormation management, you can bring this existing resource into AWS CloudFormation management using resource import.
 You can manage your resources using AWS CloudFormation regardless of where they were created without having to delete and re-create them as part of a stack.
 Note that when performing an import, this is the only change that can happen to the stack.
-If any other resources are changed, the changeset will fail to create.
-You can specify either a string, path to a file, or URL of a object in S3 that contains the resource import body as JSON or YAML.</p>
+If any other resources are changed, the changeset will fail to create.</p>
 <p>You can specify either a string, path to a file, or URL of a object in S3 that contains the resource import body as JSON or YAML.</p>
 <h3 id="systemmanagementautomationswitchparameter-1">System.Management.Automation.SwitchParameter</h3>
+<p>Reuse the existing template that is associated with the stack that you are updating.
+Conditional: You must specify only one of the following parameters: TemplateLocation or set the UsePreviousTemplate to true.</p>
+<h3 id="systemmanagementautomationswitchparameter-2">System.Management.Automation.SwitchParameter</h3>
 <p>If set and a GUI is detected, display the changeset detail in the default browser.</p>
 <h3 id="systemstring-2">System.String[]</h3>
 <p>In some cases, you must explicitly acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to create the stack.
@@ -568,7 +593,7 @@ CAPABILITY_AUTO_EXPAND Some template contain macros.
 Macros perform custom processing on templates; this can include simple actions like find-and-replace operations, all the way to extensive transformations of entire templates.
 Because of this, users typically create a change set from the processed template, so that they can review the changes resulting from the macros before actually creating the stack.
 If your stack template contains one or more macros, and you choose to create a stack directly from the processed template, without first reviewing the resulting changes in a change set, you must acknowledge this capability.</p>
-<h3 id="systemmanagementautomationswitchparameter-2">System.Management.Automation.SwitchParameter</h3>
+<h3 id="systemmanagementautomationswitchparameter-3">System.Management.Automation.SwitchParameter</h3>
 <p>If present, forces upload of a local template (file or string body) to S3, irrespective of whether the template size is over the maximum of 51,200 bytes</p>
 <h3 id="systemstring-3">System.String[]</h3>
 <p>The Simple Notification Service (SNS) topic ARNs to publish stack related events.
@@ -622,10 +647,10 @@ For example, if you execute a CreateStack operation with the token token1, then 
 In the console, stack operations display the client request token on the Events tab.
 Stack operations that are initiated from the console use the token format Console-StackOperation-ID, which helps you easily identify the stack operation .
 For example, if you create a stack using the console, each stack event would be assigned the same token in the following format: Console-CreateStack-7f59c3cf-00d2-40c7-b2ff-e75db0987002.</p>
-<h3 id="systemmanagementautomationswitchparameter-3">System.Management.Automation.SwitchParameter</h3>
+<h3 id="systemmanagementautomationswitchparameter-4">System.Management.Automation.SwitchParameter</h3>
 <p>This parameter overrides confirmation prompts to force the cmdlet to continue its operation.
 This parameter should always be used with caution.</p>
-<h3 id="systemmanagementautomationswitchparameter-4">System.Management.Automation.SwitchParameter</h3>
+<h3 id="systemmanagementautomationswitchparameter-5">System.Management.Automation.SwitchParameter</h3>
 <p>If this is set, then the operation returns immediately after submitting the request to CloudFormation.
 If not set, then the operation is followed to completion, with stack events being output to the console.</p>
 <h3 id="systemstring-9">System.String</h3>
@@ -687,6 +712,10 @@ if using LocalStack or some other AWS emulator or a VPC endpoint from an EC2 ins
 <h2 id="outputs">OUTPUTS</h2>
 <h2 id="notes">NOTES</h2>
 <h2 id="related-links">RELATED LINKS</h2>
+<p><a href="https://fireflycons.github.io/PSCloudFormation/articles/s3-usage.html">PSCloudFormation private S3 bucket</a></p>
+<p><a href="https://fireflycons.github.io/PSCloudFormation/articles/resource-import.html">Resource Import (PSCloudFormation)</a></p>
+<p><a href="(https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html)">Resource Import (AWS docs)</a></p>
+<p><a href="https://fireflycons.github.io/PSCloudFormation/articles/changesets.html">Changeset documentation (PSCloudFormation)</a></p>
 </article>
           </div>
           
