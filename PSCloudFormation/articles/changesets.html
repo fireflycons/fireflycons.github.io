@@ -116,7 +116,7 @@
 <h3 id="browser-view">Browser View</h3>
 <p>The HTML view relies on <a href="https://jquery.com">jQuery</a> and <a href="https://getbootstrap.com">Bootstrap</a> for its layout. If you are executing thes cmdlets from a restricted network with no Internet access, these components will not download from their respective CDNs and thus the changeset display may be at least unhelpful and at worst unintelligeable. In such situations, use the <code>-ChangesetDetail</code> parameter to write JSON changes to a file and examine the file content.</p>
 <h3 id="nested-changeset-creation">Nested Changeset Creation</h3>
-<p>There is a server-side bug in this which I reported and has been acknowledged by AWS. If a nested stack has no changes, then any outputs of this nested stack are incorrectly deemed to have <em>all</em> been changed. Any other stacks in the nest which use these outputs as parameters then incorrectly show resource changes caused by these paameters.</p>
+<p>There is a <a href="https://github.com/fireflycons/aws-nested-changeset-bug">server-side bug in this which I reported</a> and has been acknowledged by AWS. If a nested stack has no changes, then any outputs of this nested stack are incorrectly deemed to have <em>all</em> been changed. Any other stacks in the nest which use these outputs as parameters then incorrectly show resource changes caused by these paameters.</p>
 <p>This issue renders the nested changeset feature fairly useless at present. Since the bug is server-side (i.e. within AWS itself), as soon as AWS roll out the fix, then PSCloudFormation will work with this feature without the need for a new release.</p>
 <p>AWS estimate for the fix is March 2021.</p>
 </article>
