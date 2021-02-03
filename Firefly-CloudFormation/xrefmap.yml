@@ -853,6 +853,19 @@ references:
   commentId: T:Firefly.CloudFormation.Model.CloudFormationResult
   fullName: Firefly.CloudFormation.Model.CloudFormationResult
   nameWithType: CloudFormationResult
+- uid: Firefly.CloudFormation.Model.CloudFormationResult.ChangesetResponse
+  name: ChangesetResponse
+  href: api/Firefly.CloudFormation.Model.CloudFormationResult.html#Firefly_CloudFormation_Model_CloudFormationResult_ChangesetResponse
+  commentId: P:Firefly.CloudFormation.Model.CloudFormationResult.ChangesetResponse
+  fullName: Firefly.CloudFormation.Model.CloudFormationResult.ChangesetResponse
+  nameWithType: CloudFormationResult.ChangesetResponse
+- uid: Firefly.CloudFormation.Model.CloudFormationResult.ChangesetResponse*
+  name: ChangesetResponse
+  href: api/Firefly.CloudFormation.Model.CloudFormationResult.html#Firefly_CloudFormation_Model_CloudFormationResult_ChangesetResponse_
+  commentId: Overload:Firefly.CloudFormation.Model.CloudFormationResult.ChangesetResponse
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Model.CloudFormationResult.ChangesetResponse
+  nameWithType: CloudFormationResult.ChangesetResponse
 - uid: Firefly.CloudFormation.Model.CloudFormationResult.StackArn
   name: StackArn
   href: api/Firefly.CloudFormation.Model.CloudFormationResult.html#Firefly_CloudFormation_Model_CloudFormationResult_StackArn
