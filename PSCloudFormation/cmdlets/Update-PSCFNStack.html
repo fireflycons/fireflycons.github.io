@@ -192,8 +192,11 @@ The cmdlet doesn't have a return value by default.
 Specifying 'arn' will return the stack's ARN.
 Specifying 'result' will return the stack operation result.
 Specifying 'outputs' will return any stack outputs as a hashtable.
-Specifying '*' will return a hash table containing a key for each of the above.
-Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.</p>
+Specifying 'ChangesetArn' will return the changeset's ARN.
+Specifying '*' will return a hash table containing a key for each of the preceding named outputs.
+Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.
+Note that not all parameters are available, e.g.
+credential parameters.</p>
 <pre><code class="lang-yaml">Type: String
 Parameter Sets: (All)
 Aliases:
@@ -633,8 +636,11 @@ The cmdlet doesn't have a return value by default.
 Specifying 'arn' will return the stack's ARN.
 Specifying 'result' will return the stack operation result.
 Specifying 'outputs' will return any stack outputs as a hashtable.
-Specifying '*' will return a hash table containing a key for each of the above.
-Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.</p>
+Specifying 'ChangesetArn' will return the changeset's ARN.
+Specifying '*' will return a hash table containing a key for each of the preceding named outputs.
+Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.
+Note that not all parameters are available, e.g.
+credential parameters.</p>
 <h3 id="systemmanagementautomationswitchparameter-2">System.Management.Automation.SwitchParameter</h3>
 <p>If set, and the target stack is found to have an operation already in progress, then the command waits until that operation completes, printing out stack events as it goes.</p>
 <h3 id="systemstring-4">System.String[]</h3>

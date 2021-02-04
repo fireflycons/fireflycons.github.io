@@ -118,7 +118,9 @@ The cmdlet doesn't have a return value by default.
 Specifying 'arn' will return the stack's ARN.
 Specifying 'result' will return the stack operation result.
 Specifying '*' will return a hash table containing a key for each of the above.
-Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.</p>
+Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.
+Note that not all parameters are available, e.g.
+credential parameters.</p>
 <pre><code class="lang-yaml">Type: String
 Parameter Sets: (All)
 Aliases:
@@ -373,7 +375,9 @@ The cmdlet doesn't have a return value by default.
 Specifying 'arn' will return the stack's ARN.
 Specifying 'result' will return the stack operation result.
 Specifying '*' will return a hash table containing a key for each of the above.
-Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.</p>
+Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.
+Note that not all parameters are available, e.g.
+credential parameters.</p>
 <h3 id="systemstring-2">System.String</h3>
 <p>A unique identifier for this CreateStack request.
 Specify this token if you plan to retry requests so that AWS CloudFormation knows that you're not attempting to create a stack with the same name.

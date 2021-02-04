@@ -165,8 +165,10 @@ The cmdlet doesn't have a return value by default.
 Specifying 'arn' will return the stack's ARN.
 Specifying 'result' will return the stack operation result.
 Specifying 'outputs' will return any stack outputs as a hashtable.
-Specifying '*' will return a hash table containing a key for each of the above.
-Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.</p>
+Specifying '*' will return a hash table containing a key for each of the preceding named outputs.
+Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.
+Note that not all parameters are available, e.g.
+credential parameters.</p>
 <pre><code class="lang-yaml">Type: String
 Parameter Sets: (All)
 Aliases:
@@ -570,8 +572,10 @@ The cmdlet doesn't have a return value by default.
 Specifying 'arn' will return the stack's ARN.
 Specifying 'result' will return the stack operation result.
 Specifying 'outputs' will return any stack outputs as a hashtable.
-Specifying '*' will return a hash table containing a key for each of the above.
-Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.</p>
+Specifying '*' will return a hash table containing a key for each of the preceding named outputs.
+Specifying -Select '^ParameterName' will result in the cmdlet returning the selected cmdlet parameter value.
+Note that not all parameters are available, e.g.
+credential parameters.</p>
 <h3 id="systemstring-1">System.String[]</h3>
 <p>In some cases, you must explicitly acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to create the stack.
 CAPABILITY_IAM and CAPABILITY_NAMED_IAM Some stack templates might include resources that can affect permissions in your AWS account; for example, by creating new AWS Identity and Access Management (IAM) users.
