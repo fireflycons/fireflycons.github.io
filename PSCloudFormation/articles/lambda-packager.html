@@ -87,16 +87,6 @@
 </ul>
 <p>Having said this, the PSCloudFormation packager will still correctly apply a local zip file target referenced from a template file. It will, for the above supported runtimes still attempt to validate the handler by looking inside the zip file, however for compiled languages simply point the template at the zip artifact created by the compiled project's build process.</p>
 <h3 id="python">Python</h3>
-<p>The easiest way to package Python dependencies is to build your Python lambda in a <a href="https://docs.python.org/3/library/venv.html">virtual env</a> and then run PSCloudFormation cmdlets from within the virtual env, using the <code>VIRTUAL_ENV</code> environment variable in your <code>lambda-dependencies</code> file as the location for package dependencies. This environment variable is created when you activate your virtualenv.</p>
-<pre><code class="lang-yaml">- Location: &quot;$VIRTUAL_ENV&quot;
-  Libraries:
-  - yaml
-  - PIL
-  - six
-- Location: /some/other/location
-  Libraries:
-  - other_library
-</code></pre>
 <p><strong>Sample directory structure (Windows)</strong></p>
 <pre><code>lambda-project
 ├──template.yaml
@@ -111,7 +101,7 @@
 </code></pre>
 <p><strong>Sample directory structure (Linux/Max)</strong></p>
 <p>...where <code>X.Y</code> is the Python runtime version e.g. <code>3.6</code></p>
-<p><strong>CAVEAT</strong>: Due to the versioned site packages in the venv, you need to develop using the same version of Python as the runtime version you intend to deploy your lambda to.</p>
+<p><strong>CAVEAT</strong>: Due to the versioned site packages in the venv, you must develop using the same version of Python as the runtime version you intend to deploy your lambda to.</p>
 <pre><code>lambda-project
 ├──template.yaml
 ├──lambda-function
@@ -124,6 +114,29 @@
                 ├── PIL
                 ├── six.py
 </code></pre>
+<h4 id="using-pscloudformation-dependencies">Using PSCloudFormation dependencies</h4>
+<p>The easiest way to package Python dependencies is to build your Python lambda in a <a href="https://docs.python.org/3/library/venv.html">virtual env</a> and then run PSCloudFormation cmdlets from within the virtual env, using the <code>VIRTUAL_ENV</code> environment variable in your <code>lambda-dependencies</code> file as the location for package dependencies. This environment variable is created when you activate your virtualenv.</p>
+<p>Note that for this mechanism you must list all dependencies, including dependencies of dependencies. This mechanism does not walk the dependency tree of each package listed in <code>Libraries</code>. Note also that <code>Libraries</code> refers to files or directories, <em>not</em> package names therefore specifying <code>PyYAML</code> will <em>not</em> package any files!</p>
+<pre><code class="lang-yaml">- Location: &quot;$VIRTUAL_ENV&quot;
+  Libraries:
+  - yaml
+  - PIL
+  - six
+- Location: /some/other/location
+  Libraries:
+  - other_library
+</code></pre>
+<h4 id="using-requirementstxt">Using requirements.txt</h4>
+<p><strong>Experimental</strong> For this you must have a <a href="https://docs.python.org/3/library/venv.html">virtual env</a> active in your environment when you run PSCloudFormation cmdlets.</p>
+<p>List the lambda's dependencies in a <code>requirements.txt</code> file in the root directory of the lambda function code. Packages listed in <code>requirements.txt</code> that are present in the AWS execution environment such as <code>boto3</code> and its dependencies will be skipped for packaging to reduce the size of the package zip. To see what is being skipped, run with <code>-Verbose</code> switch.</p>
+<p>For each listed dependency, it is looked up in the virtual env and the content and sub-dependencies are recursively located through each package's dist-info files.</p>
+<p>A parser is employed to evaluate <a href="https://www.python.org/dev/peps/pep-0508/#environment-markers">marker expressions</a> applied to <code>Requires-Dist:</code> statements in <code>METADATA</code> files. This probably does not support <em>all</em> possible grammar in these logical statements, but the unit tests cover many cases I've found. If a statement fails to parse but is in your opinion syntactically correct or if a sub-dependency is not included that should have been, please raise an issue. As a workaround, fall back to <a href="#using-pscloudformation-dependencies">PSCloudFormation dependencies</a>.</p>
+<p>The following assumptions are made:</p>
+<ul>
+<li>Your virtual env contains all the dependencies your lambda requires. The packager will not <code>pip install</code> any missing ones.</li>
+<li>Versions of these dependencies are correct for your lambda.</li>
+<li>When evaluating sub-dependencies via package <code>METADATA</code> files, marker variables such as <code>os_name</code>, <code>sys_platform</code> etc. evaluate to values consistent with the lambda execution environment being Amazon Linux 2. <code>python_version</code> evaluates to the version targeted by your lambda resource's <code>Runtime</code> property. <code>extra</code> is always assumed (possibly incorrectly) undefined, thus any <code>extra == 'package'</code> will evaulate to <code>false</code>.</li>
+</ul>
 <h3 id="nodejs">NodeJS</h3>
 <p>Given a directory structure for a lambda project as below, the easiest way to package the lambda with dependencies is to specify the lambda function's directory in the CloudFormation template. Packager will then recursively package all the included node modules, e.g.</p>
 <pre><code class="lang-yaml">  LambdaFunction:
