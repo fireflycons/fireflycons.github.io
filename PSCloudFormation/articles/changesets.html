@@ -8,7 +8,7 @@
     <title>Changesets </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Changesets ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,6 +93,38 @@
 <li><a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> - A changeset is automatically created and presented fo review unless the <code>-Force</code> switch is present, in which case it is executed immediately.</li>
 </ul>
 <h2 id="working-with-changesets">Working with Changesets</h2>
+<h3 id="changeset-view">Changeset View</h3>
+<p>When a changeset is created, it is presented to the console for review. This contains the usual columns as displayed in the changeset viewer on the AWS console, with the addition of an extra column that describes the scope of the resource change for a <code>Modify</code> action. This is a comma separated list of single characters with the following meaning</p>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td><code>CreationPolicy</code> is being changed</td>
+</tr>
+<tr>
+<td>M</td>
+<td><code>Metadata</code> is being changed</td>
+</tr>
+<tr>
+<td>P</td>
+<td>One or more resource properties are being changed</td>
+</tr>
+<tr>
+<td>T</td>
+<td>One or more tags are being changed</td>
+</tr>
+<tr>
+<td>U</td>
+<td><code>UpdatePolicy</code> is being changed</td>
+</tr>
+</tbody>
+</table>
 <h3 id="nested-changesets">Nested Changesets</h3>
 <p>If the switch <code>-IncludeNestedStacks</code> is passed to either <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, and the given stack contains <code>AWS::CloudFomation::Stack</code> resources, changesets will be computed for these stacks also. Changes for all the stacks in the nest will be displayed.</p>
 <p>Please be aware of the <a href="#Nested-Changeset-Creation">caveat</a> below!</p>
