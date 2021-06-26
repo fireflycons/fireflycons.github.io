@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CloudFormationRunner
    ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -198,7 +198,7 @@ To construct this object, get a builder instance by calling <a class="xref" href
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;CloudFormationResult&gt; CreateStackAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;CloudFormationResult&gt; CreateStackAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -230,7 +230,7 @@ To construct this object, get a builder instance by calling <a class="xref" href
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;CloudFormationResult&gt; DeleteStackAsync(Func&lt;bool&gt; invalidRetentionConfirmationFunc = null, Func&lt;bool&gt; queryDeleteStackFunc = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;CloudFormationResult&gt; DeleteStackAsync(Func&lt;bool&gt; invalidRetentionConfirmationFunc = null, Func&lt;bool&gt; queryDeleteStackFunc = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -311,7 +311,7 @@ waits for that to complete, then calls <a class="xref" href="Firefly.CloudFormat
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;CloudFormationResult&gt; ResetStackAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;CloudFormationResult&gt; ResetStackAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -343,7 +343,7 @@ waits for that to complete, then calls <a class="xref" href="Firefly.CloudFormat
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;CloudFormationResult&gt; UpdateStackAsync(Func&lt;DescribeChangeSetResponse, bool&gt; confirmationFunc)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;CloudFormationResult&gt; UpdateStackAsync(Func&lt;DescribeChangeSetResponse, bool&gt; confirmationFunc)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
