@@ -596,6 +596,18 @@ references:
   commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.IO.Stream,System.String)
   fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.TempFile(System.IO.Stream, System.String)
   nameWithType: TempFile.TempFile(Stream, String)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.String)
+  name: TempFile(String)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.TempFile(System.String)
+  nameWithType: TempFile.TempFile(String)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.String,System.String)
+  name: TempFile(String, String)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_System_String_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor(System.String,System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.TempFile(System.String, System.String)
+  nameWithType: TempFile.TempFile(String, String)
 - uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.#ctor*
   name: TempFile
   href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile__ctor_
@@ -648,6 +660,25 @@ references:
   fullName.vb: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Widening
   nameWithType: TempFile.Implicit
   nameWithType.vb: TempFile.Widening
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write(System.IO.Stream)
+  name: Write(Stream)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_Write_System_IO_Stream_
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write(System.IO.Stream)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write(System.IO.Stream)
+  nameWithType: TempFile.Write(Stream)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write(System.String)
+  name: Write(String)
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_Write_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write(System.String)
+  nameWithType: TempFile.Write(String)
+- uid: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write*
+  name: Write
+  href: api/Firefly.EmbeddedResourceLoader.Materialization.TempFile.html#Firefly_EmbeddedResourceLoader_Materialization_TempFile_Write_
+  commentId: Overload:Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write
+  isSpec: "True"
+  fullName: Firefly.EmbeddedResourceLoader.Materialization.TempFile.Write
+  nameWithType: TempFile.Write
 - uid: Firefly.EmbeddedResourceLoader.ResourceFormat
   name: ResourceFormat
   href: api/Firefly.EmbeddedResourceLoader.ResourceFormat.html
