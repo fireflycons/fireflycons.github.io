@@ -142,15 +142,57 @@
 </ul>
 <p>When a GUI is detected, <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> provides an additional option <code>View in Browser</code> when it asks whether to apply the generated changeset. When <code>-Force</code> parameter is set, this is skipped.</p>
 <p><a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> will perform the above by addition of <code>-ShowInBrowser</code> switch argument.</p>
-<p>The HTML document contains a formatted view of each change along with the detail provided in the <code>JSON Changes</code> view in the CloudFormation console.</p>
+<p>The HTML document contains a formatted view of each change along with the detail provided in the <code>JSON Changes</code> view in the CloudFormation console. A graph of relationships between modified resouces is also provided. This has the following key</p>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solid box, green font</td>
+<td>New resource.</td>
+</tr>
+<tr>
+<td>Dashed box, red font</td>
+<td>Resource is being deleted.</td>
+</tr>
+<tr>
+<td>Box, green fill</td>
+<td>Resource is being modified, without replacement.</td>
+</tr>
+<tr>
+<td>Box, amber fill</td>
+<td>Resource is being modified, conditional replacement.</td>
+</tr>
+<tr>
+<td>Box, red fill</td>
+<td>Resource is being modified, and will be REPLACED.</td>
+</tr>
+<tr>
+<td>Diamond</td>
+<td>A parameter. Text is the parameter's name.</td>
+</tr>
+<tr>
+<td>Ellipse</td>
+<td>Direct modification, e.g. user changed a property directly in the template.</td>
+</tr>
+<tr>
+<td>Connectors</td>
+<td>Label shows property being changed on target resource.</td>
+</tr>
+</tbody>
+</table>
 <p>Additionally, only relevant information from the JSON changes are diplayed. Properties that are <code>null</code> in the JSON change are hidden. Change detail is only shown for <code>Modify</code> changes, as there isn't any relevant detail for <code>Add</code> or <code>Remove</code>. Full detail is intially hidden, however a button will show to un-hide this detail where it exists.</p>
 <h2 id="caveats">Caveats</h2>
 <h3 id="browser-view">Browser View</h3>
 <p>The HTML view relies on <a href="https://jquery.com">jQuery</a> and <a href="https://getbootstrap.com">Bootstrap</a> for its layout. If you are executing thes cmdlets from a restricted network with no Internet access, these components will not download from their respective CDNs and thus the changeset display may be at least unhelpful and at worst unintelligeable. In such situations, use the <code>-ChangesetDetail</code> parameter to write JSON changes to a file and examine the file content.</p>
 <h3 id="nested-changeset-creation">Nested Changeset Creation</h3>
-<p>There is a <a href="https://github.com/fireflycons/aws-nested-changeset-bug">server-side bug in this which I reported</a> and has been acknowledged by AWS. If a nested stack has no changes, then any outputs of this nested stack are incorrectly deemed to have <em>all</em> been changed. Any other stacks in the nest which use these outputs as parameters then incorrectly show resource changes caused by these paameters.</p>
+<p>There is a <a href="https://github.com/fireflycons/aws-nested-changeset-bug">server-side bug in this which I reported</a> back in Dec 2020 and has been acknowledged by AWS. If a nested stack has no changes, then any outputs of this nested stack are incorrectly deemed to have <em>all</em> been changed. Any other stacks in the nest which use these outputs as parameters then incorrectly show resource changes caused by these paameters.</p>
 <p>This issue renders the nested changeset feature fairly useless at present. Since the bug is server-side (i.e. within AWS itself), as soon as AWS roll out the fix, then PSCloudFormation will work with this feature without the need for a new release.</p>
-<p>AWS estimate for the fix is March 2021.</p>
+<p>AWS have still not fixed this as of July 2021!</p>
 </article>
           </div>
           
