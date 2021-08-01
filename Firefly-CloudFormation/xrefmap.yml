@@ -1991,6 +1991,12 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Parsers.TemplateResource.GetResourcePropertyValue
   nameWithType: TemplateResource.GetResourcePropertyValue
+- uid: Firefly.CloudFormation.Parsers.TemplateResource.IncludeMacro
+  name: IncludeMacro
+  href: api/Firefly.CloudFormation.Parsers.TemplateResource.html#Firefly_CloudFormation_Parsers_TemplateResource_IncludeMacro
+  commentId: F:Firefly.CloudFormation.Parsers.TemplateResource.IncludeMacro
+  fullName: Firefly.CloudFormation.Parsers.TemplateResource.IncludeMacro
+  nameWithType: TemplateResource.IncludeMacro
 - uid: Firefly.CloudFormation.Parsers.TemplateResource.LogicalName
   name: LogicalName
   href: api/Firefly.CloudFormation.Parsers.TemplateResource.html#Firefly_CloudFormation_Parsers_TemplateResource_LogicalName
