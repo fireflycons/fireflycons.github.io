@@ -65,6 +65,32 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.CloudFormationOperations.GetStackOutputsAsync
   nameWithType: CloudFormationOperations.GetStackOutputsAsync
+- uid: Firefly.CloudFormation.CloudFormationOperations.GetStackResources(System.String)
+  name: GetStackResources(String)
+  href: api/Firefly.CloudFormation.CloudFormationOperations.html#Firefly_CloudFormation_CloudFormationOperations_GetStackResources_System_String_
+  commentId: M:Firefly.CloudFormation.CloudFormationOperations.GetStackResources(System.String)
+  fullName: Firefly.CloudFormation.CloudFormationOperations.GetStackResources(System.String)
+  nameWithType: CloudFormationOperations.GetStackResources(String)
+- uid: Firefly.CloudFormation.CloudFormationOperations.GetStackResources*
+  name: GetStackResources
+  href: api/Firefly.CloudFormation.CloudFormationOperations.html#Firefly_CloudFormation_CloudFormationOperations_GetStackResources_
+  commentId: Overload:Firefly.CloudFormation.CloudFormationOperations.GetStackResources
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.CloudFormationOperations.GetStackResources
+  nameWithType: CloudFormationOperations.GetStackResources
+- uid: Firefly.CloudFormation.CloudFormationOperations.GetTemplateSummary(System.String)
+  name: GetTemplateSummary(String)
+  href: api/Firefly.CloudFormation.CloudFormationOperations.html#Firefly_CloudFormation_CloudFormationOperations_GetTemplateSummary_System_String_
+  commentId: M:Firefly.CloudFormation.CloudFormationOperations.GetTemplateSummary(System.String)
+  fullName: Firefly.CloudFormation.CloudFormationOperations.GetTemplateSummary(System.String)
+  nameWithType: CloudFormationOperations.GetTemplateSummary(String)
+- uid: Firefly.CloudFormation.CloudFormationOperations.GetTemplateSummary*
+  name: GetTemplateSummary
+  href: api/Firefly.CloudFormation.CloudFormationOperations.html#Firefly_CloudFormation_CloudFormationOperations_GetTemplateSummary_
+  commentId: Overload:Firefly.CloudFormation.CloudFormationOperations.GetTemplateSummary
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.CloudFormationOperations.GetTemplateSummary
+  nameWithType: CloudFormationOperations.GetTemplateSummary
 - uid: Firefly.CloudFormation.CloudFormationRunner
   name: CloudFormationRunner
   href: api/Firefly.CloudFormation.CloudFormationRunner.html
