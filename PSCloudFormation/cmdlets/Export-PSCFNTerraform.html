@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Get-PSCFNStackOutputs </title>
+    <title>Export-PSCFNTerraform </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Get-PSCFNStackOutputs ">
+    <meta name="title" content="Export-PSCFNTerraform ">
     <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,102 +66,29 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Get-PSCFNStackOutputs">
-<h1 id="get-pscfnstackoutputs">Get-PSCFNStackOutputs</h1>
+            <article class="content wrap" id="_content" data-uid="Export-PSCFNTerraform">
+<h1 id="export-pscfnterraform">Export-PSCFNTerraform</h1>
 
 <h2 id="synopsis">SYNOPSIS</h2>
-<p>Get the outputs of a stack in various formats</p>
+<p>Export an existing CloudFormation stack to Terraform</p>
 <h2 id="syntax">SYNTAX</h2>
-<h3 id="imports">Imports</h3>
-<pre><code>Get-PSCFNStackOutputs [-AsCrossStackReferences] [-Format &lt;String&gt;] [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;]
- [-Credential &lt;AWSCredentials&gt;] [-EndpointUrl &lt;String&gt;] [-NetworkCredential &lt;PSCredential&gt;]
- [-ProfileLocation &lt;String&gt;] [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;] [-S3EndpointUrl &lt;String&gt;]
- [-SecretKey &lt;String&gt;] [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
-</code></pre>
-<h3 id="hash">Hash</h3>
-<pre><code>Get-PSCFNStackOutputs [-AsHashTable] [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;] [-Credential &lt;AWSCredentials&gt;]
- [-EndpointUrl &lt;String&gt;] [-NetworkCredential &lt;PSCredential&gt;] [-ProfileLocation &lt;String&gt;]
- [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;] [-S3EndpointUrl &lt;String&gt;] [-SecretKey &lt;String&gt;]
- [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
-</code></pre>
-<h3 id="parameters">Parameters</h3>
-<pre><code>Get-PSCFNStackOutputs [-AsParameterBlock] -Format &lt;String&gt; [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;]
+<pre><code>Export-PSCFNTerraform [-StackName] &lt;String&gt; -WorkspaceDirectory &lt;String&gt; [-Force] [-AccessKey &lt;String&gt;]
  [-Credential &lt;AWSCredentials&gt;] [-EndpointUrl &lt;String&gt;] [-NetworkCredential &lt;PSCredential&gt;]
  [-ProfileLocation &lt;String&gt;] [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;] [-S3EndpointUrl &lt;String&gt;]
  [-SecretKey &lt;String&gt;] [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
-<p>This cmdlet can be used to assist creation of new CloudFormation templates that refer to the outputs of another stack.
-It can be used to generate either mapping or parameter blocks based on these outputs by converting the returned object to JSON or YAML</p>
+<p>Reads the CloudFormation stack and exports as many of its resources as possible to a Terraform workspace.
+This provides a starting position for migration of stacks to Terraform.</p>
+<p>Once the resource ownership has been passed to Terraform, all the resources within the CloudFormation template should have their deletion policy set to Retain, then the CloudFormation stack deleted, thus leaving the resources intact.</p>
 <h2 id="examples">EXAMPLES</h2>
-<h3 id="example-1">EXAMPLE 1</h3>
-<pre><code>$stackOutputs = Get-PSCFNStackOutputs -StackName my-stack -AsHashTable
+<h3 id="example-1">Example 1</h3>
+<pre><code class="lang-powershell">PS C:\&gt; {{ Add example code here }}
 </code></pre>
-<p>Retrieves the outputs of the given stack as a hashtable of output key and output value.</p>
-<h2 id="parameters-1">PARAMETERS</h2>
-<h3 id="-ascrossstackreferences">-AsCrossStackReferences</h3>
-<p>If set, returned object is formatted as a set of Fn::ImportValue statements, with any text matching the stack name within the output's ExportName being replaced with a placeholder generated from the stack name with the word 'Stack' appended.
-Make this a parameter to your new stack.</p>
-<p>Whilst the result output is not much use as it is, the individual elements can be copied and pasted in where an Fn::ImportValue statements for that parameter would be used.</p>
-<pre><code class="lang-yaml">Type: SwitchParameter
-Parameter Sets: Imports
-Aliases:
-
-Required: True
-Position: Named
-Default value: False
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-</code></pre>
-<h3 id="-ashashtable">-AsHashTable</h3>
-<p>If set (default), returned object is a hash table - key/value pairs for each stack output.</p>
-<pre><code class="lang-yaml">Type: SwitchParameter
-Parameter Sets: Hash
-Aliases:
-
-Required: True
-Position: Named
-Default value: False
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-</code></pre>
-<h3 id="-asparameterblock">-AsParameterBlock</h3>
-<p>If set, returned object is formatted as a CloudFormation parameter block.</p>
-<pre><code class="lang-yaml">Type: SwitchParameter
-Parameter Sets: Parameters
-Aliases:
-
-Required: True
-Position: Named
-Default value: False
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-</code></pre>
-<h3 id="-format">-Format</h3>
-<p>Sets how output of parameters for CloudFormation template fragments should be formatted.</p>
-<pre><code class="lang-yaml">Type: String
-Parameter Sets: Imports
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-</code></pre>
-<pre><code class="lang-yaml">Type: String
-Parameter Sets: Parameters
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-</code></pre>
+<p>{{ Add example description here }}</p>
+<h2 id="parameters">PARAMETERS</h2>
 <h3 id="-stackname">-StackName</h3>
-<p>One or more stacks to process.
-One object is produced for each stack</p>
+<p>Specifies the name of an existing CloudFormation Stack to import to Terraform.</p>
 <pre><code class="lang-yaml">Type: String
 Parameter Sets: (All)
 Aliases:
@@ -169,7 +96,32 @@ Aliases:
 Required: True
 Position: 0
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-workspacedirectory">-WorkspaceDirectory</h3>
+<p>Specifies the directory for the Terraform workspace.
+It will be created if it does not exist.</p>
+<pre><code class="lang-yaml">Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-force">-Force</h3>
+<p>If set, automatically overwrite any existing state file.</p>
+<pre><code class="lang-yaml">Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-accesskey">-AccessKey</h3>
@@ -330,19 +282,11 @@ Accept wildcard characters: False
 <h3 id="commonparameters">CommonParameters</h3>
 <p>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkID=113216">about_CommonParameters</a>.</p>
 <h2 id="inputs">INPUTS</h2>
-<h3 id="systemmanagementautomationswitchparameter">System.Management.Automation.SwitchParameter</h3>
-<p>If set, returned object is formatted as a set of Fn::ImportValue statements, with any text matching the stack name within the output's ExportName being replaced with a placeholder generated from the stack name with the word 'Stack' appended.
-Make this a parameter to your new stack.</p>
-<p>Whilst the result output is not much use as it is, the individual elements can be copied and pasted in where an Fn::ImportValue statements for that parameter would be used.</p>
-<h3 id="systemmanagementautomationswitchparameter-1">System.Management.Automation.SwitchParameter</h3>
-<p>If set (default), returned object is a hash table - key/value pairs for each stack output.</p>
-<h3 id="systemmanagementautomationswitchparameter-2">System.Management.Automation.SwitchParameter</h3>
-<p>If set, returned object is formatted as a CloudFormation parameter block.</p>
 <h3 id="systemstring">System.String</h3>
-<p>Sets how output of parameters for CloudFormation template fragments should be formatted.</p>
+<p>Specifies the name of an existing CloudFormation Stack to import to Terraform.</p>
 <h3 id="systemstring-1">System.String</h3>
-<p>One or more stacks to process.
-One object is produced for each stack</p>
+<p>Specifies the directory for the Terraform workspace.
+It will be created if it does not exist.</p>
 <h3 id="systemstring-2">System.String</h3>
 <p>The AWS access key for the user account.
 This can be a temporary access key if the corresponding session token is supplied to the -SessionToken parameter.</p>
@@ -389,8 +333,6 @@ This can be a temporary secret key if the corresponding session token is supplie
 Only specify this parameter if you must direct the call to a specific custom endpoint, e.g.
 if using LocalStack or some other AWS emulator or a VPC endpoint from an EC2 instance.</p>
 <h2 id="outputs">OUTPUTS</h2>
-<h3 id="systemcollectionshashtable">System.Collections.Hashtable</h3>
-<h3 id="systemstring-10">System.String</h3>
 <h2 id="notes">NOTES</h2>
 <h2 id="related-links">RELATED LINKS</h2>
 </article>
@@ -401,7 +343,7 @@ if using LocalStack or some other AWS emulator or a VPC endpoint from an EC2 ins
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-119/docfx/cmdlets/Get-PSCFNStackOutputs.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-119/docfx/cmdlets/Export-PSCFNTerraform.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

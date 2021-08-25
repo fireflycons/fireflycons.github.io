@@ -4,6 +4,9 @@ references:
 - uid: dynamic-parameters
   name: Dynamic Template Parameters
   href: articles/dynamic-parameters.html
+- uid: Export-PSCFNTerraform
+  name: Export-PSCFNTerraform
+  href: cmdlets/Export-PSCFNTerraform.html
 - uid: Get-PSCFNStackOutputs
   name: Get-PSCFNStackOutputs
   href: cmdlets/Get-PSCFNStackOutputs.html
