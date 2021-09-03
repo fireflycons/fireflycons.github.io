@@ -75,7 +75,7 @@
 <p>The general procedure for migrating a CloudFormation Stack is as follows</p>
 <ol>
 <li>Edit the CloudFormation Template and set a <code>DeletionPolicy</code> of <code>Retain</code> on all resources. Update the stack and ensure that this gets applied. In some cases you might need to force a resource update to one resouce (e.g. add a tag) for the policies to be applied.</li>
-<li>Run <a class="xref" href="../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> on the stack, and make manual corrections</li>
+<li>Run <a class="xref" href="../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> on the stack, and make manual corrections. Test deploy your stack to another enviroment/region/account until you're sure it's correct.</li>
 <li>Delete the CloudFormation Stack. The stack definition will be removed from CloudFormation, however the resouces it contains will not.</li>
 <li>Now the stack resources are wholly owned by Terraform.</li>
 </ol>
@@ -100,7 +100,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/issue-119/docfx/articles/terraform-export.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/master/docfx/articles/terraform-export.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
