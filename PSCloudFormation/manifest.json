@@ -103,12 +103,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform-export.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform-export.html",
+          "hash": "n/GKx9agBfm/3WYpyRROY7wxRcCBLMmPtdWACA9unFc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "8LEUGR6vvxa2O907irC7NaTp2BFAc8EEapUCAHGgvEM="
+          "hash": "zZJlhqY2Z9VIf5bszWVGUGrm1/8cSN7ezyDHQ07uUwo="
         }
       },
       "is_incremental": false,
@@ -120,7 +132,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Export-PSCFNTerraform.html",
-          "hash": "J+SQXR5ecwvZBIt7rUNiAVryZJTOmzwmR29UWLeXd50="
+          "hash": "geMRKyOjgxTNYfPZrmHRBTa+GUa43chQEKDu7zz4bxw="
         }
       },
       "is_incremental": false,
@@ -180,7 +192,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/PSCloudFormation.html",
-          "hash": "ajTWJ7WUwpOgyWkBYW6VrvJPpAi51v85SiumAf+PM0Y="
+          "hash": "txiJxEPtxfnQXAnUVlLuL+eH/2GBevIOmmNW9D2ZsyI="
         }
       },
       "is_incremental": false,
@@ -318,7 +330,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 20,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

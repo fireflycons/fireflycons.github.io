@@ -72,20 +72,30 @@
 <h2 id="synopsis">SYNOPSIS</h2>
 <p>Export an existing CloudFormation stack to Terraform</p>
 <h2 id="syntax">SYNTAX</h2>
-<pre><code>Export-PSCFNTerraform [-StackName] &lt;String&gt; -WorkspaceDirectory &lt;String&gt; [-Force] [-AccessKey &lt;String&gt;]
- [-Credential &lt;AWSCredentials&gt;] [-EndpointUrl &lt;String&gt;] [-NetworkCredential &lt;PSCredential&gt;]
- [-ProfileLocation &lt;String&gt;] [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;] [-S3EndpointUrl &lt;String&gt;]
- [-SecretKey &lt;String&gt;] [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
+<pre><code>Export-PSCFNTerraform [-StackName] &lt;String&gt; -WorkspaceDirectory &lt;String&gt; [-Force] [-NonInteractive]
+ [-AccessKey &lt;String&gt;] [-Credential &lt;AWSCredentials&gt;] [-EndpointUrl &lt;String&gt;]
+ [-NetworkCredential &lt;PSCredential&gt;] [-ProfileLocation &lt;String&gt;] [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;]
+ [-S3EndpointUrl &lt;String&gt;] [-SecretKey &lt;String&gt;] [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;]
+ [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
 <p>Reads the CloudFormation stack and exports as many of its resources as possible to a Terraform workspace.
 This provides a starting position for migration of stacks to Terraform.</p>
 <p>Once the resource ownership has been passed to Terraform, all the resources within the CloudFormation template should have their deletion policy set to Retain, then the CloudFormation stack deleted, thus leaving the resources intact.</p>
 <h2 id="examples">EXAMPLES</h2>
-<h3 id="example-1">Example 1</h3>
-<pre><code class="lang-powershell">PS C:\&gt; {{ Add example code here }}
+<h3 id="example-1">EXAMPLE 1</h3>
+<pre><code>Export-PSCFNTerraform -StackName my-stack -WorkspaceDirectory ~/tf/my-stack
 </code></pre>
-<p>{{ Add example description here }}</p>
+<p>Reads my-stack from AWS via the CloudFormation service and generates Terraform code for that stack in the specified directory.</p>
+<h3 id="example-2">EXAMPLE 2</h3>
+<pre><code>Export-PSCFNTerraform -StackName my-stack -WorkspaceDirectory ~/tf/my-stack -NonInteractive
+</code></pre>
+<p>As the first example, but does not ask questions about resources that cannot be imported directly.
+These resources are reported as not imported.</p>
+<h3 id="example-3">EXAMPLE 3</h3>
+<pre><code>Export-PSCFNTerraform -StackName my-stack -WorkspaceDirectory ~/tf/my-stack -Force
+</code></pre>
+<p>As the first example, but if an existing state file is found in the workspace, it is overwritten without prompting.</p>
 <h2 id="parameters">PARAMETERS</h2>
 <h3 id="-stackname">-StackName</h3>
 <p>Specifies the name of an existing CloudFormation Stack to import to Terraform.</p>
@@ -114,6 +124,22 @@ Accept wildcard characters: False
 </code></pre>
 <h3 id="-force">-Force</h3>
 <p>If set, automatically overwrite any existing state file.</p>
+<pre><code class="lang-yaml">Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-noninteractive">-NonInteractive</h3>
+<p>If set, do not ask the user questions.</p>
+<p>Some resources such as lambda permissions cannot at this time directly be associated with the resources they refer to.
+In these cases a dialog with the user is initiated such that the user may select the appropriate resource e.g.
+lambda function to associate the resource being imported with.
+This switch disables that user interaction meaning that the resource will have to be resolved manually later.</p>
 <pre><code class="lang-yaml">Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
