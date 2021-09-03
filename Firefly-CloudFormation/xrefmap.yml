@@ -1687,6 +1687,32 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMaxValue
   nameWithType: TemplateFileParameter.HasMaxValue
+- uid: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinLength
+  name: HasMinLength
+  href: api/Firefly.CloudFormation.Parsers.TemplateFileParameter.html#Firefly_CloudFormation_Parsers_TemplateFileParameter_HasMinLength
+  commentId: P:Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinLength
+  fullName: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinLength
+  nameWithType: TemplateFileParameter.HasMinLength
+- uid: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinLength*
+  name: HasMinLength
+  href: api/Firefly.CloudFormation.Parsers.TemplateFileParameter.html#Firefly_CloudFormation_Parsers_TemplateFileParameter_HasMinLength_
+  commentId: Overload:Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinLength
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinLength
+  nameWithType: TemplateFileParameter.HasMinLength
+- uid: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinValue
+  name: HasMinValue
+  href: api/Firefly.CloudFormation.Parsers.TemplateFileParameter.html#Firefly_CloudFormation_Parsers_TemplateFileParameter_HasMinValue
+  commentId: P:Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinValue
+  fullName: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinValue
+  nameWithType: TemplateFileParameter.HasMinValue
+- uid: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinValue*
+  name: HasMinValue
+  href: api/Firefly.CloudFormation.Parsers.TemplateFileParameter.html#Firefly_CloudFormation_Parsers_TemplateFileParameter_HasMinValue_
+  commentId: Overload:Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinValue
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Parsers.TemplateFileParameter.HasMinValue
+  nameWithType: TemplateFileParameter.HasMinValue
 - uid: Firefly.CloudFormation.Parsers.TemplateFileParameter.IsSsmParameter
   name: IsSsmParameter
   href: api/Firefly.CloudFormation.Parsers.TemplateFileParameter.html#Firefly_CloudFormation_Parsers_TemplateFileParameter_IsSsmParameter
