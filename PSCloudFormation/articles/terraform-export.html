@@ -74,8 +74,8 @@
 <p>The <a class="xref" href="../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> cmdlet will read a CloudFormation Stack via the AWS CloudFormation Service and make a best attempt at generating HCL for the resources the stack contains. Additionally it will try to fix up dependencies between these resources and input variables (stack parameters) as best it can. Thus the amount of work to be done in getting the HCL for the stack correct is greatly reduced.</p>
 <p>The general procedure for migrating a CloudFormation Stack is as follows</p>
 <ol>
-<li>Edit the CloudFormation Template and set a <code>DeletionPolicy</code> of <code>Retain</code> on all resources. Update the stack and ensure that this gets applied. In some cases you might need to force a resource update to one resouce (e.g. add a tag) for the policies to be applied.</li>
-<li>Run <a class="xref" href="../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> on the stack, and make manual corrections. Test deploy your stack to another enviroment/region/account until you're sure it's correct.</li>
+<li>Run <a class="xref" href="../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> on the stack, and make manual corrections. Test deploy your terraform stack to another environment/region/account until you're sure it's correct.</li>
+<li>Edit the CloudFormation Template and set a <code>DeletionPolicy</code> of <code>Retain</code> on all resources. Update the stack and ensure that this gets applied. In some cases you might need to force a resource update to one resouce (e.g. add a tag) for these policies to be applied.</li>
 <li>Delete the CloudFormation Stack. The stack definition will be removed from CloudFormation, however the resouces it contains will not.</li>
 <li>Now the stack resources are wholly owned by Terraform.</li>
 </ol>
