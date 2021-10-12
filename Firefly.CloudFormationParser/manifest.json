@@ -1,0 +1,980 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/firefly-cloudformationparser/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.html",
+          "hash": "USWvYfETvxZYz1roG7MHgP7NjL8OBdzgZh/amxddqEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Cfn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Cfn.html",
+          "hash": "WIleiPcyx55YhhySHwwUTxaATzCyc/Ahy1NdYsItOFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.AbstractVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.AbstractVertex.html",
+          "hash": "Zv7mEhWc3m9NWHUnug0YW11eQKxcLblvuU9F5xipnuA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.EdgeDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.EdgeDetail.html",
+          "hash": "70Vh+37yQgXUbJEw5WOqMeKFBhVNI3L4qJpM/Tp1P3w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.IParameterVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.IParameterVertex.html",
+          "hash": "eZnuBY3KgOvXVuBeSowHsEZdxQHwo6O3BWXV8ijxSfw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.IVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.IVertex.html",
+          "hash": "to26xmDfBmzBxhEXxyDIgKOz6zvi+qhpIoyQtF1QGyA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.OutputVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.OutputVertex.html",
+          "hash": "sYCdHX+DxTVpXd31VVTTGkYewgQqe05QDC23AHOFd8o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.ParameterVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.ParameterVertex.html",
+          "hash": "pyEF9S3wSkpoTUcVW117gjxIhyVzTN9S35VFbQUMSbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.PseudoParameterVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.PseudoParameterVertex.html",
+          "hash": "Kj0iLhz7WrvMubcv5rLlyTGI+18ZGDAx2KacWmjin24="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.ReferenceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.ReferenceType.html",
+          "hash": "LgBUn9PU1ZDNvg9ABSSZ376DChCcxuzQtHn6sboorFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.ResourceVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.ResourceVertex.html",
+          "hash": "IJgYB8sPPTU36R2+6BdBkli3H8BJOTSdp/2ZzdFbRcY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.GraphObjects.html",
+          "hash": "hn25kwxBTWMItikrmjID03T9RWXKea0yfXlZqStQY+A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.IOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.IOutput.html",
+          "hash": "KhirVlwrFROG8SEjFcdtPqXsZvHPECdSD9l2PdOTuA8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.IParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.IParameter.html",
+          "hash": "0/sfD9gdzENfQ+VjWMzb0freNz213TJ+E1pGEpYgKo4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.IResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.IResource.html",
+          "hash": "KLyO/G9IA4jsqASksIvZP93YwLNpVTI5lbuU3l2+G/U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.ITemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.ITemplate.html",
+          "hash": "ORtBlsUvd5BcvNUfxlPXkHGxVTsxXSjMSPz3kupfr1k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic.html",
+          "hash": "WkB2vXnZ0cwo0letwN6MAN5f7vY0koOrwtpM5PPOT4Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html",
+          "hash": "9WQK180mmKNigxrEIy0ccv8ArrMlX14RZ/4GogypDi8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractLogicalIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractLogicalIntrinsic.html",
+          "hash": "GXYx3DS+jL2oTnX3NR9Nv3MG1R32f8/U30nH14Sp8/M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic.html",
+          "hash": "z/bQp6Fp+Uo8Gwh0LBpsNH/FtK1F1r1ik4JW4G9dchU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Abstractions.html",
+          "hash": "Q0c+kLu6u0bu+SqYJR/E4UvwsBLeWTolFdcKK1DbVHQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.html",
+          "hash": "SdXYMz8by5nYL9L9L7+C5Wigk5R1h8PS7oFh4/aJSRk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.html",
+          "hash": "R0fh1JMPbFuhNltt9mMjHTMOVkaycb/H2L1TkbUtibw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.html",
+          "hash": "7LYeD19jgMuaW4RHaT8P/MATAYedKZPpb8cNRubUaLg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.html",
+          "hash": "IaE3NR4CwIcMeYKI4hVLH4SHtVpp/7eJFq4yP8sAwq8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.html",
+          "hash": "zcLuRdayx2LuVA9p94iR3ZUc7CJegvFc63zi9SXBU20="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.html",
+          "hash": "Pzs1dCceb4GtPlLkncYJwycqOxz3PT71cae6ho46hp0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.html",
+          "hash": "v3LajXI0xZ2pUPMGwK/ofYVDOd7vhddMo30aiBvZC7M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.html",
+          "hash": "aJZpYd6RXB3SNb2mCKLrKk0GrNO8XiJkOzwznNiy2+0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.html",
+          "hash": "c3ogQv7zKt8/aW/rLZiIbjI2JMz7v04HiqcgPaIOuIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.html",
+          "hash": "8XgNrHKhqVvyfZRheuL1IW9ujmBLmTz/JuGEAzZTDF0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.html",
+          "hash": "S2hyu3WKsQanEdeien54avXlOlyocnXVcNO7mhbn9Ng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.html",
+          "hash": "dM8DwzLiYKJZdFu599Lu0K/n4AyjmvBy2KAxiHT4e0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.html",
+          "hash": "oQAv3SBTQs2DMhTcvDfc+2TPfj3llLX9MF4S9f55TVg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.html",
+          "hash": "IVNfbQ0Ab5rBHQJNTTqJUNmkSJht9pigd71eoKkokYY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html",
+          "hash": "oFyUFLV2g6Ceo1T/IhQCVRF/b22t+GgsOuGxEpKxBAs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.html",
+          "hash": "if9C5l3Uz4v7KEOwEDbRRRHPG99fNcztxNAZ/2630aM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.html",
+          "hash": "Hhtsrv2TgVsjngx81paGv1cJSG0e/0fTRCcY47Krj1Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.Functions.html",
+          "hash": "xR1BaR3A5sf2RsneGgWjh9G3CQVZTbqfioOFN72rwUM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html",
+          "hash": "Cpg7RsxFHDdZ+0cQp1Cr+DJFI1A1YJAJqUg2uvXmE/M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Intrinsics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Intrinsics.html",
+          "hash": "Divl936LRo10D/s2hcTke3FMJEiP+haiSJxIvacyr2k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.S3.S3DeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.S3.S3DeserializerSettings.html",
+          "hash": "aktNVkavm6UMVHTrLomhgkRq39aUP+CgCKjuPrkDI+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.S3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.S3.html",
+          "hash": "kApxKZlGLeAwlOLYNOeZ6sj9qkrm9T2RajH4xIJtXNM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Deserializers.DeserializationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Deserializers.DeserializationContext.html",
+          "hash": "qMR0wAJzOmE2ttuT5Bb3yCGp9wprmQ6fvk5mHrXmthI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Deserializers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Deserializers.html",
+          "hash": "dTsZ+e19wcz2yjy25CeyqPNeOhY4XQ8Zj1kiBOOFDK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.html",
+          "hash": "p4yFdl9HKpEkMb6QkLW9Tz0sEZpfSbBqyQF8j0srhsQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html",
+          "hash": "kirgld4TA1/X3ZoEaDEJC0ARxzQwmwOuboHQ2BzHCkg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html",
+          "hash": "725bcsCHrZYqmUqbADnl3Xzdnx7N8TZpCxItX1B5sZs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.html",
+          "hash": "4ijUMG5Q2rHUd9gD0eG6pPguMjH8WInuooBdrf9Vlmg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.html",
+          "hash": "hJRxSBFtr8l+2ilxMCTV+wtjO6mudgSAU0L/BfbTmHk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ConditionSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ConditionSection.html",
+          "hash": "N2ZoV2V5p7rjEaHKUacFwSmhWPFcAbHV+SGJWobe1/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.GlobalSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.GlobalSection.html",
+          "hash": "tlXOWO3Eu5LThbuRRGAZ3AtCgD03vlj+L7Vzb8oUL40="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.IConditionalTemplateObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.IConditionalTemplateObject.html",
+          "hash": "RygAdgU0aqZGKmfAAQK27f4grrj3B6u9l5Ofr8JOpV8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.html",
+          "hash": "SMCxl/7DDyqBtnL0be+REpnc40bs6UuHbq7HsxUdycU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ITemplateSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ITemplateSection.html",
+          "hash": "wWORYPpsYQA/qDk2sVk3GYyuUNEOAvggjez0Ry9pDrw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.MappingSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.MappingSection.html",
+          "hash": "waXcuZf6CTUm+1OPIn31qeykdB+maCiQYOZfTMEidBY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.MetadataSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.MetadataSection.html",
+          "hash": "09LR6PW/ZpaqxHmo2rTycYQ8AWI0u3umMF4yqv8uOfE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Output.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Output.html",
+          "hash": "vbGIYF0ksZ+xAdsrVt1wl5SqHzq2zE7DA83RQjfEYjY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.OutputSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.OutputSection.html",
+          "hash": "MGongvQlSRMNOY0/nYTAssebqZBZNd6xvL6E4ya6aQs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Parameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html",
+          "hash": "c/Ps5iJel7xAp99eAr1FNA36iDdWlsIHnlYyH1nUkWw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ParameterSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ParameterSection.html",
+          "hash": "rZWyeWRHlo9QnzAOZ1672ZyAytuAZsy9LiZCJ/8twH8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.PseudoParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.PseudoParameter.html",
+          "hash": "rt+9QLn6RszQM75i9dE3Az89xH9EF0012pkTRGpxq5g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Resource.html",
+          "hash": "AfKAwBw+iVn9i8RRa/jVeFD1U8oS7KK6I6sEYLdNWTM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ResourceSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.ResourceSection.html",
+          "hash": "z/UjSZXO3XqM9gFSXFijoX1I8MVem/7efgXD6qfsvfs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.RuleSection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.RuleSection.html",
+          "hash": "eqaWrPHm2bfZCvaPIRoXteDW+jubYgY5U0Uv5CINCVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Template.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Template.html",
+          "hash": "odPxqGTIQrYTQiF13o+v7IzBKTg6TRFHcJ9b6zdT2sc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.html",
+          "hash": "+lj/akzOpRke6vItt9iudhTeHxtw73CHVrwXn6Do5wU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.html",
+          "hash": "Wt9JpH9pOp5xFXx8gGfcIIOxio1pn5W6TISWhgVfyTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "tDyrT4Mprlpeu9vkAKSSe3qJrsEwfBiQC3czSQbag9I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Tcr/FgTMvRK0NWF3PF7QUJlr6QXVvTRtNDRgfcAE6qs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/caveats.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/caveats.html",
+          "hash": "jPZRPat0bMQd2HqhHFaUEIDz2zrHGr1bdYUIR8JYNd8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/dependencies.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/dependencies.html",
+          "hash": "iW9kScQfaatq0JCY0ChT3+f1aFybe6ua7vyzqVu6ml0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/gory-details.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/gory-details.html",
+          "hash": "CVubTpLnDF7UHzHFix6B0loA9LwOAOzzbn4QM425iSI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/index.html",
+          "hash": "+np562PhCUkyUmPKPUaLh14WRGbsal376uOCBA3OM20="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "documentation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/toc.html",
+          "hash": "WqavRTZaT+EkqC0FwbT7XKwQPRihWbfM9yk7gogjROA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "hodEX927q37ZpS8Sl5GauptcMcY7ccizP50Phpddy8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "1Vxkphuk+v7vacytaaE55ZqvOlXt52sHNC/lyydUhYI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 68,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

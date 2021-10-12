@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ITemplate
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ITemplate
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.ITemplate">
+  
+  
+  <h1 id="Firefly_CloudFormationParser_ITemplate" data-uid="Firefly.CloudFormationParser.ITemplate" class="text-break">Interface ITemplate
+  </h1>
+  <div class="markdown level0 summary"><p>Interface describing a CloudFormation Template.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.html">Firefly.CloudFormationParser</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_ITemplate_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITemplate</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_AWSTemplateFormatVersion_" data-uid="Firefly.CloudFormationParser.ITemplate.AWSTemplateFormatVersion*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_AWSTemplateFormatVersion" data-uid="Firefly.CloudFormationParser.ITemplate.AWSTemplateFormatVersion">AWSTemplateFormatVersion</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the AWS template format version.
+</p>
+<p>
+The AWS CloudFormation template version that the template conforms to.
+The template format version isn&apos;t the same as the API or WSDL version.
+The template format version can change independently of the API and WSDL versions.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string AWSTemplateFormatVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The AWS template format version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Conditions_" data-uid="Firefly.CloudFormationParser.ITemplate.Conditions*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Conditions" data-uid="Firefly.CloudFormationParser.ITemplate.Conditions">Conditions</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the conditions.
+</p>
+<p>
+Conditions that control whether certain resources are created or whether certain resource properties are assigned a value during stack creation or update.
+For example, you could conditionally create a resource that depends on whether the stack is for a production or test environment.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ConditionSection Conditions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ConditionSection.html">ConditionSection</a></td>
+        <td><p>The conditions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_DependencyGraph_" data-uid="Firefly.CloudFormationParser.ITemplate.DependencyGraph*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_DependencyGraph" data-uid="Firefly.CloudFormationParser.ITemplate.DependencyGraph">DependencyGraph</h4>
+  <div class="markdown level1 summary"><p>Gets a directed edge graph of dependencies between inputs, resources and outputs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BidirectionalGraph&lt;IVertex, TaggedEdge&lt;IVertex, EdgeDetail&gt;&gt; DependencyGraph { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">QuikGraph.BidirectionalGraph</span>&lt;<a class="xref" href="Firefly.CloudFormationParser.GraphObjects.IVertex.html">IVertex</a>, <span class="xref">QuikGraph.TaggedEdge</span>&lt;<a class="xref" href="Firefly.CloudFormationParser.GraphObjects.IVertex.html">IVertex</a>, <a class="xref" href="Firefly.CloudFormationParser.GraphObjects.EdgeDetail.html">EdgeDetail</a>&gt;&gt;</td>
+        <td><p>The dependency graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Description_" data-uid="Firefly.CloudFormationParser.ITemplate.Description*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Description" data-uid="Firefly.CloudFormationParser.ITemplate.Description">Description</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the template&apos;s description.
+</p>
+<p>
+A text string that describes the template. This section must always follow the template format version section.
+</p> 
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The template's description which will be <code>null</code> if the template did not provide this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_EvaluatedConditions_" data-uid="Firefly.CloudFormationParser.ITemplate.EvaluatedConditions*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_EvaluatedConditions" data-uid="Firefly.CloudFormationParser.ITemplate.EvaluatedConditions">EvaluatedConditions</h4>
+  <div class="markdown level1 summary"><p>Gets the value of each condition where the dictionary key is the condition name, post evaluation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, bool&gt; EvaluatedConditions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>The evaluated conditions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Globals_" data-uid="Firefly.CloudFormationParser.ITemplate.Globals*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Globals" data-uid="Firefly.CloudFormationParser.ITemplate.Globals">Globals</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the globals.
+</p>
+<p>
+Globals are unique to AWS SAM
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GlobalSection Globals { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.GlobalSection.html">GlobalSection</a></td>
+        <td><p>The conditions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_IsSAMTemplate_" data-uid="Firefly.CloudFormationParser.ITemplate.IsSAMTemplate*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_IsSAMTemplate" data-uid="Firefly.CloudFormationParser.ITemplate.IsSAMTemplate">IsSAMTemplate</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is a Serverless Application Model template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSAMTemplate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if this instance is a SAM template; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Mappings_" data-uid="Firefly.CloudFormationParser.ITemplate.Mappings*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Mappings" data-uid="Firefly.CloudFormationParser.ITemplate.Mappings">Mappings</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the mappings.
+</p>
+<p>
+A mapping of keys and associated values that you can use to specify conditional parameter values, similar to a lookup table.
+You can match a key to a corresponding value by using the <code>Fn::FindInMap</code> intrinsic function in the Resources and Outputs sections.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MappingSection Mappings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.MappingSection.html">MappingSection</a></td>
+        <td><p>The mappings which will be <code>null</code> if the template did not provide this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Metadata_" data-uid="Firefly.CloudFormationParser.ITemplate.Metadata*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Metadata" data-uid="Firefly.CloudFormationParser.ITemplate.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the metadata - objects that provide additional information about the template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MetadataSection Metadata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.MetadataSection.html">MetadataSection</a></td>
+        <td><p>The metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Outputs_" data-uid="Firefly.CloudFormationParser.ITemplate.Outputs*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Outputs" data-uid="Firefly.CloudFormationParser.ITemplate.Outputs">Outputs</h4>
+  <div class="markdown level1 summary"><p>
+Gets the outputs.
+</p>
+<p>
+Describes the values that are returned whenever you view your stack&apos;s properties.
+For example, you can declare an output for an S3 bucket name and then call the <code>aws cloudformation describe-stacks</code> AWS CLI command to view the name.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IOutput&gt; Outputs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Firefly.CloudFormationParser.IOutput.html">IOutput</a>&gt;</td>
+        <td><p>The outputs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Parameters_" data-uid="Firefly.CloudFormationParser.ITemplate.Parameters*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Parameters" data-uid="Firefly.CloudFormationParser.ITemplate.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"><p>
+Gets the parameters.
+</p>
+<p>
+Values to pass to your template at runtime (when you create or update a stack). You can refer to parameters from the Resources and Outputs sections of the template.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IParameter&gt; Parameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Firefly.CloudFormationParser.IParameter.html">IParameter</a>&gt;</td>
+        <td><p>The parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Resources_" data-uid="Firefly.CloudFormationParser.ITemplate.Resources*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Resources" data-uid="Firefly.CloudFormationParser.ITemplate.Resources">Resources</h4>
+  <div class="markdown level1 summary"><p>
+Gets the resources.
+</p>
+<p>
+Specifies the stack resources and their properties, such as an Amazon Elastic Compute Cloud instance or an Amazon Simple Storage Service bucket.
+You can refer to resources in the <code>Resources</code> and <code>Outputs</code> sections of the template.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IResource&gt; Resources { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Firefly.CloudFormationParser.IResource.html">IResource</a>&gt;</td>
+        <td><p>The resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Rules_" data-uid="Firefly.CloudFormationParser.ITemplate.Rules*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Rules" data-uid="Firefly.CloudFormationParser.ITemplate.Rules">Rules</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the rules.
+</p>
+<p>
+Validates a parameter or a combination of parameters passed to a template during a stack creation or stack update.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RuleSection Rules { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.RuleSection.html">RuleSection</a></td>
+        <td><p>The rules.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_ITemplate_Transform_" data-uid="Firefly.CloudFormationParser.ITemplate.Transform*"></a>
+  <h4 id="Firefly_CloudFormationParser_ITemplate_Transform" data-uid="Firefly.CloudFormationParser.ITemplate.Transform">Transform</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the transformations.
+</p>
+<p>
+For serverless applications (also referred to as Lambda-based applications),
+specifies the version of the AWS Serverless Application Model (AWS SAM) to use. When you specify a transform,
+you can use AWS SAM syntax to declare resources in your template.
+The model defines the syntax that you can use and how it&apos;s processed.
+</p>
+<p>
+You can also use AWS::Include transforms to work with template snippets that are stored separately from the main AWS CloudFormation template.
+You can store your snippet files in an Amazon S3 bucket and then reuse the functions across multiple templates.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object Transform { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>The transformations which will be <code>null</code> if the template did not provide this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

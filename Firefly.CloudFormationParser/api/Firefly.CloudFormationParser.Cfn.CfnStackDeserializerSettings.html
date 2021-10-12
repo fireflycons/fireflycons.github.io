@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CfnStackDeserializerSettings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CfnStackDeserializerSettings
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings">
+  
+  
+  <h1 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings" class="text-break">Class CfnStackDeserializerSettings
+  </h1>
+  <div class="markdown level0 summary"><p>
+Deserializer settings for reading a stack template directly from the CloudFormation API, i.e. the template of a deployed CloudFormation Stack.
+</p>
+<p>
+This class reads a template from an existing CloudFormation stack, and populates <a class="xref" href="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_ParameterValues">ParameterValues</a>
+with the current values of the stack&apos;s parameters as set by the most recent update. Parameters that were declared with <code>NoEcho</code>
+will receive undefined values.
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CfnStackDeserializerSettings</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html">IDeserializerSettings</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.Cfn.html">Firefly.CloudFormationParser.Cfn</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.Cfn.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CfnStackDeserializerSettings : IDeserializerSettings, IDisposable</code></pre>
+  </div>
+  <h5 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>To use this type, include package <code>Firefly.CloudFormationParser.Cfn</code> in your project.</p>
+</div>
+  <h5 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_examples"><strong>Examples</strong></h5>
+  <p>How to deserialize a template given a stack name or ARN</p>
+<pre><code>public async Task&lt;ITemplate> ReadFromCloudFormation(
+    IAmazonCloudFormation client,
+    string stackNameOrARN)
+{
+    using var settings = new CfnStackDeserializerSettings(client, stackNameOrARN);
+    return await Template.Deserialize(settings); 
+}</code></pre>
+
+  <p>How to deserialize a template given a stack name or ARN and omit resources based on condition evaluation.
+Note that parameter values are read from the deployed stack and used in the condition evaluation.</p>
+<pre><code>public async Task&lt;ITemplate> ReadFromCloudFormation(
+    IAmazonCloudFormation client,
+    string stackNameOrARN)
+{
+    using var settings = new CfnStackDeserializerSettings(client, stackNameOrARN)
+        {
+            ExcludeConditionalResources = true
+        };
+
+    return await Template.Deserialize(settings); 
+}</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings__ctor_" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.#ctor*"></a>
+  <h4 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings__ctor_Amazon_CloudFormation_IAmazonCloudFormation_System_String_" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.#ctor(Amazon.CloudFormation.IAmazonCloudFormation,System.String)">CfnStackDeserializerSettings(IAmazonCloudFormation, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.html">CfnStackDeserializerSettings</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CfnStackDeserializerSettings(IAmazonCloudFormation client, string stackId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.CloudFormation.IAmazonCloudFormation</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>An AWS CloudFormation client with which to read the given stack.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stackId</span></td>
+        <td><p>Name or ARN of stack to read template from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_ExcludeConditionalResources_" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.ExcludeConditionalResources*"></a>
+  <h4 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_ExcludeConditionalResources" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.ExcludeConditionalResources">ExcludeConditionalResources</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets a value indicating whether to exclude resources and outputs nullified by the evaluation of conditions.
+</p>
+<p>
+When this is <code>true</code>, the results of the evaluation of conditions in the <code>Conditions</code> block of the template using the values of
+the parameters as supplied by <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues">ParameterValues</a> are used to eliminate any resource or output where its <code>Condition</code>
+property evaluates to <code>false</code> from the template object returned by the call to <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_Deserialize_Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_">Deserialize(IDeserializerSettings)</a>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExcludeConditionalResources { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if conditional objects should be excluded; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_ParameterValues_" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.ParameterValues*"></a>
+  <h4 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_ParameterValues" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.ParameterValues">ParameterValues</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets an optional dictionary of values to assign to parameters.
+</p>
+<p>
+If this is unset at the time <a class="xref" href="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_GetContentAsync">GetContentAsync()</a> is called, it will be populated
+with the current values of the parameters as defined by the deployed stack. Note that for
+parameters that were declared <code>NoEcho</code>, the values of these parameters will be undefined.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, object&gt; ParameterValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><p>The parameter values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_Dispose_" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.Dispose*"></a>
+  <h4 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_Dispose" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_GetContentAsync_" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.GetContentAsync*"></a>
+  <h4 id="Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_GetContentAsync" data-uid="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.GetContentAsync">GetContentAsync()</h4>
+  <div class="markdown level1 summary"><p>
+Gets the template content. This should be implemented as an <code>async</code> method.
+</p>
+<p>
+Implementations should prepare the template data as a reader from the information passed to the implementation&apos;s constructor.
+It is the job of the implementation to dispose of any resources involved in this operation after the template has been read.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;TextReader&gt; GetContentAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.textreader">TextReader</a>&gt;</td>
+        <td><p>A reader positioned at the start of the template to parse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html">IDeserializerSettings</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html">IDeserializerSettings</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

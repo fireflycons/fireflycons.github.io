@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IResource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IResource
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.IResource">
+  
+  
+  <h1 id="Firefly_CloudFormationParser_IResource" data-uid="Firefly.CloudFormationParser.IResource" class="text-break">Interface IResource
+  </h1>
+  <div class="markdown level0 summary"><p>Interface describing a CloudFormation Resource.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Name">ITemplateObject.Name</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.html">Firefly.CloudFormationParser</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_IResource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IResource : ITemplateObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_Condition_" data-uid="Firefly.CloudFormationParser.IResource.Condition*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_Condition" data-uid="Firefly.CloudFormationParser.IResource.Condition">Condition</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the resource&apos;s condition.
+</p>
+<p>
+When present, associates this output with a condition defined in the <code>Conditions</code> section of the template.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Condition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The CloudFormation condition which will be <code>null</code> if the template did not provide this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_CreationPolicy_" data-uid="Firefly.CloudFormationParser.IResource.CreationPolicy*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_CreationPolicy" data-uid="Firefly.CloudFormationParser.IResource.CreationPolicy">CreationPolicy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the creation policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, object&gt; CreationPolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><p>The creation policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_DeletionPolicy_" data-uid="Firefly.CloudFormationParser.IResource.DeletionPolicy*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_DeletionPolicy" data-uid="Firefly.CloudFormationParser.IResource.DeletionPolicy">DeletionPolicy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the deletion policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DeletionPolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The deletion policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_DependsOn_" data-uid="Firefly.CloudFormationParser.IResource.DependsOn*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_DependsOn" data-uid="Firefly.CloudFormationParser.IResource.DependsOn">DependsOn</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets explicit dependencies on other resources in the template.
+</p>
+<p>
+You should use the convenience property <a class="xref" href="Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_ExplicitDependencies">ExplicitDependencies</a> to get the list of dependencies.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object DependsOn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>The dependencies which will be <code>null</code> if the template did not provide this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_Description_" data-uid="Firefly.CloudFormationParser.IResource.Description*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_Description" data-uid="Firefly.CloudFormationParser.IResource.Description">Description</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the resource&apos;s description.
+</p>
+<p>
+A string type that describes the output value. The value for the description declaration must be a literal string that&apos;s between 0 and 1024 bytes in length.
+</p> 
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>The resource's description which will be <code>null</code> if the template did not provide this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_ExplicitDependencies_" data-uid="Firefly.CloudFormationParser.IResource.ExplicitDependencies*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_ExplicitDependencies" data-uid="Firefly.CloudFormationParser.IResource.ExplicitDependencies">ExplicitDependencies</h4>
+  <div class="markdown level1 summary"><p>Gets the explicit dependencies on other resources in the template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; ExplicitDependencies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>A list of explicit dependencies.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_Metadata_" data-uid="Firefly.CloudFormationParser.IResource.Metadata*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_Metadata" data-uid="Firefly.CloudFormationParser.IResource.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the metadata.
+</p>
+<p>
+You can use the optional Metadata section to include arbitrary JSON or YAML objects that provide details about the resource.
+Often used with instances or launch templates to provide data for <code>cfn-init</code>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, object&gt; Metadata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><p>The metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_Properties_" data-uid="Firefly.CloudFormationParser.IResource.Properties*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_Properties" data-uid="Firefly.CloudFormationParser.IResource.Properties">Properties</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the resource properties.
+</p>
+<p>
+Resource properties are additional options that you can specify for a resource.
+For example, for each EC2 instance, you must specify an Amazon Machine Image (AMI) ID for that instance.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, object&gt; Properties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><p>The properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_Type_" data-uid="Firefly.CloudFormationParser.IResource.Type*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_Type" data-uid="Firefly.CloudFormationParser.IResource.Type">Type</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets the resource type.
+</p>
+The resource type identifies the type of resource that you are declaring. For example, AWS::EC2::Instance declares an EC2 instance.
+<p>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_UpdatePolicy_" data-uid="Firefly.CloudFormationParser.IResource.UpdatePolicy*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_UpdatePolicy" data-uid="Firefly.CloudFormationParser.IResource.UpdatePolicy">UpdatePolicy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the update policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, object&gt; UpdatePolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><p>The update policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_UpdateReplacePolicy_" data-uid="Firefly.CloudFormationParser.IResource.UpdateReplacePolicy*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_UpdateReplacePolicy" data-uid="Firefly.CloudFormationParser.IResource.UpdateReplacePolicy">UpdateReplacePolicy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the update replace policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string UpdateReplacePolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The update replace policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IResource_Version_" data-uid="Firefly.CloudFormationParser.IResource.Version*"></a>
+  <h4 id="Firefly_CloudFormationParser_IResource_Version" data-uid="Firefly.CloudFormationParser.IResource.Version">Version</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the resource version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Version { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Firefly_CloudFormationParser_IResource_Version_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is valid for custom resources.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

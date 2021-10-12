@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AbstractIntrinsic
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AbstractIntrinsic
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic">
+  
+  
+  <h1 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic" class="text-break">Class AbstractIntrinsic
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract base class for CloudFormation intrinsics</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AbstractIntrinsic</span></div>
+      <div class="level2"><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic.html">AbstractArrayIntrinsic</a></div>
+      <div class="level2"><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic.html">AbstractScalarIntrinsic</a></div>
+      <div class="level2"><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.html">SubIntrinsic</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html">IIntrinsic</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.html">Firefly.CloudFormationParser.Intrinsics.Abstractions</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractIntrinsic : IIntrinsic, IEnumerable&lt;object&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_LongName_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.LongName*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_LongName" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.LongName">LongName</h4>
+  <div class="markdown level1 summary"><p>Gets the long name of the intrinsic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string LongName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The long name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_TagName_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.TagName*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_TagName" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.TagName">TagName</h4>
+  <div class="markdown level1 summary"><p>Gets the YAML tag name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string TagName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The name of the tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_UseLongForm_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UseLongForm*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_UseLongForm" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UseLongForm">UseLongForm</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to use the long form when serializing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseLongForm { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if long form should be used; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_Evaluate_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Evaluate*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_Evaluate_Firefly_CloudFormationParser_ITemplate_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Evaluate(Firefly.CloudFormationParser.ITemplate)">Evaluate(ITemplate)</h4>
+  <div class="markdown level1 summary"><p>Evaluates the result of the intrinsic function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object Evaluate(ITemplate template)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.ITemplate.html">ITemplate</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>Reference to the template being processed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_GetEnumerator_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.GetEnumerator*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_GetEnumerator" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;object&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><p>An enumerator that can be used to iterate through the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_GetReferencedObjects_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.GetReferencedObjects*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_GetReferencedObjects_Firefly_CloudFormationParser_ITemplate_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.GetReferencedObjects(Firefly.CloudFormationParser.ITemplate)">GetReferencedObjects(ITemplate)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of referenced resources and/or parameters in this expression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IEnumerable&lt;string&gt; GetReferencedObjects(ITemplate template)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.ITemplate.html">ITemplate</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>Reference to the template being processed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>List of references</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_SetValue_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.SetValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_SetValue_System_Collections_Generic_IEnumerable_System_Object__" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.SetValue(System.Collections.Generic.IEnumerable{System.Object})">SetValue(IEnumerable&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+Sets the values for the intrinsic.
+</p>
+<p>
+This is a list of objects, whose length depends on the number of properties (usually list elements) supported by the intrinsic.
+Each element depending on the intrinsic, may be a scalar value, another intrinsic or another list of items e.g. for <code>!Join</code> or <code>!Select</code> 
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetValue(IEnumerable&lt;object&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values to assign to the intrinsic</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_SetValue_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.SetValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_SetValue_System_Object_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.SetValue(System.Object)">SetValue(Object)</h4>
+  <div class="markdown level1 summary"><p>
+Sets the values for the intrinsic.
+</p>
+<p>
+This is a single scalar or intrinsic object or a list of objects. This is a convenience method which wraps a scalar and then calls <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_IIntrinsic_SetValue_System_Collections_Generic_IEnumerable_System_Object__">SetValue(IEnumerable&lt;Object&gt;)</a>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to assign to the intrinsic</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_ValidateValues_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ValidateValues*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_ValidateValues_System_Int32_System_Int32_System_Collections_Generic_IList_System_Object__" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ValidateValues(System.Int32,System.Int32,System.Collections.Generic.IList{System.Object})">ValidateValues(Int32, Int32, IList&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs some validation on the number of values being set on this intrinsic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ValidateValues(int minValues, int maxValues, IList&lt;object&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">minValues</span></td>
+        <td><p>The minimum values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxValues</span></td>
+        <td><p>The maximum values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Number of values being assigned is outside the min and max constraints,</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_WriteYaml_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.WriteYaml*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_WriteYaml_YamlDotNet_Core_IEmitter_YamlDotNet_Serialization_IValueSerializer_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.WriteYaml(YamlDotNet.Core.IEmitter,YamlDotNet.Serialization.IValueSerializer)">WriteYaml(IEmitter, IValueSerializer)</h4>
+  <div class="markdown level1 summary"><p>Writes this intrinsic to a YAML emitter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteYaml(IEmitter emitter, IValueSerializer nestedValueSerializer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">YamlDotNet.Core.IEmitter</span></td>
+        <td><span class="parametername">emitter</span></td>
+        <td><p>The emitter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">YamlDotNet.Serialization.IValueSerializer</span></td>
+        <td><span class="parametername">nestedValueSerializer</span></td>
+        <td><p>An <span class="xref">YamlDotNet.Serialization.IValueSerializer</span> with which to write nested objects such as dictionaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_System_Collections_IEnumerable_GetEnumerator_" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_System_Collections_IEnumerable_GetEnumerator" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through a collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a> object that can be used to iterate through the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html">IIntrinsic</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html">IIntrinsic</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

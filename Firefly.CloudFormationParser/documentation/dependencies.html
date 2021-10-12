@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dependency Graph </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Dependency Graph ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="dependency-graph">Dependency Graph</h1>
+
+<p>One of the main reasons I constructed this library was to be able to understand the dependencies between all the inputs, resources and outputs of a template. For this I emplyed the <a href="https://github.com/KeRNeLith/QuikGraph">QuikGraph</a> package to construct a directed edge graph of the dependencies at the end of the deserialization. Understanding the dependencies allows you to perform a few useful tricks. For instance, you can create a visualisation of the template as a DOT graph that can be viewed using <a href="https://graphviz.org/">GraphViz</a> tools, or you could create a linter. This library parses CloudFormation <em>much</em> faster than any of the well-known Python tools out there, but I will admit is much less mature. For instance, this library currently does not <a href="caveats.html">directly support SAM templates</a>, though it should not error when reading them.</p>
+<p>See the <code>TestHelpers</code> project to see how to create a DOT language representation of the template that can be viewed in online renderers such as <a href="https://dreampuf.github.io/GraphvizOnline">GraphVizOnline</a> or passed to APIs such as <a href="https://quickchart.io/graphviz">QuickChart.io</a> to get back SVG (post the DOT string to <a href="https://quickchart.io/graphviz">https://quickchart.io/graphviz</a>).</p>
+<h2 id="example">Example</h2>
+<p>From a deserialization of <a href="https://github.com/awslabs/aws-cloudformation-templates/blob/master/aws/services/CloudFormation/MacrosExamples/Public-and-Private-Subnet-per-AZ/Create-Stack.yaml">this template</a>, the following DOT graph can be generated. <a href="https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0D%0Arankdir%3DLR%0D%0Anode%20%5Bfontname%3D%22Arial%22%2C%20fontsize%3D9%5D%3B%0D%0Aedge%20%5Bfontname%3D%22Arial%22%2C%20fontsize%3D9%5D%3B%0D%0A0%20%5Bshape%3Ddiamond%2C%20label%3D%22VPCCidrBlock%22%5D%3B%0D%0A1%20%5Bshape%3Ddiamond%2C%20label%3D%22KeyPair%22%5D%3B%0D%0A2%20%5Bshape%3Dbox%2C%20label%3D%22VPC%22%5D%3B%0D%0A3%20%5Bshape%3Dbox%2C%20label%3D%22VPCPubSn1%22%5D%3B%0D%0A4%20%5Bshape%3Dbox%2C%20label%3D%22VPCPrivSn1%22%5D%3B%0D%0A5%20%5Bshape%3Dbox%2C%20label%3D%22VPCPubRt1%22%5D%3B%0D%0A6%20%5Bshape%3Dbox%2C%20label%3D%22VPCPubSn1RtAssoc%22%5D%3B%0D%0A7%20%5Bshape%3Dbox%2C%20label%3D%22VPCPrivRt1%22%5D%3B%0D%0A8%20%5Bshape%3Dbox%2C%20label%3D%22VPCPrivSn1RtAssoc%22%5D%3B%0D%0A9%20%5Bshape%3Dbox%2C%20label%3D%22VPCPubDefaultRoute%22%5D%3B%0D%0A10%20%5Bshape%3Dbox%2C%20label%3D%22VPCPrivDefaultRoute%22%5D%3B%0D%0A11%20%5Bshape%3Dbox%2C%20label%3D%22VPCIGW%22%5D%3B%0D%0A12%20%5Bshape%3Dbox%2C%20label%3D%22VPCIGWAttachment%22%5D%3B%0D%0A13%20%5Bshape%3Dbox%2C%20label%3D%22SGAllTrafficFromVPC%22%5D%3B%0D%0A14%20%5Bshape%3Dbox%2C%20label%3D%22VPCNatInstance%22%5D%3B%0D%0A15%20%5Bshape%3Ddiamond%2C%20label%3D%22AWS%3A%3ARegion%22%5D%3B%0D%0A0%20-%3E%202%20%5Blabel%3D%22%23Param%22%5D%3B%0D%0A0%20-%3E%2013%20%5Blabel%3D%22%23Param%22%5D%3B%0D%0A1%20-%3E%2014%20%5Blabel%3D%22%23Param%22%5D%3B%0D%0A2%20-%3E%203%20%5Blabel%3D%22id%22%5D%3B%0D%0A2%20-%3E%204%20%5Blabel%3D%22id%22%5D%3B%0D%0A2%20-%3E%205%20%5Blabel%3D%22id%22%5D%3B%0D%0A2%20-%3E%207%20%5Blabel%3D%22id%22%5D%3B%0D%0A2%20-%3E%2012%20%5Blabel%3D%22id%22%5D%3B%0D%0A2%20-%3E%2013%20%5Blabel%3D%22id%22%5D%3B%0D%0A3%20-%3E%206%20%5Blabel%3D%22id%22%5D%3B%0D%0A3%20-%3E%2014%20%5Blabel%3D%22id%22%5D%3B%0D%0A4%20-%3E%208%20%5Blabel%3D%22id%22%5D%3B%0D%0A5%20-%3E%206%20%5Blabel%3D%22id%22%5D%3B%0D%0A5%20-%3E%209%20%5Blabel%3D%22id%22%5D%3B%0D%0A7%20-%3E%208%20%5Blabel%3D%22id%22%5D%3B%0D%0A7%20-%3E%2010%20%5Blabel%3D%22id%22%5D%3B%0D%0A11%20-%3E%209%20%5Blabel%3D%22id%22%5D%3B%0D%0A11%20-%3E%2012%20%5Blabel%3D%22id%22%5D%3B%0D%0A13%20-%3E%2014%20%5Blabel%3D%22id%22%5D%3B%0D%0A14%20-%3E%2010%20%5Blabel%3D%22id%22%5D%3B%0D%0A15%20-%3E%203%20%5Blabel%3D%22%23Param%22%5D%3B%0D%0A15%20-%3E%204%20%5Blabel%3D%22%23Param%22%5D%3B%0D%0A%7D">Click here</a> to see a visualization.</p>
+<pre><code class="lang-dot">digraph G {
+rankdir=LR
+node [fontname=&quot;Arial&quot;, fontsize=9];
+edge [fontname=&quot;Arial&quot;, fontsize=9];
+0 [shape=diamond, label=&quot;VPCCidrBlock&quot;];
+1 [shape=diamond, label=&quot;KeyPair&quot;];
+2 [shape=box, label=&quot;VPC&quot;];
+3 [shape=box, label=&quot;VPCPubSn1&quot;];
+4 [shape=box, label=&quot;VPCPrivSn1&quot;];
+5 [shape=box, label=&quot;VPCPubRt1&quot;];
+6 [shape=box, label=&quot;VPCPubSn1RtAssoc&quot;];
+7 [shape=box, label=&quot;VPCPrivRt1&quot;];
+8 [shape=box, label=&quot;VPCPrivSn1RtAssoc&quot;];
+9 [shape=box, label=&quot;VPCPubDefaultRoute&quot;];
+10 [shape=box, label=&quot;VPCPrivDefaultRoute&quot;];
+11 [shape=box, label=&quot;VPCIGW&quot;];
+12 [shape=box, label=&quot;VPCIGWAttachment&quot;];
+13 [shape=box, label=&quot;SGAllTrafficFromVPC&quot;];
+14 [shape=box, label=&quot;VPCNatInstance&quot;];
+15 [shape=diamond, label=&quot;AWS::Region&quot;];
+0 -&gt; 2 [label=&quot;#Param&quot;];
+0 -&gt; 13 [label=&quot;#Param&quot;];
+1 -&gt; 14 [label=&quot;#Param&quot;];
+2 -&gt; 3 [label=&quot;id&quot;];
+2 -&gt; 4 [label=&quot;id&quot;];
+2 -&gt; 5 [label=&quot;id&quot;];
+2 -&gt; 7 [label=&quot;id&quot;];
+2 -&gt; 12 [label=&quot;id&quot;];
+2 -&gt; 13 [label=&quot;id&quot;];
+3 -&gt; 6 [label=&quot;id&quot;];
+3 -&gt; 14 [label=&quot;id&quot;];
+4 -&gt; 8 [label=&quot;id&quot;];
+5 -&gt; 6 [label=&quot;id&quot;];
+5 -&gt; 9 [label=&quot;id&quot;];
+7 -&gt; 8 [label=&quot;id&quot;];
+7 -&gt; 10 [label=&quot;id&quot;];
+11 -&gt; 9 [label=&quot;id&quot;];
+11 -&gt; 12 [label=&quot;id&quot;];
+13 -&gt; 14 [label=&quot;id&quot;];
+14 -&gt; 10 [label=&quot;id&quot;];
+15 -&gt; 3 [label=&quot;#Param&quot;];
+15 -&gt; 4 [label=&quot;#Param&quot;];
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/docfx/documentation/dependencies.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

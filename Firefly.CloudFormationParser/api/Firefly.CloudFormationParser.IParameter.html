@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IParameter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IParameter
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.IParameter">
+  
+  
+  <h1 id="Firefly_CloudFormationParser_IParameter" data-uid="Firefly.CloudFormationParser.IParameter" class="text-break">Interface IParameter
+  </h1>
+  <div class="markdown level0 summary"><p>Interface describing a CloudFormation Parameter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Name">ITemplateObject.Name</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.html">Firefly.CloudFormationParser</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_IParameter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IParameter : ITemplateObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_AllowedPattern_" data-uid="Firefly.CloudFormationParser.IParameter.AllowedPattern*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_AllowedPattern" data-uid="Firefly.CloudFormationParser.IParameter.AllowedPattern">AllowedPattern</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a regular expression that represents the patterns to allow for String types. The pattern must match the entire parameter value provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string AllowedPattern { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The allowed pattern, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_AllowedValues_" data-uid="Firefly.CloudFormationParser.IParameter.AllowedValues*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_AllowedValues" data-uid="Firefly.CloudFormationParser.IParameter.AllowedValues">AllowedValues</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an array containing the list of values allowed for the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; AllowedValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>The allowed values, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_ConstraintDescription_" data-uid="Firefly.CloudFormationParser.IParameter.ConstraintDescription*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_ConstraintDescription" data-uid="Firefly.CloudFormationParser.IParameter.ConstraintDescription">ConstraintDescription</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a string that explains a constraint when the constraint is violated..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ConstraintDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The constraint description, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_CurrentValue_" data-uid="Firefly.CloudFormationParser.IParameter.CurrentValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_CurrentValue" data-uid="Firefly.CloudFormationParser.IParameter.CurrentValue">CurrentValue</h4>
+  <div class="markdown level1 summary"><p>
+Gets the current value of this parameter
+</p>
+<p>
+This value may be set by passing a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary&lt;TKey,TValue&gt;</a> of string,object to <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues">ParameterValues</a> method.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object CurrentValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>The current value, which will be <code>null</code> if not set by passing a values dictionary to the deserializer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_Default_" data-uid="Firefly.CloudFormationParser.IParameter.Default*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_Default" data-uid="Firefly.CloudFormationParser.IParameter.Default">Default</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value of the appropriate type for the template to use if no value is specified when a stack is created.
+If you define constraints for the parameter, you must specify a value that adheres to those constraints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Default { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The default value, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_Description_" data-uid="Firefly.CloudFormationParser.IParameter.Description*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_Description" data-uid="Firefly.CloudFormationParser.IParameter.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a string of up to 4000 characters that describes the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>Description of the parameter, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_MaxLength_" data-uid="Firefly.CloudFormationParser.IParameter.MaxLength*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_MaxLength" data-uid="Firefly.CloudFormationParser.IParameter.MaxLength">MaxLength</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an integer value that determines the largest number of characters you want to allow for String types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? MaxLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>The maximum length, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_MaxValue_" data-uid="Firefly.CloudFormationParser.IParameter.MaxValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_MaxValue" data-uid="Firefly.CloudFormationParser.IParameter.MaxValue">MaxValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a numeric value that determines the largest numeric value you want to allow for Number types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double? MaxValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>The maximum value, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_MinLength_" data-uid="Firefly.CloudFormationParser.IParameter.MinLength*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_MinLength" data-uid="Firefly.CloudFormationParser.IParameter.MinLength">MinLength</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an integer value that determines the smallest number of characters you want to allow for String types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? MinLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>The minimum length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_MinValue_" data-uid="Firefly.CloudFormationParser.IParameter.MinValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_MinValue" data-uid="Firefly.CloudFormationParser.IParameter.MinValue">MinValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a numeric value that determines the smallest numeric value you want to allow for Number types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double? MinValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>The minimum value, which will be <code>null</code> if not defined in the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_NoEcho_" data-uid="Firefly.CloudFormationParser.IParameter.NoEcho*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_NoEcho" data-uid="Firefly.CloudFormationParser.IParameter.NoEcho">NoEcho</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to mask the parameter value to prevent it from being displayed in the console, command line tools, or API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool NoEcho { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>If <code>true</code>, user interfaces should redact the parameter value when displaying.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_Type_" data-uid="Firefly.CloudFormationParser.IParameter.Type*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_Type" data-uid="Firefly.CloudFormationParser.IParameter.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the data type for the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The AWS Parameter type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_GetClrType_" data-uid="Firefly.CloudFormationParser.IParameter.GetClrType*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_GetClrType" data-uid="Firefly.CloudFormationParser.IParameter.GetClrType">GetClrType()</h4>
+  <div class="markdown level1 summary"><p>Gets the CLR type for the parameter given the AWS type specified for it in the template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Type GetClrType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><p>CLR type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_GetCurrentValue_" data-uid="Firefly.CloudFormationParser.IParameter.GetCurrentValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_GetCurrentValue" data-uid="Firefly.CloudFormationParser.IParameter.GetCurrentValue">GetCurrentValue()</h4>
+  <div class="markdown level1 summary"><p>Gets the current value of the parameter choosing whatever value has been set and if none, the default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object GetCurrentValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>Current value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_IParameter_SetCurrentValue_" data-uid="Firefly.CloudFormationParser.IParameter.SetCurrentValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_SetCurrentValue_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Firefly.CloudFormationParser.IParameter.SetCurrentValue(System.Collections.Generic.IDictionary{System.String,System.Object})">SetCurrentValue(IDictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the current value of this parameter to use in evaluations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetCurrentValue(IDictionary&lt;string, object&gt; parameterValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">parameterValues</span></td>
+        <td><p>The parameter values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></td>
+        <td><ul><li>Parameter <em>Name</em> - cannot assign array value to Number type</li><li>Parameter <em>Name</em> - cannot assign value of type <em>type</em> to Number type</li><li>Parameter <em>Name</em> - cannot assign value of type <em>type</em> to Number type</li><li>Parameter <em>Name</em> - cannot assign value of type <em>type</em> to Number type</li><li>Parameter <em>Name</em> - cannot assign array value to String type</li></ul>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><ul><li>Parameter <em>Name</em> - Value &apos;<em>value</em>&apos; does not match allowed values: <em>string.Join(&quot;, &quot;, AllowedValues)</em></li><li>Parameter <em>Name</em> - Value &apos;<em>value</em>&apos; does not match value constraint: <em>MinValue</em> &lt;= x &lt;= <em>MaxValue</em></li><li>Parameter <em>Name</em> - Value &apos;<em>stringVal</em>&apos; does not match pattern: <em>AllowedPattern</em></li><li>Parameter <em>Name</em> - Value &apos;<em>stringVal</em>&apos; does not match allowed values: <em>AllowedValues</em></li></ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDeserializerSettings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDeserializerSettings
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings">
+  
+  
+  <h1 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings" class="text-break">Interface IDeserializerSettings
+  </h1>
+  <div class="markdown level0 summary"><p>Defines properties required by the CloudFormation deserializer.
+This can be implemented to provide deserialization from other sources e.g. a CloudFormation Stack or S3 bucket.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.html">Firefly.CloudFormationParser.Serialization.Settings</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDeserializerSettings : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ExcludeConditionalResources_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ExcludeConditionalResources*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ExcludeConditionalResources" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ExcludeConditionalResources">ExcludeConditionalResources</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets a value indicating whether to exclude resources and outputs nullified by the evaluation of conditions.
+</p>
+<p>
+When this is <code>true</code>, the results of the evaluation of conditions in the <code>Conditions</code> block of the template using the values of
+the parameters as supplied by <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues">ParameterValues</a> are used to eliminate any resource or output where its <code>Condition</code>
+property evaluates to <code>false</code> from the template object returned by the call to <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_Deserialize_Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_">Deserialize(IDeserializerSettings)</a>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ExcludeConditionalResources { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if conditional objects should be excluded; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ParameterValues*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ParameterValues">ParameterValues</h4>
+  <div class="markdown level1 summary"><p>
+Gets or sets an optional dictionary of values to assign to parameters.
+</p>
+<p>
+If left unset, then parameter defaults where present will be used in evaluations, or where there is no
+declared default value, the default for the type - empty string, zero for number etc.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDictionary&lt;string, object&gt; ParameterValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><p>The parameter values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_GetContentAsync_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.GetContentAsync*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_GetContentAsync" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.GetContentAsync">GetContentAsync()</h4>
+  <div class="markdown level1 summary"><p>
+Gets the template content. This should be implemented as an <code>async</code> method.
+</p>
+<p>
+Implementations should prepare the template data as a reader from the information passed to the implementation&apos;s constructor.
+It is the job of the implementation to dispose of any resources involved in this operation after the template has been read.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TextReader&gt; GetContentAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.textreader">TextReader</a>&gt;</td>
+        <td><p>A reader positioned at the start of the template to parse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

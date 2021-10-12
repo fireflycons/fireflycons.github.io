@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>The Gory Details </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="The Gory Details ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="the-gory-details">The Gory Details</h1>
+
+<p><a href="https://github.com/aaubry/YamlDotNet">YamlDotNet</a> as many of you will know, is extremely sparse on documentation! That gave this project a very steep learning curve. I found that pretty much what you want from YamlDotNet is actually there as you work through each particular problem. The further into this library I got, I came across situations where I thought <em>&quot;I wonder how you do this?&quot;</em> only to find that with more digging, there was some interface that could be implemented to override some default functionality, both within the serialization and deserialization phases.</p>
+<p>In order to get to grips with how YamlDotNet works, and what it is capable of, I resorted to cloning the latest release and adding it directly as a project reference in the solution file for this package so I could easily debug through it as the project progressed.</p>
+<p>CloudFormation is a complicated beast. There are many articles in Stack Overflow and the like, giving examples of how to deserialize a custom tag to an object but all those articles are too simplistic when it comes to CloudFormation. Specifically we have to solve the following problems associated with <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsics</a>.</p>
+<h2 id="five-issues">Five Issues</h2>
+<ol>
+<li>An intrinsic may be declared in long or short form <sup><a href="#1-long-and-short-form">1</a></sup></li>
+<li>An intrinsic may have other intrinsics nested within it, either immediately, or way down within a nested dictionary structure that is an argument to the intrinsic <sup><a href="#2-nesting-intrinsics">2</a></sup>.</li>
+<li>The same intrinsic may have several different arrangements of properties (<code>!Sub</code> and <code>!GetAZs</code> notably) <sup><a href="#2-nesting-intrinsics">2</a> <a href="#3-differing-properties">3</a></sup>.</li>
+<li>A key in the schema may, given the context, be interpreted as an intrinsic in one part of a template, and not in others. <code>Condition:</code> (long form) when found in the <code>Conditions</code> section of a template should be parsed as a <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-condition.html">Condition</a> intrinsic, but when found as a <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html">condition statement</a> in a policy document, it is <em>not</em> an intrinsic <sup><a href="#4-contextual-differences">4</a></sup>.</li>
+<li>Short form intrinsics with a single argument of another intrinsic. This sends the default parser into meltdown! it sees the next event in the parse stream tagged with the same tag and enters a recursion resulting in a stack overflow. In the example below <sup><a href="#5-intrinsic-with-intrinsic-as-argument">5</a></sup>, the parser expects <code>!Base64</code> to be created from the current parsing event and the next parsing event is a mapping to enter <code>Fn::Sub:</code>, however that mapping event carries the <code>Base64</code> tag. Calling the <code>Func&lt;IParser, Type, object?&gt; nestedObjectDeserializer</code> argument passed to our <code>INodeDeserializer</code> implementation to parse this re-enters the same code for parsing <code>Base64</code> until the stack blows.</li>
+</ol>
+<h1 id="solving-deserialization">Solving Deserialization</h1>
+<p>Firstly, how to parse the short form intrinsics which are expressed as YAML tags. If these intrinsics were simple objects with consistent property sets, then a simple <a href="https://www.google.com/search?q=yamldotnet+type+converter">TypeConverter</a> implementation would do. However, this does not address issues 2, 3 and 4 above. The way to attack this is to provide an implementation of <a href="https://github.com/aaubry/YamlDotNet/blob/master/YamlDotNet/Serialization/INodeTypeResolver.cs">INodeTypeResolver</a> to select implementations of <a href="https://github.com/aaubry/YamlDotNet/blob/master/YamlDotNet/Serialization/INodeDeserializer.cs">INodeDeserializer</a> for each intrinsic to get more control of the deserialization process. The <code>Deserialize</code> method of <code>INodeDeserializer</code> which we implement is passed a <code>Func</code> argument which can be called to recursively deserialize the properties of the current intrinsic, thus it addresses issues 2 and 3 from the list above.</p>
+<p>Now to the fourth issue. I found that it would be necessary to be able to pass information to my implementation of <code>INodeTypeResolver</code> to indicate where in the template the parse currently is. I did this using an implementation of <a href="https://github.com/aaubry/YamlDotNet/blob/master/YamlDotNet/Serialization/IObjectFactory.cs">IObjectFactory</a> that can see when a concrete template section (Parameters, Conditions, Resources etc) is being created. The object factory then fires an event that connects to the <code>INodeTypeResolver</code> implementation so that the resolver can decide whether a key such as <code>Condition:</code> when buried deep within a resource's properties should be deserialized as intrinsic, or just passed to the default deserializer which will create a <code>Dictionary&lt;object, object&gt;</code>. In the case of <code>Condition</code>, if a resource is being created the latter of the two strategies should be employed.</p>
+<p>The final issue, that of a stack overflow. Here I employed a read-ahead technique, buffering the complex object that follows (in the case of the example given it is a mapping, but can also be a sequence). I then remove the tag from the mapping or sequence start event and pass the buffer which is an implementation of <a href="https://github.com/aaubry/YamlDotNet/blob/master/YamlDotNet/Core/IParser.cs">IParser</a> to the <code>Func</code> for nested object deserialization, and all is good.</p>
+<h2 id="long-or-short-form">Long or Short Form?</h2>
+<p>As some may be well aware, YAML is a superset of JSON, thus YamlDotNet will parse JSON with little fuss. In the case of CloudFormation, the syntax of JSON requires that all intrinsics are coded long-form. Thus, when parsing JSON or long form syntax in YAML, the resulting object graph is exactly the same. Now the node deserializers become slightly ineffective in this situation. The <code>INodeTypeResolver</code> knows it needs to return an intrinsic if it sees the long form name as a key, however the key has already been consumed by the parser, therefore the object graph ends up containing a <code>KeyValuePair</code> that can look like <code>{&quot;Ref&quot;, RefIntrinsic }</code> where what we actually want at the node where this KVP is, is just the intrinsic implementation.</p>
+<p>Therefore the <a class="xref" href="../api/Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_Deserialize_Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_">Deserialize</a> method performs a second pass, walking the object graph fixing up these references.</p>
+<h1 id="solving-serialization">Solving Serialization</h1>
+<p>This was a little more straight forward than deserialization. In this case we can use implementations of <a href="https://github.com/aaubry/YamlDotNet/blob/master/YamlDotNet/Serialization/IYamlTypeConverter.cs">IYamlTypeConverter</a> and override the <code>WriteYaml</code> method. Having said that, it was still necessary to find a way to serialize deep nests of objects that may be properties of the intrinsic currently being serialized. Now YamlDotNet provides <a href="https://github.com/aaubry/YamlDotNet/blob/master/YamlDotNet/Serialization/IValueSerializer.cs">IValueSerializer</a> which is somewhat analogous to the <code>Func</code> argument passed to node deserializers, however it is not handily passed to you as a method argument on <code>WriteYaml</code>. Therefore it is necessary to create a default <code>ValueSerializer</code> and pass it to each <code>IYamlTypeConverter</code> implementation prior to the serialization run. Thus, when serializing the arguments of an intrinsic, where they are not a scalar or another intrinsic, they can be passed to the value serializer and the recursion of the object graph continues.</p>
+<h1 id="example-syntax">Example Syntax</h1>
+<h2 id="1-long-and-short-form">1 Long and Short Form</h2>
+<pre><code class="lang-yaml">Resources:
+  Type: AWS::SSM::Parameter
+  Properties:
+    Type: String
+    Name: !Ref ShortName
+    Value:
+      Ref: LongValue
+</code></pre>
+<h2 id="2-nesting-intrinsics">2 Nesting Intrinsics</h2>
+<p>Note location of the two <code>!Ref</code> intrinsics...</p>
+<pre><code class="lang-yaml"># --8&lt;---
+    - !If
+      - SecretsManagerDomainCredentialsSecretsKMSKeyCondition
+      - PolicyName: KMSKeyForSecret
+        PolicyDocument:
+          Version: 2012-10-17
+          Statement:
+            - Effect: Allow
+              Action: kms:Decrypt
+              Resource: !Ref SecretsManagerDomainCredentialsSecretsKMSKey
+    - !Ref AWS::NoValue
+</code></pre>
+<h2 id="3-differing-properties">3 Differing properties</h2>
+<h3 id="sub-with-single-argument">Sub with single argument</h3>
+<pre><code class="lang-yaml">  SomeProperty: !Sub blah-${ParamOrResourceReference}
+</code></pre>
+<h3 id="sub-with-two-arguments">Sub with two arguments</h3>
+<p>Note also the nested <code>!GetAtt</code></p>
+<pre><code class="lang-yaml">  SomeProperty: !Sub
+    - blah-${ParamOrResourceReference}-${LocalRef1}-${LocalRef2)
+    - LocalRef1: value
+      LocalRef2: !GetAtt
+        - SomeResource
+        - Property
+</code></pre>
+<h2 id="4-contextual-differences">4 Contextual Differences</h2>
+<p>Note the differing contexts for <code>Condition:</code></p>
+<pre><code class="lang-yaml">Conditions:
+  Cond1: !Equals
+    - 1
+    - 1
+  Cond2: !And
+    - Condition: Cond1
+    - !Equals
+      - 1
+      - 1
+
+# --8&lt;---
+        PolicyDocument:
+          Version: 2012-10-17
+          Statement:
+            - Effect: Allow
+              Action: kms:Decrypt
+              Resource: !Ref SecretsManagerDomainCredentialsSecretsKMSKey
+              Condition:
+                Bool:
+                  aws:ViaAWSService: true
+</code></pre>
+<h2 id="5-intrinsic-with-intrinsic-as-argument">5 Intrinsic with intrinsic as argument</h2>
+<p>Here we get a potential for stack overflow. The tag <code>!Base64</code> is not a scalar value of <code>Value:</code>, but a tag applied to the <code>MappingStart</code> event that opens the object declaration with the property <code>Fn::Sub</code></p>
+<pre><code class="lang-yaml">    Properties:
+      Type: String
+      Value: !Base64
+          Fn::Sub: '${Param1}'
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/docfx/documentation/gory-details.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
