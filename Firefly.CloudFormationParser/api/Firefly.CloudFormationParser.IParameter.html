@@ -95,16 +95,16 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_AllowedPattern.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.AllowedPattern%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L20">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L21">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_AllowedPattern_" data-uid="Firefly.CloudFormationParser.IParameter.AllowedPattern*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_AllowedPattern" data-uid="Firefly.CloudFormationParser.IParameter.AllowedPattern">AllowedPattern</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a regular expression that represents the patterns to allow for String types. The pattern must match the entire parameter value provided.</p>
+  <div class="markdown level1 summary"><p>Gets the allowed pattern as a regular expression.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string AllowedPattern { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">Regex AllowedPattern { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -116,8 +116,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The allowed pattern, which will be <code>null</code> if not defined in the template.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.regularexpressions.regex">Regex</a></td>
+        <td><p>The allowed pattern, or <code>null</code> if the parameter has no allowed pattern.</p>
 </td>
       </tr>
     </tbody>
@@ -127,16 +127,16 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_AllowedValues.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.AllowedValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L28">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L29">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_AllowedValues_" data-uid="Firefly.CloudFormationParser.IParameter.AllowedValues*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_AllowedValues" data-uid="Firefly.CloudFormationParser.IParameter.AllowedValues">AllowedValues</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an array containing the list of values allowed for the parameter.</p>
+  <div class="markdown level1 summary"><p>Gets an array containing the list of values allowed for the parameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">List&lt;string&gt; AllowedValues { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; AllowedValues { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,16 +159,16 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_ConstraintDescription.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.ConstraintDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L36">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L37">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_ConstraintDescription_" data-uid="Firefly.CloudFormationParser.IParameter.ConstraintDescription*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_ConstraintDescription" data-uid="Firefly.CloudFormationParser.IParameter.ConstraintDescription">ConstraintDescription</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string that explains a constraint when the constraint is violated..</p>
+  <div class="markdown level1 summary"><p>Gets a string that explains a constraint when the constraint is violated..</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string ConstraintDescription { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">string ConstraintDescription { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,7 +191,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_CurrentValue.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.CurrentValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L114">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L50">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_CurrentValue_" data-uid="Firefly.CloudFormationParser.IParameter.CurrentValue*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_CurrentValue" data-uid="Firefly.CloudFormationParser.IParameter.CurrentValue">CurrentValue</h4>
@@ -228,17 +228,17 @@ This value may be set by passing a <a class="xref" href="https://docs.microsoft.
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_Default.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.Default%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L45">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L59">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_Default_" data-uid="Firefly.CloudFormationParser.IParameter.Default*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_Default" data-uid="Firefly.CloudFormationParser.IParameter.Default">Default</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value of the appropriate type for the template to use if no value is specified when a stack is created.
+  <div class="markdown level1 summary"><p>Gets a value of the appropriate type for the template to use if no value is specified when a stack is created.
 If you define constraints for the parameter, you must specify a value that adheres to those constraints.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Default { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">string Default { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,16 +261,16 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_Description.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L53">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L67">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_Description_" data-uid="Firefly.CloudFormationParser.IParameter.Description*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_Description" data-uid="Firefly.CloudFormationParser.IParameter.Description">Description</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string of up to 4000 characters that describes the parameter.</p>
+  <div class="markdown level1 summary"><p>Gets a string of up to 4000 characters that describes the parameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Description { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">string Description { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -290,19 +290,179 @@ If you define constraints for the parameter, you must specify a value that adher
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_MaxLength.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.MaxLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_HasMaxLength.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.HasMaxLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L101">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L75">View Source</a>
   </span>
-  <a id="Firefly_CloudFormationParser_IParameter_MaxLength_" data-uid="Firefly.CloudFormationParser.IParameter.MaxLength*"></a>
-  <h4 id="Firefly_CloudFormationParser_IParameter_MaxLength" data-uid="Firefly.CloudFormationParser.IParameter.MaxLength">MaxLength</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an integer value that determines the largest number of characters you want to allow for String types.</p>
+  <a id="Firefly_CloudFormationParser_IParameter_HasMaxLength_" data-uid="Firefly.CloudFormationParser.IParameter.HasMaxLength*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_HasMaxLength" data-uid="Firefly.CloudFormationParser.IParameter.HasMaxLength">HasMaxLength</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this parameter has a maximum length.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int? MaxLength { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool HasMaxLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if this parameter has a maximum length; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_HasMaxValue.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.HasMaxValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L83">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_IParameter_HasMaxValue_" data-uid="Firefly.CloudFormationParser.IParameter.HasMaxValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_HasMaxValue" data-uid="Firefly.CloudFormationParser.IParameter.HasMaxValue">HasMaxValue</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this parameter has a maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasMaxValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if this parameter has a maximum value; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_HasMinLength.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.HasMinLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L91">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_IParameter_HasMinLength_" data-uid="Firefly.CloudFormationParser.IParameter.HasMinLength*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_HasMinLength" data-uid="Firefly.CloudFormationParser.IParameter.HasMinLength">HasMinLength</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this parameter has a minimum length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasMinLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if this parameter has a minimum length; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_HasMinValue.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.HasMinValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L99">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_IParameter_HasMinValue_" data-uid="Firefly.CloudFormationParser.IParameter.HasMinValue*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_HasMinValue" data-uid="Firefly.CloudFormationParser.IParameter.HasMinValue">HasMinValue</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this parameter has a minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasMinValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if this parameter has a minimum value; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_IsSsmParameter.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.IsSsmParameter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L155">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_IParameter_IsSsmParameter_" data-uid="Firefly.CloudFormationParser.IParameter.IsSsmParameter*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_IsSsmParameter" data-uid="Firefly.CloudFormationParser.IParameter.IsSsmParameter">IsSsmParameter</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this parameter is populated from SSM Parameter Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSsmParameter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if this is an SSM-populated parameter; else <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_MaxLength.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.MaxLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L107">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_IParameter_MaxLength_" data-uid="Firefly.CloudFormationParser.IParameter.MaxLength*"></a>
+  <h4 id="Firefly_CloudFormationParser_IParameter_MaxLength" data-uid="Firefly.CloudFormationParser.IParameter.MaxLength">MaxLength</h4>
+  <div class="markdown level1 summary"><p>Gets an integer value that determines the largest number of characters you want to allow for String types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? MaxLength { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -325,16 +485,16 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_MaxValue.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.MaxValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L85">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L115">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_MaxValue_" data-uid="Firefly.CloudFormationParser.IParameter.MaxValue*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_MaxValue" data-uid="Firefly.CloudFormationParser.IParameter.MaxValue">MaxValue</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a numeric value that determines the largest numeric value you want to allow for Number types.</p>
+  <div class="markdown level1 summary"><p>Gets a numeric value that determines the largest numeric value you want to allow for Number types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">double? MaxValue { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">double? MaxValue { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,16 +517,16 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_MinLength.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.MinLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L93">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L123">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_MinLength_" data-uid="Firefly.CloudFormationParser.IParameter.MinLength*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_MinLength" data-uid="Firefly.CloudFormationParser.IParameter.MinLength">MinLength</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an integer value that determines the smallest number of characters you want to allow for String types.</p>
+  <div class="markdown level1 summary"><p>Gets an integer value that determines the smallest number of characters you want to allow for String types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int? MinLength { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">int? MinLength { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -389,16 +549,16 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_MinValue.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.MinValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L77">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L131">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_MinValue_" data-uid="Firefly.CloudFormationParser.IParameter.MinValue*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_MinValue" data-uid="Firefly.CloudFormationParser.IParameter.MinValue">MinValue</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a numeric value that determines the smallest numeric value you want to allow for Number types.</p>
+  <div class="markdown level1 summary"><p>Gets a numeric value that determines the smallest numeric value you want to allow for Number types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">double? MinValue { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">double? MinValue { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -421,16 +581,16 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_NoEcho.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.NoEcho%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L61">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L139">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_NoEcho_" data-uid="Firefly.CloudFormationParser.IParameter.NoEcho*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_NoEcho" data-uid="Firefly.CloudFormationParser.IParameter.NoEcho">NoEcho</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to mask the parameter value to prevent it from being displayed in the console, command line tools, or API.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether to mask the parameter value to prevent it from being displayed in the console, command line tools, or API.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool NoEcho { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool NoEcho { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -453,16 +613,16 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_Type.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L69">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L147">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_Type_" data-uid="Firefly.CloudFormationParser.IParameter.Type*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_Type" data-uid="Firefly.CloudFormationParser.IParameter.Type">Type</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the data type for the parameter.</p>
+  <div class="markdown level1 summary"><p>Gets the data type for the parameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Type { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">string Type { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -487,7 +647,7 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_GetClrType.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.GetClrType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L120">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L162">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_GetClrType_" data-uid="Firefly.CloudFormationParser.IParameter.GetClrType*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_GetClrType" data-uid="Firefly.CloudFormationParser.IParameter.GetClrType">GetClrType()</h4>
@@ -519,7 +679,7 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_GetCurrentValue.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.GetCurrentValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L126">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L168">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_GetCurrentValue_" data-uid="Firefly.CloudFormationParser.IParameter.GetCurrentValue*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_GetCurrentValue" data-uid="Firefly.CloudFormationParser.IParameter.GetCurrentValue">GetCurrentValue()</h4>
@@ -551,7 +711,7 @@ If you define constraints for the parameter, you must specify a value that adher
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter_SetCurrentValue_System_Collections_Generic_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter.SetCurrentValue(System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L167">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L209">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_IParameter_SetCurrentValue_" data-uid="Firefly.CloudFormationParser.IParameter.SetCurrentValue*"></a>
   <h4 id="Firefly_CloudFormationParser_IParameter_SetCurrentValue_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Firefly.CloudFormationParser.IParameter.SetCurrentValue(System.Collections.Generic.IDictionary{System.String,System.Object})">SetCurrentValue(IDictionary&lt;String, Object&gt;)</h4>
@@ -612,7 +772,7 @@ If you define constraints for the parameter, you must specify a value that adher
                     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_IParameter.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.IParameter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/IParameter.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

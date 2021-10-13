@@ -2514,6 +2514,71 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.IParameter.GetCurrentValue
   nameWithType: IParameter.GetCurrentValue
+- uid: Firefly.CloudFormationParser.IParameter.HasMaxLength
+  name: HasMaxLength
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMaxLength
+  commentId: P:Firefly.CloudFormationParser.IParameter.HasMaxLength
+  fullName: Firefly.CloudFormationParser.IParameter.HasMaxLength
+  nameWithType: IParameter.HasMaxLength
+- uid: Firefly.CloudFormationParser.IParameter.HasMaxLength*
+  name: HasMaxLength
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMaxLength_
+  commentId: Overload:Firefly.CloudFormationParser.IParameter.HasMaxLength
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.IParameter.HasMaxLength
+  nameWithType: IParameter.HasMaxLength
+- uid: Firefly.CloudFormationParser.IParameter.HasMaxValue
+  name: HasMaxValue
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMaxValue
+  commentId: P:Firefly.CloudFormationParser.IParameter.HasMaxValue
+  fullName: Firefly.CloudFormationParser.IParameter.HasMaxValue
+  nameWithType: IParameter.HasMaxValue
+- uid: Firefly.CloudFormationParser.IParameter.HasMaxValue*
+  name: HasMaxValue
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMaxValue_
+  commentId: Overload:Firefly.CloudFormationParser.IParameter.HasMaxValue
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.IParameter.HasMaxValue
+  nameWithType: IParameter.HasMaxValue
+- uid: Firefly.CloudFormationParser.IParameter.HasMinLength
+  name: HasMinLength
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMinLength
+  commentId: P:Firefly.CloudFormationParser.IParameter.HasMinLength
+  fullName: Firefly.CloudFormationParser.IParameter.HasMinLength
+  nameWithType: IParameter.HasMinLength
+- uid: Firefly.CloudFormationParser.IParameter.HasMinLength*
+  name: HasMinLength
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMinLength_
+  commentId: Overload:Firefly.CloudFormationParser.IParameter.HasMinLength
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.IParameter.HasMinLength
+  nameWithType: IParameter.HasMinLength
+- uid: Firefly.CloudFormationParser.IParameter.HasMinValue
+  name: HasMinValue
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMinValue
+  commentId: P:Firefly.CloudFormationParser.IParameter.HasMinValue
+  fullName: Firefly.CloudFormationParser.IParameter.HasMinValue
+  nameWithType: IParameter.HasMinValue
+- uid: Firefly.CloudFormationParser.IParameter.HasMinValue*
+  name: HasMinValue
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_HasMinValue_
+  commentId: Overload:Firefly.CloudFormationParser.IParameter.HasMinValue
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.IParameter.HasMinValue
+  nameWithType: IParameter.HasMinValue
+- uid: Firefly.CloudFormationParser.IParameter.IsSsmParameter
+  name: IsSsmParameter
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_IsSsmParameter
+  commentId: P:Firefly.CloudFormationParser.IParameter.IsSsmParameter
+  fullName: Firefly.CloudFormationParser.IParameter.IsSsmParameter
+  nameWithType: IParameter.IsSsmParameter
+- uid: Firefly.CloudFormationParser.IParameter.IsSsmParameter*
+  name: IsSsmParameter
+  href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_IsSsmParameter_
+  commentId: Overload:Firefly.CloudFormationParser.IParameter.IsSsmParameter
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.IParameter.IsSsmParameter
+  nameWithType: IParameter.IsSsmParameter
 - uid: Firefly.CloudFormationParser.IParameter.MaxLength
   name: MaxLength
   href: api/Firefly.CloudFormationParser.IParameter.html#Firefly_CloudFormationParser_IParameter_MaxLength
@@ -3515,6 +3580,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedPattern
   nameWithType: Parameter.AllowedPattern
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedPatternString
+  name: AllowedPatternString
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_AllowedPatternString
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedPatternString
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedPatternString
+  nameWithType: Parameter.AllowedPatternString
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedPatternString*
+  name: AllowedPatternString
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_AllowedPatternString_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedPatternString
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedPatternString
+  nameWithType: Parameter.AllowedPatternString
 - uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.AllowedValues
   name: AllowedValues
   href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_AllowedValues
@@ -3606,6 +3684,71 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.GetCurrentValue
   nameWithType: Parameter.GetCurrentValue
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxLength
+  name: HasMaxLength
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMaxLength
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxLength
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxLength
+  nameWithType: Parameter.HasMaxLength
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxLength*
+  name: HasMaxLength
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMaxLength_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxLength
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxLength
+  nameWithType: Parameter.HasMaxLength
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxValue
+  name: HasMaxValue
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMaxValue
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxValue
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxValue
+  nameWithType: Parameter.HasMaxValue
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxValue*
+  name: HasMaxValue
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMaxValue_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxValue
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMaxValue
+  nameWithType: Parameter.HasMaxValue
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinLength
+  name: HasMinLength
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMinLength
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinLength
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinLength
+  nameWithType: Parameter.HasMinLength
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinLength*
+  name: HasMinLength
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMinLength_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinLength
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinLength
+  nameWithType: Parameter.HasMinLength
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinValue
+  name: HasMinValue
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMinValue
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinValue
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinValue
+  nameWithType: Parameter.HasMinValue
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinValue*
+  name: HasMinValue
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_HasMinValue_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinValue
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.HasMinValue
+  nameWithType: Parameter.HasMinValue
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.IsSsmParameter
+  name: IsSsmParameter
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_IsSsmParameter
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Parameter.IsSsmParameter
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.IsSsmParameter
+  nameWithType: Parameter.IsSsmParameter
+- uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.IsSsmParameter*
+  name: IsSsmParameter
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_IsSsmParameter_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Parameter.IsSsmParameter
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Parameter.IsSsmParameter
+  nameWithType: Parameter.IsSsmParameter
 - uid: Firefly.CloudFormationParser.TemplateObjects.Parameter.MaxLength
   name: MaxLength
   href: api/Firefly.CloudFormationParser.TemplateObjects.Parameter.html#Firefly_CloudFormationParser_TemplateObjects_Parameter_MaxLength
