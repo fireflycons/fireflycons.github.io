@@ -74,6 +74,9 @@
 <p>SAM templates imply resources that will be created when the template is expanded. This package currently does not handle references to the implied resources as it does not currently perform an in-memory expansion of the template (and won't unless I suddenly get the urge to transliterate a few thousand lines of Python), so they are simply ignored when the <a href="dependencies.html">dependency graph</a> is constructed.</p>
 <p>When <a class="xref" href="../api/Firefly.CloudFormationParser.ITemplate.html#Firefly_CloudFormationParser_ITemplate_IsSAMTemplate">ITemplate.IsSAMTemplate</a> is <code>true</code>, relying on the dependency graph is not a good idea as this only knows about objects declared in the template and not objects that will actually exist once the template is deployed. You can however retrieve a processed template from a stack deployed with the SAM template to get the concrete resources and build a dependency graph from that.</p>
 <h2 id="other-macro-types">Other Macro Types</h2>
+<h3 id="fntransform---awsinclude">Fn::Transform - AWS::Include</h3>
+<p>Currently not supported, but will be soon.</p>
+<h3 id="third-party-custom-macros">Third Party (Custom) Macros</h3>
 <p>The library will likely never support custom macro expansions as these rely on third party code that won't be directly accessible to this library, and will always throw exceptions on templates where additional attributes for the macro are present at the resource level (i.e. sibling attribute to Type, Properties). Again, better to retrieve a processed template from CloudFormation.</p>
 </article>
           </div>

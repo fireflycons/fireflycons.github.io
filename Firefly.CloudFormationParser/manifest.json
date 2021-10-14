@@ -5,30 +5,6 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.html",
-          "hash": "Yqvut6c9MRDz6LpM9ECF4maWSZhsMh9TEzBT60Hqdjo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Firefly.CloudFormationParser.Cfn.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Firefly.CloudFormationParser.Cfn.html",
-          "hash": "WIleiPcyx55YhhySHwwUTxaATzCyc/Ahy1NdYsItOFk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.CloudFormationParser.GraphObjects.AbstractVertex.yml",
       "output": {
         ".html": {
@@ -177,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormationParser.IResource.html",
-          "hash": "rjzKeK6QEhA83J0gK5i4ZduM7e97Kq8DUWs5YJHl7eQ="
+          "hash": "+ffA/75GEwoVxveCND/AwLwMY5FMYIxdtvbJ0taSmnU="
         }
       },
       "is_incremental": false,
@@ -497,30 +473,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Firefly.CloudFormationParser.S3.S3DeserializerSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Firefly.CloudFormationParser.S3.S3DeserializerSettings.html",
-          "hash": "smRiJJozQ138a7QWHZaBtokOUWWGsRl/LPyMxdmuGY4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Firefly.CloudFormationParser.S3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Firefly.CloudFormationParser.S3.html",
-          "hash": "kApxKZlGLeAwlOLYNOeZ6sj9qkrm9T2RajH4xIJtXNM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Deserializers.DeserializationContext.yml",
       "output": {
         ".html": {
@@ -545,6 +497,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html",
+          "hash": "C6Oeqq8S9NjJmIHGIN2CBIf5ZBsUqnHYD+JtxbuKmeI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.yml",
       "output": {
         ".html": {
@@ -562,6 +526,18 @@
         ".html": {
           "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html",
           "hash": "fg9/Pg74LUUO+uSl+pBjNdjEe2IZWP7QWaCC/csXMh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html",
+          "hash": "E2u/Xkpvm/2YK8zOelYKopSviGsE0jZ6bOZcssHJljs="
         }
       },
       "is_incremental": false,
@@ -597,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormationParser.Serialization.Settings.html",
-          "hash": "hJRxSBFtr8l+2ilxMCTV+wtjO6mudgSAU0L/BfbTmHk="
+          "hash": "B17l5JeU5kAB5J6fusUKPO9kalBIWkOgGkvRE8NSAMc="
         }
       },
       "is_incremental": false,
@@ -753,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormationParser.TemplateObjects.Resource.html",
-          "hash": "3fX9PuFdJLeNmGfm/IqJ+sSfMVQhxxyWkWvECjKj/do="
+          "hash": "MEoStg1EVGAavHc5k8/NxpsBCiXGDTDqY4pkIVFOee0="
         }
       },
       "is_incremental": false,
@@ -837,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Tcr/FgTMvRK0NWF3PF7QUJlr6QXVvTRtNDRgfcAE6qs="
+          "hash": "ZYr0WhoDWMO86tsLROszfX10Y/hgWBpbj9STnuw4vz4="
         }
       },
       "is_incremental": false,
@@ -849,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "documentation/caveats.html",
-          "hash": "jPZRPat0bMQd2HqhHFaUEIDz2zrHGr1bdYUIR8JYNd8="
+          "hash": "+SebtK1Tv6RPmAcZpuHa95yiEYNYrSVRvwCmFTG7Gak="
         }
       },
       "is_incremental": false,
@@ -892,12 +868,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/resource-props.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/resource-props.html",
+          "hash": "czZz+WU7FR24kn1pBFQILZNMaTYW4F+Vm3wgQGnutmo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "documentation/toc.yml",
       "output": {
         ".html": {
           "relative_path": "documentation/toc.html",
-          "hash": "WqavRTZaT+EkqC0FwbT7XKwQPRihWbfM9yk7gogjROA="
+          "hash": "ClEbtccSuuoSLGcryp1Md6/apip+3+rAkyIkVu1Yy2M="
         }
       },
       "is_incremental": false,
@@ -942,13 +930,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 68,
+          "total_file_count": 66,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

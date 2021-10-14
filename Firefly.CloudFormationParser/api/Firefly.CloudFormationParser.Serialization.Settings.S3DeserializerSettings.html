@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings">
   
   
-  <h1 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings" class="text-break">Class S3DeserializerSettings
+  <h1 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings" class="text-break">Class S3DeserializerSettings
   </h1>
   <div class="markdown level0 summary"><p>
 Deserializer settings for reading a stack template directly from a location in an S3 bucket.
@@ -112,16 +112,13 @@ Deserializer settings for reading a stack template directly from a location in a
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.S3.html">Firefly.CloudFormationParser.S3</a></h6>
-  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.S3.dll</h6>
-  <h5 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.html">Firefly.CloudFormationParser.Serialization.Settings</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class S3DeserializerSettings : IDeserializerSettings, IDisposable</code></pre>
   </div>
-  <h5 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>To use this type, include package <code>Firefly.CloudFormationParser.S3</code> in your project.</p>
-</div>
-  <h5 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_examples"><strong>Examples</strong></h5>
+  <h5 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_examples"><strong>Examples</strong></h5>
   <p>How to deserialize a template given a bucket name and key</p>
 <pre><code>public async Task&lt;ITemplate> ReadFromS3(IAmazonS3 client, string bucket, string key)
 {
@@ -133,14 +130,14 @@ Deserializer settings for reading a stack template directly from a location in a
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_S3_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_String_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.S3.S3DeserializerSettings.%23ctor(Amazon.S3.IAmazonS3%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_String_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.%23ctor(Amazon.S3.IAmazonS3%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser.S3/S3DeserializerSettings.cs/#L61">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/S3DeserializerSettings.cs/#L56">View Source</a>
   </span>
-  <a id="Firefly_CloudFormationParser_S3_S3DeserializerSettings__ctor_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.#ctor*"></a>
-  <h4 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_String_System_String_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.String,System.String)">S3DeserializerSettings(IAmazonS3, String, String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.S3.S3DeserializerSettings.html">S3DeserializerSettings</a> class.</p>
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_String_System_String_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.String,System.String)">S3DeserializerSettings(IAmazonS3, String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html">S3DeserializerSettings</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -179,22 +176,22 @@ Deserializer settings for reading a stack template directly from a location in a
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_S3_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_Uri_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.S3.S3DeserializerSettings.%23ctor(Amazon.S3.IAmazonS3%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_Uri_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.%23ctor(Amazon.S3.IAmazonS3%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser.S3/S3DeserializerSettings.cs/#L82">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/S3DeserializerSettings.cs/#L77">View Source</a>
   </span>
-  <a id="Firefly_CloudFormationParser_S3_S3DeserializerSettings__ctor_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.#ctor*"></a>
-  <h4 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_Uri_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.Uri)">S3DeserializerSettings(IAmazonS3, Uri)</h4>
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_Uri_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.Uri)">S3DeserializerSettings(IAmazonS3, Uri)</h4>
   <div class="markdown level1 summary"><p>
-Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.S3.S3DeserializerSettings.html">S3DeserializerSettings</a> class.
+Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html">S3DeserializerSettings</a> class.
 </p>
 <p>
 This can take object URIs in both HTTPS and S3 schemas. S3 URIs always imply the current region.
 </p>
 <p>
 Since the S3 client passed to the constructor is already set up, HTTPS URIs referring to regions other than
-that which the client is set up for will cause <a class="xref" href="Firefly.CloudFormationParser.S3.S3DeserializerSettings.html#Firefly_CloudFormationParser_S3_S3DeserializerSettings_GetContentAsync">GetContentAsync()</a> to fail.
+that which the client is set up for will cause <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_GetContentAsync">GetContentAsync()</a> to fail.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -230,13 +227,13 @@ that which the client is set up for will cause <a class="xref" href="Firefly.Clo
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_S3_S3DeserializerSettings_ExcludeConditionalResources.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.S3.S3DeserializerSettings.ExcludeConditionalResources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ExcludeConditionalResources.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser.S3/S3DeserializerSettings.cs/#L102">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/S3DeserializerSettings.cs/#L97">View Source</a>
   </span>
-  <a id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_ExcludeConditionalResources_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.ExcludeConditionalResources*"></a>
-  <h4 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_ExcludeConditionalResources" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.ExcludeConditionalResources">ExcludeConditionalResources</h4>
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ExcludeConditionalResources_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ExcludeConditionalResources" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources">ExcludeConditionalResources</h4>
   <div class="markdown level1 summary"><p>
 Gets or sets a value indicating whether to exclude resources and outputs nullified by the evaluation of conditions.
 </p>
@@ -269,13 +266,13 @@ property evaluates to <code>false</code> from the template object returned by th
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_S3_S3DeserializerSettings_ParameterValues.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.S3.S3DeserializerSettings.ParameterValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ParameterValues.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser.S3/S3DeserializerSettings.cs/#L105">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/S3DeserializerSettings.cs/#L100">View Source</a>
   </span>
-  <a id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_ParameterValues_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.ParameterValues*"></a>
-  <h4 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_ParameterValues" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.ParameterValues">ParameterValues</h4>
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ParameterValues_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ParameterValues" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues">ParameterValues</h4>
   <div class="markdown level1 summary"><p>
 Gets or sets an optional dictionary of values to assign to parameters.
 </p>
@@ -309,13 +306,13 @@ declared default value, the default for the type - empty string, zero for number
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_S3_S3DeserializerSettings_Dispose.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.S3.S3DeserializerSettings.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_Dispose.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser.S3/S3DeserializerSettings.cs/#L120">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/S3DeserializerSettings.cs/#L115">View Source</a>
   </span>
-  <a id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_Dispose_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.Dispose*"></a>
-  <h4 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_Dispose" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.Dispose">Dispose()</h4>
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_Dispose_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_Dispose" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -325,13 +322,13 @@ declared default value, the default for the type - empty string, zero for number
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_S3_S3DeserializerSettings_GetContentAsync.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.S3.S3DeserializerSettings.GetContentAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_GetContentAsync.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser.S3/S3DeserializerSettings.cs/#L108">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/S3DeserializerSettings.cs/#L103">View Source</a>
   </span>
-  <a id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_GetContentAsync_" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.GetContentAsync*"></a>
-  <h4 id="Firefly_CloudFormationParser_S3_S3DeserializerSettings_GetContentAsync" data-uid="Firefly.CloudFormationParser.S3.S3DeserializerSettings.GetContentAsync">GetContentAsync()</h4>
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_GetContentAsync_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_GetContentAsync" data-uid="Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync">GetContentAsync()</h4>
   <div class="markdown level1 summary"><p>
 Gets the template content. This should be implemented as an <code>async</code> method.
 </p>
@@ -380,10 +377,10 @@ It is the job of the implementation to dispose of any resources involved in this
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_S3_S3DeserializerSettings.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.S3.S3DeserializerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser.S3/S3DeserializerSettings.cs/#L33" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/S3DeserializerSettings.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

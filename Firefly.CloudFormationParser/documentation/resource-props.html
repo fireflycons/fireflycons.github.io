@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Firefly.CloudFormationParser.Cfn
-   </title>
+    <title>Accessing Resource Properties </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Firefly.CloudFormationParser.Cfn
-   ">
+    <meta name="title" content="Accessing Resource Properties ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,25 +66,32 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.Cfn">
-  
-  <h1 id="Firefly_CloudFormationParser_Cfn" data-uid="Firefly.CloudFormationParser.Cfn" class="text-break">Namespace Firefly.CloudFormationParser.Cfn
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.html">CfnStackDeserializerSettings</a></h4>
-      <section><p>
-Deserializer settings for reading a stack template directly from the CloudFormation API, i.e. the template of a deployed CloudFormation Stack.
-</p>
-<p>
-This class reads a template from an existing CloudFormation stack, and populates <a class="xref" href="Firefly.CloudFormationParser.Cfn.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Cfn_CfnStackDeserializerSettings_ParameterValues">ParameterValues</a>
-with the current values of the stack&apos;s parameters as set by the most recent update. Parameters that were declared with <code>NoEcho</code>
-will receive undefined values.
-</p>
-</section>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="accessing-resource-properties">Accessing Resource Properties</h1>
+
+<p>The properties of a resource may be read or modified using the property accessor methods on <a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html">IResource</a>. This permits the modification of resources that would be associated with making a CloudFormation Package.</p>
+<h2 id="property-path-syntax">Property Path Syntax</h2>
+<p>To reference a particular property, use a path syntax as follows.</p>
+<pre><code class="lang-yaml">  ConfigRole: # Role for config service, allowing access to S3 bucket and SNS
+    Type: &quot;AWS::IAM::Role&quot;
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: &quot;2012-10-17&quot;
+        Statement:
+          - Effect: &quot;Allow&quot;
+            Principal:
+              Service: &quot;config.amazonaws.com&quot;
+            Action:
+              - &quot;sts:AssumeRole&quot;
+</code></pre>
+<p>If we wanted to get to value of the <code>Action</code> in the policy document above, the path syntax would be</p>
+<p><code>AssumeRolePolicyDocument.Statement.0.Action.0</code></p>
+<p>That is to say, for mapping entries use the key name and for list entries, use the zero-based index.</p>
+<h2 id="property-accessor-methods">Property Accessor Methods</h2>
+<ul>
+<li><a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_GetResourcePropertyValue_System_String_">IResource.GetResourcePropertyValue</a> - Gets the value of a property at the given path.</li>
+<li><a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_UpdateResourceProperty_System_String_System_Object_">IResource.UpdateResourceProperty</a> - Replaces the value of a propery at the given path.</li>
+</ul>
 </article>
           </div>
           
@@ -94,6 +99,9 @@ will receive undefined values.
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/docfx/documentation/resource-props.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
