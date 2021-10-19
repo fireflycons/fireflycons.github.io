@@ -73,8 +73,14 @@
   
   <h1 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings" class="text-break">Interface IDeserializerSettings
   </h1>
-  <div class="markdown level0 summary"><p>Defines properties required by the CloudFormation deserializer.
-This can be implemented to provide deserialization from other sources e.g. a CloudFormation Stack or S3 bucket.</p>
+  <div class="markdown level0 summary"><p>
+Defines properties required by the CloudFormation deserializer.
+</p>
+<p>
+An object inherited from this interface is returned by a call to <a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_Build">Build()</a>.
+You should dispose this object following template deserialization to free any resources that are internally allocated such as
+streams and readers.
+</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -96,12 +102,12 @@ This can be implemented to provide deserialization from other sources e.g. a Clo
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ExcludeConditionalResources.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ExcludeConditionalResources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L29">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L37">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ExcludeConditionalResources_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ExcludeConditionalResources*"></a>
   <h4 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ExcludeConditionalResources" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ExcludeConditionalResources">ExcludeConditionalResources</h4>
   <div class="markdown level1 summary"><p>
-Gets or sets a value indicating whether to exclude resources and outputs nullified by the evaluation of conditions.
+Gets a value indicating whether to exclude resources and outputs nullified by the evaluation of conditions.
 </p>
 <p>
 When this is <code>true</code>, the results of the evaluation of conditions in the <code>Conditions</code> block of the template using the values of
@@ -112,7 +118,7 @@ property evaluates to <code>false</code> from the template object returned by th
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool ExcludeConditionalResources { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool ExcludeConditionalResources { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,22 +141,29 @@ property evaluates to <code>false</code> from the template object returned by th
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ParameterValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L43">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L58">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ParameterValues*"></a>
   <h4 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_ParameterValues" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ParameterValues">ParameterValues</h4>
   <div class="markdown level1 summary"><p>
-Gets or sets an optional dictionary of values to assign to parameters.
+Gets an optional dictionary of values to assign to parameters.
 </p>
 <p>
 If left unset, then parameter defaults where present will be used in evaluations, or where there is no
 declared default value, the default for the type - empty string, zero for number etc.
 </p>
+<p>
+When deserializing directly from an existing CloudFormation Stack, current values of parameters will be retrieved
+from the stack and populated here. The API will not return values for parameters flagged <code>NoEcho</code>, therefore
+if you want to be able to evaluate values for these parameters, pass a dictionary of the values you want to use to
+<a class="xref" href="Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithParameterValues_System_Collections_Generic_IDictionary_System_String_System_Object__">WithParameterValues(IDictionary&lt;String, Object&gt;)</a>, and these will be merged with the remaining parameters
+from the stack. 
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDictionary&lt;string, object&gt; ParameterValues { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">IDictionary&lt;string, object&gt; ParameterValues { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -168,6 +181,38 @@ declared default value, the default for the type - empty string, zero for number
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_S3Client.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L66">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_S3Client_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client*"></a>
+  <h4 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_S3Client" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client">S3Client</h4>
+  <div class="markdown level1 summary"><p>Gets the S3 client to use for any implied S3 operations, such as retrieving nested stacks or includes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAmazonS3 S3Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.S3.IAmazonS3</span></td>
+        <td><p>The S3 client.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -175,7 +220,7 @@ declared default value, the default for the type - empty string, zero for number
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_GetContentAsync.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.GetContentAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L55">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L78">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_GetContentAsync_" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.GetContentAsync*"></a>
   <h4 id="Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_GetContentAsync" data-uid="Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.GetContentAsync">GetContentAsync()</h4>
@@ -219,7 +264,7 @@ It is the job of the implementation to dispose of any resources involved in this
                     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Serialization/Settings/IDeserializerSettings.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

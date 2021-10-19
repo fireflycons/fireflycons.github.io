@@ -504,6 +504,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.TagName
   nameWithType: AbstractIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UnpackIntrinsic(System.Object)
+  name: UnpackIntrinsic(Object)
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_UnpackIntrinsic_System_Object_
+  commentId: M:Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UnpackIntrinsic(System.Object)
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UnpackIntrinsic(System.Object)
+  nameWithType: AbstractIntrinsic.UnpackIntrinsic(Object)
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UnpackIntrinsic*
+  name: UnpackIntrinsic
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_UnpackIntrinsic_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UnpackIntrinsic
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UnpackIntrinsic
+  nameWithType: AbstractIntrinsic.UnpackIntrinsic
 - uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UseLongForm
   name: UseLongForm
   href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_UseLongForm
@@ -1306,19 +1319,6 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.Evaluate
   nameWithType: GetAZsIntrinsic.Evaluate
-- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.GetAZsFunction
-  name: GetAZsFunction
-  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAZsIntrinsic_GetAZsFunction
-  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.GetAZsFunction
-  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.GetAZsFunction
-  nameWithType: GetAZsIntrinsic.GetAZsFunction
-- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.GetAZsFunction*
-  name: GetAZsFunction
-  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAZsIntrinsic_GetAZsFunction_
-  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.GetAZsFunction
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.GetAZsFunction
-  nameWithType: GetAZsIntrinsic.GetAZsFunction
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.GetReferencedObjects(Firefly.CloudFormationParser.ITemplate)
   name: GetReferencedObjects(ITemplate)
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAZsIntrinsic_GetReferencedObjects_Firefly_CloudFormationParser_ITemplate_
@@ -2269,6 +2269,18 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.TagName
   nameWithType: IIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Utils
+  name: Firefly.CloudFormationParser.Intrinsics.Utils
+  href: api/Firefly.CloudFormationParser.Intrinsics.Utils.html
+  commentId: N:Firefly.CloudFormationParser.Intrinsics.Utils
+  fullName: Firefly.CloudFormationParser.Intrinsics.Utils
+  nameWithType: Firefly.CloudFormationParser.Intrinsics.Utils
+- uid: Firefly.CloudFormationParser.Intrinsics.Utils.AWSNoValue
+  name: AWSNoValue
+  href: api/Firefly.CloudFormationParser.Intrinsics.Utils.AWSNoValue.html
+  commentId: T:Firefly.CloudFormationParser.Intrinsics.Utils.AWSNoValue
+  fullName: Firefly.CloudFormationParser.Intrinsics.Utils.AWSNoValue
+  nameWithType: AWSNoValue
 - uid: Firefly.CloudFormationParser.IOutput
   name: IOutput
   href: api/Firefly.CloudFormationParser.IOutput.html
@@ -2693,6 +2705,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.IResource.GetResourcePropertyValue
   nameWithType: IResource.GetResourcePropertyValue
+- uid: Firefly.CloudFormationParser.IResource.IsSAMResource
+  name: IsSAMResource
+  href: api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_IsSAMResource
+  commentId: P:Firefly.CloudFormationParser.IResource.IsSAMResource
+  fullName: Firefly.CloudFormationParser.IResource.IsSAMResource
+  nameWithType: IResource.IsSAMResource
+- uid: Firefly.CloudFormationParser.IResource.IsSAMResource*
+  name: IsSAMResource
+  href: api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_IsSAMResource_
+  commentId: Overload:Firefly.CloudFormationParser.IResource.IsSAMResource
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.IResource.IsSAMResource
+  nameWithType: IResource.IsSAMResource
 - uid: Firefly.CloudFormationParser.IResource.Metadata
   name: Metadata
   href: api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_Metadata
@@ -2719,6 +2744,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.IResource.Properties
   nameWithType: IResource.Properties
+- uid: Firefly.CloudFormationParser.IResource.Template
+  name: Template
+  href: api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_Template
+  commentId: P:Firefly.CloudFormationParser.IResource.Template
+  fullName: Firefly.CloudFormationParser.IResource.Template
+  nameWithType: IResource.Template
+- uid: Firefly.CloudFormationParser.IResource.Template*
+  name: Template
+  href: api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_Template_
+  commentId: Overload:Firefly.CloudFormationParser.IResource.Template
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.IResource.Template
+  nameWithType: IResource.Template
 - uid: Firefly.CloudFormationParser.IResource.Type
   name: Type
   href: api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_Type
@@ -2933,6 +2971,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.ITemplate.Parameters
   nameWithType: ITemplate.Parameters
+- uid: Firefly.CloudFormationParser.ITemplate.PseudoParameters
+  name: PseudoParameters
+  href: api/Firefly.CloudFormationParser.ITemplate.html#Firefly_CloudFormationParser_ITemplate_PseudoParameters
+  commentId: P:Firefly.CloudFormationParser.ITemplate.PseudoParameters
+  fullName: Firefly.CloudFormationParser.ITemplate.PseudoParameters
+  nameWithType: ITemplate.PseudoParameters
+- uid: Firefly.CloudFormationParser.ITemplate.PseudoParameters*
+  name: PseudoParameters
+  href: api/Firefly.CloudFormationParser.ITemplate.html#Firefly_CloudFormationParser_ITemplate_PseudoParameters_
+  commentId: Overload:Firefly.CloudFormationParser.ITemplate.PseudoParameters
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.ITemplate.PseudoParameters
+  nameWithType: ITemplate.PseudoParameters
 - uid: Firefly.CloudFormationParser.ITemplate.Resources
   name: Resources
   href: api/Firefly.CloudFormationParser.ITemplate.html#Firefly_CloudFormationParser_ITemplate_Resources
@@ -2972,6 +3023,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.ITemplate.Transform
   nameWithType: ITemplate.Transform
+- uid: Firefly.CloudFormationParser.ITemplate.UserParameterValues
+  name: UserParameterValues
+  href: api/Firefly.CloudFormationParser.ITemplate.html#Firefly_CloudFormationParser_ITemplate_UserParameterValues
+  commentId: P:Firefly.CloudFormationParser.ITemplate.UserParameterValues
+  fullName: Firefly.CloudFormationParser.ITemplate.UserParameterValues
+  nameWithType: ITemplate.UserParameterValues
+- uid: Firefly.CloudFormationParser.ITemplate.UserParameterValues*
+  name: UserParameterValues
+  href: api/Firefly.CloudFormationParser.ITemplate.html#Firefly_CloudFormationParser_ITemplate_UserParameterValues_
+  commentId: Overload:Firefly.CloudFormationParser.ITemplate.UserParameterValues
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.ITemplate.UserParameterValues
+  nameWithType: ITemplate.UserParameterValues
 - uid: Firefly.CloudFormationParser.Serialization.Deserializers
   name: Firefly.CloudFormationParser.Serialization.Deserializers
   href: api/Firefly.CloudFormationParser.Serialization.Deserializers.html
@@ -3044,96 +3108,190 @@ references:
   commentId: N:Firefly.CloudFormationParser.Serialization.Settings
   fullName: Firefly.CloudFormationParser.Serialization.Settings
   nameWithType: Firefly.CloudFormationParser.Serialization.Settings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings
-  name: CfnStackDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html
-  commentId: T:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings
-  nameWithType: CfnStackDeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.#ctor(Amazon.CloudFormation.IAmazonCloudFormation,System.String)
-  name: CfnStackDeserializerSettings(IAmazonCloudFormation, String)
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings__ctor_Amazon_CloudFormation_IAmazonCloudFormation_System_String_
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.#ctor(Amazon.CloudFormation.IAmazonCloudFormation,System.String)
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.CfnStackDeserializerSettings(Amazon.CloudFormation.IAmazonCloudFormation, System.String)
-  nameWithType: CfnStackDeserializerSettings.CfnStackDeserializerSettings(IAmazonCloudFormation, String)
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.#ctor*
-  name: CfnStackDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings__ctor_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.#ctor
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder
+  name: DeserializerSettingsBuilder
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html
+  commentId: T:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder
+  nameWithType: DeserializerSettingsBuilder
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.Build
+  name: Build()
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_Build
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.Build
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.Build()
+  nameWithType: DeserializerSettingsBuilder.Build()
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.Build*
+  name: Build
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_Build_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.Build
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.CfnStackDeserializerSettings
-  nameWithType: CfnStackDeserializerSettings.CfnStackDeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.Dispose
-  name: Dispose()
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_Dispose
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.Dispose
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.Dispose()
-  nameWithType: CfnStackDeserializerSettings.Dispose()
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.Dispose*
-  name: Dispose
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_Dispose_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.Dispose
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.Build
+  nameWithType: DeserializerSettingsBuilder.Build
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSAccountId(System.String)
+  name: WithAWSAccountId(String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithAWSAccountId_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSAccountId(System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSAccountId(System.String)
+  nameWithType: DeserializerSettingsBuilder.WithAWSAccountId(String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSAccountId*
+  name: WithAWSAccountId
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithAWSAccountId_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSAccountId
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.Dispose
-  nameWithType: CfnStackDeserializerSettings.Dispose
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ExcludeConditionalResources
-  name: ExcludeConditionalResources
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_ExcludeConditionalResources
-  commentId: P:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ExcludeConditionalResources
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ExcludeConditionalResources
-  nameWithType: CfnStackDeserializerSettings.ExcludeConditionalResources
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ExcludeConditionalResources*
-  name: ExcludeConditionalResources
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_ExcludeConditionalResources_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ExcludeConditionalResources
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSAccountId
+  nameWithType: DeserializerSettingsBuilder.WithAWSAccountId
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSRegion(System.String)
+  name: WithAWSRegion(String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithAWSRegion_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSRegion(System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSRegion(System.String)
+  nameWithType: DeserializerSettingsBuilder.WithAWSRegion(String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSRegion*
+  name: WithAWSRegion
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithAWSRegion_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSRegion
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ExcludeConditionalResources
-  nameWithType: CfnStackDeserializerSettings.ExcludeConditionalResources
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.GetContentAsync
-  name: GetContentAsync()
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_GetContentAsync
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.GetContentAsync
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.GetContentAsync()
-  nameWithType: CfnStackDeserializerSettings.GetContentAsync()
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.GetContentAsync*
-  name: GetContentAsync
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_GetContentAsync_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.GetContentAsync
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithAWSRegion
+  nameWithType: DeserializerSettingsBuilder.WithAWSRegion
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithCloudFormationStack(Amazon.CloudFormation.IAmazonCloudFormation,System.String)
+  name: WithCloudFormationStack(IAmazonCloudFormation, String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithCloudFormationStack_Amazon_CloudFormation_IAmazonCloudFormation_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithCloudFormationStack(Amazon.CloudFormation.IAmazonCloudFormation,System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithCloudFormationStack(Amazon.CloudFormation.IAmazonCloudFormation, System.String)
+  nameWithType: DeserializerSettingsBuilder.WithCloudFormationStack(IAmazonCloudFormation, String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithCloudFormationStack*
+  name: WithCloudFormationStack
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithCloudFormationStack_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithCloudFormationStack
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.GetContentAsync
-  nameWithType: CfnStackDeserializerSettings.GetContentAsync
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ParameterValues
-  name: ParameterValues
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_ParameterValues
-  commentId: P:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ParameterValues
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ParameterValues
-  nameWithType: CfnStackDeserializerSettings.ParameterValues
-- uid: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ParameterValues*
-  name: ParameterValues
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_CfnStackDeserializerSettings_ParameterValues_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ParameterValues
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithCloudFormationStack
+  nameWithType: DeserializerSettingsBuilder.WithCloudFormationStack
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithExcludeConditionalResources(System.Boolean)
+  name: WithExcludeConditionalResources(Boolean)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithExcludeConditionalResources_System_Boolean_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithExcludeConditionalResources(System.Boolean)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithExcludeConditionalResources(System.Boolean)
+  nameWithType: DeserializerSettingsBuilder.WithExcludeConditionalResources(Boolean)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithExcludeConditionalResources*
+  name: WithExcludeConditionalResources
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithExcludeConditionalResources_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithExcludeConditionalResources
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.CfnStackDeserializerSettings.ParameterValues
-  nameWithType: CfnStackDeserializerSettings.ParameterValues
-- uid: Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings
-  name: FileDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.html
-  commentId: T:Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings
-  nameWithType: FileDeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.#ctor(System.String)
-  name: FileDeserializerSettings(String)
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_FileDeserializerSettings__ctor_System_String_
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.#ctor(System.String)
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.FileDeserializerSettings(System.String)
-  nameWithType: FileDeserializerSettings.FileDeserializerSettings(String)
-- uid: Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.#ctor*
-  name: FileDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_FileDeserializerSettings__ctor_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.#ctor
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithExcludeConditionalResources
+  nameWithType: DeserializerSettingsBuilder.WithExcludeConditionalResources
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithParameterValues(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: WithParameterValues(IDictionary<String, Object>)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithParameterValues_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithParameterValues(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: WithParameterValues(IDictionary(Of String, Object))
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithParameterValues(System.Collections.Generic.IDictionary<System.String, System.Object>)
+  fullName.vb: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithParameterValues(System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  nameWithType: DeserializerSettingsBuilder.WithParameterValues(IDictionary<String, Object>)
+  nameWithType.vb: DeserializerSettingsBuilder.WithParameterValues(IDictionary(Of String, Object))
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithParameterValues*
+  name: WithParameterValues
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithParameterValues_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithParameterValues
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.FileDeserializerSettings.FileDeserializerSettings
-  nameWithType: FileDeserializerSettings.FileDeserializerSettings
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithParameterValues
+  nameWithType: DeserializerSettingsBuilder.WithParameterValues
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithS3Client(Amazon.S3.IAmazonS3)
+  name: WithS3Client(IAmazonS3)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithS3Client_Amazon_S3_IAmazonS3_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithS3Client(Amazon.S3.IAmazonS3)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithS3Client(Amazon.S3.IAmazonS3)
+  nameWithType: DeserializerSettingsBuilder.WithS3Client(IAmazonS3)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithS3Client*
+  name: WithS3Client
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithS3Client_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithS3Client
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithS3Client
+  nameWithType: DeserializerSettingsBuilder.WithS3Client
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackId(System.String)
+  name: WithStackId(String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithStackId_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackId(System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackId(System.String)
+  nameWithType: DeserializerSettingsBuilder.WithStackId(String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackId*
+  name: WithStackId
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithStackId_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackId
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackId
+  nameWithType: DeserializerSettingsBuilder.WithStackId
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackName(System.String)
+  name: WithStackName(String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithStackName_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackName(System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackName(System.String)
+  nameWithType: DeserializerSettingsBuilder.WithStackName(String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackName*
+  name: WithStackName
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithStackName_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackName
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithStackName
+  nameWithType: DeserializerSettingsBuilder.WithStackName
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateFile(System.String)
+  name: WithTemplateFile(String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateFile_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateFile(System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateFile(System.String)
+  nameWithType: DeserializerSettingsBuilder.WithTemplateFile(String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateFile*
+  name: WithTemplateFile
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateFile_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateFile
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateFile
+  nameWithType: DeserializerSettingsBuilder.WithTemplateFile
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3(Amazon.S3.IAmazonS3,System.String,System.String)
+  name: WithTemplateS3(IAmazonS3, String, String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateS3_Amazon_S3_IAmazonS3_System_String_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3(Amazon.S3.IAmazonS3,System.String,System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3(Amazon.S3.IAmazonS3, System.String, System.String)
+  nameWithType: DeserializerSettingsBuilder.WithTemplateS3(IAmazonS3, String, String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3(Amazon.S3.IAmazonS3,System.Uri)
+  name: WithTemplateS3(IAmazonS3, Uri)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateS3_Amazon_S3_IAmazonS3_System_Uri_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3(Amazon.S3.IAmazonS3,System.Uri)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3(Amazon.S3.IAmazonS3, System.Uri)
+  nameWithType: DeserializerSettingsBuilder.WithTemplateS3(IAmazonS3, Uri)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3*
+  name: WithTemplateS3
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateS3_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateS3
+  nameWithType: DeserializerSettingsBuilder.WithTemplateS3
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateStream(System.IO.Stream)
+  name: WithTemplateStream(Stream)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateStream_System_IO_Stream_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateStream(System.IO.Stream)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateStream(System.IO.Stream)
+  nameWithType: DeserializerSettingsBuilder.WithTemplateStream(Stream)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateStream*
+  name: WithTemplateStream
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateStream_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateStream
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateStream
+  nameWithType: DeserializerSettingsBuilder.WithTemplateStream
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateString(System.String)
+  name: WithTemplateString(String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateString_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateString(System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateString(System.String)
+  nameWithType: DeserializerSettingsBuilder.WithTemplateString(String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateString*
+  name: WithTemplateString
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithTemplateString_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateString
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.WithTemplateString
+  nameWithType: DeserializerSettingsBuilder.WithTemplateString
 - uid: Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings
   name: IDeserializerSettings
   href: api/Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html
@@ -3179,173 +3337,56 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.ParameterValues
   nameWithType: IDeserializerSettings.ParameterValues
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings
-  name: S3DeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html
-  commentId: T:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings
-  nameWithType: S3DeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.String,System.String)
-  name: S3DeserializerSettings(IAmazonS3, String, String)
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_String_System_String_
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.String,System.String)
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.S3DeserializerSettings(Amazon.S3.IAmazonS3, System.String, System.String)
-  nameWithType: S3DeserializerSettings.S3DeserializerSettings(IAmazonS3, String, String)
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.Uri)
-  name: S3DeserializerSettings(IAmazonS3, Uri)
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_Amazon_S3_IAmazonS3_System_Uri_
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor(Amazon.S3.IAmazonS3,System.Uri)
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.S3DeserializerSettings(Amazon.S3.IAmazonS3, System.Uri)
-  nameWithType: S3DeserializerSettings.S3DeserializerSettings(IAmazonS3, Uri)
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor*
-  name: S3DeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings__ctor_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.#ctor
+- uid: Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client
+  name: S3Client
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_S3Client
+  commentId: P:Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client
+  nameWithType: IDeserializerSettings.S3Client
+- uid: Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client*
+  name: S3Client
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_IDeserializerSettings_S3Client_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.S3DeserializerSettings
-  nameWithType: S3DeserializerSettings.S3DeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose
-  name: Dispose()
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_Dispose
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose()
-  nameWithType: S3DeserializerSettings.Dispose()
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose*
-  name: Dispose
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_Dispose_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.IDeserializerSettings.S3Client
+  nameWithType: IDeserializerSettings.S3Client
+- uid: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException
+  name: InvalidDeserializerSettingsException
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.html
+  commentId: T:Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException
+  nameWithType: InvalidDeserializerSettingsException
+- uid: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor
+  name: InvalidDeserializerSettingsException()
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.html#Firefly_CloudFormationParser_Serialization_Settings_InvalidDeserializerSettingsException__ctor
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.InvalidDeserializerSettingsException()
+  nameWithType: InvalidDeserializerSettingsException.InvalidDeserializerSettingsException()
+- uid: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: InvalidDeserializerSettingsException(SerializationInfo, StreamingContext)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.html#Firefly_CloudFormationParser_Serialization_Settings_InvalidDeserializerSettingsException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.InvalidDeserializerSettingsException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: InvalidDeserializerSettingsException.InvalidDeserializerSettingsException(SerializationInfo, StreamingContext)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor(System.String)
+  name: InvalidDeserializerSettingsException(String)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.html#Firefly_CloudFormationParser_Serialization_Settings_InvalidDeserializerSettingsException__ctor_System_String_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor(System.String)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.InvalidDeserializerSettingsException(System.String)
+  nameWithType: InvalidDeserializerSettingsException.InvalidDeserializerSettingsException(String)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor(System.String,System.Exception)
+  name: InvalidDeserializerSettingsException(String, Exception)
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.html#Firefly_CloudFormationParser_Serialization_Settings_InvalidDeserializerSettingsException__ctor_System_String_System_Exception_
+  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor(System.String,System.Exception)
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.InvalidDeserializerSettingsException(System.String, System.Exception)
+  nameWithType: InvalidDeserializerSettingsException.InvalidDeserializerSettingsException(String, Exception)
+- uid: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor*
+  name: InvalidDeserializerSettingsException
+  href: api/Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.html#Firefly_CloudFormationParser_Serialization_Settings_InvalidDeserializerSettingsException__ctor_
+  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.#ctor
   isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.Dispose
-  nameWithType: S3DeserializerSettings.Dispose
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources
-  name: ExcludeConditionalResources
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ExcludeConditionalResources
-  commentId: P:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources
-  nameWithType: S3DeserializerSettings.ExcludeConditionalResources
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources*
-  name: ExcludeConditionalResources
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ExcludeConditionalResources_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ExcludeConditionalResources
-  nameWithType: S3DeserializerSettings.ExcludeConditionalResources
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync
-  name: GetContentAsync()
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_GetContentAsync
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync()
-  nameWithType: S3DeserializerSettings.GetContentAsync()
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync*
-  name: GetContentAsync
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_GetContentAsync_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.GetContentAsync
-  nameWithType: S3DeserializerSettings.GetContentAsync
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues
-  name: ParameterValues
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ParameterValues
-  commentId: P:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues
-  nameWithType: S3DeserializerSettings.ParameterValues
-- uid: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues*
-  name: ParameterValues
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_S3DeserializerSettings_ParameterValues_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.S3DeserializerSettings.ParameterValues
-  nameWithType: S3DeserializerSettings.ParameterValues
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings
-  name: StreamDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html
-  commentId: T:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings
-  nameWithType: StreamDeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.#ctor(System.IO.Stream)
-  name: StreamDeserializerSettings(Stream)
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings__ctor_System_IO_Stream_
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.#ctor(System.IO.Stream)
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.StreamDeserializerSettings(System.IO.Stream)
-  nameWithType: StreamDeserializerSettings.StreamDeserializerSettings(Stream)
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.#ctor*
-  name: StreamDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings__ctor_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.#ctor
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.StreamDeserializerSettings
-  nameWithType: StreamDeserializerSettings.StreamDeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.Dispose
-  name: Dispose()
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_Dispose
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.Dispose
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.Dispose()
-  nameWithType: StreamDeserializerSettings.Dispose()
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.Dispose*
-  name: Dispose
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_Dispose_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.Dispose
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.Dispose
-  nameWithType: StreamDeserializerSettings.Dispose
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ExcludeConditionalResources
-  name: ExcludeConditionalResources
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_ExcludeConditionalResources
-  commentId: P:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ExcludeConditionalResources
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ExcludeConditionalResources
-  nameWithType: StreamDeserializerSettings.ExcludeConditionalResources
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ExcludeConditionalResources*
-  name: ExcludeConditionalResources
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_ExcludeConditionalResources_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ExcludeConditionalResources
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ExcludeConditionalResources
-  nameWithType: StreamDeserializerSettings.ExcludeConditionalResources
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.GetContentAsync
-  name: GetContentAsync()
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_GetContentAsync
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.GetContentAsync
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.GetContentAsync()
-  nameWithType: StreamDeserializerSettings.GetContentAsync()
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.GetContentAsync*
-  name: GetContentAsync
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_GetContentAsync_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.GetContentAsync
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.GetContentAsync
-  nameWithType: StreamDeserializerSettings.GetContentAsync
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ParameterValues
-  name: ParameterValues
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_ParameterValues
-  commentId: P:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ParameterValues
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ParameterValues
-  nameWithType: StreamDeserializerSettings.ParameterValues
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ParameterValues*
-  name: ParameterValues
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StreamDeserializerSettings_ParameterValues_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ParameterValues
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StreamDeserializerSettings.ParameterValues
-  nameWithType: StreamDeserializerSettings.ParameterValues
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings
-  name: StringDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.html
-  commentId: T:Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings
-  nameWithType: StringDeserializerSettings
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.#ctor(System.String)
-  name: StringDeserializerSettings(String)
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StringDeserializerSettings__ctor_System_String_
-  commentId: M:Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.#ctor(System.String)
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.StringDeserializerSettings(System.String)
-  nameWithType: StringDeserializerSettings.StringDeserializerSettings(String)
-- uid: Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.#ctor*
-  name: StringDeserializerSettings
-  href: api/Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.html#Firefly_CloudFormationParser_Serialization_Settings_StringDeserializerSettings__ctor_
-  commentId: Overload:Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.#ctor
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.Serialization.Settings.StringDeserializerSettings.StringDeserializerSettings
-  nameWithType: StringDeserializerSettings.StringDeserializerSettings
+  fullName: Firefly.CloudFormationParser.Serialization.Settings.InvalidDeserializerSettingsException.InvalidDeserializerSettingsException
+  nameWithType: InvalidDeserializerSettingsException.InvalidDeserializerSettingsException
 - uid: Firefly.CloudFormationParser.TemplateObjects
   name: Firefly.CloudFormationParser.TemplateObjects
   href: api/Firefly.CloudFormationParser.TemplateObjects.html
@@ -3390,6 +3431,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.GlobalSection.Context
   nameWithType: GlobalSection.Context
+- uid: Firefly.CloudFormationParser.TemplateObjects.GlobalSection.GetSection(System.String)
+  name: GetSection(String)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.GlobalSection.html#Firefly_CloudFormationParser_TemplateObjects_GlobalSection_GetSection_System_String_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.GlobalSection.GetSection(System.String)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.GlobalSection.GetSection(System.String)
+  nameWithType: GlobalSection.GetSection(String)
+- uid: Firefly.CloudFormationParser.TemplateObjects.GlobalSection.GetSection*
+  name: GetSection
+  href: api/Firefly.CloudFormationParser.TemplateObjects.GlobalSection.html#Firefly_CloudFormationParser_TemplateObjects_GlobalSection_GetSection_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.GlobalSection.GetSection
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.GlobalSection.GetSection
+  nameWithType: GlobalSection.GetSection
 - uid: Firefly.CloudFormationParser.TemplateObjects.IConditionalTemplateObject
   name: IConditionalTemplateObject
   href: api/Firefly.CloudFormationParser.TemplateObjects.IConditionalTemplateObject.html
@@ -4018,6 +4072,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.GetResourcePropertyValue
   nameWithType: Resource.GetResourcePropertyValue
+- uid: Firefly.CloudFormationParser.TemplateObjects.Resource.IsSAMResource
+  name: IsSAMResource
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_IsSAMResource
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Resource.IsSAMResource
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.IsSAMResource
+  nameWithType: Resource.IsSAMResource
+- uid: Firefly.CloudFormationParser.TemplateObjects.Resource.IsSAMResource*
+  name: IsSAMResource
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_IsSAMResource_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Resource.IsSAMResource
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.IsSAMResource
+  nameWithType: Resource.IsSAMResource
 - uid: Firefly.CloudFormationParser.TemplateObjects.Resource.Metadata
   name: Metadata
   href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_Metadata
@@ -4057,6 +4124,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.Properties
   nameWithType: Resource.Properties
+- uid: Firefly.CloudFormationParser.TemplateObjects.Resource.Template
+  name: Template
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_Template
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Resource.Template
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.Template
+  nameWithType: Resource.Template
+- uid: Firefly.CloudFormationParser.TemplateObjects.Resource.Template*
+  name: Template
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_Template_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Resource.Template
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.Template
+  nameWithType: Resource.Template
 - uid: Firefly.CloudFormationParser.TemplateObjects.Resource.ToString
   name: ToString()
   href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_ToString
@@ -4387,6 +4467,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.Template.ParsedResources
   nameWithType: Template.ParsedResources
+- uid: Firefly.CloudFormationParser.TemplateObjects.Template.PseudoParameters
+  name: PseudoParameters
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_PseudoParameters
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Template.PseudoParameters
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Template.PseudoParameters
+  nameWithType: Template.PseudoParameters
+- uid: Firefly.CloudFormationParser.TemplateObjects.Template.PseudoParameters*
+  name: PseudoParameters
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_PseudoParameters_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Template.PseudoParameters
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Template.PseudoParameters
+  nameWithType: Template.PseudoParameters
 - uid: Firefly.CloudFormationParser.TemplateObjects.Template.Resources
   name: Resources
   href: api/Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_Resources
@@ -4439,3 +4532,16 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.Template.Transform
   nameWithType: Template.Transform
+- uid: Firefly.CloudFormationParser.TemplateObjects.Template.UserParameterValues
+  name: UserParameterValues
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_UserParameterValues
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Template.UserParameterValues
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Template.UserParameterValues
+  nameWithType: Template.UserParameterValues
+- uid: Firefly.CloudFormationParser.TemplateObjects.Template.UserParameterValues*
+  name: UserParameterValues
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Template.html#Firefly_CloudFormationParser_TemplateObjects_Template_UserParameterValues_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Template.UserParameterValues
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Template.UserParameterValues
+  nameWithType: Template.UserParameterValues

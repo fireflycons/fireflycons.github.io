@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Accessing Resource Properties </title>
+    <title>Property Manipulation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Accessing Resource Properties ">
+    <meta name="title" content="Property Manipulation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,31 +67,76 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="accessing-resource-properties">Accessing Resource Properties</h1>
+<h1 id="property-manipulation">Property Manipulation</h1>
 
-<p>The properties of a resource may be read or modified using the property accessor methods on <a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html">IResource</a>. This permits the modification of resources that would be associated with making a CloudFormation Package.</p>
-<h2 id="property-path-syntax">Property Path Syntax</h2>
-<p>To reference a particular property, use a path syntax as follows.</p>
-<pre><code class="lang-yaml">  ConfigRole: # Role for config service, allowing access to S3 bucket and SNS
-    Type: &quot;AWS::IAM::Role&quot;
-    Properties:
-      AssumeRolePolicyDocument:
-        Version: &quot;2012-10-17&quot;
-        Statement:
-          - Effect: &quot;Allow&quot;
-            Principal:
-              Service: &quot;config.amazonaws.com&quot;
-            Action:
-              - &quot;sts:AssumeRole&quot;
-</code></pre>
-<p>If we wanted to get to value of the <code>Action</code> in the policy document above, the path syntax would be</p>
-<p><code>AssumeRolePolicyDocument.Statement.0.Action.0</code></p>
-<p>That is to say, for mapping entries use the key name and for list entries, use the zero-based index.</p>
-<h2 id="property-accessor-methods">Property Accessor Methods</h2>
+<p>Using this library it is possible to read, change or create properties on resources prior to re-serializing the template. This is especially useful when implementing functionality such as <code>aws cloudformation package</code> where you would package local files to S3 and then adjust the resource to point to the uploaded S3 object.</p>
+<h2 id="methods-for-property-manipulation">Methods for Property Manipulation</h2>
 <ul>
-<li><a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_GetResourcePropertyValue_System_String_">IResource.GetResourcePropertyValue</a> - Gets the value of a property at the given path.</li>
-<li><a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_UpdateResourceProperty_System_String_System_Object_">IResource.UpdateResourceProperty</a> - Replaces the value of a propery at the given path.</li>
+<li><a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_GetResourcePropertyValue_System_String_">IResource.GetPropertyValue</a> - Gets the value at the given property path. This may be a scalar value if the property is a leaf node in the resource declaration, or a dictionary or list if the requested property has descendants. If it is a leaf node and there is an intrinsic at the node, then the library attempts to evaluate the result of the intrinsic. The evaluation will depend on values provided for template parameters. If the property is not found, then <code>null</code> is returned.</li>
+<li><a class="xref" href="../api/Firefly.CloudFormationParser.IResource.html#Firefly_CloudFormationParser_IResource_UpdateResourceProperty_System_String_System_Object_">IResource.UpdateResourceProperty</a> - Sets the value of the property at the given property path. The value of the property at the given path is replaced with the value you provide. This value may be a scalar or a complete object graph. If the given path does not resolve, then object graph is added for the unresolved path segments before the value is placed at the new leaf node.</li>
 </ul>
+<h2 id="property-path-syntax">Property Path Syntax</h2>
+<p>Paths are expressed in dotted notation, and list elements with a zero-based index e.g.</p>
+<pre><code class="lang-yaml">  MyLambda:
+    Type: AWS::Serverless::Function
+    Properies:
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-123
+          - sg-456
+</code></pre>
+<p><code>VpcConfig.SecurityGroupIds</code> as a path will return a <code>List&lt;object&gt;</code> containing the security group IDs</p>
+<pre><code class="lang-yaml">  iamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Path: /
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Action: sts:AssumeRole
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+      Policies:
+        - PolicyName: ADConnector
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Sid: CreateAdConnectorEc2Resources
+                Effect: Allow
+                Action:
+                  - ec2:DescribeSubnets
+                Resource: '*'
+                Condition:
+                  Bool:
+                    aws:ViaAWSService: true
+              - Sid: DeleteAdConnectorEc2Resources
+                Effect: Allow
+                Action:
+                  - ec2:DeleteSecurityGroup
+                Resource: '*'
+                Condition:
+                  Bool:
+                    aws:ViaAWSService: true
+</code></pre>
+<ul>
+<li><code>Polices.0.PolicyDocument.Statement.0.Sid</code> will return the value <code>CreateAdConnectorEc2Resources</code></li>
+<li><code>Polices.0.PolicyDocument.Statement</code> will return a <code>List&lt;object&gt;</code> containing all the statements.</li>
+</ul>
+<pre><code class="lang-yaml">Parameters:
+  Param1:
+    Type: String
+    Value: MyValue
+
+Resources:
+  SSMParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Type: String
+      Name: MyName
+      Value: !Ref Param1
+</code></pre>
+<p><code>Value</code> will return <code>MyValue</code>. If an alternate value for parameter <code>Param1</code> is set by the <a class="xref" href="../api/Firefly.CloudFormationParser.Serialization.Settings.DeserializerSettingsBuilder.html#Firefly_CloudFormationParser_Serialization_Settings_DeserializerSettingsBuilder_WithParameterValues_System_Collections_Generic_IDictionary_System_String_System_Object__">deserializer builder</a> then that value will be returned.</p>
 </article>
           </div>
           
