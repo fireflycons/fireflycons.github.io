@@ -1107,6 +1107,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.LongName
   nameWithType: FindInMapIntrinsic.LongName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.MapName
+  name: MapName
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_FindInMapIntrinsic_MapName
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.MapName
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.MapName
+  nameWithType: FindInMapIntrinsic.MapName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.MapName*
+  name: MapName
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_FindInMapIntrinsic_MapName_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.MapName
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.MapName
+  nameWithType: FindInMapIntrinsic.MapName
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.SecondLevelKey
   name: SecondLevelKey
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_FindInMapIntrinsic_SecondLevelKey
