@@ -88,6 +88,7 @@
     <div><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html">IIntrinsic</a></div>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</div>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic.html">IBranchableIntrinsic</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -141,8 +142,100 @@
   <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
   <h5 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SelectIntrinsic : AbstractArrayIntrinsic, IIntrinsic, IEnumerable&lt;object&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public class SelectIntrinsic : AbstractArrayIntrinsic, IIntrinsic, IEnumerable&lt;object&gt;, IEnumerable, IBranchableIntrinsic</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L29">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.#ctor*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.#ctor">SelectIntrinsic()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html">SelectIntrinsic</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectIntrinsic()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor_System_Object_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.%23ctor(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L37">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.#ctor*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor_System_Object_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.#ctor(System.Object)">SelectIntrinsic(Object)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html">SelectIntrinsic</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectIntrinsic(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor_System_Object_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.%23ctor(System.Object%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L47">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.#ctor*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic__ctor_System_Object_System_Boolean_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.#ctor(System.Object,System.Boolean)">SelectIntrinsic(Object, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html">SelectIntrinsic</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectIntrinsic(object value, bool useLongForm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">useLongForm</span></td>
+        <td><p>If set to <code>true</code>, emit long form of intrinsic when serializing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
@@ -182,7 +275,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Index.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Index%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L31">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L58">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Index_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Index*"></a>
   <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Index" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Index">Index</h4>
@@ -214,7 +307,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_LongName.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.LongName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L34">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L61">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_LongName_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.LongName*"></a>
   <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_LongName" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.LongName">LongName</h4>
@@ -248,7 +341,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_TagName.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.TagName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L37">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L64">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_TagName_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.TagName*"></a>
   <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_TagName" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.TagName">TagName</h4>
@@ -284,7 +377,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Evaluate_Firefly_CloudFormationParser_ITemplate_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Evaluate(Firefly.CloudFormationParser.ITemplate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L49">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L76">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Evaluate_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Evaluate*"></a>
   <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Evaluate_Firefly_CloudFormationParser_ITemplate_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Evaluate(Firefly.CloudFormationParser.ITemplate)">Evaluate(ITemplate)</h4>
@@ -333,10 +426,60 @@
   <div><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_Evaluate_Firefly_CloudFormationParser_ITemplate_">AbstractIntrinsic.Evaluate(ITemplate)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_GetBranch_Firefly_CloudFormationParser_ITemplate_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.GetBranch(Firefly.CloudFormationParser.ITemplate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L98">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_GetBranch_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.GetBranch*"></a>
+  <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_GetBranch_Firefly_CloudFormationParser_ITemplate_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.GetBranch(Firefly.CloudFormationParser.ITemplate)">GetBranch(ITemplate)</h4>
+  <div class="markdown level1 summary"><p>Gets the item indicated by the selection index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetBranch(ITemplate template)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.ITemplate.html">ITemplate</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>Selected item based on template or intrinsic conditions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_GetReferencedObjects_Firefly_CloudFormationParser_ITemplate_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.GetReferencedObjects(Firefly.CloudFormationParser.ITemplate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L65">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L104">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_GetReferencedObjects_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.GetReferencedObjects*"></a>
   <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_GetReferencedObjects_Firefly_CloudFormationParser_ITemplate_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.GetReferencedObjects(Firefly.CloudFormationParser.ITemplate)">GetReferencedObjects(ITemplate)</h4>
@@ -388,7 +531,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_SetValue_System_Collections_Generic_IEnumerable_System_Object__.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.SetValue(System.Collections.Generic.IEnumerable%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L78">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/Intrinsics/Functions/SelectIntrinsic.cs/#L137">View Source</a>
   </span>
   <a id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_SetValue_" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.SetValue*"></a>
   <h4 id="Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_SetValue_System_Collections_Generic_IEnumerable_System_Object__" data-uid="Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.SetValue(System.Collections.Generic.IEnumerable{System.Object})">SetValue(IEnumerable&lt;Object&gt;)</h4>
@@ -403,7 +546,7 @@ Each element depending on the intrinsic, may be a scalar value, another intrinsi
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetValue(IEnumerable&lt;object&gt; values)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void SetValue(IEnumerable&lt;object&gt; values)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -434,6 +577,9 @@ Each element depending on the intrinsic, may be a scalar value, another intrinsi
   </div>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic.html">IBranchableIntrinsic</a>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
