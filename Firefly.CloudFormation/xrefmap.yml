@@ -1895,6 +1895,25 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Resolvers.IInputFileResolver.Source
   nameWithType: IInputFileResolver.Source
+- uid: Firefly.CloudFormation.Resolvers.ITemplateResolver
+  name: ITemplateResolver
+  href: api/Firefly.CloudFormation.Resolvers.ITemplateResolver.html
+  commentId: T:Firefly.CloudFormation.Resolvers.ITemplateResolver
+  fullName: Firefly.CloudFormation.Resolvers.ITemplateResolver
+  nameWithType: ITemplateResolver
+- uid: Firefly.CloudFormation.Resolvers.ITemplateResolver.NoEchoParameters
+  name: NoEchoParameters
+  href: api/Firefly.CloudFormation.Resolvers.ITemplateResolver.html#Firefly_CloudFormation_Resolvers_ITemplateResolver_NoEchoParameters
+  commentId: P:Firefly.CloudFormation.Resolvers.ITemplateResolver.NoEchoParameters
+  fullName: Firefly.CloudFormation.Resolvers.ITemplateResolver.NoEchoParameters
+  nameWithType: ITemplateResolver.NoEchoParameters
+- uid: Firefly.CloudFormation.Resolvers.ITemplateResolver.NoEchoParameters*
+  name: NoEchoParameters
+  href: api/Firefly.CloudFormation.Resolvers.ITemplateResolver.html#Firefly_CloudFormation_Resolvers_ITemplateResolver_NoEchoParameters_
+  commentId: Overload:Firefly.CloudFormation.Resolvers.ITemplateResolver.NoEchoParameters
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Resolvers.ITemplateResolver.NoEchoParameters
+  nameWithType: ITemplateResolver.NoEchoParameters
 - uid: Firefly.CloudFormation.Resolvers.StackPolicyResolver
   name: StackPolicyResolver
   href: api/Firefly.CloudFormation.Resolvers.StackPolicyResolver.html
@@ -1946,12 +1965,24 @@ references:
   commentId: T:Firefly.CloudFormation.Resolvers.TemplateResolver
   fullName: Firefly.CloudFormation.Resolvers.TemplateResolver
   nameWithType: TemplateResolver
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,Amazon.CloudFormation.TemplateStage,System.String,System.Boolean,System.Boolean)
+  name: TemplateResolver(IAwsClientFactory, ICloudFormationContext, TemplateStage, String, Boolean, Boolean)
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_Amazon_CloudFormation_TemplateStage_System_String_System_Boolean_System_Boolean_
+  commentId: M:Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,Amazon.CloudFormation.TemplateStage,System.String,System.Boolean,System.Boolean)
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver(Firefly.CloudFormation.IAwsClientFactory, Firefly.CloudFormation.ICloudFormationContext, Amazon.CloudFormation.TemplateStage, System.String, System.Boolean, System.Boolean)
+  nameWithType: TemplateResolver.TemplateResolver(IAwsClientFactory, ICloudFormationContext, TemplateStage, String, Boolean, Boolean)
 - uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)
   name: TemplateResolver(IAwsClientFactory, ICloudFormationContext, String, Boolean, Boolean)
   href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_
   commentId: M:Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)
   fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver(Firefly.CloudFormation.IAwsClientFactory, Firefly.CloudFormation.ICloudFormationContext, System.String, System.Boolean, System.Boolean)
   nameWithType: TemplateResolver.TemplateResolver(IAwsClientFactory, ICloudFormationContext, String, Boolean, Boolean)
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,Amazon.CloudFormation.TemplateStage,System.String,System.Boolean,System.Boolean)
+  name: TemplateResolver(ICloudFormationContext, TemplateStage, String, Boolean, Boolean)
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_Amazon_CloudFormation_TemplateStage_System_String_System_Boolean_System_Boolean_
+  commentId: M:Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,Amazon.CloudFormation.TemplateStage,System.String,System.Boolean,System.Boolean)
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.TemplateResolver(Firefly.CloudFormation.ICloudFormationContext, Amazon.CloudFormation.TemplateStage, System.String, System.Boolean, System.Boolean)
+  nameWithType: TemplateResolver.TemplateResolver(ICloudFormationContext, TemplateStage, String, Boolean, Boolean)
 - uid: Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)
   name: TemplateResolver(ICloudFormationContext, String, Boolean, Boolean)
   href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_
@@ -1991,6 +2022,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.MaxFileSize
   nameWithType: TemplateResolver.MaxFileSize
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters
+  name: NoEchoParameters
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver_NoEchoParameters
+  commentId: P:Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters
+  nameWithType: TemplateResolver.NoEchoParameters
+- uid: Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters*
+  name: NoEchoParameters
+  href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver_NoEchoParameters_
+  commentId: Overload:Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters
+  isSpec: "True"
+  fullName: Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters
+  nameWithType: TemplateResolver.NoEchoParameters
 - uid: Firefly.CloudFormation.Resolvers.TemplateResolver.ResolveFileAsync(System.String)
   name: ResolveFileAsync(String)
   href: api/Firefly.CloudFormation.Resolvers.TemplateResolver.html#Firefly_CloudFormation_Resolvers_TemplateResolver_ResolveFileAsync_System_String_

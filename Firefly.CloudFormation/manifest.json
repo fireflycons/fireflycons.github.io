@@ -329,6 +329,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Firefly.CloudFormation.Resolvers.ITemplateResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Firefly.CloudFormation.Resolvers.ITemplateResolver.html",
+          "hash": "wSeijcdqPday0kZalklxEgtg0pgH5EkNpVLiVlmS3Kk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.CloudFormation.Resolvers.StackPolicyResolver.yml",
       "output": {
         ".html": {
@@ -345,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Resolvers.TemplateResolver.html",
-          "hash": "hnuYAZ/LUBQoufVNWkcOEVLl1qdHmqbVk7w7l5trzf8="
+          "hash": "iGZQKo418Oa2OA/ZrZO+qyV/j3wwHeMqIWp+8SCsvwc="
         }
       },
       "is_incremental": false,
@@ -357,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CloudFormation.Resolvers.html",
-          "hash": "C+15oHs1bGUQwXfZzLLyCBIFmy43MkRGDXkMF4be2SE="
+          "hash": "nvur5xZ07cVW6q8xobvqqVRl9fWRlJtvdF652MJk7os="
         }
       },
       "is_incremental": false,
@@ -429,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bt+tEU1pijcaZplFUHYxVfzTesdtz4K8zZaa8xUg7sc="
+          "hash": "VjUcDVR7xZuZgGJ1oSjBb5wUJueuMDkTD2XLUGT23j8="
         }
       },
       "is_incremental": false,
@@ -528,7 +540,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 34,
+          "total_file_count": 35,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

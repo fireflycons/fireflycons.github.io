@@ -84,6 +84,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Firefly.CloudFormation.Resolvers.ITemplateResolver.html">ITemplateResolver</a></div>
     <div><a class="xref" href="Firefly.CloudFormation.Resolvers.IInputFileResolver.html">IInputFileResolver</a></div>
   </div>
   <div class="inheritedMembers">
@@ -138,16 +139,80 @@
   <h6><strong>Assembly</strong>: Firefly.CloudFormation.dll</h6>
   <h5 id="Firefly_CloudFormation_Resolvers_TemplateResolver_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TemplateResolver : AbstractFileResolver, IInputFileResolver</code></pre>
+    <pre><code class="lang-csharp hljs">public class TemplateResolver : AbstractFileResolver, ITemplateResolver, IInputFileResolver</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_Amazon_CloudFormation_TemplateStage_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.%23ctor(Firefly.CloudFormation.IAwsClientFactory%2CFirefly.CloudFormation.ICloudFormationContext%2CAmazon.CloudFormation.TemplateStage%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L81">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_Amazon_CloudFormation_TemplateStage_System_String_System_Boolean_System_Boolean_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,Amazon.CloudFormation.TemplateStage,System.String,System.Boolean,System.Boolean)">TemplateResolver(IAwsClientFactory, ICloudFormationContext, TemplateStage, String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormation.Resolvers.TemplateResolver.html">TemplateResolver</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TemplateResolver(IAwsClientFactory clientFactory, ICloudFormationContext context, TemplateStage templateStage, string stackName, bool usePreviousTemplate, bool forceS3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.IAwsClientFactory.html">IAwsClientFactory</a></td>
+        <td><span class="parametername">clientFactory</span></td>
+        <td><p>The client factory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.ICloudFormationContext.html">ICloudFormationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Amazon.CloudFormation.TemplateStage</span></td>
+        <td><span class="parametername">templateStage</span></td>
+        <td><p>Template stage to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stackName</span></td>
+        <td><p>Name of the stack.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">usePreviousTemplate</span></td>
+        <td><p>if set to <code>true</code> [use previous template].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">forceS3</span></td>
+        <td><p>If set to <code>true</code>, force template upload to S3 even if less than max size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.%23ctor(Firefly.CloudFormation.IAwsClientFactory%2CFirefly.CloudFormation.ICloudFormationContext%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L47">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L67">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor*"></a>
   <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_IAwsClientFactory_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.IAwsClientFactory,Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)">TemplateResolver(IAwsClientFactory, ICloudFormationContext, String, Boolean, Boolean)</h4>
@@ -202,10 +267,68 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_Amazon_CloudFormation_TemplateStage_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.%23ctor(Firefly.CloudFormation.ICloudFormationContext%2CAmazon.CloudFormation.TemplateStage%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L42">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_Amazon_CloudFormation_TemplateStage_System_String_System_Boolean_System_Boolean_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,Amazon.CloudFormation.TemplateStage,System.String,System.Boolean,System.Boolean)">TemplateResolver(ICloudFormationContext, TemplateStage, String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormation.Resolvers.TemplateResolver.html">TemplateResolver</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TemplateResolver(ICloudFormationContext context, TemplateStage templateStage, string stackName, bool usePreviousTemplate, bool forceS3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormation.ICloudFormationContext.html">ICloudFormationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Amazon.CloudFormation.TemplateStage</span></td>
+        <td><span class="parametername">templateStage</span></td>
+        <td><p>Template stage to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stackName</span></td>
+        <td><p>Name of the stack.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">usePreviousTemplate</span></td>
+        <td><p>if set to <code>true</code> reuse the existing template that is associated with the stack that you are updating.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">forceS3</span></td>
+        <td><p>If set to <code>true</code>, force template upload to S3 even if less than max size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.%23ctor(Firefly.CloudFormation.ICloudFormationContext%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L34">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L54">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor*"></a>
   <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver__ctor_Firefly_CloudFormation_ICloudFormationContext_System_String_System_Boolean_System_Boolean_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.#ctor(Firefly.CloudFormation.ICloudFormationContext,System.String,System.Boolean,System.Boolean)">TemplateResolver(ICloudFormationContext, String, Boolean, Boolean)</h4>
@@ -259,7 +382,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver_ForceS3.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L61">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L99">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_Resolvers_TemplateResolver_ForceS3_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3*"></a>
   <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver_ForceS3" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.ForceS3">ForceS3</h4>
@@ -293,7 +416,7 @@
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver_MaxFileSize.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.MaxFileSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L70">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L108">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_Resolvers_TemplateResolver_MaxFileSize_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.MaxFileSize*"></a>
   <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver_MaxFileSize" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.MaxFileSize">MaxFileSize</h4>
@@ -323,6 +446,42 @@ If the file is on local file system and is larger than this number of bytes, it 
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Firefly.CloudFormation.Resolvers.AbstractFileResolver.html#Firefly_CloudFormation_Resolvers_AbstractFileResolver_MaxFileSize">AbstractFileResolver.MaxFileSize</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver_NoEchoParameters.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L91">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormation_Resolvers_TemplateResolver_NoEchoParameters_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters*"></a>
+  <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver_NoEchoParameters" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.NoEchoParameters">NoEchoParameters</h4>
+  <div class="markdown level1 summary"><p>Interface defining the template resolver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; NoEchoParameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>The <code>NoEcho</code> parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Firefly_CloudFormation_Resolvers_TemplateResolver_NoEchoParameters_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Firefly.CloudFormation.Resolvers.IInputFileResolver.html">IInputFileResolver</a></div>
+  </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -330,7 +489,7 @@ If the file is on local file system and is larger than this number of bytes, it 
     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver_ResolveFileAsync_System_String_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver.ResolveFileAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L80">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L118">View Source</a>
   </span>
   <a id="Firefly_CloudFormation_Resolvers_TemplateResolver_ResolveFileAsync_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.ResolveFileAsync*"></a>
   <h4 id="Firefly_CloudFormation_Resolvers_TemplateResolver_ResolveFileAsync_System_String_" data-uid="Firefly.CloudFormation.Resolvers.TemplateResolver.ResolveFileAsync(System.String)">ResolveFileAsync(String)</h4>
@@ -380,6 +539,9 @@ including from CloudFormation itself if called for a UsePreviousTemplate update.
   <div><a class="xref" href="Firefly.CloudFormation.Resolvers.AbstractFileResolver.html#Firefly_CloudFormation_Resolvers_AbstractFileResolver_ResolveFileAsync_System_String_">AbstractFileResolver.ResolveFileAsync(String)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
+      <a class="xref" href="Firefly.CloudFormation.Resolvers.ITemplateResolver.html">ITemplateResolver</a>
+  </div>
+  <div>
       <a class="xref" href="Firefly.CloudFormation.Resolvers.IInputFileResolver.html">IInputFileResolver</a>
   </div>
   <h3 id="seealso">See Also</h3>
@@ -397,7 +559,7 @@ including from CloudFormation itself if called for a UsePreviousTemplate update.
                     <a href="https://github.com/fireflycons/Firefly.CloudFormation/new/master/apiSpec/new?filename=Firefly_CloudFormation_Resolvers_TemplateResolver.md&amp;value=---%0Auid%3A%20Firefly.CloudFormation.Resolvers.TemplateResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormation/blob/master/src/Firefly.CloudFormation/Resolvers/TemplateResolver.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
