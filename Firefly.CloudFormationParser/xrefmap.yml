@@ -554,6 +554,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.TagName
   nameWithType: AbstractIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Type
+  nameWithType: AbstractIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Type
+  nameWithType: AbstractIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.UnpackIntrinsic(System.Object)
   name: UnpackIntrinsic(Object)
   href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_UnpackIntrinsic_System_Object_
@@ -813,6 +826,25 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic.GetBranch
   nameWithType: IBranchableIntrinsic.GetBranch
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic
+  name: IReferenceIntrinsic
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.html
+  commentId: T:Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic
+  nameWithType: IReferenceIntrinsic
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  name: ReferencedObject(ITemplate)
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_IReferenceIntrinsic_ReferencedObject_Firefly_CloudFormationParser_ITemplate_
+  commentId: M:Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  nameWithType: IReferenceIntrinsic.ReferencedObject(ITemplate)
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.ReferencedObject*
+  name: ReferencedObject
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_IReferenceIntrinsic_ReferencedObject_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.ReferencedObject
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.ReferencedObject
+  nameWithType: IReferenceIntrinsic.ReferencedObject
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions
   name: Firefly.CloudFormationParser.Intrinsics.Functions
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.html
@@ -895,6 +927,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.TagName
   nameWithType: AndIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_AndIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.Type
+  nameWithType: AndIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_AndIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.AndIntrinsic.Type
+  nameWithType: AndIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic
   name: Base64Intrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.html
@@ -984,6 +1029,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.TagName
   nameWithType: Base64Intrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_Base64Intrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.Type
+  nameWithType: Base64Intrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_Base64Intrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.Type
+  nameWithType: Base64Intrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.ValueToEncode
   name: ValueToEncode
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.Base64Intrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_Base64Intrinsic_ValueToEncode
@@ -1141,6 +1199,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.TagName
   nameWithType: CidrIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_CidrIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.Type
+  nameWithType: CidrIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_CidrIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.CidrIntrinsic.Type
+  nameWithType: CidrIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic
   name: ConditionIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.html
@@ -1230,6 +1301,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.TagName
   nameWithType: ConditionIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_ConditionIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.Type
+  nameWithType: ConditionIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_ConditionIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.ConditionIntrinsic.Type
+  nameWithType: ConditionIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic
   name: EqualsIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.html
@@ -1306,6 +1390,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.TagName
   nameWithType: EqualsIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_EqualsIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.Type
+  nameWithType: EqualsIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_EqualsIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.EqualsIntrinsic.Type
+  nameWithType: EqualsIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic
   name: FindInMapIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.html
@@ -1469,6 +1566,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.ToString
   nameWithType: FindInMapIntrinsic.ToString
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_FindInMapIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.Type
+  nameWithType: FindInMapIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_FindInMapIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.FindInMapIntrinsic.Type
+  nameWithType: FindInMapIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic
   name: GetAttIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.html
@@ -1571,6 +1681,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.LongName
   nameWithType: GetAttIntrinsic.LongName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  name: ReferencedObject(ITemplate)
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAttIntrinsic_ReferencedObject_Firefly_CloudFormationParser_ITemplate_
+  commentId: M:Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  nameWithType: GetAttIntrinsic.ReferencedObject(ITemplate)
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.ReferencedObject*
+  name: ReferencedObject
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAttIntrinsic_ReferencedObject_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.ReferencedObject
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.ReferencedObject
+  nameWithType: GetAttIntrinsic.ReferencedObject
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.SetValue(System.Collections.Generic.IEnumerable{System.Object})
   name: SetValue(IEnumerable<Object>)
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAttIntrinsic_SetValue_System_Collections_Generic_IEnumerable_System_Object__
@@ -1606,6 +1729,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.TagName
   nameWithType: GetAttIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAttIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.Type
+  nameWithType: GetAttIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAttIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAttIntrinsic.Type
+  nameWithType: GetAttIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic
   name: GetAZsIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.html
@@ -1708,6 +1844,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.TagName
   nameWithType: GetAZsIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAZsIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.Type
+  nameWithType: GetAZsIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_GetAZsIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.GetAZsIntrinsic.Type
+  nameWithType: GetAZsIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic
   name: IfIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.html
@@ -1852,6 +2001,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.ToString
   nameWithType: IfIntrinsic.ToString
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_IfIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.Type
+  nameWithType: IfIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_IfIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.Type
+  nameWithType: IfIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.ValueIfFalse
   name: ValueIfFalse
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.IfIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_IfIntrinsic_ValueIfFalse
@@ -1980,6 +2142,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.TagName
   nameWithType: ImportValueIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_ImportValueIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.Type
+  nameWithType: ImportValueIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_ImportValueIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.ImportValueIntrinsic.Type
+  nameWithType: ImportValueIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic
   name: JoinIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.html
@@ -2098,6 +2273,32 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.TagName
   nameWithType: JoinIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.ToString
+  name: ToString()
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_JoinIntrinsic_ToString
+  commentId: M:Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.ToString
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.ToString()
+  nameWithType: JoinIntrinsic.ToString()
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.ToString*
+  name: ToString
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_JoinIntrinsic_ToString_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.ToString
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.ToString
+  nameWithType: JoinIntrinsic.ToString
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_JoinIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.Type
+  nameWithType: JoinIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_JoinIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.JoinIntrinsic.Type
+  nameWithType: JoinIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic
   name: NotIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.html
@@ -2174,6 +2375,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.TagName
   nameWithType: NotIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_NotIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.Type
+  nameWithType: NotIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_NotIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.NotIntrinsic.Type
+  nameWithType: NotIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic
   name: OrIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.html
@@ -2250,6 +2464,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.TagName
   nameWithType: OrIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_OrIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.Type
+  nameWithType: OrIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_OrIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.OrIntrinsic.Type
+  nameWithType: OrIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic
   name: RefIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.html
@@ -2333,6 +2560,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Reference
   nameWithType: RefIntrinsic.Reference
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  name: ReferencedObject(ITemplate)
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_RefIntrinsic_ReferencedObject_Firefly_CloudFormationParser_ITemplate_
+  commentId: M:Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.ReferencedObject(Firefly.CloudFormationParser.ITemplate)
+  nameWithType: RefIntrinsic.ReferencedObject(ITemplate)
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.ReferencedObject*
+  name: ReferencedObject
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_RefIntrinsic_ReferencedObject_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.ReferencedObject
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.ReferencedObject
+  nameWithType: RefIntrinsic.ReferencedObject
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Tag
   name: Tag
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_RefIntrinsic_Tag
@@ -2365,6 +2605,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.ToString
   nameWithType: RefIntrinsic.ToString
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_RefIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Type
+  nameWithType: RefIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_RefIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.RefIntrinsic.Type
+  nameWithType: RefIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic
   name: SelectIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html
@@ -2496,6 +2749,32 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.TagName
   nameWithType: SelectIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.ToString
+  name: ToString()
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_ToString
+  commentId: M:Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.ToString
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.ToString()
+  nameWithType: SelectIntrinsic.ToString()
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.ToString*
+  name: ToString
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_ToString_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.ToString
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.ToString
+  nameWithType: SelectIntrinsic.ToString
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Type
+  nameWithType: SelectIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SelectIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SelectIntrinsic.Type
+  nameWithType: SelectIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic
   name: SplitIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.html
@@ -2627,6 +2906,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.TagName
   nameWithType: SplitIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SplitIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.Type
+  nameWithType: SplitIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SplitIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SplitIntrinsic.Type
+  nameWithType: SplitIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic
   name: SubIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.html
@@ -2793,6 +3085,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.TagName
   nameWithType: SubIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SubIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.Type
+  nameWithType: SubIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Functions_SubIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.Type
+  nameWithType: SubIntrinsic.Type
 - uid: Firefly.CloudFormationParser.Intrinsics.IIntrinsic
   name: IIntrinsic
   href: api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html
@@ -2851,6 +3156,127 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.TagName
   nameWithType: IIntrinsic.TagName
+- uid: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.Type
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_IIntrinsic_Type
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.IIntrinsic.Type
+  fullName: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.Type
+  nameWithType: IIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.Type*
+  name: Type
+  href: api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_IIntrinsic_Type_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.IIntrinsic.Type
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.Type
+  nameWithType: IIntrinsic.Type
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType
+  name: IntrinsicType
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html
+  commentId: T:Firefly.CloudFormationParser.Intrinsics.IntrinsicType
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType
+  nameWithType: IntrinsicType
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.And
+  name: And
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_And
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.And
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.And
+  nameWithType: IntrinsicType.And
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Base64
+  name: Base64
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Base64
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Base64
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Base64
+  nameWithType: IntrinsicType.Base64
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Cidr
+  name: Cidr
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Cidr
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Cidr
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Cidr
+  nameWithType: IntrinsicType.Cidr
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Condition
+  name: Condition
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Condition
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Condition
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Condition
+  nameWithType: IntrinsicType.Condition
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Equals
+  name: Equals
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Equals
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Equals
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Equals
+  nameWithType: IntrinsicType.Equals
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.FindInMap
+  name: FindInMap
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_FindInMap
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.FindInMap
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.FindInMap
+  nameWithType: IntrinsicType.FindInMap
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.GetAtt
+  name: GetAtt
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_GetAtt
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.GetAtt
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.GetAtt
+  nameWithType: IntrinsicType.GetAtt
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.GetAZs
+  name: GetAZs
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_GetAZs
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.GetAZs
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.GetAZs
+  nameWithType: IntrinsicType.GetAZs
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.If
+  name: If
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_If
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.If
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.If
+  nameWithType: IntrinsicType.If
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.ImportValue
+  name: ImportValue
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_ImportValue
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.ImportValue
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.ImportValue
+  nameWithType: IntrinsicType.ImportValue
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Join
+  name: Join
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Join
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Join
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Join
+  nameWithType: IntrinsicType.Join
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Not
+  name: Not
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Not
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Not
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Not
+  nameWithType: IntrinsicType.Not
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Or
+  name: Or
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Or
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Or
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Or
+  nameWithType: IntrinsicType.Or
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Ref
+  name: Ref
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Ref
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Ref
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Ref
+  nameWithType: IntrinsicType.Ref
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Select
+  name: Select
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Select
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Select
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Select
+  nameWithType: IntrinsicType.Select
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Split
+  name: Split
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Split
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Split
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Split
+  nameWithType: IntrinsicType.Split
+- uid: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Sub
+  name: Sub
+  href: api/Firefly.CloudFormationParser.Intrinsics.IntrinsicType.html#Firefly_CloudFormationParser_Intrinsics_IntrinsicType_Sub
+  commentId: F:Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Sub
+  fullName: Firefly.CloudFormationParser.Intrinsics.IntrinsicType.Sub
+  nameWithType: IntrinsicType.Sub
 - uid: Firefly.CloudFormationParser.Intrinsics.Utils
   name: Firefly.CloudFormationParser.Intrinsics.Utils
   href: api/Firefly.CloudFormationParser.Intrinsics.Utils.html
@@ -4064,118 +4490,6 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.Template
   nameWithType: ITemplateObject.Template
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor
-  name: ITemplateObjectVisitor
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html
-  commentId: T:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor
-  nameWithType: ITemplateObjectVisitor
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitList*
-  name: AfterVisitList
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_AfterVisitList_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitList
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitList
-  nameWithType: ITemplateObjectVisitor.AfterVisitList
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitList``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IList{``0})
-  name: AfterVisitList<T>(ITemplateObject, PropertyPath, IList<T>)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_AfterVisitList__1_Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Firefly_CloudFormationParser_Utils_PropertyPath_System_Collections_Generic_IList___0__
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitList``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IList{``0})
-  name.vb: AfterVisitList(Of T)(ITemplateObject, PropertyPath, IList(Of T))
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitList<T>(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IList<T>)
-  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitList(Of T)(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IList(Of T))
-  nameWithType: ITemplateObjectVisitor.AfterVisitList<T>(ITemplateObject, PropertyPath, IList<T>)
-  nameWithType.vb: ITemplateObjectVisitor.AfterVisitList(Of T)(ITemplateObject, PropertyPath, IList(Of T))
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitObject*
-  name: AfterVisitObject
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_AfterVisitObject_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitObject
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitObject
-  nameWithType: ITemplateObjectVisitor.AfterVisitObject
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitObject``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IDictionary{``0,System.Object})
-  name: AfterVisitObject<T>(ITemplateObject, PropertyPath, IDictionary<T, Object>)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_AfterVisitObject__1_Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Firefly_CloudFormationParser_Utils_PropertyPath_System_Collections_Generic_IDictionary___0_System_Object__
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitObject``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IDictionary{``0,System.Object})
-  name.vb: AfterVisitObject(Of T)(ITemplateObject, PropertyPath, IDictionary(Of T, Object))
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitObject<T>(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IDictionary<T, System.Object>)
-  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.AfterVisitObject(Of T)(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IDictionary(Of T, System.Object))
-  nameWithType: ITemplateObjectVisitor.AfterVisitObject<T>(ITemplateObject, PropertyPath, IDictionary<T, Object>)
-  nameWithType.vb: ITemplateObjectVisitor.AfterVisitObject(Of T)(ITemplateObject, PropertyPath, IDictionary(Of T, Object))
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitList*
-  name: BeforeVisitList
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_BeforeVisitList_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitList
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitList
-  nameWithType: ITemplateObjectVisitor.BeforeVisitList
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitList``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IList{``0})
-  name: BeforeVisitList<T>(ITemplateObject, PropertyPath, IList<T>)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_BeforeVisitList__1_Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Firefly_CloudFormationParser_Utils_PropertyPath_System_Collections_Generic_IList___0__
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitList``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IList{``0})
-  name.vb: BeforeVisitList(Of T)(ITemplateObject, PropertyPath, IList(Of T))
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitList<T>(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IList<T>)
-  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitList(Of T)(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IList(Of T))
-  nameWithType: ITemplateObjectVisitor.BeforeVisitList<T>(ITemplateObject, PropertyPath, IList<T>)
-  nameWithType.vb: ITemplateObjectVisitor.BeforeVisitList(Of T)(ITemplateObject, PropertyPath, IList(Of T))
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitObject*
-  name: BeforeVisitObject
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_BeforeVisitObject_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitObject
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitObject
-  nameWithType: ITemplateObjectVisitor.BeforeVisitObject
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitObject``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IDictionary{``0,System.Object})
-  name: BeforeVisitObject<T>(ITemplateObject, PropertyPath, IDictionary<T, Object>)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_BeforeVisitObject__1_Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Firefly_CloudFormationParser_Utils_PropertyPath_System_Collections_Generic_IDictionary___0_System_Object__
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitObject``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.IDictionary{``0,System.Object})
-  name.vb: BeforeVisitObject(Of T)(ITemplateObject, PropertyPath, IDictionary(Of T, Object))
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitObject<T>(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IDictionary<T, System.Object>)
-  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.BeforeVisitObject(Of T)(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.IDictionary(Of T, System.Object))
-  nameWithType: ITemplateObjectVisitor.BeforeVisitObject<T>(ITemplateObject, PropertyPath, IDictionary<T, Object>)
-  nameWithType.vb: ITemplateObjectVisitor.BeforeVisitObject(Of T)(ITemplateObject, PropertyPath, IDictionary(Of T, Object))
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitIntrinsic(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,Firefly.CloudFormationParser.Intrinsics.IIntrinsic)
-  name: VisitIntrinsic(ITemplateObject, PropertyPath, IIntrinsic)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_VisitIntrinsic_Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Firefly_CloudFormationParser_Utils_PropertyPath_Firefly_CloudFormationParser_Intrinsics_IIntrinsic_
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitIntrinsic(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,Firefly.CloudFormationParser.Intrinsics.IIntrinsic)
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitIntrinsic(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, Firefly.CloudFormationParser.Intrinsics.IIntrinsic)
-  nameWithType: ITemplateObjectVisitor.VisitIntrinsic(ITemplateObject, PropertyPath, IIntrinsic)
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitIntrinsic*
-  name: VisitIntrinsic
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_VisitIntrinsic_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitIntrinsic
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitIntrinsic
-  nameWithType: ITemplateObjectVisitor.VisitIntrinsic
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitListItem(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Object)
-  name: VisitListItem(ITemplateObject, PropertyPath, Object)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_VisitListItem_Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Firefly_CloudFormationParser_Utils_PropertyPath_System_Object_
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitListItem(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Object)
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitListItem(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Object)
-  nameWithType: ITemplateObjectVisitor.VisitListItem(ITemplateObject, PropertyPath, Object)
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitListItem*
-  name: VisitListItem
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_VisitListItem_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitListItem
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitListItem
-  nameWithType: ITemplateObjectVisitor.VisitListItem
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitProperty*
-  name: VisitProperty
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_VisitProperty_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitProperty
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitProperty
-  nameWithType: ITemplateObjectVisitor.VisitProperty
-- uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitProperty``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.KeyValuePair{``0,System.Object})
-  name: VisitProperty<T>(ITemplateObject, PropertyPath, KeyValuePair<T, Object>)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html#Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_VisitProperty__1_Firefly_CloudFormationParser_TemplateObjects_ITemplateObject_Firefly_CloudFormationParser_Utils_PropertyPath_System_Collections_Generic_KeyValuePair___0_System_Object__
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitProperty``1(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject,Firefly.CloudFormationParser.Utils.PropertyPath,System.Collections.Generic.KeyValuePair{``0,System.Object})
-  name.vb: VisitProperty(Of T)(ITemplateObject, PropertyPath, KeyValuePair(Of T, Object))
-  fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitProperty<T>(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.KeyValuePair<T, System.Object>)
-  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.VisitProperty(Of T)(Firefly.CloudFormationParser.TemplateObjects.ITemplateObject, Firefly.CloudFormationParser.Utils.PropertyPath, System.Collections.Generic.KeyValuePair(Of T, System.Object))
-  nameWithType: ITemplateObjectVisitor.VisitProperty<T>(ITemplateObject, PropertyPath, KeyValuePair<T, Object>)
-  nameWithType.vb: ITemplateObjectVisitor.VisitProperty(Of T)(ITemplateObject, PropertyPath, KeyValuePair(Of T, Object))
 - uid: Firefly.CloudFormationParser.TemplateObjects.ITemplateSection
   name: ITemplateSection
   href: api/Firefly.CloudFormationParser.TemplateObjects.ITemplateSection.html
@@ -4195,44 +4509,12 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.ITemplateSection.Context
   nameWithType: ITemplateSection.Context
-- uid: Firefly.CloudFormationParser.TemplateObjects.IVisitable
-  name: IVisitable
-  href: api/Firefly.CloudFormationParser.TemplateObjects.IVisitable.html
-  commentId: T:Firefly.CloudFormationParser.TemplateObjects.IVisitable
-  fullName: Firefly.CloudFormationParser.TemplateObjects.IVisitable
-  nameWithType: IVisitable
-- uid: Firefly.CloudFormationParser.TemplateObjects.IVisitable.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  name: Accept(ITemplateObjectVisitor)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.IVisitable.html#Firefly_CloudFormationParser_TemplateObjects_IVisitable_Accept_Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.IVisitable.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  fullName: Firefly.CloudFormationParser.TemplateObjects.IVisitable.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  nameWithType: IVisitable.Accept(ITemplateObjectVisitor)
-- uid: Firefly.CloudFormationParser.TemplateObjects.IVisitable.Accept*
-  name: Accept
-  href: api/Firefly.CloudFormationParser.TemplateObjects.IVisitable.html#Firefly_CloudFormationParser_TemplateObjects_IVisitable_Accept_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.IVisitable.Accept
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.IVisitable.Accept
-  nameWithType: IVisitable.Accept
 - uid: Firefly.CloudFormationParser.TemplateObjects.Mapping
   name: Mapping
   href: api/Firefly.CloudFormationParser.TemplateObjects.Mapping.html
   commentId: T:Firefly.CloudFormationParser.TemplateObjects.Mapping
   fullName: Firefly.CloudFormationParser.TemplateObjects.Mapping
   nameWithType: Mapping
-- uid: Firefly.CloudFormationParser.TemplateObjects.Mapping.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  name: Accept(ITemplateObjectVisitor)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.Mapping.html#Firefly_CloudFormationParser_TemplateObjects_Mapping_Accept_Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Mapping.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  fullName: Firefly.CloudFormationParser.TemplateObjects.Mapping.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  nameWithType: Mapping.Accept(ITemplateObjectVisitor)
-- uid: Firefly.CloudFormationParser.TemplateObjects.Mapping.Accept*
-  name: Accept
-  href: api/Firefly.CloudFormationParser.TemplateObjects.Mapping.html#Firefly_CloudFormationParser_TemplateObjects_Mapping_Accept_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Mapping.Accept
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.Mapping.Accept
-  nameWithType: Mapping.Accept
 - uid: Firefly.CloudFormationParser.TemplateObjects.Mapping.Name
   name: Name
   href: api/Firefly.CloudFormationParser.TemplateObjects.Mapping.html#Firefly_CloudFormationParser_TemplateObjects_Mapping_Name
@@ -4265,19 +4547,6 @@ references:
   commentId: T:Firefly.CloudFormationParser.TemplateObjects.MappingSection
   fullName: Firefly.CloudFormationParser.TemplateObjects.MappingSection
   nameWithType: MappingSection
-- uid: Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  name: Accept(ITemplateObjectVisitor)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.MappingSection.html#Firefly_CloudFormationParser_TemplateObjects_MappingSection_Accept_Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  fullName: Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  nameWithType: MappingSection.Accept(ITemplateObjectVisitor)
-- uid: Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept*
-  name: Accept
-  href: api/Firefly.CloudFormationParser.TemplateObjects.MappingSection.html#Firefly_CloudFormationParser_TemplateObjects_MappingSection_Accept_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept
-  nameWithType: MappingSection.Accept
 - uid: Firefly.CloudFormationParser.TemplateObjects.MappingSection.Context
   name: Context
   href: api/Firefly.CloudFormationParser.TemplateObjects.MappingSection.html#Firefly_CloudFormationParser_TemplateObjects_MappingSection_Context
@@ -4791,19 +5060,6 @@ references:
   commentId: T:Firefly.CloudFormationParser.TemplateObjects.Resource
   fullName: Firefly.CloudFormationParser.TemplateObjects.Resource
   nameWithType: Resource
-- uid: Firefly.CloudFormationParser.TemplateObjects.Resource.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  name: Accept(ITemplateObjectVisitor)
-  href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_Accept_Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_
-  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Resource.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)
-  nameWithType: Resource.Accept(ITemplateObjectVisitor)
-- uid: Firefly.CloudFormationParser.TemplateObjects.Resource.Accept*
-  name: Accept
-  href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_Accept_
-  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Resource.Accept
-  isSpec: "True"
-  fullName: Firefly.CloudFormationParser.TemplateObjects.Resource.Accept
-  nameWithType: Resource.Accept
 - uid: Firefly.CloudFormationParser.TemplateObjects.Resource.Condition
   name: Condition
   href: api/Firefly.CloudFormationParser.TemplateObjects.Resource.html#Firefly_CloudFormationParser_TemplateObjects_Resource_Condition
@@ -5381,6 +5637,403 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.TemplateObjects.Template.UserParameterValues
   nameWithType: Template.UserParameterValues
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal
+  name: Firefly.CloudFormationParser.TemplateObjects.Traversal
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.html
+  commentId: N:Firefly.CloudFormationParser.TemplateObjects.Traversal
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal
+  nameWithType: Firefly.CloudFormationParser.TemplateObjects.Traversal
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions
+  name: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.html
+  commentId: N:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions
+  nameWithType: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions
+  name: MappingSectionExtensions
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.html
+  commentId: T:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions
+  nameWithType: MappingSectionExtensions
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept*
+  name: Accept
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_MappingSectionExtensions_Accept_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept
+  nameWithType: MappingSectionExtensions.Accept
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept``1(Firefly.CloudFormationParser.TemplateObjects.MappingSection,``0)
+  name: Accept<TVisitor>(MappingSection, TVisitor)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_MappingSectionExtensions_Accept__1_Firefly_CloudFormationParser_TemplateObjects_MappingSection___0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept``1(Firefly.CloudFormationParser.TemplateObjects.MappingSection,``0)
+  name.vb: Accept(Of TVisitor)(MappingSection, TVisitor)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept<TVisitor>(Firefly.CloudFormationParser.TemplateObjects.MappingSection, TVisitor)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept(Of TVisitor)(Firefly.CloudFormationParser.TemplateObjects.MappingSection, TVisitor)
+  nameWithType: MappingSectionExtensions.Accept<TVisitor>(MappingSection, TVisitor)
+  nameWithType.vb: MappingSectionExtensions.Accept(Of TVisitor)(MappingSection, TVisitor)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept``1(Firefly.CloudFormationParser.TemplateObjects.MappingSection,Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor{``0},``0)
+  name: Accept<TContext>(MappingSection, ITemplateObjectVisitor<TContext>, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_MappingSectionExtensions_Accept__1_Firefly_CloudFormationParser_TemplateObjects_MappingSection_Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitor___0____0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept``1(Firefly.CloudFormationParser.TemplateObjects.MappingSection,Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor{``0},``0)
+  name.vb: Accept(Of TContext)(MappingSection, ITemplateObjectVisitor(Of TContext), TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept<TContext>(Firefly.CloudFormationParser.TemplateObjects.MappingSection, Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor<TContext>, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.Accept(Of TContext)(Firefly.CloudFormationParser.TemplateObjects.MappingSection, Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor(Of TContext), TContext)
+  nameWithType: MappingSectionExtensions.Accept<TContext>(MappingSection, ITemplateObjectVisitor<TContext>, TContext)
+  nameWithType.vb: MappingSectionExtensions.Accept(Of TContext)(MappingSection, ITemplateObjectVisitor(Of TContext), TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions
+  name: ResourceAcceptExtensions
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.html
+  commentId: T:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions
+  nameWithType: ResourceAcceptExtensions
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept*
+  name: Accept
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_ResourceAcceptExtensions_Accept_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept
+  nameWithType: ResourceAcceptExtensions.Accept
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept``1(Firefly.CloudFormationParser.IResource,``0)
+  name: Accept<TVisitor>(IResource, TVisitor)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_ResourceAcceptExtensions_Accept__1_Firefly_CloudFormationParser_IResource___0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept``1(Firefly.CloudFormationParser.IResource,``0)
+  name.vb: Accept(Of TVisitor)(IResource, TVisitor)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept<TVisitor>(Firefly.CloudFormationParser.IResource, TVisitor)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept(Of TVisitor)(Firefly.CloudFormationParser.IResource, TVisitor)
+  nameWithType: ResourceAcceptExtensions.Accept<TVisitor>(IResource, TVisitor)
+  nameWithType.vb: ResourceAcceptExtensions.Accept(Of TVisitor)(IResource, TVisitor)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept``1(Firefly.CloudFormationParser.IResource,Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor{``0},``0)
+  name: Accept<TContext>(IResource, ITemplateObjectVisitor<TContext>, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_ResourceAcceptExtensions_Accept__1_Firefly_CloudFormationParser_IResource_Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitor___0____0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept``1(Firefly.CloudFormationParser.IResource,Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor{``0},``0)
+  name.vb: Accept(Of TContext)(IResource, ITemplateObjectVisitor(Of TContext), TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept<TContext>(Firefly.CloudFormationParser.IResource, Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor<TContext>, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.ResourceAcceptExtensions.Accept(Of TContext)(Firefly.CloudFormationParser.IResource, Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor(Of TContext), TContext)
+  nameWithType: ResourceAcceptExtensions.Accept<TContext>(IResource, ITemplateObjectVisitor<TContext>, TContext)
+  nameWithType.vb: ResourceAcceptExtensions.Accept(Of TContext)(IResource, ITemplateObjectVisitor(Of TContext), TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1
+  name: ITemplateObjectVisitor<TContext>
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html
+  commentId: T:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1
+  name.vb: ITemplateObjectVisitor(Of TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor<TContext>
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor(Of TContext)
+  nameWithType: ITemplateObjectVisitor<TContext>
+  nameWithType.vb: ITemplateObjectVisitor(Of TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.DoAccept(System.Object,`0)
+  name: DoAccept(Object, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitor_1_DoAccept_System_Object__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.DoAccept(System.Object,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor<TContext>.DoAccept(System.Object, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor(Of TContext).DoAccept(System.Object, TContext)
+  nameWithType: ITemplateObjectVisitor<TContext>.DoAccept(Object, TContext)
+  nameWithType.vb: ITemplateObjectVisitor(Of TContext).DoAccept(Object, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.DoAccept*
+  name: DoAccept
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitor_1_DoAccept_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.DoAccept
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor<TContext>.DoAccept
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor(Of TContext).DoAccept
+  nameWithType: ITemplateObjectVisitor<TContext>.DoAccept
+  nameWithType.vb: ITemplateObjectVisitor(Of TContext).DoAccept
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.Template
+  name: Template
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitor_1_Template
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.Template
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor<TContext>.Template
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor(Of TContext).Template
+  nameWithType: ITemplateObjectVisitor<TContext>.Template
+  nameWithType.vb: ITemplateObjectVisitor(Of TContext).Template
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.Template*
+  name: Template
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitor_1_Template_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor`1.Template
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor<TContext>.Template
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor(Of TContext).Template
+  nameWithType: ITemplateObjectVisitor<TContext>.Template
+  nameWithType.vb: ITemplateObjectVisitor(Of TContext).Template
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1
+  name: ITemplateObjectVisitorContext<TContext>
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext-1.html
+  commentId: T:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1
+  name.vb: ITemplateObjectVisitorContext(Of TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext<TContext>
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext(Of TContext)
+  nameWithType: ITemplateObjectVisitorContext<TContext>
+  nameWithType.vb: ITemplateObjectVisitorContext(Of TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1.Next(System.Int32)
+  name: Next(Int32)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitorContext_1_Next_System_Int32_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1.Next(System.Int32)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext<TContext>.Next(System.Int32)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext(Of TContext).Next(System.Int32)
+  nameWithType: ITemplateObjectVisitorContext<TContext>.Next(Int32)
+  nameWithType.vb: ITemplateObjectVisitorContext(Of TContext).Next(Int32)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1.Next(System.String)
+  name: Next(String)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitorContext_1_Next_System_String_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1.Next(System.String)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext<TContext>.Next(System.String)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext(Of TContext).Next(System.String)
+  nameWithType: ITemplateObjectVisitorContext<TContext>.Next(String)
+  nameWithType.vb: ITemplateObjectVisitorContext(Of TContext).Next(String)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1.Next*
+  name: Next
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitorContext_1_Next_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext`1.Next
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext<TContext>.Next
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext(Of TContext).Next
+  nameWithType: ITemplateObjectVisitorContext<TContext>.Next
+  nameWithType.vb: ITemplateObjectVisitorContext(Of TContext).Next
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext
+  name: NullTemplateObjectVisitorContext
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.html
+  commentId: T:Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext
+  nameWithType: NullTemplateObjectVisitorContext
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next(System.Int32)
+  name: Next(Int32)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_NullTemplateObjectVisitorContext_Next_System_Int32_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next(System.Int32)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next(System.Int32)
+  nameWithType: NullTemplateObjectVisitorContext.Next(Int32)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next(System.String)
+  name: Next(String)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_NullTemplateObjectVisitorContext_Next_System_String_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next(System.String)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next(System.String)
+  nameWithType: NullTemplateObjectVisitorContext.Next(String)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next*
+  name: Next
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_NullTemplateObjectVisitorContext_Next_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.Next
+  nameWithType: NullTemplateObjectVisitorContext.Next
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1
+  name: TemplateObjectVisitor<TContext>
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html
+  commentId: T:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1
+  name.vb: TemplateObjectVisitor(Of TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext)
+  nameWithType: TemplateObjectVisitor<TContext>
+  nameWithType.vb: TemplateObjectVisitor(Of TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.#ctor(Firefly.CloudFormationParser.ITemplate)
+  name: TemplateObjectVisitor(ITemplate)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1__ctor_Firefly_CloudFormationParser_ITemplate_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.#ctor(Firefly.CloudFormationParser.ITemplate)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.TemplateObjectVisitor(Firefly.CloudFormationParser.ITemplate)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).TemplateObjectVisitor(Firefly.CloudFormationParser.ITemplate)
+  nameWithType: TemplateObjectVisitor<TContext>.TemplateObjectVisitor(ITemplate)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).TemplateObjectVisitor(ITemplate)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.#ctor*
+  name: TemplateObjectVisitor
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1__ctor_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.#ctor
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.TemplateObjectVisitor
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).TemplateObjectVisitor
+  nameWithType: TemplateObjectVisitor<TContext>.TemplateObjectVisitor
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).TemplateObjectVisitor
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.DoAccept(System.Object,`0)
+  name: DoAccept(Object, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_DoAccept_System_Object__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.DoAccept(System.Object,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.DoAccept(System.Object, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).DoAccept(System.Object, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.DoAccept(Object, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).DoAccept(Object, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.DoAccept*
+  name: DoAccept
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_DoAccept_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.DoAccept
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.DoAccept
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).DoAccept
+  nameWithType: TemplateObjectVisitor<TContext>.DoAccept
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).DoAccept
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Path
+  name: Path
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Path
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Path
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Path
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Path
+  nameWithType: TemplateObjectVisitor<TContext>.Path
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Path
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Path*
+  name: Path
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Path_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Path
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Path
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Path
+  nameWithType: TemplateObjectVisitor<TContext>.Path
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Path
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Template
+  name: Template
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Template
+  commentId: P:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Template
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Template
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Template
+  nameWithType: TemplateObjectVisitor<TContext>.Template
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Template
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Template*
+  name: Template
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Template_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Template
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Template
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Template
+  nameWithType: TemplateObjectVisitor<TContext>.Template
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Template
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(Firefly.CloudFormationParser.Intrinsics.IIntrinsic,`0)
+  name: Visit(IIntrinsic, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_Firefly_CloudFormationParser_Intrinsics_IIntrinsic__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(Firefly.CloudFormationParser.Intrinsics.IIntrinsic,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit(Firefly.CloudFormationParser.Intrinsics.IIntrinsic, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(Firefly.CloudFormationParser.Intrinsics.IIntrinsic, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit(IIntrinsic, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(IIntrinsic, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Boolean,`0)
+  name: Visit(Boolean, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Boolean__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Boolean,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit(System.Boolean, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(System.Boolean, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit(Boolean, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(Boolean, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Double,`0)
+  name: Visit(Double, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Double__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Double,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit(System.Double, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(System.Double, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit(Double, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(Double, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Int32,`0)
+  name: Visit(Int32, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Int32__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Int32,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit(System.Int32, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(System.Int32, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit(Int32, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(Int32, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.String,`0)
+  name: Visit(String, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_String__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.String,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit(System.String, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(System.String, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit(String, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(String, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*
+  name: Visit
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit
+  nameWithType: TemplateObjectVisitor<TContext>.Visit
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.IDictionary{``0,System.Object},`0)
+  name: Visit<TKey>(IDictionary<TKey, Object>, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_IDictionary___0_System_Object___0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.IDictionary{``0,System.Object},`0)
+  name.vb: Visit(Of TKey)(IDictionary(Of TKey, Object), TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit<TKey>(System.Collections.Generic.IDictionary<TKey, System.Object>, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(Of TKey)(System.Collections.Generic.IDictionary(Of TKey, System.Object), TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit<TKey>(IDictionary<TKey, Object>, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(Of TKey)(IDictionary(Of TKey, Object), TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.IList{``0},`0)
+  name: Visit<TItem>(IList<TItem>, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_IList___0___0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.IList{``0},`0)
+  name.vb: Visit(Of TItem)(IList(Of TItem), TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit<TItem>(System.Collections.Generic.IList<TItem>, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(Of TItem)(System.Collections.Generic.IList(Of TItem), TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit<TItem>(IList<TItem>, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(Of TItem)(IList(Of TItem), TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.KeyValuePair{``0,System.Object},`0)
+  name: Visit<TKey>(KeyValuePair<TKey, Object>, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_KeyValuePair___0_System_Object___0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.KeyValuePair{``0,System.Object},`0)
+  name.vb: Visit(Of TKey)(KeyValuePair(Of TKey, Object), TContext)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.Visit<TKey>(System.Collections.Generic.KeyValuePair<TKey, System.Object>, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).Visit(Of TKey)(System.Collections.Generic.KeyValuePair(Of TKey, System.Object), TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.Visit<TKey>(KeyValuePair<TKey, Object>, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).Visit(Of TKey)(KeyValuePair(Of TKey, Object), TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractArrayIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic,`0)
+  name: VisitAbstractArrayIntrinsic(AbstractArrayIntrinsic, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractArrayIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractArrayIntrinsic__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractArrayIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitAbstractArrayIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitAbstractArrayIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.VisitAbstractArrayIntrinsic(AbstractArrayIntrinsic, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitAbstractArrayIntrinsic(AbstractArrayIntrinsic, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractArrayIntrinsic*
+  name: VisitAbstractArrayIntrinsic
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractArrayIntrinsic_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractArrayIntrinsic
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitAbstractArrayIntrinsic
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitAbstractArrayIntrinsic
+  nameWithType: TemplateObjectVisitor<TContext>.VisitAbstractArrayIntrinsic
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitAbstractArrayIntrinsic
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractScalarIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic,`0)
+  name: VisitAbstractScalarIntrinsic(AbstractScalarIntrinsic, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractScalarIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractScalarIntrinsic__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractScalarIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitAbstractScalarIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitAbstractScalarIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.VisitAbstractScalarIntrinsic(AbstractScalarIntrinsic, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitAbstractScalarIntrinsic(AbstractScalarIntrinsic, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractScalarIntrinsic*
+  name: VisitAbstractScalarIntrinsic
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractScalarIntrinsic_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractScalarIntrinsic
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitAbstractScalarIntrinsic
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitAbstractScalarIntrinsic
+  nameWithType: TemplateObjectVisitor<TContext>.VisitAbstractScalarIntrinsic
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitAbstractScalarIntrinsic
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitBranchableIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic,`0)
+  name: VisitBranchableIntrinsic(IBranchableIntrinsic, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitBranchableIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_IBranchableIntrinsic__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitBranchableIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitBranchableIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitBranchableIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.VisitBranchableIntrinsic(IBranchableIntrinsic, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitBranchableIntrinsic(IBranchableIntrinsic, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitBranchableIntrinsic*
+  name: VisitBranchableIntrinsic
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitBranchableIntrinsic_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitBranchableIntrinsic
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitBranchableIntrinsic
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitBranchableIntrinsic
+  nameWithType: TemplateObjectVisitor<TContext>.VisitBranchableIntrinsic
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitBranchableIntrinsic
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitSubIntrinsic(Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic,`0)
+  name: VisitSubIntrinsic(SubIntrinsic, TContext)
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitSubIntrinsic_Firefly_CloudFormationParser_Intrinsics_Functions_SubIntrinsic__0_
+  commentId: M:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitSubIntrinsic(Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic,`0)
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitSubIntrinsic(Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic, TContext)
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitSubIntrinsic(Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic, TContext)
+  nameWithType: TemplateObjectVisitor<TContext>.VisitSubIntrinsic(SubIntrinsic, TContext)
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitSubIntrinsic(SubIntrinsic, TContext)
+- uid: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitSubIntrinsic*
+  name: VisitSubIntrinsic
+  href: api/Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitSubIntrinsic_
+  commentId: Overload:Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitSubIntrinsic
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor<TContext>.VisitSubIntrinsic
+  fullName.vb: Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor(Of TContext).VisitSubIntrinsic
+  nameWithType: TemplateObjectVisitor<TContext>.VisitSubIntrinsic
+  nameWithType.vb: TemplateObjectVisitor(Of TContext).VisitSubIntrinsic
 - uid: Firefly.CloudFormationParser.Utils
   name: Firefly.CloudFormationParser.Utils
   href: api/Firefly.CloudFormationParser.Utils.html
@@ -5393,6 +6046,112 @@ references:
   commentId: T:Firefly.CloudFormationParser.Utils.PropertyPath
   fullName: Firefly.CloudFormationParser.Utils.PropertyPath
   nameWithType: PropertyPath
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.#ctor
+  name: PropertyPath()
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath__ctor
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.#ctor
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.PropertyPath()
+  nameWithType: PropertyPath.PropertyPath()
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.#ctor(System.Collections.Generic.IEnumerable{System.String})
+  name: PropertyPath(IEnumerable<String>)
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath__ctor_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.#ctor(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: PropertyPath(IEnumerable(Of String))
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.PropertyPath(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Firefly.CloudFormationParser.Utils.PropertyPath.PropertyPath(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: PropertyPath.PropertyPath(IEnumerable<String>)
+  nameWithType.vb: PropertyPath.PropertyPath(IEnumerable(Of String))
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.#ctor*
+  name: PropertyPath
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath__ctor_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.#ctor
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.PropertyPath
+  nameWithType: PropertyPath.PropertyPath
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.Clone
+  name: Clone()
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Clone
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.Clone
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Clone()
+  nameWithType: PropertyPath.Clone()
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.Clone*
+  name: Clone
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Clone_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.Clone
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Clone
+  nameWithType: PropertyPath.Clone
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.Depth
+  name: Depth
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Depth
+  commentId: P:Firefly.CloudFormationParser.Utils.PropertyPath.Depth
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Depth
+  nameWithType: PropertyPath.Depth
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.Depth*
+  name: Depth
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Depth_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.Depth
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Depth
+  nameWithType: PropertyPath.Depth
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.Equals(Firefly.CloudFormationParser.Utils.PropertyPath)
+  name: Equals(PropertyPath)
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Equals_Firefly_CloudFormationParser_Utils_PropertyPath_
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.Equals(Firefly.CloudFormationParser.Utils.PropertyPath)
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Equals(Firefly.CloudFormationParser.Utils.PropertyPath)
+  nameWithType: PropertyPath.Equals(PropertyPath)
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Equals_System_Object_
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.Equals(System.Object)
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Equals(System.Object)
+  nameWithType: PropertyPath.Equals(Object)
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.Equals*
+  name: Equals
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Equals_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.Equals
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Equals
+  nameWithType: PropertyPath.Equals
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.GetHashCode
+  name: GetHashCode()
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_GetHashCode
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.GetHashCode
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.GetHashCode()
+  nameWithType: PropertyPath.GetHashCode()
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.GetHashCode*
+  name: GetHashCode
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_GetHashCode_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.GetHashCode
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.GetHashCode
+  nameWithType: PropertyPath.GetHashCode
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.op_Equality(Firefly.CloudFormationParser.Utils.PropertyPath,Firefly.CloudFormationParser.Utils.PropertyPath)
+  name: Equality(PropertyPath, PropertyPath)
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_op_Equality_Firefly_CloudFormationParser_Utils_PropertyPath_Firefly_CloudFormationParser_Utils_PropertyPath_
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.op_Equality(Firefly.CloudFormationParser.Utils.PropertyPath,Firefly.CloudFormationParser.Utils.PropertyPath)
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Equality(Firefly.CloudFormationParser.Utils.PropertyPath, Firefly.CloudFormationParser.Utils.PropertyPath)
+  nameWithType: PropertyPath.Equality(PropertyPath, PropertyPath)
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.op_Equality*
+  name: Equality
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_op_Equality_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.op_Equality
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Equality
+  nameWithType: PropertyPath.Equality
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.op_Inequality(Firefly.CloudFormationParser.Utils.PropertyPath,Firefly.CloudFormationParser.Utils.PropertyPath)
+  name: Inequality(PropertyPath, PropertyPath)
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_op_Inequality_Firefly_CloudFormationParser_Utils_PropertyPath_Firefly_CloudFormationParser_Utils_PropertyPath_
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.op_Inequality(Firefly.CloudFormationParser.Utils.PropertyPath,Firefly.CloudFormationParser.Utils.PropertyPath)
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Inequality(Firefly.CloudFormationParser.Utils.PropertyPath, Firefly.CloudFormationParser.Utils.PropertyPath)
+  nameWithType: PropertyPath.Inequality(PropertyPath, PropertyPath)
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.op_Inequality*
+  name: Inequality
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_op_Inequality_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.op_Inequality
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Inequality
+  nameWithType: PropertyPath.Inequality
 - uid: Firefly.CloudFormationParser.Utils.PropertyPath.Path
   name: Path
   href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_Path
@@ -5406,3 +6165,16 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Utils.PropertyPath.Path
   nameWithType: PropertyPath.Path
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.ToJsonPath
+  name: ToJsonPath()
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_ToJsonPath
+  commentId: M:Firefly.CloudFormationParser.Utils.PropertyPath.ToJsonPath
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.ToJsonPath()
+  nameWithType: PropertyPath.ToJsonPath()
+- uid: Firefly.CloudFormationParser.Utils.PropertyPath.ToJsonPath*
+  name: ToJsonPath
+  href: api/Firefly.CloudFormationParser.Utils.PropertyPath.html#Firefly_CloudFormationParser_Utils_PropertyPath_ToJsonPath_
+  commentId: Overload:Firefly.CloudFormationParser.Utils.PropertyPath.ToJsonPath
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Utils.PropertyPath.ToJsonPath
+  nameWithType: PropertyPath.ToJsonPath

@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TemplateObjectVisitor&lt;TContext&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TemplateObjectVisitor&lt;TContext&gt;
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1">
+  
+  
+  <h1 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1" class="text-break">Class TemplateObjectVisitor&lt;TContext&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>An object visitor</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">TemplateObjectVisitor&lt;TContext&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html">ITemplateObjectVisitor</a>&lt;TContext&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.html">Firefly.CloudFormationParser.TemplateObjects.Traversal</a></h6>
+  <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
+  <h5 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TemplateObjectVisitor&lt;TContext&gt; : ITemplateObjectVisitor&lt;TContext&gt; where TContext : ITemplateObjectVisitorContext&lt;TContext&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContext</span></td>
+        <td><p>The type of the context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1__ctor_Firefly_CloudFormationParser_ITemplate_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.%23ctor(Firefly.CloudFormationParser.ITemplate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L25">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1__ctor_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.#ctor*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1__ctor_Firefly_CloudFormationParser_ITemplate_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.#ctor(Firefly.CloudFormationParser.ITemplate)">TemplateObjectVisitor(ITemplate)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html">TemplateObjectVisitor&lt;TContext&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TemplateObjectVisitor(ITemplate template)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.ITemplate.html">ITemplate</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The parsed CloudFormation template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Path.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Path%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L106">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Path_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Path*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Path" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Path">Path</h4>
+  <div class="markdown level1 summary"><p>Gets the current path within the object graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyPath Path { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.Utils.PropertyPath.html">PropertyPath</a></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Template.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Template%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L98">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Template_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Template*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Template" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Template">Template</h4>
+  <div class="markdown level1 summary"><p>
+Gets a reference to the current parsed template.
+</p>
+<p>
+This is needed when visiting child objects of a <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic.html">IBranchableIntrinsic</a> such that the appropriate
+sub-properties of the intrinsic are visited according to the prevailing conditions.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITemplate Template { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.ITemplate.html">ITemplate</a></td>
+        <td><p>The template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_DoAccept_System_Object__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.DoAccept(System.Object%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L31">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_DoAccept_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.DoAccept*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_DoAccept_System_Object__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.DoAccept(System.Object,`0)">DoAccept(Object, TContext)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the Accept calls added as extension methods to the types of objects encountered in the deserialized YAML object graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoAccept(object objectInGraph, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">objectInGraph</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_Firefly_CloudFormationParser_Intrinsics_IIntrinsic__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit(Firefly.CloudFormationParser.Intrinsics.IIntrinsic%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L145">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_Firefly_CloudFormationParser_Intrinsics_IIntrinsic__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(Firefly.CloudFormationParser.Intrinsics.IIntrinsic,`0)">Visit(IIntrinsic, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified intrinsic and dispatches to visit handler for each distinct subclass of <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html">IIntrinsic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit(IIntrinsic intrinsic, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html">IIntrinsic</a></td>
+        <td><span class="parametername">intrinsic</span></td>
+        <td><p>The intrinsic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Boolean__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit(System.Boolean%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L266">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Boolean__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Boolean,`0)">Visit(Boolean, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified boolean value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit(bool booleanValue, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">booleanValue</span></td>
+        <td><p>if set to <code>true</code> [boolean value].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Double__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit(System.Double%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L275">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Double__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Double,`0)">Visit(Double, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified double value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit(double doubleValue, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">doubleValue</span></td>
+        <td><p>The double value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Int32__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L257">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_Int32__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.Int32,`0)">Visit(Int32, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified integer value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit(int integerValue, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">integerValue</span></td>
+        <td><p>The integer value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_String__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit(System.String%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L248">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_System_String__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit(System.String,`0)">Visit(String, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit(string stringValue, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stringValue</span></td>
+        <td><p>The string value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_IDictionary___0_System_Object___0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit%60%601(System.Collections.Generic.IDictionary%7B%60%600%2CSystem.Object%7D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L114">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_IDictionary___0_System_Object___0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.IDictionary{``0,System.Object},`0)">Visit&lt;TKey&gt;(IDictionary&lt;TKey, Object&gt;, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit&lt;TKey&gt;(IDictionary&lt;TKey, object&gt; dict, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">dict</span></td>
+        <td><p>The dictionary.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The type of the key. This should be either string or object(string).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_IList___0___0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit%60%601(System.Collections.Generic.IList%7B%60%600%7D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L130">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_IList___0___0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.IList{``0},`0)">Visit&lt;TItem&gt;(IList&lt;TItem&gt;, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit&lt;TItem&gt;(IList&lt;TItem&gt; list, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TItem&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TItem</span></td>
+        <td><p>The type of the list item. This should be dictionary, list, intrinsic or any acceptable value type for CloudFormation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_KeyValuePair___0_System_Object___0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.Visit%60%601(System.Collections.Generic.KeyValuePair%7B%60%600%2CSystem.Object%7D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L238">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_Visit__1_System_Collections_Generic_KeyValuePair___0_System_Object___0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.Visit``1(System.Collections.Generic.KeyValuePair{``0,System.Object},`0)">Visit&lt;TKey&gt;(KeyValuePair&lt;TKey, Object&gt;, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits the specified property, i.e. <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair&lt;TKey,TValue&gt;</a> of a dictionary object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Visit&lt;TKey&gt;(KeyValuePair&lt;TKey, object&gt; property, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">property</span></td>
+        <td><p>The property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The type of the key. This should be either string or object(string).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractArrayIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractArrayIntrinsic__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.VisitAbstractArrayIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L187">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractArrayIntrinsic_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractArrayIntrinsic*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractArrayIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractArrayIntrinsic__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractArrayIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic,`0)">VisitAbstractArrayIntrinsic(AbstractArrayIntrinsic, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits any derivative of <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic.html">AbstractArrayIntrinsic</a>.
+Each item in the <code>Items</code> array of the intrinsic is visited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void VisitAbstractArrayIntrinsic(AbstractArrayIntrinsic intrinsic, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic.html">AbstractArrayIntrinsic</a></td>
+        <td><span class="parametername">intrinsic</span></td>
+        <td><p>The intrinsic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractScalarIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractScalarIntrinsic__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.VisitAbstractScalarIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L197">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractScalarIntrinsic_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractScalarIntrinsic*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitAbstractScalarIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractScalarIntrinsic__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitAbstractScalarIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic,`0)">VisitAbstractScalarIntrinsic(AbstractScalarIntrinsic, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits any derivative of <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic.html">AbstractScalarIntrinsic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void VisitAbstractScalarIntrinsic(AbstractScalarIntrinsic intrinsic, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic.html">AbstractScalarIntrinsic</a></td>
+        <td><span class="parametername">intrinsic</span></td>
+        <td><p>The intrinsic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitBranchableIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_IBranchableIntrinsic__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.VisitBranchableIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L227">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitBranchableIntrinsic_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitBranchableIntrinsic*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitBranchableIntrinsic_Firefly_CloudFormationParser_Intrinsics_Abstractions_IBranchableIntrinsic__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitBranchableIntrinsic(Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic,`0)">VisitBranchableIntrinsic(IBranchableIntrinsic, TContext)</h4>
+  <div class="markdown level1 summary"><p>
+Visits any derivatives of <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic.html">IBranchableIntrinsic</a>, i.e. <code>!If</code> and <code>!Select</code>
+where only one branch of the intrinsic should be walked base don prevailing conditions.
+</p>
+<p>
+Whilst both of these intrinsic functions are also inherited from <a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic.html">AbstractScalarIntrinsic</a>,
+this visitor takes precedence for these functions.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void VisitBranchableIntrinsic(IBranchableIntrinsic intrinsic, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic.html">IBranchableIntrinsic</a></td>
+        <td><span class="parametername">intrinsic</span></td>
+        <td><p>The intrinsic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitSubIntrinsic_Firefly_CloudFormationParser_Intrinsics_Functions_SubIntrinsic__0_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601.VisitSubIntrinsic(Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L208">View Source</a>
+  </span>
+  <a id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitSubIntrinsic_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitSubIntrinsic*"></a>
+  <h4 id="Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1_VisitSubIntrinsic_Firefly_CloudFormationParser_Intrinsics_Functions_SubIntrinsic__0_" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor`1.VisitSubIntrinsic(Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic,`0)">VisitSubIntrinsic(SubIntrinsic, TContext)</h4>
+  <div class="markdown level1 summary"><p>Visits <code>!Sub</code> intrinsic which is somewhat a special case,
+having both implicit and possibly additional explicit references as a dictionary.
+Each of these are visited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void VisitSubIntrinsic(SubIntrinsic intrinsic, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Functions.SubIntrinsic.html">SubIntrinsic</a></td>
+        <td><span class="parametername">intrinsic</span></td>
+        <td><p>The intrinsic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html">ITemplateObjectVisitor&lt;TContext&gt;</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html">ITemplateObjectVisitor</a>&lt;TContext&gt;</div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_Traversal_TemplateObjectVisitor_1.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/Traversal/TemplateObjectVisitor.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Firefly.CloudFormationParser.Intrinsics.Abstractions
+    <title>Namespace Firefly.CloudFormationParser.TemplateObjects.Traversal
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Firefly.CloudFormationParser.Intrinsics.Abstractions
+    <meta name="title" content="Namespace Firefly.CloudFormationParser.TemplateObjects.Traversal
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,34 +68,32 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions">
+            <article class="content wrap" id="_content" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal">
   
-  <h1 id="Firefly_CloudFormationParser_Intrinsics_Abstractions" data-uid="Firefly.CloudFormationParser.Intrinsics.Abstractions" class="text-break">Namespace Firefly.CloudFormationParser.Intrinsics.Abstractions
+  <h1 id="Firefly_CloudFormationParser_TemplateObjects_Traversal" data-uid="Firefly.CloudFormationParser.TemplateObjects.Traversal" class="text-break">Namespace Firefly.CloudFormationParser.TemplateObjects.Traversal
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractArrayIntrinsic.html">AbstractArrayIntrinsic</a></h4>
-      <section><p>Abstract base class for intrinsics that have an array of items</p>
+      <h4><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.NullTemplateObjectVisitorContext.html">NullTemplateObjectVisitorContext</a></h4>
+      <section><p>A empty implementation of the <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext-1.html">ITemplateObjectVisitorContext&lt;TContext&gt;</a>.
+This just returns it self as the object graph is traversed and otherwise does nothing.</p>
 </section>
-      <h4><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html">AbstractIntrinsic</a></h4>
-      <section><p>Abstract base class for CloudFormation intrinsics</p>
-</section>
-      <h4><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractLogicalIntrinsic.html">AbstractLogicalIntrinsic</a></h4>
-      <section><p>Base class for tags that evaluate to a boolean result, i.e. those that can be used in conditions.</p>
-</section>
-      <h4><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractScalarIntrinsic.html">AbstractScalarIntrinsic</a></h4>
-      <section><p>Base class for tags that have a scalar value</p>
+      <h4><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.TemplateObjectVisitor-1.html">TemplateObjectVisitor&lt;TContext&gt;</a></h4>
+      <section><p>An object visitor</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.IBranchableIntrinsic.html">IBranchableIntrinsic</a></h4>
-      <section><p>Where an intrinsic can return one path from a selection depending on conditions, gets the selected branch</p>
+      <h4><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitor-1.html">ITemplateObjectVisitor&lt;TContext&gt;</a></h4>
+      <section><p>Basic interface for implementing a CloudFormation object graph visitor. The visitor provides a context implementation.
+A visitor context must as minimum implement the <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext-1.html">ITemplateObjectVisitorContext&lt;TContext&gt;</a> which provides basic traversal methods.</p>
 </section>
-      <h4><a class="xref" href="Firefly.CloudFormationParser.Intrinsics.Abstractions.IReferenceIntrinsic.html">IReferenceIntrinsic</a></h4>
-      <section><p>Marker interface for intrinsics that may reference other objects in the template</p>
+      <h4><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.ITemplateObjectVisitorContext-1.html">ITemplateObjectVisitorContext&lt;TContext&gt;</a></h4>
+      <section><p>This interface defines methods for altering the context as the object graph is traversed.
+<br>
+It is up to the implementation to choose if that changes a state in the context or if it returns a new context.</p>
 </section>
 </article>
           </div>

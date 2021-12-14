@@ -95,7 +95,6 @@
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback">IDeserializationCallback</a></div>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
     <div><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateSection.html">ITemplateSection</a></div>
-    <div><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.IVisitable.html">IVisitable</a></div>
     <div><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.html">ITemplateObject</a></div>
   </div>
   <div class="inheritedMembers">
@@ -243,7 +242,7 @@
   <h6><strong>Assembly</strong>: Firefly.CloudFormationParser.dll</h6>
   <h5 id="Firefly_CloudFormationParser_TemplateObjects_MappingSection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MappingSection : Dictionary&lt;string, object&gt;, IDictionary&lt;string, object&gt;, ICollection&lt;KeyValuePair&lt;string, object&gt;&gt;, IReadOnlyDictionary&lt;string, object&gt;, IReadOnlyCollection&lt;KeyValuePair&lt;string, object&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt;, IDictionary, ICollection, IEnumerable, IDeserializationCallback, ISerializable, ITemplateSection, IVisitable, ITemplateObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class MappingSection : Dictionary&lt;string, object&gt;, IDictionary&lt;string, object&gt;, ICollection&lt;KeyValuePair&lt;string, object&gt;&gt;, IReadOnlyDictionary&lt;string, object&gt;, IReadOnlyCollection&lt;KeyValuePair&lt;string, object&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt;, IDictionary, ICollection, IEnumerable, IDeserializationCallback, ISerializable, ITemplateSection, ITemplateObject</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -351,42 +350,6 @@ They are set as follows:
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/new/master/apiSpec/new?filename=Firefly_CloudFormationParser_TemplateObjects_MappingSection_Accept_Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_.md&amp;value=---%0Auid%3A%20Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.CloudFormationParser/blob/master/src/Firefly.CloudFormationParser/TemplateObjects/MappingSection.cs/#L27">View Source</a>
-  </span>
-  <a id="Firefly_CloudFormationParser_TemplateObjects_MappingSection_Accept_" data-uid="Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept*"></a>
-  <h4 id="Firefly_CloudFormationParser_TemplateObjects_MappingSection_Accept_Firefly_CloudFormationParser_TemplateObjects_ITemplateObjectVisitor_" data-uid="Firefly.CloudFormationParser.TemplateObjects.MappingSection.Accept(Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor)">Accept(ITemplateObjectVisitor)</h4>
-  <div class="markdown level1 summary"><p>Accepts the specified visitor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Accept(ITemplateObjectVisitor templateObjectVisitor)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateObjectVisitor.html">ITemplateObjectVisitor</a></td>
-        <td><span class="parametername">templateObjectVisitor</span></td>
-        <td><p>The visitor.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;</a>
@@ -422,10 +385,14 @@ They are set as follows:
       <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateSection.html">ITemplateSection</a>
   </div>
   <div>
-      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.IVisitable.html">IVisitable</a>
+      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.html">ITemplateObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_MappingSectionExtensions_Accept__1_Firefly_CloudFormationParser_TemplateObjects_MappingSection___0_">MappingSectionExtensions.Accept&lt;TVisitor&gt;(MappingSection, TVisitor)</a>
   </div>
   <div>
-      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.ITemplateObject.html">ITemplateObject</a>
+      <a class="xref" href="Firefly.CloudFormationParser.TemplateObjects.Traversal.AcceptExtensions.MappingSectionExtensions.html#Firefly_CloudFormationParser_TemplateObjects_Traversal_AcceptExtensions_MappingSectionExtensions_Accept__1_Firefly_CloudFormationParser_TemplateObjects_MappingSection_Firefly_CloudFormationParser_TemplateObjects_Traversal_ITemplateObjectVisitor___0____0_">MappingSectionExtensions.Accept&lt;TContext&gt;(MappingSection, ITemplateObjectVisitor&lt;TContext&gt;, TContext)</a>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
