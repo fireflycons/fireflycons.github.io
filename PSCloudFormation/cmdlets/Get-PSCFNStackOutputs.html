@@ -8,7 +8,7 @@
     <title>Get-PSCFNStackOutputs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Get-PSCFNStackOutputs ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
 <p>Get the outputs of a stack in various formats</p>
 <h2 id="syntax">SYNTAX</h2>
 <h3 id="imports">Imports</h3>
-<pre><code>Get-PSCFNStackOutputs [-AsCrossStackReferences] [-Format &lt;String&gt;] [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;]
+<pre><code>Get-PSCFNStackOutputs [-AsCrossStackReferences] [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;]
  [-Credential &lt;AWSCredentials&gt;] [-EndpointUrl &lt;String&gt;] [-NetworkCredential &lt;PSCredential&gt;]
  [-ProfileLocation &lt;String&gt;] [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;] [-S3EndpointUrl &lt;String&gt;]
  [-SecretKey &lt;String&gt;] [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
@@ -85,7 +85,7 @@
  [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
 </code></pre>
 <h3 id="parameters">Parameters</h3>
-<pre><code>Get-PSCFNStackOutputs [-AsParameterBlock] -Format &lt;String&gt; [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;]
+<pre><code>Get-PSCFNStackOutputs [-AsParameterBlock] [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;]
  [-Credential &lt;AWSCredentials&gt;] [-EndpointUrl &lt;String&gt;] [-NetworkCredential &lt;PSCredential&gt;]
  [-ProfileLocation &lt;String&gt;] [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;] [-S3EndpointUrl &lt;String&gt;]
  [-SecretKey &lt;String&gt;] [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
@@ -135,28 +135,6 @@ Required: True
 Position: Named
 Default value: False
 Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-</code></pre>
-<h3 id="-format">-Format</h3>
-<p>Sets how output of parameters for CloudFormation template fragments should be formatted.</p>
-<pre><code class="lang-yaml">Type: String
-Parameter Sets: Imports
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-</code></pre>
-<pre><code class="lang-yaml">Type: String
-Parameter Sets: Parameters
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-stackname">-StackName</h3>
@@ -339,16 +317,14 @@ Make this a parameter to your new stack.</p>
 <h3 id="systemmanagementautomationswitchparameter-2">System.Management.Automation.SwitchParameter</h3>
 <p>If set, returned object is formatted as a CloudFormation parameter block.</p>
 <h3 id="systemstring">System.String</h3>
-<p>Sets how output of parameters for CloudFormation template fragments should be formatted.</p>
-<h3 id="systemstring-1">System.String</h3>
 <p>One or more stacks to process.
 One object is produced for each stack</p>
-<h3 id="systemstring-2">System.String</h3>
+<h3 id="systemstring-1">System.String</h3>
 <p>The AWS access key for the user account.
 This can be a temporary access key if the corresponding session token is supplied to the -SessionToken parameter.</p>
 <h3 id="amazonruntimeawscredentials">Amazon.Runtime.AWSCredentials</h3>
 <p>An AWSCredentials object instance containing access and secret key information, and optionally a token for session-based credentials.</p>
-<h3 id="systemstring-3">System.String</h3>
+<h3 id="systemstring-2">System.String</h3>
 <p>The endpoint to make CloudFormation calls against.</p>
 <p>The cmdlets normally determine which endpoint to call based on the region specified to the -Region parameter or set as default in the shell (via Set-DefaultAWSRegion).
 Only specify this parameter if you must direct the call to a specific custom endpoint, e.g.
@@ -357,13 +333,13 @@ if using LocalStack or some other AWS emulator or a VPC endpoint from an EC2 ins
 <p>Used with SAML-based authentication when ProfileName references a SAML role profile.
 Contains the network credentials to be supplied during authentication with the configured identity provider's endpoint.
 This parameter is not required if the user's default network identity can or should be used during authentication.</p>
-<h3 id="systemstring-4">System.String</h3>
+<h3 id="systemstring-3">System.String</h3>
 <p>Used to specify the name and location of the ini-format credential file (shared with the AWS CLI and other AWS SDKs)</p>
 <p>If this optional parameter is omitted this cmdlet will search the encrypted credential file used by the AWS SDK for .NET and AWS Toolkit for Visual Studio first.
 If the profile is not found then the cmdlet will search in the ini-format credential file at the default location: (user's home directory).aws\credentials.</p>
 <p>If this parameter is specified then this cmdlet will only search the ini-format credential file at the location given.</p>
 <p>As the current folder can vary in a shell or during script execution it is advised that you use specify a fully qualified path instead of a relative path.</p>
-<h3 id="systemstring-5">System.String</h3>
+<h3 id="systemstring-4">System.String</h3>
 <p>The user-defined name of an AWS credentials or SAML-based role profile containing credential information.
 The profile is expected to be found in the secure credential file shared with the AWS SDK for .NET and AWS Toolkit for Visual Studio.
 You can also specify the name of a profile stored in the .ini-format credential file used with the AWS CLI and other AWS SDKs.</p>
@@ -371,18 +347,18 @@ You can also specify the name of a profile stored in the .ini-format credential 
 <p>The system name of an AWS region or an AWSRegion instance.
 This governs the endpoint that will be used when calling service operations.
 Note that the AWS resources referenced in a call are usually region-specific.</p>
-<h3 id="systemstring-6">System.String</h3>
+<h3 id="systemstring-5">System.String</h3>
 <p>The endpoint to make S3 calls against.</p>
 <p>S3 is used by these cmdlets for managing S3 based templates and by the packager for uploading code artifacts and nested templates.</p>
 <p>The cmdlets normally determine which endpoint to call based on the region specified to the -Region parameter or set as default in the shell (via Set-DefaultAWSRegion).
 Only specify this parameter if you must direct the call to a specific custom endpoint, e.g.
 if using LocalStack or some other AWS emulator or a VPC endpoint from an EC2 instance.</p>
-<h3 id="systemstring-7">System.String</h3>
+<h3 id="systemstring-6">System.String</h3>
 <p>The AWS secret key for the user account.
 This can be a temporary secret key if the corresponding session token is supplied to the -SessionToken parameter.</p>
-<h3 id="systemstring-8">System.String</h3>
+<h3 id="systemstring-7">System.String</h3>
 <p>The session token if the access and secret keys are temporary session-based credentials.</p>
-<h3 id="systemstring-9">System.String</h3>
+<h3 id="systemstring-8">System.String</h3>
 <p>The endpoint to make STS calls against.</p>
 <p>STS is used only if creating a bucket to store oversize templates and packager artifacts to get the caller account ID to use as part of the generated bucket name.</p>
 <p>The cmdlets normally determine which endpoint to call based on the region specified to the -Region parameter or set as default in the shell (via Set-DefaultAWSRegion).
@@ -390,7 +366,7 @@ Only specify this parameter if you must direct the call to a specific custom end
 if using LocalStack or some other AWS emulator or a VPC endpoint from an EC2 instance.</p>
 <h2 id="outputs">OUTPUTS</h2>
 <h3 id="systemcollectionshashtable">System.Collections.Hashtable</h3>
-<h3 id="systemstring-10">System.String</h3>
+<h3 id="systemstring-9">System.String</h3>
 <h2 id="notes">NOTES</h2>
 <h2 id="related-links">RELATED LINKS</h2>
 </article>

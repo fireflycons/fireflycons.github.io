@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example - VPC Stack CloudFormation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example - VPC Stack CloudFormation ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tf-example-vpc-stack-cf">
+<h1 id="cloudformation-for-the-vpc-stack-example">CloudFormation for the vpc-stack example</h1>
+
+<pre>
+<code class="lang-yaml">---
+  AWSTemplateFormatVersion: &quot;2010-09-09&quot;
+
+  Description: &quot;Creates a VPC with Managed NAT, similar to the VPC Wizard at https://console.aws.amazon.com/vpc/home#wizardFullpagePublicAndPrivate&quot;
+  Parameters:
+    VPCName:
+      Description: The name of the VPC being created.
+      Type: String
+      Default: &quot;VPC Public and Private with NAT&quot;
+
+  Mappings:
+    # Demonstrates that these mappings are rendered as a locals {} block
+    # and are correctly referenced.
+    SubnetConfig:
+      VPC:
+        CIDR: &quot;10.0.0.0/16&quot;
+
+    # This mapping accounts for the scenario when certain AZs
+    # are not available to use (this differs on a per account
+    # per customer basis). E.g., if the &#39;b&#39; AZ is not available
+    # in a specific region in one&#39;s account then updating the
+    # list contained in the mapping below here will allow a
+    # different AZ to be chosen.
+    AZRegions:
+      ap-northeast-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      ap-northeast-2:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      ap-south-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      ap-southeast-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      ap-southeast-2:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      ca-central-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      eu-central-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      eu-west-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      eu-west-2:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      sa-east-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      us-east-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      us-east-2:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      us-west-1:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+      us-west-2:
+        AZs: [&quot;a&quot;, &quot;b&quot;]
+
+  Resources:
+
+    VPC:
+      # Demonstrates intrinsics: !Ref
+      Type: &quot;AWS::EC2::VPC&quot;
+      Properties:
+        EnableDnsSupport: &quot;true&quot;
+        EnableDnsHostnames: &quot;true&quot;
+        CidrBlock:
+          Fn::FindInMap:
+            - &quot;SubnetConfig&quot;
+            - &quot;VPC&quot;
+            - &quot;CIDR&quot;
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Public&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Ref &#39;VPCName&#39;
+
+    PublicSubnet0:
+      # Demonstrates intrinsics: !Ref, !Sub, !Select, !Join, !Cidr, !FindInMap
+      Type: &quot;AWS::EC2::Subnet&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        AvailabilityZone:
+          Fn::Sub:
+            - &quot;${AWS::Region}${AZ}&quot;
+            - AZ: !Select [ 0, !FindInMap [ &quot;AZRegions&quot;, !Ref &quot;AWS::Region&quot;, &quot;AZs&quot; ] ]
+        CidrBlock: !Select
+          - 0
+          - !Cidr
+            - !FindInMap
+              - SubnetConfig
+              - VPC
+              - CIDR
+            - 4
+            - 8
+        MapPublicIpOnLaunch: true
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Public&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-public-&#39;
+                - !Select [ 0, !FindInMap [ &quot;AZRegions&quot;, !Ref &quot;AWS::Region&quot;, &quot;AZs&quot; ] ]
+
+    PublicSubnet1:
+      Type: &quot;AWS::EC2::Subnet&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        AvailabilityZone:
+          Fn::Sub:
+            - &quot;${AWS::Region}${AZ}&quot;
+            - AZ: !Select [ 1, !FindInMap [ &quot;AZRegions&quot;, !Ref &quot;AWS::Region&quot;, &quot;AZs&quot; ] ]
+        CidrBlock: !Select
+          - 1
+          - !Cidr
+            - !FindInMap
+              - SubnetConfig
+              - VPC
+              - CIDR
+            - 4
+            - 8
+        MapPublicIpOnLaunch: &quot;true&quot;
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Public&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-public-&#39;
+                - !Select [ 1, !FindInMap [ &quot;AZRegions&quot;, !Ref &quot;AWS::Region&quot;, &quot;AZs&quot; ] ]
+
+    PrivateSubnet0:
+      # Demonstrates intrinsics: !Ref, !GetAZs, !Select, !Join, !Cidr, !FindInMap
+      Type: &quot;AWS::EC2::Subnet&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        AvailabilityZone: !Select
+          - 0
+          - !GetAZs
+        CidrBlock: !Select
+          - 2
+          - !Cidr
+            - !FindInMap
+              - SubnetConfig
+              - VPC
+              - CIDR
+            - 4
+            - 8
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Private&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-private-&#39;
+                - !Select [ 0, !FindInMap [ &quot;AZRegions&quot;, !Ref &quot;AWS::Region&quot;, &quot;AZs&quot; ] ]
+
+    PrivateSubnet1:
+      Type: &quot;AWS::EC2::Subnet&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        AvailabilityZone: !Select
+          - 1
+          - !GetAZs
+        CidrBlock: !Select
+          - 3
+          - !Cidr
+            - !FindInMap
+              - SubnetConfig
+              - VPC
+              - CIDR
+            - 4
+            - 8
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Private&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-private-&#39;
+                - !Select [ 1, !FindInMap [ &quot;AZRegions&quot;, !Ref &quot;AWS::Region&quot;, &quot;AZs&quot; ] ]
+
+    InternetGateway:
+      Type: &quot;AWS::EC2::InternetGateway&quot;
+      Properties:
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Public&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-IGW&#39;
+
+    GatewayAttachment:
+      # Demonstrates the fact that although there is no specific terraform resource for
+      # this object, a correct reference to aws_vpc is added to aws_internet_gateway.
+      Type: &quot;AWS::EC2::VPCGatewayAttachment&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        InternetGatewayId:
+          Ref: &quot;InternetGateway&quot;
+
+    PublicRouteTable:
+      Type: &quot;AWS::EC2::RouteTable&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Public&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-public-route-table&#39;
+
+    PublicRoute:
+      Type: &quot;AWS::EC2::Route&quot;
+      DependsOn: &quot;GatewayAttachment&quot;
+      Properties:
+        RouteTableId:
+          Ref: &quot;PublicRouteTable&quot;
+        DestinationCidrBlock: &quot;0.0.0.0/0&quot;
+        GatewayId:
+          Ref: &quot;InternetGateway&quot;
+
+    PublicSubnetRouteTableAssociation0:
+      Type: &quot;AWS::EC2::SubnetRouteTableAssociation&quot;
+      Properties:
+        SubnetId:
+          Ref: &quot;PublicSubnet0&quot;
+        RouteTableId:
+          Ref: &quot;PublicRouteTable&quot;
+
+    PublicSubnetRouteTableAssociation1:
+      Type: &quot;AWS::EC2::SubnetRouteTableAssociation&quot;
+      Properties:
+        SubnetId:
+          Ref: &quot;PublicSubnet1&quot;
+        RouteTableId:
+          Ref: &quot;PublicRouteTable&quot;
+
+    PublicNetworkAcl:
+      Type: &quot;AWS::EC2::NetworkAcl&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        Tags:
+          -
+            Key: &quot;Application&quot;
+            Value:
+              Ref: &quot;VPCName&quot;
+          -
+            Key: &quot;Network&quot;
+            Value: &quot;Public&quot;
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-public-nacl&#39;
+
+    InboundPublicNetworkAclEntry:
+      Type: &quot;AWS::EC2::NetworkAclEntry&quot;
+      Properties:
+        NetworkAclId:
+          Ref: &quot;PublicNetworkAcl&quot;
+        RuleNumber: &quot;100&quot;
+        Protocol: &quot;-1&quot;
+        RuleAction: &quot;allow&quot;
+        Egress: &quot;false&quot;
+        CidrBlock: &quot;0.0.0.0/0&quot;
+        PortRange:
+          From: &quot;0&quot;
+          To: &quot;65535&quot;
+
+    OutboundPublicNetworkAclEntry:
+      Type: &quot;AWS::EC2::NetworkAclEntry&quot;
+      Properties:
+        NetworkAclId:
+          Ref: &quot;PublicNetworkAcl&quot;
+        RuleNumber: &quot;100&quot;
+        Protocol: &quot;-1&quot;
+        RuleAction: &quot;allow&quot;
+        Egress: &quot;true&quot;
+        CidrBlock: &quot;0.0.0.0/0&quot;
+        PortRange:
+          From: &quot;0&quot;
+          To: &quot;65535&quot;
+
+    PublicSubnetNetworkAclAssociation0:
+      # Demonstrates the fact that although there is no specific terraform resource for
+      # this object, a correct reference to aws_subnet is added to aws_network_acl.
+      Type: &quot;AWS::EC2::SubnetNetworkAclAssociation&quot;
+      Properties:
+        SubnetId:
+          Ref: &quot;PublicSubnet0&quot;
+        NetworkAclId:
+          Ref: &quot;PublicNetworkAcl&quot;
+
+    PublicSubnetNetworkAclAssociation1:
+      Type: &quot;AWS::EC2::SubnetNetworkAclAssociation&quot;
+      Properties:
+        SubnetId:
+          Ref: &quot;PublicSubnet1&quot;
+        NetworkAclId:
+          Ref: &quot;PublicNetworkAcl&quot;
+
+    ElasticIP0:
+      Type: &quot;AWS::EC2::EIP&quot;
+      Properties:
+        Domain: &quot;vpc&quot;
+
+    ElasticIP1:
+      Type: &quot;AWS::EC2::EIP&quot;
+      Properties:
+        Domain: &quot;vpc&quot;
+
+    NATGateway0:
+      Type: &quot;AWS::EC2::NatGateway&quot;
+      Properties:
+        AllocationId:
+          Fn::GetAtt:
+            - &quot;ElasticIP0&quot;
+            - &quot;AllocationId&quot;
+        SubnetId:
+          Ref: &quot;PublicSubnet0&quot;
+
+    NATGateway1:
+      Type: &quot;AWS::EC2::NatGateway&quot;
+      Properties:
+        AllocationId:
+          Fn::GetAtt:
+            - &quot;ElasticIP1&quot;
+            - &quot;AllocationId&quot;
+        SubnetId:
+          Ref: &quot;PublicSubnet1&quot;
+
+    PrivateRouteTable0:
+      Type: &quot;AWS::EC2::RouteTable&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        Tags:
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-private-route-table-0&#39;
+
+    PrivateRouteTable1:
+      Type: &quot;AWS::EC2::RouteTable&quot;
+      Properties:
+        VpcId:
+          Ref: &quot;VPC&quot;
+        Tags:
+          -
+            Key: &quot;Name&quot;
+            Value: !Join
+              - &#39;&#39;
+              - - !Ref &quot;VPCName&quot;
+                - &#39;-private-route-table-1&#39;
+
+    PrivateRouteToInternet0:
+      Type: &quot;AWS::EC2::Route&quot;
+      Properties:
+        RouteTableId:
+          Ref: &quot;PrivateRouteTable0&quot;
+        DestinationCidrBlock: &quot;0.0.0.0/0&quot;
+        NatGatewayId:
+          Ref: &quot;NATGateway0&quot;
+
+    PrivateRouteToInternet1:
+      Type: &quot;AWS::EC2::Route&quot;
+      Properties:
+        RouteTableId:
+          Ref: &quot;PrivateRouteTable1&quot;
+        DestinationCidrBlock: &quot;0.0.0.0/0&quot;
+        NatGatewayId:
+          Ref: &quot;NATGateway1&quot;
+
+    PrivateSubnetRouteTableAssociation0:
+      Type: &quot;AWS::EC2::SubnetRouteTableAssociation&quot;
+      Properties:
+        SubnetId:
+          Ref: &quot;PrivateSubnet0&quot;
+        RouteTableId:
+          Ref: &quot;PrivateRouteTable0&quot;
+
+    PrivateSubnetRouteTableAssociation1:
+      Type: &quot;AWS::EC2::SubnetRouteTableAssociation&quot;
+      Properties:
+        SubnetId:
+          Ref: &quot;PrivateSubnet1&quot;
+        RouteTableId:
+          Ref: &quot;PrivateRouteTable1&quot;
+
+  Outputs:
+
+    VPCId:
+      Description: &quot;VPCId of VPC&quot;
+      Value:
+        Ref: &quot;VPC&quot;
+
+    PublicSubnet0:
+      Description: &quot;SubnetId of public subnet 0&quot;
+      Value:
+        Ref: &quot;PublicSubnet0&quot;
+
+    PublicSubnet1:
+      Description: &quot;SubnetId of public subnet 1&quot;
+      Value:
+        Ref: &quot;PublicSubnet1&quot;
+
+    PrivateSubnet0:
+      Description: &quot;SubnetId of private subnet 0&quot;
+      Value:
+        Ref: &quot;PrivateSubnet0&quot;
+
+    PrivateSubnet1:
+      Description: &quot;SubnetId of private subnet 1&quot;
+      Value:
+        Ref: &quot;PrivateSubnet1&quot;
+
+    DefaultSecurityGroup:
+      Description: &quot;DefaultSecurityGroup Id&quot;
+      Value: !GetAtt VPC.DefaultSecurityGroup
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/master/docfx/articles/terraform/examples/vpc-stack/cloudformation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

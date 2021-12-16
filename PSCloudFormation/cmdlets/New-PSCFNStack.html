@@ -8,7 +8,7 @@
     <title>New-PSCFNStack </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="New-PSCFNStack ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,14 +73,14 @@
 <p>Calls the AWS CloudFormation CreateStack API operation.</p>
 <h2 id="syntax">SYNTAX</h2>
 <pre><code>New-PSCFNStack [-DisableRollback] [-EnableTerminationProtection] [-OnFailure &lt;OnFailure&gt;] [-Select &lt;String&gt;]
- [-Capabilities &lt;String[]&gt;] [-ForceS3] [-NotificationARNs &lt;String[]&gt;] [-ParameterFile &lt;String&gt;]
- [-ResourceType &lt;String[]&gt;] [-RollbackConfiguration_MonitoringTimeInMinute &lt;Int32&gt;]
+ [-Capabilities &lt;String[]&gt;] [-ForceS3] [-NotificationARNs &lt;String[]&gt;] [-ResourceType &lt;String[]&gt;]
+ [-RollbackConfiguration_MonitoringTimeInMinute &lt;Int32&gt;]
  [-RollbackConfiguration_RollbackTrigger &lt;RollbackTrigger[]&gt;] [-StackPolicyLocation &lt;String&gt;] [-Tag &lt;Tag[]&gt;]
- [-TemplateLocation &lt;String&gt;] [-ClientRequestToken &lt;String&gt;] [-Force] [-PassThru] [-RoleARN &lt;String&gt;]
- [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;] [-Credential &lt;AWSCredentials&gt;] [-EndpointUrl &lt;String&gt;]
- [-NetworkCredential &lt;PSCredential&gt;] [-ProfileLocation &lt;String&gt;] [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;]
- [-S3EndpointUrl &lt;String&gt;] [-SecretKey &lt;String&gt;] [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;]
- [&lt;CommonParameters&gt;]
+ [-TemplateLocation &lt;String&gt;] [-ParameterFile &lt;String&gt;] [-ClientRequestToken &lt;String&gt;] [-Force] [-PassThru]
+ [-RoleARN &lt;String&gt;] [-StackName] &lt;String&gt; [-AccessKey &lt;String&gt;] [-Credential &lt;AWSCredentials&gt;]
+ [-EndpointUrl &lt;String&gt;] [-NetworkCredential &lt;PSCredential&gt;] [-ProfileLocation &lt;String&gt;]
+ [-ProfileName &lt;String&gt;] [-Region &lt;Object&gt;] [-S3EndpointUrl &lt;String&gt;] [-SecretKey &lt;String&gt;]
+ [-SessionToken &lt;String&gt;] [-STSEndpointUrl &lt;String&gt;] [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
 <p>Creates a stack as specified in the template.
@@ -222,24 +222,6 @@ Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 </code></pre>
-<h3 id="-parameterfile">-ParameterFile</h3>
-<p>If present, location of a list of stack parameters to apply.
-This is a JSON or YAML list of parameter structures with fields ParameterKey and ParameterValue.
-This is similar to aws cloudformation create-stack except the other fields defined for that are ignored here.
-Parameters not supplied to an update operation are assumed to be UsePreviousValue.
-If a parameter of the same name is defined on the command line, the command line takes precedence.
-If your stack has a parameter with the same name as one of the parameters to this cmdlet, then you <em>must</em> set the stack parameter via a parameter file.</p>
-<p>You can specify either a string containing JSON or YAML, or path to a file that contains the parameters.</p>
-<pre><code class="lang-yaml">Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-</code></pre>
 <h3 id="-resourcetype">-ResourceType</h3>
 <p>The template resource types that you have permissions to work with for this create stack action, such as AWS::EC2::Instance, AWS::EC2::<em>, or Custom::MyCustomInstance.
 Use the following syntax to describe template resource types: AWS::</em> (for all AWS resource), Custom::* (for all custom resources), Custom::logical_ID (for a specific custom resource), AWS::service_name::* (for all resources of a particular AWS service), and AWS::service_name::resource_logical_ID (for a specific AWS resource).
@@ -330,6 +312,24 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-parameterfile">-ParameterFile</h3>
+<p>If present, location of a list of stack parameters to apply.
+This is a JSON or YAML list of parameter structures with fields ParameterKey and ParameterValue.
+This is similar to aws cloudformation create-stack except the other fields defined for that are ignored here.
+Parameters not supplied to an update operation are assumed to be UsePreviousValue.
+If a parameter of the same name is defined on the command line, the command line takes precedence.
+If your stack has a parameter with the same name as one of the parameters to this cmdlet, then you <em>must</em> set the stack parameter via a parameter file.</p>
+<p>You can specify either a string containing JSON or YAML, or path to a file that contains the parameters.</p>
+<pre><code class="lang-yaml">Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-clientrequesttoken">-ClientRequestToken</h3>
@@ -589,15 +589,7 @@ If your stack template contains one or more macros, and you choose to create a s
 <h3 id="systemstring-2">System.String[]</h3>
 <p>The Simple Notification Service (SNS) topic ARNs to publish stack related events.
 You can find your SNS topic ARNs using the SNS console or your Command Line Interface (CLI).</p>
-<h3 id="systemstring-3">System.String</h3>
-<p>If present, location of a list of stack parameters to apply.
-This is a JSON or YAML list of parameter structures with fields ParameterKey and ParameterValue.
-This is similar to aws cloudformation create-stack except the other fields defined for that are ignored here.
-Parameters not supplied to an update operation are assumed to be UsePreviousValue.
-If a parameter of the same name is defined on the command line, the command line takes precedence.
-If your stack has a parameter with the same name as one of the parameters to this cmdlet, then you <em>must</em> set the stack parameter via a parameter file.</p>
-<p>You can specify either a string containing JSON or YAML, or path to a file that contains the parameters.</p>
-<h3 id="systemstring-4">System.String[]</h3>
+<h3 id="systemstring-3">System.String[]</h3>
 <p>The template resource types that you have permissions to work with for this create stack action, such as AWS::EC2::Instance, AWS::EC2::<em>, or Custom::MyCustomInstance.
 Use the following syntax to describe template resource types: AWS::</em> (for all AWS resource), Custom::* (for all custom resources), Custom::logical_ID (for a specific custom resource), AWS::service_name::* (for all resources of a particular AWS service), and AWS::service_name::resource_logical_ID (for a specific AWS resource).
 If the list of resource types doesn't include a resource that you're creating, the stack creation fails.
@@ -615,7 +607,7 @@ Then, for update operations, it begins disposing of old resources immediately on
 By default, AWS CloudFormation saves the rollback triggers specified for a stack and applies them to any subsequent update operations for the stack, unless you specify otherwise.
 If you do specify rollback triggers for this parameter, those triggers replace any list of triggers previously specified for the stack.
 If a specified trigger is missing, the entire stack operation fails and is rolled back.</p>
-<h3 id="systemstring-5">System.String</h3>
+<h3 id="systemstring-4">System.String</h3>
 <p>Structure containing the stack policy body.
 For more information, go to Prevent Updates to Stack Resources in the AWS CloudFormation User Guide.
 You can specify either a string, path to a file, or URL of a object in S3 that contains the policy body.</p>
@@ -623,12 +615,20 @@ You can specify either a string, path to a file, or URL of a object in S3 that c
 <p>Key-value pairs to associate with this stack.
 AWS CloudFormation also propagates these tags to the resources created in the stack.
 A maximum number of 50 tags can be specified.</p>
-<h3 id="systemstring-6">System.String</h3>
+<h3 id="systemstring-5">System.String</h3>
 <p>Structure containing the template body.
 For more information, go to Template Anatomy in the AWS CloudFormation User Guide.</p>
 <p>You can specify either a string, path to a file, or URL of a object in S3 that contains the template body.</p>
 <p>You can also pipe a template body to this command, e.g.
 from the output of the New-PSCFNPackage command.</p>
+<h3 id="systemstring-6">System.String</h3>
+<p>If present, location of a list of stack parameters to apply.
+This is a JSON or YAML list of parameter structures with fields ParameterKey and ParameterValue.
+This is similar to aws cloudformation create-stack except the other fields defined for that are ignored here.
+Parameters not supplied to an update operation are assumed to be UsePreviousValue.
+If a parameter of the same name is defined on the command line, the command line takes precedence.
+If your stack has a parameter with the same name as one of the parameters to this cmdlet, then you <em>must</em> set the stack parameter via a parameter file.</p>
+<p>You can specify either a string containing JSON or YAML, or path to a file that contains the parameters.</p>
 <h3 id="systemstring-7">System.String</h3>
 <p>A unique identifier for this CreateStack request.
 Specify this token if you plan to retry requests so that AWS CloudFormation knows that you're not attempting to create a stack with the same name.

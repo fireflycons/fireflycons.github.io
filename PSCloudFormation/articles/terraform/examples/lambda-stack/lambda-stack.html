@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example - Lambda Stack </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example - Lambda Stack ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tf-example-lambda-stack">
+<h1 id="example---lambda-stack">Example - Lambda Stack</h1>
+
+<p>This example shows a serverless lambda with embedded python script and an event bride rule to trigger it.</p>
+<p>Demonstrates the following</p>
+<ul>
+<li>How a serverless resource is expanded to all implied resources.</li>
+<li>How inline lambda code is exported to Terraform.</li>
+<li>Dependency resolution within IAM policies.</li>
+</ul>
+<h2 id="cloudformation">CloudFormation</h2>
+<p>CloudFormation to build the stack is <a href="cloudformation.html">here</a>.</p>
+<p>The stack was deployed with a stack name of <code>test-lambda</code>.</p>
+<h2 id="import-run">Import run</h2>
+<p>This is the command to export <code>test-lambda</code> to Terraform in action...</p>
+<p><img src="../../../../images/tf-lambda-import.gif" alt="Running"></p>
+<p>A few points to note here</p>
+<ul>
+<li>An extra provider <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> is included to manage the extracted lambda code.</li>
+<li>There are five imported resources, when the CloudFormation only contains two resources. This is because the serverless lambda declaration implies creation of a role, an Eventbridge event and a lambda permission to permit Eventbridge to invoke the lambda.</li>
+<li>When the function is imported (Resource 1/5) the inline python code is extracted and written to a file</li>
+<li>In the plan stage at the end, we see some changes
+<ul>
+<li>A new resource. This creates the zip package of the extracted python code for deployment.</li>
+<li>A change to the lambda function. This is because we have injected the <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function#filename">filename</a> and <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function#source_code_hash">source_code_hash</a> arguments to refer to the zip package, by way of the additional provider.</li>
+<li>A change to the bucket - This always happens with S3 buckets, but is a non-destructive change. It wants to add the default <code>private</code> ACL type, as this is <code>null</code> in the state file after <code>terraform import</code>.</li>
+</ul>
+</li>
+<li>We are also warned about the lambda. It is entirely possible the the <em>actual</em> code of the lambda is newer that what was deployed originally by the CloudFormation. A newer version could have been uploaded from the Lambda console, or via Lambda APIs as might happen in a CI/CD system. Without refreshing the content of the extracted script file with the current version, application of the Terraform configuration would overwrite the current version of the lambda code.</li>
+</ul>
+<h2 id="generated-outputs">Generated outputs</h2>
+<ul>
+<li><code>main.tf</code> is <a href="hcl.html">here</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/master/docfx/articles/terraform/examples/lambda-stack/lambda-stack.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

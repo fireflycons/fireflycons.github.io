@@ -8,7 +8,7 @@
     <title>Changesets </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Changesets ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -71,25 +71,25 @@
 
 <p>PSCloudFormation supports extracting changeset detail to a file, the pipeline, and potentially viewing in a browser. It also suppports nested changeset creation (new as of re:Invent 2020).</p>
 <ul>
-<li><a href="#Cmdlets-for-Changeset-Creation">Cmdlets for Changeset Creation</a></li>
-<li><a href="#Working-with-Changesets">Working with Changesets</a>
+<li><a href="#cmdlets-for-changeset-creation">Cmdlets for Changeset Creation</a></li>
+<li><a href="#working-with-changesets">Working with Changesets</a>
 <ul>
-<li><a href="#Nested-Changeset">Nested Changests</a></li>
-<li><a href="#Pipeline-Output">Pipeline Output</a></li>
-<li><a href="#Exporting-Change-Detail-to-File">Exporting Change Detail to File</a></li>
-<li><a href="#Viewing-in-a-Browser">Viewing in a Browser</a></li>
+<li><a href="#nested-changesets">Nested Changests</a></li>
+<li><a href="#pipeline-output">Pipeline Output</a></li>
+<li><a href="#exporting-change-detail-to-file">Exporting Change Detail to File</a></li>
+<li><a href="#viewing-in-a-browser">Viewing in a Browser</a></li>
 </ul>
 </li>
-<li><a href="#Caveats">Caveats</a>
+<li><a href="#caveats">Caveats</a>
 <ul>
-<li><a href="#Browser-View">Browser View</a></li>
-<li><a href="#Nested-Changeset-Creation">Nested Changeset Creation</a></li>
+<li><a href="#browser-view">Browser View</a></li>
+<li><a href="#nested-changeset-creation">Nested Changeset Creation</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="cmdlets-for-changeset-creation">Cmdlets for Changeset Creation</h2>
 <ul>
-<li><a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> - Use this to create a cchangeset only for review.</li>
+<li><a class="xref" href="../cmdlets/New-PSCFNChangeset.html">New-PSCFNChangeset</a> - Use this to create a cchangeset only for review.</li>
 <li><a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> - A changeset is automatically created and presented fo review unless the <code>-Force</code> switch is present, in which case it is executed immediately.</li>
 </ul>
 <h2 id="working-with-changesets">Working with Changesets</h2>
@@ -126,13 +126,13 @@
 </tbody>
 </table>
 <h3 id="nested-changesets">Nested Changesets</h3>
-<p>If the switch <code>-IncludeNestedStacks</code> is passed to either <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, and the given stack contains <code>AWS::CloudFomation::Stack</code> resources, changesets will be computed for these stacks also. Changes for all the stacks in the nest will be displayed.</p>
-<p>Please be aware of the <a href="#Nested-Changeset-Creation">caveat</a> below!</p>
+<p>If the switch <code>-IncludeNestedStacks</code> is passed to either <a class="xref" href="../cmdlets/New-PSCFNChangeset.html">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, and the given stack contains <code>AWS::CloudFomation::Stack</code> resources, changesets will be computed for these stacks also. Changes for all the stacks in the nest will be displayed.</p>
+<p>Please be aware of the <a href="#nested-changeset-creation">caveat</a> below!</p>
 <h3 id="pipeline-output">Pipeline Output</h3>
-<p>The <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> cmdlet will output raw JSON to the pipeline if neither <code>-ChangesetDetail</code> not <code>-ShowInBrowser</code> arguments are present. The changest may be further processed by piping this output through <code>ConvertFrom-Json</code> to get a PowerShell object representation of the changeset detail.</p>
+<p>The <a class="xref" href="../cmdlets/New-PSCFNChangeset.html">New-PSCFNChangeset</a> cmdlet will output raw JSON to the pipeline if neither <code>-ChangesetDetail</code> nor <code>-ShowInBrowser</code> arguments are present. The changest may be further processed by piping this output through <code>ConvertFrom-Json</code> to get a PowerShell object representation of the changeset detail.</p>
 <p>The JSON object is the same as that which you can see in the <code>JSON Changes</code> tab of the CloudFormation Console, with the small exception that the property names in the JSON begin with an uppercase letter.</p>
 <h3 id="exporting-change-detail-to-file">Exporting Change Detail to File</h3>
-<p>If a file path is given to the <code>-ChangesetDetail</code> parameter of <a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, then the JSON Changes document is written to this file.</p>
+<p>If a file path is given to the <code>-ChangesetDetail</code> parameter of <a class="xref" href="../cmdlets/New-PSCFNChangeset.html">New-PSCFNChangeset</a> or <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a>, then the JSON Changes document is written to this file.</p>
 <h3 id="viewing-in-a-browser">Viewing in a Browser</h3>
 <p>Where possible, detailed changeset information may be viewed in a browser. PSCloudFormation attempts to detect whether a browser should be available. It does this by examining the operating system version and from this working out whether a GUI is present. This is done like so:</p>
 <ul>
@@ -141,7 +141,7 @@
 <li><strong>MacOS</strong>. On Macs a GUI is assumed always present. Pass the generated HTML document to <code>open</code>.</li>
 </ul>
 <p>When a GUI is detected, <a class="xref" href="../cmdlets/Update-PSCFNStack.html">Update-PSCFNStack</a> provides an additional option <code>View in Browser</code> when it asks whether to apply the generated changeset. When <code>-Force</code> parameter is set, this is skipped.</p>
-<p><a href="xref:Update-PSCFNChangeset">New-PSCFNChangeset</a> will perform the above by addition of <code>-ShowInBrowser</code> switch argument.</p>
+<p><a class="xref" href="../cmdlets/New-PSCFNChangeset.html">New-PSCFNChangeset</a> will perform the above by addition of <code>-ShowInBrowser</code> switch argument.</p>
 <p>The HTML document contains a formatted view of each change along with the detail provided in the <code>JSON Changes</code> view in the CloudFormation console. An SVG graph of relationships between modified resouces is also provided, which can be manipulated using the mouse. This has the following key</p>
 <table>
 <thead>

@@ -43,6 +43,33 @@ references:
 - uid: Reset-PSCFNStack
   name: Reset-PSCFNStack
   href: cmdlets/Reset-PSCFNStack.html
+- uid: tf-caveats
+  name: Export - Caveats
+  href: articles/terraform/caveats.html
+- uid: tf-example-lambda-stack
+  name: Example - Lambda Stack
+  href: articles/terraform/examples/lambda-stack/lambda-stack.html
+- uid: tf-example-lambda-stack-cf
+  name: Example - Lambda Stack CloudFormation
+  href: articles/terraform/examples/lambda-stack/cloudformation.html
+- uid: tf-example-lambda-stack-tf
+  name: Example - Lambda Stack main.tf
+  href: articles/terraform/examples/lambda-stack/hcl.html
+- uid: tf-example-vpc-stack
+  name: Example - VPC Stack
+  href: articles/terraform/examples/vpc-stack/vpc-stack.html
+- uid: tf-example-vpc-stack-cf
+  name: Example - VPC Stack CloudFormation
+  href: articles/terraform/examples/vpc-stack/cloudformation.html
+- uid: tf-example-vpc-stack-tf
+  name: Example - VPC Stack main.tf
+  href: articles/terraform/examples/vpc-stack/hcl.html
+- uid: tf-example-vpc-stack-tfvars
+  name: Example - VPC Stack tfvars
+  href: articles/terraform/examples/vpc-stack/tfvars.html
+- uid: tf-workflow
+  name: Export Workflow
+  href: articles/terraform/workflow.html
 - uid: Update-PSCFNStack
   name: Update-PSCFNStack
   href: cmdlets/Update-PSCFNStack.html

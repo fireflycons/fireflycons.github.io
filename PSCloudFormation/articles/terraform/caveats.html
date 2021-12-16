@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Export - Caveats </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Export - Caveats ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tf-caveats">
+<h1 id="terraform-export---caveats">Terraform Export - Caveats</h1>
+
+<p>There will be more than what's here - I just haven't found them yet!</p>
+<h2 id="resource-types">Resource Types</h2>
+<ul>
+<li>Currently this tool recognises the relationship between about 380 AWS resources and their Terraform equivalents. That's probably about half of what can actually be matched.</li>
+<li>Only about 30 of these are well tested thus far.</li>
+<li>There are still some AWS resources for which an equivalent resource has not yet been added to the Terraform AWS provider. <code>AWS::SecretsManager::SecretAttachment</code> at the time of writing and being one I use frequently with RDS stacks.</li>
+</ul>
+<h2 id="embedded-scripts-and-code-provisioners-lambda">Embedded scripts and code (provisioners, lambda)</h2>
+<ul>
+<li><code>AWS::CloudFormation::Init</code> data attached to resources is not exported because Terraform does not have this concept. Where init data is found, a warning is issued against the imported resource. Such scripts need refactoring to user data or some other mechanism.</li>
+<li>User Data import - <code>terraform import</code> seems to make a hash (literally) of user data properties imported from launch configurations (and probably instances too). You will need to correct that in the generated HCL or <code>terraform apply</code> is going to wipe out your user data script!<br> Having said that, many user data scripts contain CloudFormation specific commands such as calls to <code>cfn-init</code> and references to CloudFormation specific pseudo-parameters which may hold little relevance in a terraform-managed stack.<br>Where user data is found, a warning is issued.</li>
+<li>Lambda
+<ul>
+<li>Embedded function code declared in the CloudFormation Template with <code>ZipFile</code> will be extracted to a local file and hooked up to its <code>aws_lambda_function</code> resource by way of the <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> provider. Beware that code residing in the template <em>may well not be</em> the current version of the code, as it nay have been updated at the console or by way of lambda APIs for updating function configuration since initial stack deployment.</li>
+<li>Where code is located in S3 or ECR, terraform import does not pull back the location data, however this cmdlet will dscover and fix this up when emitting the HCL configuration.</li>
+</ul>
+</li>
+</ul>
+<h2 id="imported-resources">Imported Resources</h2>
+<ul>
+<li>The existing resources in a deployed CloudFormation Stack are imported. If the CloudFormation Template that deployed the stack contains conditional resources which may not be instantiated at the time this tool is run, those resources won't be imported to Terraform. If you want the full functionality of the original CloudFormation template, that has to be added manually.</li>
+</ul>
+<h2 id="other-quirks">Other Quirks</h2>
+<h4 id="s3">S3</h4>
+<ul>
+<li><code>aws_s3_bucket_policy</code> - Due to some strange persmissions thing, policy is nearly always imported as an empty string. You will have to manually add in the policy statement.<br>Where bucket policies are found, a warning will be emitted.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/master/docfx/articles/terraform/caveats.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

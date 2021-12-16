@@ -4,15 +4,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/changesets.md",
       "output": {
         ".html": {
           "relative_path": "articles/changesets.html",
-          "hash": "c6mxEbDIKo7GRNXWTpEccJccklRHQyBQNoqYO2MdvYw="
+          "hash": "yolxLxVcMoIl+FP651+NiOC2U0CH1PHSfIk0qISX+f4="
         }
       },
       "is_incremental": false,
@@ -24,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/dynamic-parameters.html",
-          "hash": "CMIigD0q0ASGW5bSsZX2ExmR27nSV4lKXc4HDQpXjL4="
+          "hash": "sPASAmhdIJ/1zy1T1bD3GoT2ucsFCcLX8VxZQg7AVBc="
         }
       },
       "is_incremental": false,
@@ -36,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/index.html",
-          "hash": "fvCGBkx6OaVGkOANaAVkl8ZdyZZjXaqnzVz6ujrSGrk="
+          "hash": "dxtDiBslNwrTboCqVPhXTFLwXERpTYNXOCpTzK6nLjw="
         }
       },
       "is_incremental": false,
@@ -48,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/lambda-packager.html",
-          "hash": "sUK67YqV8FlYXJ7s4vSDoUEocC2tWdSA8r2hW/uzDKI="
+          "hash": "IchrTOGWumGexNqerhGnQt2Zi4p10yCrcIX2aLAdGfc="
         }
       },
       "is_incremental": false,
@@ -60,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packager.html",
-          "hash": "BrnoHNAN33l+8y/6P5ZNL/IxLMFkrN7C9JC9UTgJ4dA="
+          "hash": "BRGEbFxDxHcWC0wUYVPMPODZL1D+gaKspGhYsPMBtNw="
         }
       },
       "is_incremental": false,
@@ -72,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/parameter-files.html",
-          "hash": "t0TNxq4ml2kNzWdDwQSBRzRN/1S98arlNia1gorW/nE="
+          "hash": "yu0nhkWYHLy7cCnYw9GxmM3U+FkRVdYP/hEMgVfeW8A="
         }
       },
       "is_incremental": false,
@@ -84,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/resource-import.html",
-          "hash": "tnZWK+INTU+jby7uavVFedXf0e6KDREsxge8pBr8u74="
+          "hash": "HqYEVSJwwSgpCs7wNMSQ3UCmrRbl9q1Jp9xCk+hBeww="
         }
       },
       "is_incremental": false,
@@ -96,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/s3-usage.html",
-          "hash": "JVrMwOsZdB1jg/wM0ntnkPEEofolAtx2TlYfJXdSDQI="
+          "hash": "mhlWrChXXFB1TsWON1BZzkAXK22hol6SGAX2VMDnXL0="
         }
       },
       "is_incremental": false,
@@ -108,7 +105,127 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform-export.html",
-          "hash": "BlSQLep3ZW0bnB/DYwIj/WEFSTFj1/qg4zgygKv4CHs="
+          "hash": "Z5/zNOx1ihX8ttsF2rsw+X5k2ex/TX3wMAqZwRdqPVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/caveats.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/caveats.html",
+          "hash": "XNGHqan1QtMFBBqJq7B3cAGQqqZvq6/POsZiumjnEGY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/examples.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/examples.html",
+          "hash": "6ifvsYy6q/CtB/x3mOVLNjLcqy51wWTUJ6lqlJmKSRg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/lambda-stack/cloudformation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/lambda-stack/cloudformation.html",
+          "hash": "xg5FUUAjBR1dTLE78CwBc4D3peUwgKrREh9SbDhenrw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/lambda-stack/hcl.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/lambda-stack/hcl.html",
+          "hash": "kNu12UaGw4DyHKrxAPyBksdH0AKan0Qkua3sL9VKa6w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/lambda-stack/lambda-stack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/lambda-stack/lambda-stack.html",
+          "hash": "7DnBg2oldYJYBxB1Su9TUTR1w8N22VnL3Q8K+QPhgTU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/vpc-stack/cloudformation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/vpc-stack/cloudformation.html",
+          "hash": "yiAMwHmnlw+zdNPKlJtvALNmoI6NZEMceWiVDvzhH5s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/vpc-stack/hcl.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/vpc-stack/hcl.html",
+          "hash": "uRHuHYIbaqF3kVia1GB/R1SVyQmvhrBD5qVgDukcy6s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/vpc-stack/tfvars.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/vpc-stack/tfvars.html",
+          "hash": "ak649xJQ6BV+DZnoCVpPfNGRW2/kpkcmKUS4TdzetDM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/vpc-stack/vpc-stack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/vpc-stack/vpc-stack.html",
+          "hash": "w7+TGXD6G7y6z14TBS+8X32KKu6tj7QrrsKQ7dauG7k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/workflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/workflow.html",
+          "hash": "QtOkX07FKRUY59j2Zq9notr1D95rq/ncPxr5BM4CaHI="
         }
       },
       "is_incremental": false,
@@ -120,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "zZJlhqY2Z9VIf5bszWVGUGrm1/8cSN7ezyDHQ07uUwo="
+          "hash": "OwanPaOMbFcLaPlMdAmg2eP0PSaqwSdDboZ8U2SJq64="
         }
       },
       "is_incremental": false,
@@ -132,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Export-PSCFNTerraform.html",
-          "hash": "V1QsFVLkQPgfJSWSD6YjGz8OOXXlrxDe0bVuk52IByY="
+          "hash": "Re3xhU1p2E4RB7H4EU4bSFxOS0HWmw8Xtwh3cqdt6s4="
         }
       },
       "is_incremental": false,
@@ -144,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Get-PSCFNStackOutputs.html",
-          "hash": "srv3zeOsZwwz/hyYuOZsaUxySSQl1S0Kb3Xf2Dy/6FY="
+          "hash": "VKkfXKdR3jkXkSM3KDjJsfqaTxJLbQsq7QqQ7INBQmw="
         }
       },
       "is_incremental": false,
@@ -156,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/New-PSCFNChangeset.html",
-          "hash": "jfro8k+CTdtHgnh1A7uz/0hFP3z+v8prKtqtq8PFOMQ="
+          "hash": "WwWWnDlKCZuiAzyPblyORtst4u1a8P+e1BHU2x7Ek3A="
         }
       },
       "is_incremental": false,
@@ -168,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/New-PSCFNPackage.html",
-          "hash": "VNsEG6euh2p0HuxSDMS/veHGZybWHeN6KxviPl9yuaI="
+          "hash": "/xsPE+iHLEFAOaliq92pRbEw8zt00GuYvsPktaUDs8M="
         }
       },
       "is_incremental": false,
@@ -180,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/New-PSCFNStack.html",
-          "hash": "K7Zisu8hZDBgGAY7a33MGa2DkVHUraL+AwMxIrcX5FY="
+          "hash": "yqNRV6OO2JiYQkEO+mTo9Ll3DLRKU7GjdihgU0VUsfk="
         }
       },
       "is_incremental": false,
@@ -192,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/PSCloudFormation.html",
-          "hash": "2aVjvltV8nvK3JYnGYcyhBv+x+As7UMcw74JVJhUIHc="
+          "hash": "/pO6olEDY9AaJeGLb6UD8q52RouwlHAGhVtTyee5gno="
         }
       },
       "is_incremental": false,
@@ -204,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Remove-PSCFNStack.html",
-          "hash": "E2+ZfK4QrcCkvE66e0knrI9Sq/gKPm1+slBLDAjbJAg="
+          "hash": "zIc3Chxz5Nh9++IWZkVSnLgSpB3k8dkWCMec50tiS6A="
         }
       },
       "is_incremental": false,
@@ -216,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Reset-PSCFNStack.html",
-          "hash": "KQ0PGMuCelYlAS4bCtZRRLxN0TdDdJvQ8IrEL+H/N4k="
+          "hash": "W4zA7fd3Mx01zOm/QNgbnMUxQ8wlAEi2BvvMiufrtBQ="
         }
       },
       "is_incremental": false,
@@ -228,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Update-PSCFNStack.html",
-          "hash": "r52XV9I6IH+rdVsdo9EcI/nFgdv1grygWZyhW5M1xh0="
+          "hash": "neQEIdg9sBCt1rtOSIdjCQcOZpYlFM0cALW6Yrc5S+4="
         }
       },
       "is_incremental": false,
@@ -240,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/index.html",
-          "hash": "BbomvYNkp7bFs/8P2nxC+iPvARL49pP55rTTSqFm+s4="
+          "hash": "+VJ2k7wunXFdRH5FX5cxofJw+srJpf/nlQJSrvVRe64="
         }
       },
       "is_incremental": false,
@@ -292,12 +409,34 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/tf-lambda-import.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/tf-lambda-import.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/vpc-import.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/vpc-import.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "FfNKTfhVvS8mVV0JdkqmhVhOkC74CNc8Xnsl0kw6vgc="
+          "hash": "/Dk9bG6iE0dvqDVIsY94O6p0qDk8vvMdTrtt4dPydyQ="
         }
       },
       "is_incremental": false,
@@ -330,7 +469,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 20,
+          "total_file_count": 30,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
