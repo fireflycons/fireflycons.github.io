@@ -82,7 +82,7 @@
 <li>User Data import - <code>terraform import</code> seems to make a hash (literally) of user data properties imported from launch configurations (and probably instances too). You will need to correct that in the generated HCL or <code>terraform apply</code> is going to wipe out your user data script!<br> Having said that, many user data scripts contain CloudFormation specific commands such as calls to <code>cfn-init</code> and references to CloudFormation specific pseudo-parameters which may hold little relevance in a terraform-managed stack.<br>Where user data is found, a warning is issued.</li>
 <li>Lambda
 <ul>
-<li>Embedded function code declared in the CloudFormation Template with <code>ZipFile</code> will be extracted to a local file and hooked up to its <code>aws_lambda_function</code> resource by way of the <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> provider. Beware that code residing in the template <em>may well not be</em> the current version of the code, as it nay have been updated at the console or by way of lambda APIs for updating function configuration since initial stack deployment.</li>
+<li>Embedded function code declared in the CloudFormation Template with <code>ZipFile</code> will be extracted to a local file and hooked up to its <code>aws_lambda_function</code> resource by way of the <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> provider. Beware that code residing in the template <em>may well not be</em> the current version of the code, as it may have been updated at the console or by way of lambda APIs for updating function configuration since initial stack deployment.</li>
 <li>Where code is located in S3 or ECR, terraform import does not pull back the location data, however this cmdlet will dscover and fix this up when emitting the HCL configuration.</li>
 </ul>
 </li>
@@ -94,7 +94,7 @@
 <h2 id="other-quirks">Other Quirks</h2>
 <h4 id="s3">S3</h4>
 <ul>
-<li><code>aws_s3_bucket_policy</code> - Due to some strange persmissions thing, policy is nearly always imported as an empty string. You will have to manually add in the policy statement.<br>Where bucket policies are found, a warning will be emitted.</li>
+<li><code>aws_s3_bucket_policy</code> - Due to some strange permissions thing, policy is nearly always imported as an empty string. You will have to manually add in the policy statement.<br>Where bucket policies are found, a warning will be emitted.</li>
 </ul>
 </article>
           </div>

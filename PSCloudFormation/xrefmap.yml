@@ -67,6 +67,9 @@ references:
 - uid: tf-example-vpc-stack-tfvars
   name: Example - VPC Stack tfvars
   href: articles/terraform/examples/vpc-stack/tfvars.html
+- uid: tf-migrating
+  name: Export - CavMigratingeats
+  href: articles/terraform/migrating.html
 - uid: tf-workflow
   name: Export Workflow
   href: articles/terraform/workflow.html

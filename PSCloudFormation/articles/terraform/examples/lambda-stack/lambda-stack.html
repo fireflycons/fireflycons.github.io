@@ -69,7 +69,7 @@
             <article class="content wrap" id="_content" data-uid="tf-example-lambda-stack">
 <h1 id="example---lambda-stack">Example - Lambda Stack</h1>
 
-<p>This example shows a serverless lambda with embedded python script and an event bride rule to trigger it.</p>
+<p>This example shows a serverless lambda with embedded python script and an Event Bridge rule to trigger it.</p>
 <p>Demonstrates the following</p>
 <ul>
 <li>How a serverless resource is expanded to all implied resources.</li>
@@ -85,7 +85,7 @@
 <p>A few points to note here</p>
 <ul>
 <li>An extra provider <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> is included to manage the extracted lambda code.</li>
-<li>There are five imported resources, when the CloudFormation only contains two resources. This is because the serverless lambda declaration implies creation of a role, an Eventbridge event and a lambda permission to permit Eventbridge to invoke the lambda.</li>
+<li>There are five imported resources, when the CloudFormation only contains two resources. This is because the serverless lambda declaration implies creation of a role, an event resource and a lambda permission to permit Event Bridge to invoke the lambda.</li>
 <li>When the function is imported (Resource 1/5) the inline python code is extracted and written to a file</li>
 <li>In the plan stage at the end, we see some changes
 <ul>
@@ -98,7 +98,7 @@
 </ul>
 <h2 id="generated-outputs">Generated outputs</h2>
 <ul>
-<li><code>main.tf</code> is <a href="hcl.html">here</a></li>
+<li><a href="hcl.html">main.tf</a></li>
 </ul>
 </article>
           </div>

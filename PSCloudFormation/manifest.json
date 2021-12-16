@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform-export.html",
-          "hash": "Z5/zNOx1ihX8ttsF2rsw+X5k2ex/TX3wMAqZwRdqPVM="
+          "hash": "IAOKZf9tQhQgKERreISNT0j00qmssvqK0C/NVjYWvYE="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/caveats.html",
-          "hash": "XNGHqan1QtMFBBqJq7B3cAGQqqZvq6/POsZiumjnEGY="
+          "hash": "Kav/o88/gxU32FBXZwpjpwANVtgrzsRIPA9N28An1Dw="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/examples/lambda-stack/lambda-stack.html",
-          "hash": "7DnBg2oldYJYBxB1Su9TUTR1w8N22VnL3Q8K+QPhgTU="
+          "hash": "YnZ/1kwEZSLf7wxoHVKk+H5F1w1b5GdpPJN73meCkEU="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/examples/vpc-stack/vpc-stack.html",
-          "hash": "w7+TGXD6G7y6z14TBS+8X32KKu6tj7QrrsKQ7dauG7k="
+          "hash": "8RgFOnDYDF9OQvONRvFbMecqLVPgH+UTRCvlVD944VM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/migrating.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/migrating.html",
+          "hash": "c9UUGOYBJKG8+Dzifo/FP5Tv6HBfSIHumi0wDV61FlQ="
         }
       },
       "is_incremental": false,
@@ -225,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/workflow.html",
-          "hash": "QtOkX07FKRUY59j2Zq9notr1D95rq/ncPxr5BM4CaHI="
+          "hash": "8smBAp4/UMZfa7kutc2nNZNC1eMOyTRgYF4QzeMBTDc="
         }
       },
       "is_incremental": false,
@@ -237,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "OwanPaOMbFcLaPlMdAmg2eP0PSaqwSdDboZ8U2SJq64="
+          "hash": "aE0Jy6WLM0DGtK3sdEHhT8IoI2alb3QFG3t2qgCta2M="
         }
       },
       "is_incremental": false,
@@ -469,7 +481,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 30,
+          "total_file_count": 31,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
