@@ -5,35 +5,11 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Firefly.CrossPlatformZip.Console.Program.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Firefly.CrossPlatformZip.Console.Program.html",
-          "hash": "t7kub2sKu9Op1DBiicMqRrl3ZB5HtAgy7xTgY/BlikA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Firefly.CrossPlatformZip.Console.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Firefly.CrossPlatformZip.Console.html",
-          "hash": "eTgh5rCNI1ywfh3OOGxEk6WXoecAYnk52+fDEqqwyn4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.yml",
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.CrossPlatformZipSettings.html",
-          "hash": "Kr1ojnyHO7NvKt85M34vqXmz0sLLnWyYa6GCb7Q1XrU="
+          "hash": "tdKR+XJO0JTlMzcGIQETMIQV/Cqs4iKtXYpnoYH2rNY="
         }
       },
       "is_incremental": false,
@@ -45,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.DuplicateEntryException.html",
-          "hash": "7VMZZ0qcQSxDWxbMvIsos0eF3nW6ZbxLfHcg4CPV04k="
+          "hash": "1MtCjPbnnqqSMgceo1+XfHuo7/9HE+YRUxXPztJ1Kus="
         }
       },
       "is_incremental": false,
@@ -57,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.ZipPlatform.html",
-          "hash": "kfSZ106x1n90TcIFVnGJ0RLSBYRPu4Qfh4D3areRiYw="
+          "hash": "N6tbDMZWIwnmqTYTZi+Fc00BZtuKFroQfVoGGfL6L34="
         }
       },
       "is_incremental": false,
@@ -69,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.Zipper.html",
-          "hash": "1QLq9Xihahf1dxqVrBawdC3Q4iwGAF7+5/3x6l5UsgI="
+          "hash": "4+6VPFfSdP/wx/YxPKuC7+es+7L7M5R5SAgQNOjNfaw="
         }
       },
       "is_incremental": false,
@@ -81,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Firefly.CrossPlatformZip.html",
-          "hash": "h26HtgzEn1a1PIYUKjVl9MXDsYu1+0TABPincFhn6bU="
+          "hash": "irw0vPv9LS6c6tn1tGMTWTT9RZaDuxqnbOwrSYbWHlQ="
         }
       },
       "is_incremental": false,
@@ -93,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "17vSvXgsPb+6rBciZPGw17frxdXzti2yxaF5nSGD05Q="
+          "hash": "e1dVIMJt0k25pG2ZkA0tbl5YA6e56ACWmXRmgdwJ8os="
         }
       },
       "is_incremental": false,
@@ -105,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "arIF/uogAi66cgTlXgKly76Wwlt7hMiObcMNM5k/sag="
+          "hash": "6XEeNCMLQnmPl8aQq4xWdLeyeTpl5R61vd3XSf1o+LM="
         }
       },
       "is_incremental": false,
@@ -117,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/command-line.html",
-          "hash": "5hyX0G20Ryo/qTjOipZueRr4BW8LKtAflI1jKbfbx+I="
+          "hash": "z1/TFY4R5+9vlqdc9OjtydNP5mJUHzozKZJMwj33dIA="
         }
       },
       "is_incremental": false,
@@ -129,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/index.html",
-          "hash": "R1WpX74mRfl3zCqW4mdqk+a/PN2fIZrJL0JLOLh6Qgw="
+          "hash": "J3mxrD2XdFxu2fN2ZTRZJxV+3Qst0UJZg/0GKMciyzs="
         }
       },
       "is_incremental": false,
@@ -141,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/lambda.html",
-          "hash": "XdmczTu1VCxPmFSRs9jp9axMLWMw52F/FFsPoK3mR58="
+          "hash": "hT+SSraezIPCIFp1aV9iIe3kweM3axLHY9SqtMQbLOA="
         }
       },
       "is_incremental": false,
@@ -165,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "1TlLspXVsVkRVQYQut2D2rS5sLbEF/SrIgodJMcXf8Q="
+          "hash": "3c/IQGeQRkmT5VvdDXQYXXVFMCU1/jxCHwVdT+NoUHE="
         }
       },
       "is_incremental": false,
@@ -188,11 +164,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
@@ -204,7 +180,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
@@ -219,7 +195,7 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
