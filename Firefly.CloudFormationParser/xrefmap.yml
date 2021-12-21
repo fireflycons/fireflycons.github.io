@@ -463,6 +463,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.Evaluate
   nameWithType: AbstractIntrinsic.Evaluate
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ExtraData
+  name: ExtraData
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_ExtraData
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ExtraData
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ExtraData
+  nameWithType: AbstractIntrinsic.ExtraData
+- uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ExtraData*
+  name: ExtraData
+  href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_ExtraData_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ExtraData
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.ExtraData
+  nameWithType: AbstractIntrinsic.ExtraData
 - uid: Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.GetEnumerator
   name: GetEnumerator()
   href: api/Firefly.CloudFormationParser.Intrinsics.Abstractions.AbstractIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_Abstractions_AbstractIntrinsic_GetEnumerator
@@ -3117,6 +3130,19 @@ references:
   isSpec: "True"
   fullName: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.Evaluate
   nameWithType: IIntrinsic.Evaluate
+- uid: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.ExtraData
+  name: ExtraData
+  href: api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_IIntrinsic_ExtraData
+  commentId: P:Firefly.CloudFormationParser.Intrinsics.IIntrinsic.ExtraData
+  fullName: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.ExtraData
+  nameWithType: IIntrinsic.ExtraData
+- uid: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.ExtraData*
+  name: ExtraData
+  href: api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_IIntrinsic_ExtraData_
+  commentId: Overload:Firefly.CloudFormationParser.Intrinsics.IIntrinsic.ExtraData
+  isSpec: "True"
+  fullName: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.ExtraData
+  nameWithType: IIntrinsic.ExtraData
 - uid: Firefly.CloudFormationParser.Intrinsics.IIntrinsic.GetReferencedObjects(Firefly.CloudFormationParser.ITemplate)
   name: GetReferencedObjects(ITemplate)
   href: api/Firefly.CloudFormationParser.Intrinsics.IIntrinsic.html#Firefly_CloudFormationParser_Intrinsics_IIntrinsic_GetReferencedObjects_Firefly_CloudFormationParser_ITemplate_
