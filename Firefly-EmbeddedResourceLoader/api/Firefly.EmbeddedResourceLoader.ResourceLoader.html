@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ResourceLoader
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -389,7 +389,7 @@ If <code>null</code> then the assembly containing the code that calls this metho
   </span>
   <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource*"></a>
   <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_IO_Stream_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)">GetStringResource(Stream)</h4>
-  <div class="markdown level1 summary"><p>Reads the resource stream into a string.</p>
+  <div class="markdown level1 summary"><p>Reads a resource stream into a string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -432,10 +432,116 @@ If <code>null</code> then the assembly containing the code that calls this metho
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_String_.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L221">View Source</a>
+  </span>
+  <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource*"></a>
+  <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_String_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String)">GetStringResource(String)</h4>
+  <div class="markdown level1 summary"><p>Reads a resource from the assembly containing the method that calls this overload into a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringResource(string partialResourcePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partialResourcePath</span></td>
+        <td><p>The partial resource path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>String containing resource data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_String_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String%2CSystem.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L208">View Source</a>
+  </span>
+  <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource*"></a>
+  <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_String_System_Reflection_Assembly_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String,System.Reflection.Assembly)">GetStringResource(String, Assembly)</h4>
+  <div class="markdown level1 summary"><p>Reads a resource in the specified assembly into a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringResource(string partialResourcePath, Assembly containingAssembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partialResourcePath</span></td>
+        <td><p>The partial resource path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
+        <td><span class="parametername">containingAssembly</span></td>
+        <td><p>The assembly containing the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>String containing resource data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object_.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L296">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L320">View Source</a>
   </span>
   <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources*"></a>
   <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_LoadResources_System_Object_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.LoadResources(System.Object)">LoadResources(Object)</h4>
@@ -580,7 +686,7 @@ namespace TestNamespace
     <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/new/master/apiSpec/new?filename=Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_System_Collections_Generic_IEnumerable_Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin__.md&amp;value=---%0Auid%3A%20Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable%7BFirefly.EmbeddedResourceLoader.IResourceLoaderPlugin%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L396">View Source</a>
+    <a href="https://github.com/fireflycons/Firefly.EmbeddedResourceLoader/blob/master/src/Firefly.EmbeddedResourceLoader/ResourceLoader.cs/#L420">View Source</a>
   </span>
   <a id="Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin*"></a>
   <h4 id="Firefly_EmbeddedResourceLoader_ResourceLoader_RegisterPlugin_System_Collections_Generic_IEnumerable_Firefly_EmbeddedResourceLoader_IResourceLoaderPlugin__" data-uid="Firefly.EmbeddedResourceLoader.ResourceLoader.RegisterPlugin(System.Collections.Generic.IEnumerable{Firefly.EmbeddedResourceLoader.IResourceLoaderPlugin})">RegisterPlugin(IEnumerable&lt;IResourceLoaderPlugin&gt;)</h4>

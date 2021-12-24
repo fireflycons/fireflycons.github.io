@@ -747,6 +747,18 @@ references:
   commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)
   fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.IO.Stream)
   nameWithType: ResourceLoader.GetStringResource(Stream)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String)
+  name: GetStringResource(String)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_String_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String)
+  nameWithType: ResourceLoader.GetStringResource(String)
+- uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String,System.Reflection.Assembly)
+  name: GetStringResource(String, Assembly)
+  href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_System_String_System_Reflection_Assembly_
+  commentId: M:Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String,System.Reflection.Assembly)
+  fullName: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource(System.String, System.Reflection.Assembly)
+  nameWithType: ResourceLoader.GetStringResource(String, Assembly)
 - uid: Firefly.EmbeddedResourceLoader.ResourceLoader.GetStringResource*
   name: GetStringResource
   href: api/Firefly.EmbeddedResourceLoader.ResourceLoader.html#Firefly_EmbeddedResourceLoader_ResourceLoader_GetStringResource_
