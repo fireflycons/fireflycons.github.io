@@ -84,23 +84,25 @@
 </ul>
 <h2 id="about">About</h2>
 <p>Given a scenario where your organisation has dictated that all native CloudFormation stacks should be migrated to Terraform, this cmdlet goes some way to easing the pain of that operation. Currently <a href="https://www.terraform.io/docs/cli/import/index.html">terraform import</a> does not generate <a href="https://www.terraform.io/docs/language/index.html">HCL</a> code for imported resources, only state information leaving the user to work out and add in all the attributes for every imported resource.</p>
-<p>The <a class="xref" href="../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> cmdlet will read a deployed CloudFormation Stack via the AWS CloudFormation Service and make a best attempt at generating HCL for the resources the stack contains. Additionally it will try to fix up dependencies between these resources, input variables (stack parameters) and output values as best it can. Thus the amount of work to be done in getting the HCL for the stack correct is greatly reduced.</p>
+<p>The <a class="xref" href="../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> cmdlet will read a deployed CloudFormation Stack via the AWS CloudFormation Service APIs and make a best attempt at generating HCL for the resources the stack contains. Additionally it will try to fix up dependencies between these resources, input variables (stack parameters) and output values as best it can. Thus the amount of work to be done in getting the HCL for the stack correct is greatly reduced.</p>
+<p>The cmdlet is also capable of exporting nested stacks as Terraform modules when run with the <code>-ExportNestedStacks</code> argument, and will resolve the dependencies between module inputs and outputs against other objects in the configuration. If this argument is omitted, then only the root stack is exported with <code>aws_cloudformation_stack</code> resources for each nested stack.</p>
 <h2 id="more-details">More Details</h2>
 <ul>
 <li>Read about various <a class="xref" href="terraform/caveats.html">caveats here</a>.</li>
-<li>How to <a class="xref" href="terraform/migrating.html">migrate a stack</a></li>
+<li>How to <a class="xref" href="terraform/migrating.html">migrate a stack</a>.</li>
 <li>See the <a class="xref" href="terraform/workflow.html">export workflow</a>.</li>
 <li>Examples
 <ul>
 <li><a class="xref" href="terraform/examples/vpc-stack/vpc-stack.html">VPC Stack</a>.</li>
 <li><a class="xref" href="terraform/examples/lambda-stack/lambda-stack.html">Lambda Stack</a>.</li>
+<li><a class="xref" href="terraform/examples/nested-stack/nested-stack.html">Nested Stacks</a>.</li>
 </ul>
 </li>
 </ul>
+<p>This tool makes heavy use of my <a href="https://fireflycons.github.io/Firefly.CloudFormationParser">CloudFormation Parser</a> module, and is the main reason for that module's inception.</p>
 <h2 id="future-improvements">Future Improvements</h2>
 <ul>
 <li>Increase the number of mapped resources.</li>
-<li>Make the exporter recursive through nested stacks, producing a Terraform module for each nested stack.</li>
 <li>Learn GoLang and become a contributor to the Terraform AWS provider 😁</li>
 </ul>
 </article>

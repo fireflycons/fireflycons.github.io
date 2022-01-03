@@ -86,7 +86,7 @@
 <ul>
 <li>An extra provider <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> is included to manage the extracted lambda code.</li>
 <li>There are five imported resources, when the CloudFormation only contains two resources. This is because the serverless lambda declaration implies creation of a role, an event resource and a lambda permission to permit Event Bridge to invoke the lambda.</li>
-<li>When the function is imported (Resource 1/5) the inline python code is extracted and written to a file</li>
+<li>When the function is imported (Resource 1/5) the inline python code is extracted and written to a file. Exported lambda code is written to directory <code>./lambda</code>, with a further subdirectory of the lambda's resource name and within there, an <code>index</code> file with file extension as implied by the function's <code>Runtime</code> property.</li>
 <li>In the plan stage at the end, we see some changes
 <ul>
 <li>A new resource. This creates the zip package of the extracted python code for deployment.</li>

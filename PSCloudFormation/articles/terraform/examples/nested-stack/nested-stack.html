@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Export - NestedStack </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Export - NestedStack ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tf-example-nested">
+<h1 id="example---nested-stacks">Example - Nested Stacks</h1>
+
+<p>This example takes the completed nested stacks example from <a href="https://cfn101.workshop.aws/intermediate/templates/nested-stacks.html">cfn101 workshop</a> and exports it as modules to Terraform.</p>
+<h2 id="inputs">Inputs</h2>
+<p>The following CloudFormation templates form the nested stack:</p>
+<ul>
+<li><a class="xref" href="root-stack.html">Root Stack</a></li>
+<li><a class="xref" href="vpc-stack.html">VPC Stack</a></li>
+<li><a class="xref" href="ec2-stack.html">EC2 Stack</a></li>
+<li><a class="xref" href="iam-stack.html">IAM Stack</a></li>
+</ul>
+<p>The stacks were deployed with a root stack name of <code>cfn-workshop-nested-stack</code>.</p>
+<h2 id="import-run">Import run</h2>
+<p>This is the command to export <code>cfn-workshop-nested-stack</code> to Terraform in action...</p>
+<p><img src="../../../../images/tf-nested-stack-import.gif" alt="Running"></p>
+<p>A few points to note about the warnings here</p>
+<ul>
+<li>References to unsupported AWS pseudo parameters.</li>
+<li>The fact that the instance in <code>EC2Stack</code> contains <code>AWS::CloudFormation::Init</code> and user data.</li>
+<li>As a result of the above, the instance is scheduled for replacement.</li>
+</ul>
+<p>This goes to show that importing a running EC2 instance to Terraform is not always possible, especially if that instance depends on CloudFormation init events, which don't happen in Terraform. Ultimately a new instance would need to be created using either remote provisioning or some other setup mechanism and the workload migrated to it.</p>
+<h2 id="generated-outputs">Generated Outputs</h2>
+<p>A directory structure is generated in the workspace as follows</p>
+<span style="font-family: Lucida Console, Courier New, monospace">
+<p>├ <a class="xref" href="root-main.html">main.tf</a><br>
+├ <a class="xref" href="module_imports.html">module_imports.tf</a></br>
+├ <a class="xref" href="root-vars.html">terraform.tfvars</a><br>
+└ modules</br>
+  ├ cfn-workshop-nested-stack-EC2Stack-KGXCZCF8MN3C<br>
+  │  ├ <a class="xref" href="ec2-main.html">main.tf</a></br>
+  │  └ <a class="xref" href="ec2-vars.html">terraform.tfvars</a><br>
+  ├ cfn-workshop-nested-stack-VpcStack-CEYRYZJTGP7X</br>
+  │  ├ <a class="xref" href="vpc-main.html">main.tf</a><br>
+  │  └ <a class="xref" href="vpc-vars.html">terraform.tfvars</a></br>
+  └ cfn-workshop-nested-stack-IamStack-R7URHPP7NDAS<br>
+     └ <a class="xref" href="iam-main.html">main.tf</a></br>
+</span><p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/master/docfx/articles/terraform/examples/nested-stack/nested-stack.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

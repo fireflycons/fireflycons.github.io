@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform-export.html",
-          "hash": "IAOKZf9tQhQgKERreISNT0j00qmssvqK0C/NVjYWvYE="
+          "hash": "NSQPM2EFzHg4NWQLVL68PrZWTXpajGFtnew1B1chh7s="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/caveats.html",
-          "hash": "Kav/o88/gxU32FBXZwpjpwANVtgrzsRIPA9N28An1Dw="
+          "hash": "VZRJa0XR6lTzG71ncJiFzfkSuuAvrMlovh+LBjZr7LY="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,163 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/examples/lambda-stack/lambda-stack.html",
-          "hash": "YnZ/1kwEZSLf7wxoHVKk+H5F1w1b5GdpPJN73meCkEU="
+          "hash": "Z9CLULwWv6tBuc7d9AvmMYSPhejlAFBFKhu16dQQznk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/ec2-main.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/ec2-main.html",
+          "hash": "13mj7j0r2J6t/XOUnudubEvnseFdafuHsD9D0J9MI44="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/ec2-stack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/ec2-stack.html",
+          "hash": "5oNvSRr+7xo5HMUdMMNGtfTR1xf8URVndiIUrevUx8o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/ec2-vars.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/ec2-vars.html",
+          "hash": "ZGQg4l3urG6DNRN9ipx55XTKRCZeWHl04UM4BsUkEM0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/iam-main.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/iam-main.html",
+          "hash": "6fHvK1KIf+YBaVzzPr87+ygBUebZSdS6sBLNVddeGe8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/iam-stack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/iam-stack.html",
+          "hash": "3Y81kyuF4K73hvYgWXwPB7dB9swHEtQj883dstl3n9I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/module_imports.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/module_imports.html",
+          "hash": "eDIxWFAJT6tjIXMhEpvyHv6AAuUNBizSJga5EayhHc0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/nested-stack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/nested-stack.html",
+          "hash": "8FMd7cd9UxS4weJ1tzCg644MYNNkX1MmB/cDqQ7kfCI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/root-main.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/root-main.html",
+          "hash": "IoxeXJOY9Mk8ljGlAEP5yJI5jgm4VVc3FQmcysrh+yo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/root-stack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/root-stack.html",
+          "hash": "0NdHnLjrov2EKkPpun+pG2IF6lkKBMcA2fD+Rw1P3mM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/root-vars.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/root-vars.html",
+          "hash": "9fPrr6xAPclIju1+hdggw2uMQTtBXzpC+q48OonU/QY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/vpc-main.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/vpc-main.html",
+          "hash": "BBHvg805nxArBCR7YdeQMorCNsTFfQEIWUFHr3Wi+mY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/vpc-stack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/vpc-stack.html",
+          "hash": "ufsv1RX+F1t6bJVLZ7yo7cMmcLKql3yXKwXwKUZstUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/examples/nested-stack/vpc-vars.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/examples/nested-stack/vpc-vars.html",
+          "hash": "VzW1ZuzyVqzi3PQCJxWqUN0yFclDnv5fkkyNHuiXe4s="
         }
       },
       "is_incremental": false,
@@ -225,7 +381,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/migrating.html",
-          "hash": "c9UUGOYBJKG8+Dzifo/FP5Tv6HBfSIHumi0wDV61FlQ="
+          "hash": "1SKncMLQZXl/ziizfjqoY4Mrw4Pyp7ukGXTQEOXt0pk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/terraform/nested.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/terraform/nested.html",
+          "hash": "02W4DPPZEL9EKuZgWVDE5awTi5nSf69sFHm6cYOSniM="
         }
       },
       "is_incremental": false,
@@ -237,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/workflow.html",
-          "hash": "8smBAp4/UMZfa7kutc2nNZNC1eMOyTRgYF4QzeMBTDc="
+          "hash": "ljy5zBq25aXBsdo61FIE1teV9e3NPiXEQErwN8kaTFs="
         }
       },
       "is_incremental": false,
@@ -249,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "aE0Jy6WLM0DGtK3sdEHhT8IoI2alb3QFG3t2qgCta2M="
+          "hash": "Og9f69bcIOUodZozrqluyeRSXm3SUlNCeFeog3B11zo="
         }
       },
       "is_incremental": false,
@@ -261,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Export-PSCFNTerraform.html",
-          "hash": "Re3xhU1p2E4RB7H4EU4bSFxOS0HWmw8Xtwh3cqdt6s4="
+          "hash": "HXMsfgOXOBOo4JzH0Tz4znczKJEznHZMMAaLMc443Uk="
         }
       },
       "is_incremental": false,
@@ -433,6 +601,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/tf-nested-stack-import.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/tf-nested-stack-import.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/vpc-import.gif",
       "output": {
         "resource": {
@@ -481,7 +660,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 31,
+          "total_file_count": 45,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

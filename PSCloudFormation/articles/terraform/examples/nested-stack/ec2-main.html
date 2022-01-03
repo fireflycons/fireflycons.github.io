@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example - Nested stack, EC2 main.tf </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example - Nested stack, EC2 main.tf ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tf-example-nested-ec2-main-tf">
+<h1 id="example---nested-stack-ec2-stack-maintf">Example - Nested stack: EC2 stack main<area>.tf</h1>
+
+<pre>
+<code class="lang-bash">variable &quot;EnvironmentType&quot; {
+  type        = string
+  description = &quot;Specify the Environment type of the stack.&quot;
+  default     = &quot;Test&quot;
+  validation {
+    condition     = contains([&quot;Dev&quot;, &quot;Test&quot;, &quot;Prod&quot;], var.EnvironmentType)
+    error_message = &quot;Specify either Dev, Test or Prod.&quot;
+  }
+}
+
+variable &quot;SubnetId&quot; {
+  type        = string
+  description = &quot;The Subnet ID&quot;
+}
+
+variable &quot;VpcId&quot; {
+  type        = string
+  description = &quot;The VPC ID&quot;
+}
+
+variable &quot;WebServerInstanceProfile&quot; {
+  type        = string
+  description = &quot;Instance profile resource ID&quot;
+}
+
+data &quot;aws_ssm_parameter&quot; &quot;AmiID&quot; {
+  name = &quot;/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2&quot;
+}
+
+data &quot;aws_region&quot; &quot;current&quot; {}
+
+locals {
+  mappings = {
+    EnvironmentToInstanceType = {
+      Dev = {
+        InstanceType = &quot;t2.nano&quot;
+      }
+      Test = {
+        InstanceType = &quot;t2.micro&quot;
+      }
+      Prod = {
+        InstanceType = &quot;t2.small&quot;
+      }
+    }
+  }
+}
+
+resource &quot;aws_eip&quot; &quot;WebServerEIP&quot; {
+  vpc = true
+}
+
+resource &quot;aws_instance&quot; &quot;WebServerInstance&quot; {
+  ami = data.aws_ssm_parameter.AmiID.value
+  associate_public_ip_address = true
+  availability_zone = &quot;eu-west-1a&quot;
+  capacity_reservation_specification {
+    capacity_reservation_preference = &quot;open&quot;
+  }
+  cpu_core_count = 1
+  cpu_threads_per_core = 1
+  credit_specification {
+    cpu_credits = &quot;standard&quot;
+  }
+  iam_instance_profile = var.WebServerInstanceProfile
+  instance_initiated_shutdown_behavior = &quot;stop&quot;
+  instance_type = local.mappings.EnvironmentToInstanceType[var.EnvironmentType].InstanceType
+  ipv6_address_count = 0
+  metadata_options {
+    http_endpoint = &quot;enabled&quot;
+    http_put_response_hop_limit = 1
+    http_tokens = &quot;optional&quot;
+  }
+  private_ip = &quot;10.0.0.9&quot;
+  root_block_device {
+    delete_on_termination = true
+    iops = 100
+    throughput = 0
+    volume_size = 8
+    volume_type = &quot;gp2&quot;
+  }
+  source_dest_check = true
+  subnet_id = var.SubnetId
+  tags = {
+    Name = join(&quot; &quot;, [var.EnvironmentType, &quot;Web Server&quot;])
+  }
+  tenancy = &quot;default&quot;
+  user_data = &quot;fd240ac505309c360967c62040d70922b2d16b06&quot;
+  vpc_security_group_ids = [
+    aws_security_group.WebServerSecurityGroup.id,
+  ]
+}
+
+resource &quot;aws_security_group&quot; &quot;WebServerSecurityGroup&quot; {
+  description = &quot;Enable HTTP and HTTPS access&quot;
+  egress = [
+    {
+      cidr_blocks = [
+        &quot;0.0.0.0/0&quot;,
+      ]
+      description = &quot;&quot;
+      from_port = 443
+      ipv6_cidr_blocks = []
+      prefix_list_ids = []
+      protocol = &quot;tcp&quot;
+      security_groups = []
+      self = false
+      to_port = 443
+    },
+    {
+      cidr_blocks = [
+        &quot;0.0.0.0/0&quot;,
+      ]
+      description = &quot;&quot;
+      from_port = 80
+      ipv6_cidr_blocks = []
+      prefix_list_ids = []
+      protocol = &quot;tcp&quot;
+      security_groups = []
+      self = false
+      to_port = 80
+    }
+  ]
+  ingress = [
+    {
+      cidr_blocks = [
+        &quot;0.0.0.0/0&quot;,
+      ]
+      description = &quot;&quot;
+      from_port = 80
+      ipv6_cidr_blocks = []
+      prefix_list_ids = []
+      protocol = &quot;tcp&quot;
+      security_groups = []
+      self = false
+      to_port = 80
+    }
+  ]
+  name = &quot;cfn-workshop-nested-stack-EC2Stack-KGXCZCF8MN3C-WebServerSecurityGroup-DUEAOQJ6QX4H&quot;
+  vpc_id = var.VpcId
+}
+
+output &quot;WebServerElasticIP&quot; {
+  value = aws_eip.WebServerEIP.id
+  description = &quot;Elastic IP associated with the web server EC2 instance&quot;
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/master/docfx/articles/terraform/examples/nested-stack/ec2-main.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

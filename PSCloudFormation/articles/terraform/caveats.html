@@ -79,11 +79,11 @@
 <h2 id="embedded-scripts-and-code-provisioners-lambda">Embedded scripts and code (provisioners, lambda)</h2>
 <ul>
 <li><code>AWS::CloudFormation::Init</code> data attached to resources is not exported because Terraform does not have this concept. Where init data is found, a warning is issued against the imported resource. Such scripts need refactoring to user data or some other mechanism.</li>
-<li>User Data import - <code>terraform import</code> seems to make a hash (literally) of user data properties imported from launch configurations (and probably instances too). You will need to correct that in the generated HCL or <code>terraform apply</code> is going to wipe out your user data script!<br> Having said that, many user data scripts contain CloudFormation specific commands such as calls to <code>cfn-init</code> and references to CloudFormation specific pseudo-parameters which may hold little relevance in a terraform-managed stack.<br>Where user data is found, a warning is issued.</li>
+<li>User Data import - <code>terraform import</code> seems to make a hash (literally) of user data properties imported from launch configurations and instances. This has the undesired side-effect of tainting the imported resource such that <code>plan</code> sees the resource as requiring replacement. You will need to correct that in the generated HCL or <code>terraform apply</code> is going to wipe out your resources!<br> Having said that, many user data scripts contain CloudFormation specific commands such as calls to <code>cfn-init</code> and references to CloudFormation specific pseudo-parameters which may hold little relevance in a terraform-managed stack.<br>Where user data is found, a warning is issued.</li>
 <li>Lambda
 <ul>
-<li>Embedded function code declared in the CloudFormation Template with <code>ZipFile</code> will be extracted to a local file and hooked up to its <code>aws_lambda_function</code> resource by way of the <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> provider. Beware that code residing in the template <em>may well not be</em> the current version of the code, as it may have been updated at the console or by way of lambda APIs for updating function configuration since initial stack deployment.</li>
-<li>Where code is located in S3 or ECR, terraform import does not pull back the location data, however this cmdlet will dscover and fix this up when emitting the HCL configuration.</li>
+<li>Embedded function code declared in the CloudFormation Template with <code>ZipFile</code> (<code>InlineCode</code> on a serverless function) will be extracted to a local file and hooked up to its <code>aws_lambda_function</code> resource by way of the <a href="https://registry.terraform.io/providers/ArthurHlt/zipper/latest">ArthurHlt/Zipper</a> provider. Beware that code residing in the template <em>may well not be</em> the current version of the code, as it may have been updated at the console or by way of lambda APIs for updating function configuration since initial stack deployment.</li>
+<li>Where code is located in S3 or ECR, terraform import does not pull back the location data, however this cmdlet will discover and fix this up when emitting the HCL configuration.</li>
 </ul>
 </li>
 </ul>
@@ -91,10 +91,19 @@
 <ul>
 <li>The existing resources in a deployed CloudFormation Stack are imported. If the CloudFormation Template that deployed the stack contains conditional resources which may not be instantiated at the time this tool is run, those resources won't be imported to Terraform. If you want the full functionality of the original CloudFormation template, that has to be added manually.</li>
 </ul>
+<h2 id="nested-stack-import">Nested Stack Import</h2>
+<p>When <a class="xref" href="../../cmdlets/Export-PSCFNTerraform.html">Export-PSCFNTerraform</a> is run with <code>-ExportNestedStacks</code> and the root stack contains more than one invocation of the same nested stack template with different parameters, then a separate Terraform module will be created for each instance of the nested stack. This is due to the fact that only <em>deployed</em> resources are imported and thus different invocations of the same template may produce a different number of resources, especially when conditions in the nested template may omit some resources.<br>It is therefore an exercise for the user to combine these into a single module.</p>
 <h2 id="other-quirks">Other Quirks</h2>
 <h4 id="s3">S3</h4>
 <ul>
 <li><code>aws_s3_bucket_policy</code> - Due to some strange permissions thing, policy is nearly always imported as an empty string. You will have to manually add in the policy statement.<br>Where bucket policies are found, a warning will be emitted.</li>
+</ul>
+<h2 id="there-will-be-bugs">There will be bugs!</h2>
+<p>Please feel free to <a href="https://github.com/fireflycons/PSCloudFormation/issues">raise issues</a> as and when you find them. Many of these are likely to be due to resources I haven't yet verified and will be because the import ID isn't correctly calculated or that the validation phase reports &quot;Unconfigurable attribute&quot;.</p>
+<p>When raising an issue, please provide the following</p>
+<ul>
+<li>If possible, a copy of the CloudFormation template or better still, create a reproduction of the error with a new template containing only the resource and conditions that cause the error, and supply this template.</li>
+<li>A full stack trace, which can be obtained by re-running the failing export with the <code>-Debug</code> swtich.</li>
 </ul>
 </article>
           </div>

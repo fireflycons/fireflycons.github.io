@@ -75,6 +75,7 @@
 <li>The CloudFormation stack is parsed and analysed. If additional providers are needed besides <code>aws</code>, these are selected</li>
 <li>An initial <code>main.tf</code> is output with the terraform and provider configuration blocks along with empty resource declarations for the resources found in the CloudFormation template.</li>
 <li><code>terraform init</code> is invoked to set up the providers.</li>
+<li>If exporting nested stacks to modules, the stacks are processed depth-first and steps 6 thru 10 are executed for each nested stack finishing with the root stack.</li>
 <li>For each mapped resouce, <code>terraform import</code> is invoked to build up the state file.</li>
 <li>The state file is read and analysed alongside the object graph generated from parsing the CloudFormation in order to determine dependencies between resources, inputs and outputs.</li>
 <li>Lambdas are analysed and their code locations fixed up (see <a class="xref" href="caveats.html#embedded-scripts-and-code-provisioners-lambda">here</a>).</li>

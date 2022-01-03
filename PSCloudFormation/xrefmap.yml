@@ -55,6 +55,45 @@ references:
 - uid: tf-example-lambda-stack-tf
   name: Example - Lambda Stack main.tf
   href: articles/terraform/examples/lambda-stack/hcl.html
+- uid: tf-example-nested
+  name: Export - NestedStack
+  href: articles/terraform/examples/nested-stack/nested-stack.html
+- uid: tf-example-nested-ec2-cf
+  name: Example - Nested stack, EC2 stack CF
+  href: articles/terraform/examples/nested-stack/ec2-stack.html
+- uid: tf-example-nested-ec2-main-tf
+  name: Example - Nested stack, EC2 main.tf
+  href: articles/terraform/examples/nested-stack/ec2-main.html
+- uid: tf-example-nested-ec2-vars-tf
+  name: Example - Nested stack, EC2 terraform.tfvars
+  href: articles/terraform/examples/nested-stack/ec2-vars.html
+- uid: tf-example-nested-iam-cf
+  name: Example - Nested stack, IAM stack CF
+  href: articles/terraform/examples/nested-stack/iam-stack.html
+- uid: tf-example-nested-iam-main-tf
+  name: Example - Nested stack, IAM main.tf
+  href: articles/terraform/examples/nested-stack/iam-main.html
+- uid: tf-example-nested-main-tf
+  name: Example - Nested stack, root main.tf
+  href: articles/terraform/examples/nested-stack/root-main.html
+- uid: tf-example-nested-module-tf
+  name: Example - Nested stack, root module_imports.tf
+  href: articles/terraform/examples/nested-stack/module_imports.html
+- uid: tf-example-nested-root-cf
+  name: Example - Nested stack, Root stack CF
+  href: articles/terraform/examples/nested-stack/root-stack.html
+- uid: tf-example-nested-vars-tf
+  name: Example - Nested stack, root terrafrom.tfvars
+  href: articles/terraform/examples/nested-stack/root-vars.html
+- uid: tf-example-nested-vpc-cf
+  name: Example - Nested stack, VPC stack CF
+  href: articles/terraform/examples/nested-stack/vpc-stack.html
+- uid: tf-example-nested-vpc-main-tf
+  name: Example - Nested stack, VPC main.tf
+  href: articles/terraform/examples/nested-stack/vpc-main.html
+- uid: tf-example-nested-vpc-vars-tf
+  name: Example - Nested stack, VPC terraform.tfvars
+  href: articles/terraform/examples/nested-stack/vpc-vars.html
 - uid: tf-example-vpc-stack
   name: Example - VPC Stack
   href: articles/terraform/examples/vpc-stack/vpc-stack.html
@@ -70,6 +109,9 @@ references:
 - uid: tf-migrating
   name: Export - CavMigratingeats
   href: articles/terraform/migrating.html
+- uid: tf-nested
+  name: Export - NestedStack
+  href: articles/terraform/nested.html
 - uid: tf-workflow
   name: Export Workflow
   href: articles/terraform/workflow.html

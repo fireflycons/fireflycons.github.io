@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example - Nested stack, EC2 stack CF </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example - Nested stack, EC2 stack CF ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tf-example-nested-ec2-cf">
+<h1 id="example---nested-stack-ec2-stack-template">Example - Nested stack: EC2 stack template</h1>
+
+<pre>
+<code class="lang-yaml">AWSTemplateFormatVersion: &quot;2010-09-09&quot;
+
+Description: AWS CloudFormation workshop - Nested stacks - EC2 template.
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: &#39;Amazon EC2 Configuration&#39;
+        Parameters:
+          - AmiID
+
+    ParameterLabels:
+      AmiID:
+        default: &#39;Amazon Machine Image ID&#39;
+
+Parameters:
+  EnvironmentType:
+    Description: &#39;Specify the Environment type of the stack.&#39;
+    Type: String
+    Default: Test
+    AllowedValues:
+      - Dev
+      - Test
+      - Prod
+    ConstraintDescription: &#39;Specify either Dev, Test or Prod.&#39;
+
+  AmiID:
+    Type: AWS::SSM::Parameter::Value&lt;AWS::EC2::Image::Id&gt;
+    Description: &#39;The ID of the AMI.&#39;
+    Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
+
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+    Description: &#39;The VPC ID&#39;
+
+  SubnetId:
+    Type: AWS::EC2::Subnet::Id
+    Description: &#39;The Subnet ID&#39;
+
+  WebServerInstanceProfile:
+    Type: String
+    Description: &#39;Instance profile resource ID&#39;
+
+Mappings:
+  EnvironmentToInstanceType:
+    Dev:
+      InstanceType: t2.nano
+    Test:
+      InstanceType: t2.micro
+    Prod:
+      InstanceType: t2.small
+
+Resources:
+  WebServerInstance:
+    Type: AWS::EC2::Instance
+    Metadata:
+      AWS::CloudFormation::Init:
+        config:
+          packages:
+            yum:
+              httpd: []
+              php: []
+          files:
+            /var/www/html/index.php:
+              content: |
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;body&gt;
+                  &lt;center&gt;
+                    &lt;?php
+                    # Get the instance ID from meta-data and store it in the $instance_id variable
+                    $url = &quot;http://169.254.169.254/latest/meta-data/instance-id&quot;;
+                    $instance_id = file_get_contents($url);
+                    # Get the instance&#39;s availability zone from metadata and store it in the $zone variable
+                    $url = &quot;http://169.254.169.254/latest/meta-data/placement/availability-zone&quot;;
+                    $zone = file_get_contents($url);
+                    # Get the instance AMI ID and store it in the $ami_id variable
+                    $url = &quot;http://169.254.169.254/latest/meta-data/ami-id&quot;;
+                    $ami_id = file_get_contents($url);
+                    ?&gt;
+                    &lt;h2&gt;EC2 Instance ID: &lt;?php echo $instance_id ?&gt;&lt;/h2&gt;
+                    &lt;h2&gt;Availability Zone: &lt;?php echo $zone ?&gt;&lt;/h2&gt;
+                    &lt;h2&gt;AMI ID: &lt;?php echo $ami_id ?&gt;&lt;/h2&gt;
+                  &lt;/center&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+              mode: 000644
+              owner: apache
+              group: apache
+
+            /etc/cfn/cfn-hup.conf:
+              content: !Sub |
+                [main]
+                stack=${AWS::StackId}
+                region=${AWS::Region}
+                interval=1
+              mode: 000400
+              owner: root
+              group: root
+
+            /etc/cfn/hooks.d/cfn-auto-reloader.conf:
+              content: !Sub |
+                [cfn-auto-reloader-hook]
+                triggers=post.update
+                path=Resources.WebServerInstance.Metadata.AWS::CloudFormation::Init
+                action=/opt/aws/bin/cfn-init --stack ${AWS::StackName} --resource WebServerInstance --region ${AWS::Region}
+                runas=root
+
+          services:
+            sysvinit:
+              httpd:
+                enabled: true
+                ensureRunning: true
+
+              cfn-hup:
+                enabled: true
+                ensureRunning: true
+                files:
+                  - /etc/cfn/cfn-hup.conf
+                  - /etc/cfn/hooks.d/cfn-auto-reloader.conf
+
+    Properties:
+      SubnetId: !Ref SubnetId
+      IamInstanceProfile: !Ref WebServerInstanceProfile
+      ImageId: !Ref AmiID
+      InstanceType: !FindInMap [EnvironmentToInstanceType, !Ref EnvironmentType, InstanceType]
+      SecurityGroupIds:
+        - !Ref WebServerSecurityGroup
+      Tags:
+        - Key: Name
+          Value: !Join [ &#39; &#39;, [ !Ref EnvironmentType, Web Server ] ]
+      UserData:
+        Fn::Base64:
+          !Sub |
+          #!/bin/bash -xe
+          # Update aws-cfn-bootstrap to the latest
+          yum install -y aws-cfn-bootstrap
+          # Call cfn-init script to install files and packages
+          /opt/aws/bin/cfn-init -v --stack ${AWS::StackName} --resource WebServerInstance --region ${AWS::Region}
+          # Call cfn-signal script to send a signal with exit code
+          /opt/aws/bin/cfn-signal --exit-code $? --stack ${AWS::StackName} --resource WebServerInstance --region ${AWS::Region}
+
+    CreationPolicy:
+      ResourceSignal:
+        Count: 1
+        Timeout: PT10M
+
+  WebServerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable HTTP and HTTPS access
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+      VpcId: !Ref VpcId
+
+  WebServerEIP:
+    Type: AWS::EC2::EIP
+    Properties:
+      Domain: vpc
+      InstanceId: !Ref WebServerInstance
+
+Outputs:
+  WebServerPublicDNS:
+    Description: &#39;Public DNS of EC2 instance&#39;
+    Value: !GetAtt WebServerInstance.PublicDnsName
+
+  WebServerElasticIP:
+    Description: Elastic IP associated with the web server EC2 instance
+    Value: !Ref WebServerEIP
+
+  WebsiteURL:
+    Value: !Sub http://${WebServerEIP}
+    Description: Application URL
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fireflycons/PSCloudFormation/blob/master/docfx/articles/terraform/examples/nested-stack/ec2-stack.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
