@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/examples/nested-stack/nested-stack.html",
-          "hash": "8FMd7cd9UxS4weJ1tzCg644MYNNkX1MmB/cDqQ7kfCI="
+          "hash": "4arPcCJhjgJrsOAUFVHk0oREVjuSs6nhOduQAA9bqCc="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/terraform/nested.html",
-          "hash": "02W4DPPZEL9EKuZgWVDE5awTi5nSf69sFHm6cYOSniM="
+          "hash": "OQLlV4Y6XQkWQ3V54w/krkNhNrSbfADPFkl+e8x7spU="
         }
       },
       "is_incremental": false,

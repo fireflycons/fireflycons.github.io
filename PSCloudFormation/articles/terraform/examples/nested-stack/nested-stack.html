@@ -70,6 +70,11 @@
 <h1 id="example---nested-stacks">Example - Nested Stacks</h1>
 
 <p>This example takes the completed nested stacks example from <a href="https://cfn101.workshop.aws/intermediate/templates/nested-stacks.html">cfn101 workshop</a> and exports it as modules to Terraform.</p>
+<p>Demonstrates the following</p>
+<ul>
+<li>That each <code>AWS::CloudFormation::Stack</code> in the root stack is exported to a Terraform module.</li>
+<li>That the module blocks for the exported modules are correctly linked up with refrences to input variables and other module outputs.</li>
+</ul>
 <h2 id="inputs">Inputs</h2>
 <p>The following CloudFormation templates form the nested stack:</p>
 <ul>

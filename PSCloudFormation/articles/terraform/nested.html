@@ -74,7 +74,7 @@
 <li>The default is to import all nested stacks as <code>aws_cloudformation_stack</code> resources, thus leaving the nested stacks owned by CloudFormation.</li>
 <li>Read all nested stacks and export these to HCL as modules. Enable this with the <code>-ExportNestedStacks</code> cmdlet parameter.</li>
 </ol>
-<p>When exporting nested stacks, each <code>AWS::CloudFormation::Stack</code> resource found in the deployed stack is read and exported to a module in the <code>./modules</code> directory of the workspace. The modules take the names of the nested stacks, so will be something like <code>VpcStack-AGGQ9RLPLCGZ</code>. Each module (including root) that is found to contain nested stacks will gain a file <code>moduke_imports.tf</code> that declares the submodules. All references to and from the submodules will be resolved where possible.</p>
+<p>When exporting nested stacks, each <code>AWS::CloudFormation::Stack</code> resource found in the deployed stack is read and exported to a module in the <code>./modules</code> directory of the workspace. The modules take the names of the nested stacks, so will be something like <code>VpcStack-AGGQ9RLPLCGZ</code>. Each module (including root) that is found to contain nested stacks will gain a file <code>module_imports.tf</code> that declares the submodules. All references to and from the submodules will be resolved where possible.</p>
 <p>As noted in <a class="xref" href="caveats.html#nested-stack-import">caveats</a>, multiple <code>AWS::CloudFormation::Stack</code> resources using the same template source will result in multiple modules being exported.</p>
 <p>See the <a class="xref" href="examples/nested-stack/nested-stack.html">nested stacks example</a>.</p>
 </article>
