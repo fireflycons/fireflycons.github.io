@@ -76,8 +76,9 @@
     aws = {
       source = &quot;hashicorp/aws&quot;
     }
-    zipper = {
-      source = &quot;ArthurHlt/zipper&quot;
+    archive = {
+      source  = &quot;hashicorp/archive&quot;
+      version = &quot;2.2.0&quot;
     }
   }
 }
@@ -86,19 +87,16 @@ provider &quot;aws&quot; {
   region = &quot;eu-west-1&quot;
 }
 
-data &quot;aws_availability_zones&quot; &quot;available&quot; {
-  state = &quot;available&quot;
-}
-
-resource &quot;zipper_file&quot; &quot;LambdaFunction_deployment_package&quot; {
-  source      = &quot;lambda/LambdaFunction/index.py&quot;
+data &quot;archive_file&quot; &quot;LambdaFunction_deployment_package&quot; {
+  type        = &quot;zip&quot;
+  source_file = &quot;lambda/LambdaFunction/index.py&quot;
   output_path = &quot;lambda/LambdaFunction/LambdaFunction_deployment_package.zip&quot;
 }
 
 resource &quot;aws_cloudwatch_event_rule&quot; &quot;LambdaFunctionSheduledEvent&quot; {
   event_bus_name      = &quot;default&quot;
   is_enabled          = true
-  name                = &quot;test-lambda-LambdaFunctionSheduledEvent-QLL75RMPW5EC&quot;
+  name                = &quot;test-lambda-LambdaFunctionSheduledEvent-11NOUEASGZWQN&quot;
   schedule_expression = &quot;rate(1 hour)&quot;
 }
 
@@ -117,6 +115,7 @@ resource &quot;aws_iam_role&quot; &quot;LambdaFunctionRole&quot; {
       ]
     }
   )
+
   inline_policy {
     name = &quot;LambdaFunctionRolePolicy0&quot;
     policy = jsonencode(
@@ -133,8 +132,11 @@ resource &quot;aws_iam_role&quot; &quot;LambdaFunctionRole&quot; {
       }
     )
   }
+  managed_policy_arns = [
+    &quot;arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole&quot;,
+  ]
   max_session_duration = 3600
-  name                 = &quot;test-lambda-LambdaFunctionRole-13BZVJKAQAW76&quot;
+  name                 = &quot;test-lambda-LambdaFunctionRole-15D7T84YDQ2OV&quot;
   path                 = &quot;/&quot;
   tags = {
     &quot;lambda:createdBy&quot; = &quot;SAM&quot;
@@ -146,19 +148,20 @@ resource &quot;aws_lambda_function&quot; &quot;LambdaFunction&quot; {
     &quot;x86_64&quot;,
   ]
   description                    = &quot;Just prints to CloudWatch log&quot;
-  filename                       = zipper_file.LambdaFunction_deployment_package.output_path
-  function_name                  = &quot;test-lambda-LambdaFunction-sRfgz1lPwRH2&quot;
+  filename                       = data.archive_file.LambdaFunction_deployment_package.output_path
+  function_name                  = &quot;test-lambda-LambdaFunction-FyS9wmUPMO8m&quot;
   handler                        = &quot;index.handler&quot;
   memory_size                    = 128
   package_type                   = &quot;Zip&quot;
   reserved_concurrent_executions = -1
   role                           = aws_iam_role.LambdaFunctionRole.arn
   runtime                        = &quot;python3.7&quot;
-  source_code_hash               = zipper_file.LambdaFunction_deployment_package.output_sha
+  source_code_hash               = data.archive_file.LambdaFunction_deployment_package.output_base64sha256
   tags = {
     &quot;lambda:createdBy&quot; = &quot;SAM&quot;
   }
   timeout = 3
+
   tracing_config {
     mode = &quot;PassThrough&quot;
   }
@@ -169,10 +172,14 @@ resource &quot;aws_lambda_permission&quot; &quot;LambdaFunctionSheduledEventPerm
   function_name = aws_lambda_function.LambdaFunction.arn
   principal     = &quot;events.amazonaws.com&quot;
   source_arn    = aws_cloudwatch_event_rule.LambdaFunctionSheduledEvent.arn
+  statement_id  = &quot;test-lambda-LambdaFunctionSheduledEventPermission-2FANL87ZUE68&quot;
 }
 
 resource &quot;aws_s3_bucket&quot; &quot;S3Bucket&quot; {
-  bucket = &quot;test-lambda-s3bucket-1qfp4kvowpamf&quot;
+  arn            = &quot;arn:aws:s3:::test-lambda-s3bucket-tq166twr9fly&quot;
+  bucket         = &quot;test-lambda-s3bucket-tq166twr9fly&quot;
+  hosted_zone_id = &quot;Z1BKCTXD74EZPE&quot;
+  request_payer  = &quot;BucketOwner&quot;
 }
 </code></pre>
 </article>
